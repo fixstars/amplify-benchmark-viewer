@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLink /> Rendered well 1`] = `
+<div>
+  <a
+    class="css-94l1l1"
+    href="/"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+    >
+      Home
+    </p>
+  </a>
+</div>
+`;

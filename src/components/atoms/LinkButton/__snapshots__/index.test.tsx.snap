@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinkButton /> Rendered well 1`] = `
+<div>
+  <a
+    class="css-km1vak"
+    href="/clients/fixstars"
+  >
+    Fixstars
+  </a>
+</div>
+`;

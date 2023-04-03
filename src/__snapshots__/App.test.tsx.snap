@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-thz6x0"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-z80fak-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1r339ym-MuiToolbar-root"
+      >
+        <div
+          class="css-yp9swi"
+        >
+          <a
+            class="css-94l1l1"
+            href="/"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-19sbe58-MuiTypography-root"
+            >
+              Annealing Benchmark
+            </h6>
+          </a>
+        </div>
+        <nav
+          class="css-ov1ktg"
+        >
+          <a
+            class="css-94l1l1"
+            href="/"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-4hrd4f-MuiTypography-root"
+            >
+              Problems
+            </p>
+          </a>
+          <a
+            class="css-94l1l1"
+            href="/clients"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+            >
+              Clients
+            </p>
+          </a>
+          <a
+            class="css-94l1l1"
+            href="/labels"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+            >
+              Label
+            </p>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root css-3dvxzl"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      />
+      <div
+        class="MuiBox-root css-x7m8p7"
+      >
+        <span
+          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-8qhgpu-MuiCircularProgress-root"
+          role="progressbar"
+          style="width: 40px; height: 40px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionTitle /> Rendered well 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15h1z56-MuiGrid-root"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h2 css-140x6pm-MuiTypography-root"
+    >
+      section title
+    </h2>
+  </div>
+</div>
+`;
