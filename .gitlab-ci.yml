@@ -1,0 +1,79 @@
+stages:
+  - scan
+  - push
+
+Prettier:
+  stage: scan
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run format
+  only:
+    refs:
+      - merge_requests
+
+ESLint:
+  stage: scan
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run lint
+  only:
+    refs:
+      - merge_requests
+
+CheckTypo:
+  stage: scan
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run check:spell
+  only:
+    refs:
+      - merge_requests
+
+Test:
+  stage: scan
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run test:ci
+  only:
+    refs:
+      - merge_requests
+
+Push-to-GitHub:
+  stage: push
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    # With GitLab
+    - git checkout develop
+    - git branch -D main
+    # Add GitHub repository to origin
+    - git remote remove origin
+    - git remote add origin https://$GITHUB_TOKEN@github.com/fixstars/amplify-benchmark-viewer-test.git
+    - git fetch
+    - git checkout main
+    - git pull origin main
+    # Rebase and push GitLab develop to GitHub main
+    - git checkout develop
+    - git rebase main
+    - git branch -D main
+    - git checkout -b main
+    - git push origin main
+  only:
+    - develop
