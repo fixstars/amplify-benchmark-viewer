@@ -1,0 +1,742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LabelList /> Rendered well 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-thz6x0"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1hc7nu0-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1r339ym-MuiToolbar-root"
+      >
+        <div
+          class="css-yp9swi"
+        >
+          <a
+            class="css-94l1l1"
+            href="/"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-19sbe58-MuiTypography-root"
+            >
+              Annealing Benchmark
+            </h6>
+          </a>
+        </div>
+        <nav
+          class="css-ov1ktg"
+        >
+          <a
+            class="css-94l1l1"
+            href="/"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-4hrd4f-MuiTypography-root"
+            >
+              Problems
+            </p>
+          </a>
+          <a
+            class="css-94l1l1"
+            href="/clients"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+            >
+              Clients
+            </p>
+          </a>
+          <a
+            class="css-94l1l1"
+            href="/labels"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+            >
+              Label
+            </p>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root css-1cf7osc"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      />
+      <div
+        class="MuiBox-root css-0"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15h1z56-MuiGrid-root"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h2 css-1asg1ln-MuiTypography-root"
+          >
+            Label List
+          </h2>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-13pmxen"
+      >
+        <div
+          aria-colcount="3"
+          aria-multiselectable="false"
+          aria-rowcount="4"
+          class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-nz4uc6-MuiDataGrid-root"
+          role="grid"
+        >
+          <div
+            class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
+          >
+            <div
+              class="MuiDataGrid-columnHeaders MuiDataGrid-withBorderColor css-1iyq7zh-MuiDataGrid-columnHeaders"
+              style="min-height: 56px; max-height: 56px; line-height: 56px;"
+            >
+              <div
+                class="MuiDataGrid-columnHeadersInner MuiDataGrid-columnHeadersInner--scrollable css-gl260s-MuiDataGrid-columnHeadersInner"
+                role="rowgroup"
+                style="transform: translate3d(0px, 0px, 0px);"
+              >
+                <div
+                  aria-rowindex="1"
+                  class="css-yrdy0g-MuiDataGrid-columnHeaderRow"
+                  role="row"
+                >
+                  <div
+                    aria-colindex="1"
+                    aria-label="Label"
+                    aria-sort="none"
+                    class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
+                    data-field="label"
+                    role="columnheader"
+                    style="height: 56px; width: 220px; min-width: 220px; max-width: 220px;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiDataGrid-columnHeaderDraggableContainer"
+                      draggable="false"
+                    >
+                      <div
+                        class="MuiDataGrid-columnHeaderTitleContainer"
+                      >
+                        <div
+                          class="MuiDataGrid-columnHeaderTitleContainerContent"
+                        >
+                          <div
+                            aria-label=""
+                            class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                            data-mui-internal-clone-element="true"
+                          >
+                            Label
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight"
+                      style="min-height: 56px; opacity: 1;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                        data-testid="SeparatorIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M11 19V5h2v14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    aria-colindex="2"
+                    aria-label="Instance"
+                    aria-sort="none"
+                    class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
+                    data-field="instance"
+                    role="columnheader"
+                    style="height: 56px; width: 0px; min-width: 0; max-width: 0;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="MuiDataGrid-columnHeaderDraggableContainer"
+                      draggable="false"
+                    >
+                      <div
+                        class="MuiDataGrid-columnHeaderTitleContainer"
+                      >
+                        <div
+                          class="MuiDataGrid-columnHeaderTitleContainerContent"
+                        >
+                          <div
+                            aria-label=""
+                            class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                            data-mui-internal-clone-element="true"
+                          >
+                            Instance
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight"
+                      style="min-height: 56px; opacity: 1;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                        data-testid="SeparatorIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M11 19V5h2v14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    aria-colindex="3"
+                    aria-label="Clients"
+                    aria-sort="none"
+                    class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
+                    data-field="clients"
+                    role="columnheader"
+                    style="height: 56px; width: 0px; min-width: 0; max-width: 0;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="MuiDataGrid-columnHeaderDraggableContainer"
+                      draggable="false"
+                    >
+                      <div
+                        class="MuiDataGrid-columnHeaderTitleContainer"
+                      >
+                        <div
+                          class="MuiDataGrid-columnHeaderTitleContainerContent"
+                        >
+                          <div
+                            aria-label=""
+                            class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                            data-mui-internal-clone-element="true"
+                          >
+                            Clients
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight"
+                      style="min-height: 56px; opacity: 1;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                        data-testid="SeparatorIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M11 19V5h2v14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+              style="overflow-x: hidden;"
+            >
+              <div
+                class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+                style="width: auto; height: 156px; min-height: auto;"
+              >
+                <div
+                  class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+                  style="transform: translate3d(0px, 0px, 0px);"
+                >
+                  <div
+                    aria-rowindex="2"
+                    aria-selected="false"
+                    class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+                    data-id="a 1GPU vs 4GPU"
+                    data-rowindex="0"
+                    role="row"
+                    style="max-height: none; min-height: auto;"
+                  >
+                    <div
+                      aria-colindex="1"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="0"
+                      data-field="label"
+                      role="cell"
+                      style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiDataGrid-cellContent"
+                        title="a 1GPU vs 4GPU"
+                      >
+                        a 1GPU vs 4GPU
+                      </div>
+                    </div>
+                    <div
+                      aria-colindex="2"
+                      aria-colspan="1"
+                      class="instance MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="1"
+                      data-field="instance"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        style="margin: 5px 0px 5px 0px; display: flex;"
+                      >
+                        <span
+                          style="margin-right: 10px;"
+                        >
+                          MaxCut
+                          :
+                        </span>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1o4kjj1"
+                            href="/classes/MaxCut/instances/d_instance"
+                          >
+                            d_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1o7gueb"
+                            href="/classes/MaxCut/instances/e_instance"
+                          >
+                            e_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-gqb4bp"
+                            href="/classes/MaxCut/instances/f_instance"
+                          >
+                            f_instance
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        style="margin: 5px 0px 5px 0px; display: flex;"
+                      >
+                        <span
+                          style="margin-right: 10px;"
+                        >
+                          Tsp
+                          :
+                        </span>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-196ffja"
+                            href="/classes/Tsp/instances/a_instance"
+                          >
+                            a_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-14frf9o"
+                            href="/classes/Tsp/instances/b_instance"
+                          >
+                            b_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-tudjox"
+                            href="/classes/Tsp/instances/c_instance"
+                          >
+                            c_instance
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-colindex="3"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="2"
+                      data-field="clients"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-1o7gueb"
+                          href="/clients/a_client"
+                        >
+                          a_client
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-rowindex="3"
+                    aria-selected="false"
+                    class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+                    data-id="2022/12 BBB Benchmark"
+                    data-rowindex="1"
+                    role="row"
+                    style="max-height: none; min-height: auto;"
+                  >
+                    <div
+                      aria-colindex="1"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="0"
+                      data-field="label"
+                      role="cell"
+                      style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiDataGrid-cellContent"
+                        title="2022/12 BBB Benchmark"
+                      >
+                        2022/12 BBB Benchmark
+                      </div>
+                    </div>
+                    <div
+                      aria-colindex="2"
+                      aria-colspan="1"
+                      class="instance MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="1"
+                      data-field="instance"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        style="margin: 5px 0px 5px 0px; display: flex;"
+                      >
+                        <span
+                          style="margin-right: 10px;"
+                        >
+                          MaxCut
+                          :
+                        </span>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1wumwsl"
+                            href="/classes/MaxCut/instances/j_instance"
+                          >
+                            j_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1d1cfkq"
+                            href="/classes/MaxCut/instances/k_instance"
+                          >
+                            k_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1s7e1mx"
+                            href="/classes/MaxCut/instances/l_instance"
+                          >
+                            l_instance
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        style="margin: 5px 0px 5px 0px; display: flex;"
+                      >
+                        <span
+                          style="margin-right: 10px;"
+                        >
+                          Tsp
+                          :
+                        </span>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1i2dnn3"
+                            href="/classes/Tsp/instances/g_instance"
+                          >
+                            g_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-c8py96"
+                            href="/classes/Tsp/instances/h_instance"
+                          >
+                            h_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-10okgg3"
+                            href="/classes/Tsp/instances/i_instance"
+                          >
+                            i_instance
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-colindex="3"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="2"
+                      data-field="clients"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-1o7gueb"
+                          href="/clients/a_client"
+                        >
+                          a_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-gqb4bp"
+                          href="/clients/c_client"
+                        >
+                          c_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-196ffja"
+                          href="/clients/d_client"
+                        >
+                          d_client
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-rowindex="4"
+                    aria-selected="false"
+                    class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
+                    data-id="20221101"
+                    data-rowindex="2"
+                    role="row"
+                    style="max-height: none; min-height: auto;"
+                  >
+                    <div
+                      aria-colindex="1"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="0"
+                      data-field="label"
+                      role="cell"
+                      style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiDataGrid-cellContent"
+                        title="20221101"
+                      >
+                        20221101
+                      </div>
+                    </div>
+                    <div
+                      aria-colindex="2"
+                      aria-colspan="1"
+                      class="instance MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="1"
+                      data-field="instance"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        style="margin: 5px 0px 5px 0px; display: flex;"
+                      >
+                        <span
+                          style="margin-right: 10px;"
+                        >
+                          Cvrp
+                          :
+                        </span>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-zzcu01"
+                            href="/classes/Cvrp/instances/o_instance"
+                          >
+                            o_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-2ijomo"
+                            href="/classes/Cvrp/instances/p_instance"
+                          >
+                            p_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-19sw7en"
+                            href="/classes/Cvrp/instances/q_instance"
+                          >
+                            q_instance
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        style="margin: 5px 0px 5px 0px; display: flex;"
+                      >
+                        <span
+                          style="margin-right: 10px;"
+                        >
+                          Qap
+                          :
+                        </span>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-11vui9t"
+                            href="/classes/Qap/instances/m_instance"
+                          >
+                            m_instance
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1jpc6yz"
+                            href="/classes/Qap/instances/n_instance"
+                          >
+                            n_instance
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-colindex="3"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="2"
+                      data-field="clients"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                      tabindex="-1"
+                    >
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-1o7gueb"
+                          href="/clients/a_client"
+                        >
+                          a_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-14frf9o"
+                          href="/clients/b_client"
+                        >
+                          b_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-gqb4bp"
+                          href="/clients/c_client"
+                        >
+                          c_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-196ffja"
+                          href="/clients/d_client"
+                        >
+                          d_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-tudjox"
+                          href="/clients/e_client"
+                        >
+                          e_client
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

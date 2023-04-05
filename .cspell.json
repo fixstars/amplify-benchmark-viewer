@@ -1,0 +1,36 @@
+{
+  "words": [
+    "webfonts",
+    "TTFB",
+    "lefthook",
+    "stylelint",
+    "tanstack",
+    "Cvrp",
+    "feasibles",
+    "Fixstars",
+    "feasibilities",
+    "hoveron",
+    "plotly",
+    "updatemenus",
+    "xaxis",
+    "yaxis",
+    "xanchor",
+    "yanchor",
+    "autorange",
+    "showlegend",
+    "testid",
+    "toself",
+    "xtype",
+    "ytype",
+    "fillcolor",
+    "legendgroup",
+    "autodocs"
+  ],
+  "ignorePaths": [
+    "__snapshots__",
+    "package.json",
+    "package-lock.json",
+    "node_modules",
+    "lefthook.yml"
+  ]
+}

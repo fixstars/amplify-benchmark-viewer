@@ -1,0 +1,7 @@
+[
+  { "name": "Tsp" },
+  { "name": "Qap" },
+  { "name": "MaxCut" },
+  { "name": "Sudoku" },
+  { "name": "Cvrp" }
+]

@@ -1,0 +1,92 @@
+name: Check the source code
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  Prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20.3.0'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run format
+  ESLint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20.3.0'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint
+  StyleLint:
+    name: StyleLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20.3.0'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint:css
+  RemarkLint:
+    name: RemarkLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20.3.0'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint:md
+  CheckTypo:
+    name: Check typo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20.3.0'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run check:spell
+  Test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20.3.0'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run test:ci
+  CheckLicense:
+    name: Check license
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: bash license.sh
+      - run: >-
+          if [[ $(git diff --name-only HEAD | grep -e src/ || echo '') != "" ]]; then
+            RED="e[31m"
+            END_COLOR="e[0m"
+
+            echo ""
+            echo -e "${RED}######################################################################${END_COLOR}"
+            echo -e "${RED}# Some of the files in the src folder do not have the LICENSE block. #${END_COLOR}"
+            echo -e "${RED}# Please sh license.sh before committing.                            #${END_COLOR}"
+            echo -e "${RED}######################################################################${END_COLOR}"
+            echo ""
+
+            exit 1
+          fi

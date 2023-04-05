@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MasterResultChart /> Rendered well 1`] = `
+<div>
+  <div />
+  <div
+    class="css-1so8vz0"
+    data-testid="legendTooltip"
+    id="legendTooltip"
+    style="opacity: 0;"
+  />
+</div>
+`;
