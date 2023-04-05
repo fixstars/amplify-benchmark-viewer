@@ -1,0 +1,26 @@
+[
+  {
+    "client": "a_client",
+    "version": "v0.6.4-54-ge56964d-V100",
+    "problemInstances": {
+      "Tsp": ["a_instance", "b_instance", "c_instance"],
+      "MaxCut": ["d_instance", "e_instance", "f_instance"]
+    }
+  },
+  {
+    "client": "a_client",
+    "version": "v0.7.0-V100",
+    "problemInstances": {
+      "Tsp": ["g_instance", "h_instance", "i_instance"],
+      "MaxCut": ["j_instance", "k_instance", "l_instance"]
+    }
+  },
+  {
+    "client": "d_client",
+    "version": "unknown",
+    "problemInstances": {
+      "Qap": ["m_instance", "n_instance"],
+      "Cvrp": ["o_instance", "p_instance", "q_instance"]
+    }
+  }
+]

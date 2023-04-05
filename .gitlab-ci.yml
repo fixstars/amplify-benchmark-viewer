@@ -1,0 +1,240 @@
+stages:
+  - scan
+  - push
+  - pages
+
+cache: &global_cache
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+
+Prettier:
+  stage: scan
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run format
+  only:
+    refs:
+      - merge_requests
+
+ESLint:
+  stage: scan
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run lint
+  only:
+    refs:
+      - merge_requests
+
+StyleLint:
+  stage: scan
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run lint:css
+  only:
+    refs:
+      - merge_requests
+
+RemarkLint:
+  stage: scan
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run lint:md
+  only:
+    refs:
+      - merge_requests
+
+CheckTypo:
+  stage: scan
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run check:spell
+  only:
+    refs:
+      - merge_requests
+
+Test:
+  stage: scan
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run test:ci
+  only:
+    refs:
+      - merge_requests
+
+sync-repositories:
+  stage: push
+  tags:
+    - docker
+  image: bitnami/git
+  script:
+    # prepare remote repositories
+    - git remote set-url origin https://gitlab-ci-token:$GITLAB_TOKEN@${CI_REPOSITORY_URL##*@}
+    - git config remote.github.url >&- && git remote set-url github https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/fixstars/amplify-benchmark-viewer.git || git remote add github https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/fixstars/amplify-benchmark-viewer.git
+    - git config user.email "noreply@fixstars.com"
+    - git config user.name "GitLab Bot"
+    - git fetch github main
+    - git fetch origin main gitlab_main
+    # git rebase --abort when git rebase exists
+    - >
+      if [[ -d "$(git rev-parse --git-path rebase-merge)" || -d "$(git rev-parse --git-path rebase-apply)" ]]; then
+        echo "Rebase in progress, aborting..."
+        git rebase --abort
+        echo "Rebase aborted."
+      else
+        echo "No rebase in progress."
+      fi
+    - git switch -C gitlab_main origin/gitlab_main
+    - git clean -xfd
+    # rebase and push
+    - git status
+    - git rebase github/main
+    - git push origin gitlab_main
+    - git push origin gitlab_main:main -f
+    - git push github gitlab_main:main
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "gitlab_main"'
+
+check_schema:
+  stage: scan
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - apt-get update -y
+    - apt-get install git -y
+    - npx json2ts ./schema/report_data.json > src/@types/report_data.d.ts --style.singleQuote --style.trailingComma=all --no-style.semi
+    - >
+      if [[ $(git diff --name-only HEAD | grep 'src/@types/report_data.d.ts' || echo '') != "" ]]; then
+        RED="\e[31m"
+        END_COLOR="\e[0m"
+
+        echo ""
+        echo -e "${RED}###########################################################${END_COLOR}"
+        echo -e "${RED}# The report_data.d.ts of the report page do not match. #${END_COLOR}"
+        echo -e "${RED}# Please npx json2ts report_data.json before committing.         #${END_COLOR}"
+        echo -e "${RED}###########################################################${END_COLOR}"
+        echo ""
+
+        exit 1
+      fi
+  only:
+    refs:
+      - merge_requests
+
+scan_secrets:
+  stage: scan
+  tags:
+    - docker
+  image: golang:latest
+  script:
+    - git clone -b v3.41.1 https://github.com/trufflesecurity/trufflehog.git
+    - cd trufflehog; go install
+    - cd ..
+    - rm -rf trufflehog
+    - trufflehog git file://. --only-verified --fail --no-update --since-commit=main
+  only:
+    refs:
+      - merge_requests
+
+test_pages:
+  stage: pages
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+  only:
+    - merge_requests
+
+Check_license:
+  stage: scan
+  tags:
+    - docker
+  image: bitnami/git
+  script:
+    - bash license.sh
+    - >
+      if [[ $(git diff --name-only HEAD | grep -e src/ || echo '') != "" ]]; then
+        RED="\e[31m"
+        END_COLOR="\e[0m"
+
+        echo ""
+        echo -e "${RED}######################################################################${END_COLOR}"
+        echo -e "${RED}# Some of the files in the src folder do not have the LICENSE block. #${END_COLOR}"
+        echo -e "${RED}# Please sh license.sh before committing.                            #${END_COLOR}"
+        echo -e "${RED}######################################################################${END_COLOR}"
+        echo ""
+
+        exit 1
+      fi
+  only:
+    refs:
+      - merge_requests
+
+pages:
+  stage: pages
+  tags:
+    - docker
+  image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run build
+    - cp -rp dist/* public
+  artifacts:
+    paths:
+      - public
+  only:
+    - gitlab_main

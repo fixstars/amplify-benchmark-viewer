@@ -1,0 +1,37 @@
+[
+  {
+    "class": "TSP",
+    "instance": "s_instance",
+    "clients": ["a_client", "b_client", "c_client", "d_client", "e_client"]
+  },
+  {
+    "class": "TSP",
+    "instance": "t_instance",
+    "clients": ["a_client", "b_client", "d_client", "e_client"]
+  },
+  {
+    "class": "QAP",
+    "instance": "u_instance",
+    "clients": ["a_client", "c_client", "d_client"]
+  },
+  {
+    "class": "MaxCut",
+    "instance": "e_instance",
+    "clients": ["a_client", "b_client", "d_client", "e_client"]
+  },
+  {
+    "class": "MaxCut",
+    "instance": "d_instance",
+    "clients": ["a_client", "b_client", "d_client"]
+  },
+  {
+    "class": "CVRP",
+    "instance": "q_instance",
+    "clients": ["a_client", "c_client", "d_client", "e_client"]
+  },
+  {
+    "class": "CVRP",
+    "instance": "v_instance",
+    "clients": ["a_client", "c_client", "d_client"]
+  }
+]

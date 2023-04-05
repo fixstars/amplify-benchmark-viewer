@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Rendered well 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1hc7nu0-MuiPaper-root-MuiAppBar-root"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1r339ym-MuiToolbar-root"
+    >
+      <div
+        class="css-yp9swi"
+      >
+        <a
+          class="css-94l1l1"
+          href="/"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-19sbe58-MuiTypography-root"
+          >
+            Annealing Benchmark
+          </h6>
+        </a>
+      </div>
+      <nav
+        class="css-ov1ktg"
+      >
+        <a
+          class="css-94l1l1"
+          href="/"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-4hrd4f-MuiTypography-root"
+          >
+            Problems
+          </p>
+        </a>
+        <a
+          class="css-94l1l1"
+          href="/clients"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+          >
+            Clients
+          </p>
+        </a>
+        <a
+          class="css-94l1l1"
+          href="/labels"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+          >
+            Label
+          </p>
+        </a>
+      </nav>
+    </div>
+  </header>
+</div>
+`;
