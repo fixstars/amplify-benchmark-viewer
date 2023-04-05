@@ -1,0 +1,15 @@
+name: Push to GitLab
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Push-to-GitLab:
+    name: Push to GitLab
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '16'
+      - run: git push https://gitlab-ci-token:$GITLAB_TOKEN@gitlab.fixstars.com/fam/dev/amplify-benchmark-viewer.git

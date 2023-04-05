@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, act } from '@testing-library/react'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import mockData from 'utils/test/mocks/data/mockReportData.json'
 
 import { JsonFileUploader } from '.'
@@ -60,10 +60,6 @@ describe('<JsonFileUploader />', () => {
     expect(screen.queryByText('Loading...')).toBeInTheDocument()
     expect(mockLoading.mock.calls.length).toBe(1)
 
-    await act(async () => {
-      await new Promise((r) => setTimeout(r))
-    })
-
-    expect(mockOnLoad.mock.calls[0][0]).toEqual(mockData)
+    await waitFor(() => expect(mockOnLoad.mock.calls[0][0]).toEqual(mockData))
   })
 })

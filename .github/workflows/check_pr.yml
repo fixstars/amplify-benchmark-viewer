@@ -1,0 +1,46 @@
+name: Check the source code
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  Prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm run format
+  ESLint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm run lint
+  CheckTypo:
+    name: Check typo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm run check:spell
+  Test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm run test:ci
