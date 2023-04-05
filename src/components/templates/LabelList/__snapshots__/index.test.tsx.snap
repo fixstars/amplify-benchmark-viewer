@@ -1,0 +1,760 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LabelList /> Rendered well 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-thz6x0"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1hc7nu0-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1r339ym-MuiToolbar-root"
+      >
+        <div
+          class="css-yp9swi"
+        >
+          <a
+            class="css-94l1l1"
+            href="/"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-19sbe58-MuiTypography-root"
+            >
+              Annealing Benchmark
+            </h6>
+          </a>
+        </div>
+        <nav
+          class="css-ov1ktg"
+        >
+          <a
+            class="css-94l1l1"
+            href="/"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-4hrd4f-MuiTypography-root"
+            >
+              Problems
+            </p>
+          </a>
+          <a
+            class="css-94l1l1"
+            href="/clients"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+            >
+              Clients
+            </p>
+          </a>
+          <a
+            class="css-94l1l1"
+            href="/labels"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
+            >
+              Label
+            </p>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root css-3dvxzl"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      />
+      <div
+        class="MuiBox-root css-0"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15h1z56-MuiGrid-root"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h2 css-140x6pm-MuiTypography-root"
+          >
+            Label List
+          </h2>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-13pmxen"
+      >
+        <div
+          aria-colcount="3"
+          aria-multiselectable="false"
+          aria-rowcount="4"
+          class="MuiDataGrid-root MuiDataGrid-root--densityStandard css-kz0v3w-MuiDataGrid-root"
+          role="grid"
+        >
+          <div>
+            <div />
+          </div>
+          <div
+            class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
+          >
+            <div
+              class="MuiDataGrid-columnHeaders css-f3jnds-MuiDataGrid-columnHeaders"
+              style="min-height: 56px; max-height: 56px; line-height: 56px;"
+            >
+              <div
+                class="MuiDataGrid-columnHeadersInner MuiDataGrid-columnHeadersInner--scrollable css-gl260s-MuiDataGrid-columnHeadersInner"
+                role="rowgroup"
+                style="transform: translate3d(0px, 0px, 0px);"
+              >
+                <div
+                  aria-rowindex="1"
+                  class="css-yrdy0g-MuiDataGrid-columnHeaderRow"
+                  role="row"
+                >
+                  <div
+                    aria-colindex="1"
+                    aria-label="Label"
+                    aria-sort="none"
+                    class="MuiDataGrid-columnHeader"
+                    data-field="label"
+                    role="columnheader"
+                    style="height: 56px; width: 220px; min-width: 220px; max-width: 220px;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiDataGrid-columnHeaderDraggableContainer"
+                      draggable="false"
+                    >
+                      <div
+                        class="MuiDataGrid-columnHeaderTitleContainer"
+                      >
+                        <div
+                          class="MuiDataGrid-columnHeaderTitleContainerContent"
+                        >
+                          <div
+                            aria-label=""
+                            class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                            data-mui-internal-clone-element="true"
+                          >
+                            Label
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight"
+                      style="min-height: 56px; opacity: 1;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                        data-testid="SeparatorIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M11 19V5h2v14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    aria-colindex="2"
+                    aria-label="Instance"
+                    aria-sort="none"
+                    class="MuiDataGrid-columnHeader"
+                    data-field="instance"
+                    role="columnheader"
+                    style="height: 56px; width: 0px; min-width: 0; max-width: 0;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="MuiDataGrid-columnHeaderDraggableContainer"
+                      draggable="false"
+                    >
+                      <div
+                        class="MuiDataGrid-columnHeaderTitleContainer"
+                      >
+                        <div
+                          class="MuiDataGrid-columnHeaderTitleContainerContent"
+                        >
+                          <div
+                            aria-label=""
+                            class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                            data-mui-internal-clone-element="true"
+                          >
+                            Instance
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight"
+                      style="min-height: 56px; opacity: 1;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                        data-testid="SeparatorIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M11 19V5h2v14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    aria-colindex="3"
+                    aria-label="Clients"
+                    aria-sort="none"
+                    class="MuiDataGrid-columnHeader"
+                    data-field="clients"
+                    role="columnheader"
+                    style="height: 56px; width: 0px; min-width: 0; max-width: 0;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="MuiDataGrid-columnHeaderDraggableContainer"
+                      draggable="false"
+                    >
+                      <div
+                        class="MuiDataGrid-columnHeaderTitleContainer"
+                      >
+                        <div
+                          class="MuiDataGrid-columnHeaderTitleContainerContent"
+                        >
+                          <div
+                            aria-label=""
+                            class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                            data-mui-internal-clone-element="true"
+                          >
+                            Clients
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight"
+                      style="min-height: 56px; opacity: 1;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                        data-testid="SeparatorIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M11 19V5h2v14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="overflow: visible; height: 0px; width: 0px;"
+            >
+              <div
+                class="MuiDataGrid-virtualScroller css-1w5m2wr-MuiDataGrid-virtualScroller"
+                style="width: 0px; height: auto; margin-top: 56px; overflow-x: hidden;"
+              >
+                <div
+                  class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+                  style="width: auto; height: 156px; min-height: auto;"
+                >
+                  <div
+                    class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+                    style="transform: translate3d(0px, 0px, 0px);"
+                  >
+                    <div
+                      aria-rowindex="2"
+                      aria-selected="false"
+                      class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+                      data-id="Fixstars 1GPU vs 4GPU"
+                      data-rowindex="0"
+                      role="row"
+                      style="max-height: none; min-height: auto;"
+                    >
+                      <div
+                        aria-colindex="1"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="0"
+                        data-field="label"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="MuiDataGrid-cellContent"
+                        >
+                          Fixstars 1GPU vs 4GPU
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="2"
+                        aria-colspan="1"
+                        class="instance MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="1"
+                        data-field="instance"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            Tsp
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-196ffja"
+                              href="/classes/Tsp/instances/pr144"
+                            >
+                              pr144
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-gqb4bp"
+                              href="/classes/Tsp/instances/pr136"
+                            >
+                              pr136
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-14frf9o"
+                              href="/classes/Tsp/instances/si175"
+                            >
+                              si175
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            MaxCut
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-122ny3k"
+                              href="/classes/MaxCut/instances/G32"
+                            >
+                              G32
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-h2czby"
+                              href="/classes/MaxCut/instances/K2000"
+                            >
+                              K2000
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1i2dnn3"
+                              href="/classes/MaxCut/instances/G65"
+                            >
+                              G65
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="3"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="2"
+                        data-field="clients"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-ez86r"
+                            href="/clients/FixstarsClient"
+                          >
+                            FixstarsClient
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-rowindex="3"
+                      aria-selected="false"
+                      class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+                      data-id="2022/12 QSTAR Benchmark"
+                      data-rowindex="1"
+                      role="row"
+                      style="max-height: none; min-height: auto;"
+                    >
+                      <div
+                        aria-colindex="1"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="0"
+                        data-field="label"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="MuiDataGrid-cellContent"
+                        >
+                          2022/12 QSTAR Benchmark
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="2"
+                        aria-colspan="1"
+                        class="instance MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="1"
+                        data-field="instance"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            Tsp
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-tudjox"
+                              href="/classes/Tsp/instances/pr299"
+                            >
+                              pr299
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1jpc6yz"
+                              href="/classes/Tsp/instances/burma14"
+                            >
+                              burma14
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-6011wx"
+                              href="/classes/Tsp/instances/ulysses16"
+                            >
+                              ulysses16
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            MaxCut
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-ii0jz"
+                              href="/classes/MaxCut/instances/G1"
+                            >
+                              G1
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1pxl2vt"
+                              href="/classes/MaxCut/instances/G11"
+                            >
+                              G11
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-c8py96"
+                              href="/classes/MaxCut/instances/G77"
+                            >
+                              G77
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="3"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="2"
+                        data-field="clients"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-ez86r"
+                            href="/clients/FixstarsClient"
+                          >
+                            FixstarsClient
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1d1cfkq"
+                            href="/clients/FujitsuDASolverClient"
+                          >
+                            FujitsuDASolverClient
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-gqb4bp"
+                            href="/clients/ToshibaClient"
+                          >
+                            ToshibaClient
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-rowindex="4"
+                      aria-selected="false"
+                      class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
+                      data-id="20221101"
+                      data-rowindex="2"
+                      role="row"
+                      style="max-height: none; min-height: auto;"
+                    >
+                      <div
+                        aria-colindex="1"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="0"
+                        data-field="label"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="MuiDataGrid-cellContent"
+                        >
+                          20221101
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="2"
+                        aria-colspan="1"
+                        class="instance MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="1"
+                        data-field="instance"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            Qap
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-x2w0jh"
+                              href="/classes/Qap/instances/esc32a"
+                            >
+                              esc32a
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1pvt7ys"
+                              href="/classes/Qap/instances/chr12a"
+                            >
+                              chr12a
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            Cvrp
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1ij905d"
+                              href="/classes/Cvrp/instances/P-n16-k8"
+                            >
+                              P-n16-k8
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-16jiptj"
+                              href="/classes/Cvrp/instances/P-n19-k2"
+                            >
+                              P-n19-k2
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1h16xoj"
+                              href="/classes/Cvrp/instances/A-n32-k5"
+                            >
+                              A-n32-k5
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="3"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="2"
+                        data-field="clients"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-ez86r"
+                            href="/clients/FixstarsClient"
+                          >
+                            FixstarsClient
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-tudjox"
+                            href="/clients/DWaveSamplerClient"
+                          >
+                            DWaveSamplerClient
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1d1cfkq"
+                            href="/clients/FujitsuDASolverClient"
+                          >
+                            FujitsuDASolverClient
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-gqb4bp"
+                            href="/clients/ToshibaClient"
+                          >
+                            ToshibaClient
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-km1vak"
+                            href="/clients/NECClient"
+                          >
+                            NECClient
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="Mui-resizeTriggers"
+            >
+              <div
+                class="expand-trigger"
+              >
+                <div
+                  style="width: 1px; height: 1px;"
+                />
+              </div>
+              <div
+                class="contract-trigger"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

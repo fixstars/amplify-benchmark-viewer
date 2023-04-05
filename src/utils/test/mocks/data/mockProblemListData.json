@@ -1,0 +1,58 @@
+[
+  {
+    "class": "TSP",
+    "instance": "16x16_easy_233",
+    "clients": [
+      "FixstarsClient",
+      "DWaveSamplerClient",
+      "FujitsuDASolverClient",
+      "ToshibaClient",
+      "NECClient"
+    ]
+  },
+  {
+    "class": "TSP",
+    "instance": "kroA100",
+    "clients": [
+      "FixstarsClient",
+      "DWaveSamplerClient",
+      "ToshibaClient",
+      "NECClient"
+    ]
+  },
+  {
+    "class": "QAP",
+    "instance": "tai150c",
+    "clients": ["FixstarsClient", "FujitsuDASolverClient", "ToshibaClient"]
+  },
+  {
+    "class": "MaxCut",
+    "instance": "K2000",
+    "clients": [
+      "FixstarsClient",
+      "DWaveSamplerClient",
+      "ToshibaClient",
+      "NECClient"
+    ]
+  },
+  {
+    "class": "MaxCut",
+    "instance": "G32",
+    "clients": ["FixstarsClient", "DWaveSamplerClient", "ToshibaClient"]
+  },
+  {
+    "class": "CVRP",
+    "instance": "A-n32-k5",
+    "clients": [
+      "FixstarsClient",
+      "FujitsuDASolverClient",
+      "ToshibaClient",
+      "NECClient"
+    ]
+  },
+  {
+    "class": "CVRP",
+    "instance": "B-n31-k5",
+    "clients": ["FixstarsClient", "FujitsuDASolverClient", "ToshibaClient"]
+  }
+]

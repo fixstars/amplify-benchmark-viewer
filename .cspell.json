@@ -1,0 +1,43 @@
+{
+  "words": [
+    "webfonts",
+    "TTFB",
+    "lefthook",
+    "stylelint",
+    "tanstack",
+    "Cvrp",
+    "feasibles",
+    "Fixstars",
+    "feasibilities",
+    "hoveron",
+    "plotly",
+    "updatemenus",
+    "xaxis",
+    "yaxis",
+    "xanchor",
+    "yanchor",
+    "autorange",
+    "showlegend",
+    "testid",
+    "toself",
+    "gurobi",
+    "ToshibaSQBM2Client",
+    "FujitsuDAPTSolverClient",
+    "QiskitClient",
+    "QulacsClient",
+    "bayg29",
+    "xtype",
+    "ytype",
+    "fillcolor",
+    "legendgroup",
+    "Optigan",
+    "QSTAR"
+  ],
+  "ignorePaths": [
+    "__snapshots__",
+    "package.json",
+    "package-lock.json",
+    "node_modules",
+    "lefthook.yml"
+  ]
+}

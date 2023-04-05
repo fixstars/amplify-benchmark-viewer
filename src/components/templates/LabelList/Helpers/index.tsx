@@ -1,0 +1,39 @@
+import type { GridColumns } from '@mui/x-data-grid'
+import type { ProblemInstances } from 'utils/DataGridCell'
+import {
+  renderClientsCell,
+  renderProblemInstancesCell,
+} from 'utils/DataGridCell'
+
+export interface LabelData {
+  readonly label: string
+  readonly problemInstances: ProblemInstances
+  readonly clients: ReadonlyArray<string>
+}
+
+const columns: GridColumns<LabelData> = [
+  {
+    field: 'label',
+    headerName: 'Label',
+    sortable: false,
+    minWidth: 220,
+  },
+  {
+    field: 'instance',
+    headerName: 'Instance',
+    sortable: false,
+    flex: 1,
+    cellClassName: 'instance',
+    renderCell: ({ row: { label, problemInstances } }) =>
+      renderProblemInstancesCell(label, problemInstances),
+  },
+  {
+    field: 'clients',
+    headerName: 'Clients',
+    sortable: false,
+    flex: 1,
+    renderCell: ({ row }) => renderClientsCell(row.label, row.clients),
+  },
+]
+
+export { columns }

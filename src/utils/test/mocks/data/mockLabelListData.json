@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Fixstars 1GPU vs 4GPU",
+    "problemInstances": {
+      "Tsp": ["pr144", "pr136", "si175"],
+      "MaxCut": ["G32", "K2000", "G65"]
+    },
+    "clients": ["FixstarsClient"]
+  },
+  {
+    "label": "2022/12 QSTAR Benchmark",
+    "problemInstances": {
+      "Tsp": ["pr299", "burma14", "ulysses16"],
+      "MaxCut": ["G1", "G11", "G77"]
+    },
+    "clients": ["FixstarsClient", "FujitsuDASolverClient", "ToshibaClient"]
+  },
+  {
+    "label": "20221101",
+    "problemInstances": {
+      "Qap": ["esc32a", "chr12a"],
+      "Cvrp": ["P-n16-k8", "P-n19-k2", "A-n32-k5"]
+    },
+    "clients": [
+      "FixstarsClient",
+      "DWaveSamplerClient",
+      "FujitsuDASolverClient",
+      "ToshibaClient",
+      "NECClient"
+    ]
+  }
+]
