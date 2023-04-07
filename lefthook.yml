@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    Prettier:
+      run: npm run format:fix
+    ESLint:
+      files: git diff --name-only HEAD | grep -e \.ts$ -e \.tsx$ || echo ''
+      run: npm run lint
+    CheckTypo:
+      run: npm run check:spell
+    Test:
+      files: git diff --name-only HEAD | grep -e \.ts$ -e \.tsx$ || echo ''
+      run: npm run test:ci
