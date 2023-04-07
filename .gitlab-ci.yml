@@ -65,7 +65,6 @@ Push-to-GitHub:
     - apt-get install git -y
     # With GitLab
     - git checkout develop
-    - git branch -D main
     # Add GitHub repository to origin
     - git remote remove origin
     - git remote add origin https://$GITHUB_TOKEN@github.com/fixstars/amplify-benchmark-viewer-test.git
