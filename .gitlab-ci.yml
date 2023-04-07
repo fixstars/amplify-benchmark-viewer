@@ -60,6 +60,9 @@ Push-to-GitHub:
     - docker
   image: node:16-slim
   script:
+    # Install Git
+    - apt-get update -y
+    - apt-get install git -y
     # With GitLab
     - git checkout develop
     - git branch -D main
