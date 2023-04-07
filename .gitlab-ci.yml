@@ -73,6 +73,8 @@ Push-to-GitHub:
     - git pull origin main
     # Rebase and push GitLab develop to GitHub main
     - git checkout develop
+    - git config user.email "bot@gitlab.com"
+    - git config user.name "GitLab bot"
     - git rebase main
     - git branch -D main
     - git checkout -b main
