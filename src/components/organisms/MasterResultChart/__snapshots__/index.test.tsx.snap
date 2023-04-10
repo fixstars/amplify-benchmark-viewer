@@ -4,7 +4,7 @@ exports[`<MasterResultChart /> Rendered well 1`] = `
 <div>
   <div />
   <div
-    class="css-jh3t7o"
+    class="css-1so8vz0"
     data-testid="legendTooltip"
     id="legendTooltip"
     style="opacity: 0;"

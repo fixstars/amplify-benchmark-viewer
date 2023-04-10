@@ -6,6 +6,9 @@ pre-commit:
     ESLint:
       files: git diff --name-only HEAD | grep -e \.ts$ -e \.tsx$ || echo ''
       run: npm run lint
+    StyleLint:
+      files: git diff --name-only HEAD | grep -e \.css$ -e \.tsx$ || echo ''
+      run: npm run lint:css
     CheckTypo:
       run: npm run check:spell
     Test:

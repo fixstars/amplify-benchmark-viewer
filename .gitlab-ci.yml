@@ -28,6 +28,19 @@ ESLint:
     refs:
       - merge_requests
 
+StyleLint:
+  stage: scan
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run lint:css
+  only:
+    refs:
+      - merge_requests
+
 CheckTypo:
   stage: scan
   tags:

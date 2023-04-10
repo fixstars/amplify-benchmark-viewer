@@ -62,7 +62,7 @@ exports[`<UploadDataPage /> rendered well 1`] = `
       </div>
     </header>
     <div
-      class="MuiBox-root css-3dvxzl"
+      class="MuiBox-root css-1cf7osc"
     >
       <div
         class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
@@ -71,7 +71,7 @@ exports[`<UploadDataPage /> rendered well 1`] = `
         class="css-1015tjo"
       >
         <div
-          class="css-1kywaoy"
+          class="css-6uj4tx"
         >
           <input
             accept=".json"

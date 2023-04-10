@@ -12,7 +12,7 @@ const LegendTooltip = styled('div')`
   font-size: 10px;
   background-color: #111;
   color: #f4f1f4;
-  border: 0px;
+  border: 0;
   border-radius: 4px;
   pointer-events: none;
   z-index: 9999;

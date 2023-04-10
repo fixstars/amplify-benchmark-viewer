@@ -4,7 +4,7 @@ import { Typography, Grid } from '@mui/material'
 import { styled } from '@mui/system'
 
 const Title = styled(Typography)`
-  padding: 0 8px 4px 8px;
+  padding: 0 8px 4px;
   font-weight: bold;
 `
 

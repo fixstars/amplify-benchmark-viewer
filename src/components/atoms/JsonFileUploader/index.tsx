@@ -26,7 +26,7 @@ const DropArea = styled('div')<{ readonly isDragOver?: boolean }>`
   padding: 10px;
   border: dashed;
   cursor: pointer;
-  border-color: rgba(0, 0, 0, 0.12);
+  border-color: rgb(0 0 0 / 12%);
   border-radius: 4px;
   background-color: #fff;
   display: flex;

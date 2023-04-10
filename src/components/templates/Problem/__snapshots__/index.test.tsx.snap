@@ -62,7 +62,7 @@ exports[`<Problem /> Rendered well 1`] = `
       </div>
     </header>
     <div
-      class="MuiBox-root css-3dvxzl"
+      class="MuiBox-root css-1cf7osc"
     >
       <div
         class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
@@ -74,7 +74,7 @@ exports[`<Problem /> Rendered well 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15h1z56-MuiGrid-root"
         >
           <h2
-            class="MuiTypography-root MuiTypography-h2 css-140x6pm-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h2 css-1asg1ln-MuiTypography-root"
           >
             Tsp/pr124
           </h2>

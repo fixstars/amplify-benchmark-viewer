@@ -11,7 +11,7 @@ const Contents = styled(Box)`
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 0 16px 16px 16px;
+  padding: 0 16px 16px;
 `
 
 interface Props {

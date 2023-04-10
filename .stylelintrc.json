@@ -1,12 +1,4 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-  "overrides": [
-    {
-      "files": ["**/*.tsx"],
-      "customSyntax": "@stylelint/postcss-css-in-js"
-    }
-  ],
-  "rules": {
-    "function-no-unknown": [true, { "ignoreFunctions": ["/\\${/"] }]
-  }
+  "extends": ["stylelint-config-standard"],
+  "customSyntax": "postcss-styled-syntax"
 }
