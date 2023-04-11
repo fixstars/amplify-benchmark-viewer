@@ -77,11 +77,9 @@ Push-to-GitHub:
     - apt-get update -y
     - apt-get install git -y
     # With GitLab
-    - git rev-parse --abbrev-ref HEAD
     - git fetch
-    - git stash
     - git checkout develop
-    - git pull origin develop
+    - git reset --hard origin/develop
     # Add GitHub repository to origin
     - git remote remove origin
     - git remote add origin https://$GITHUB_TOKEN@github.com/fixstars/amplify-benchmark-viewer-test.git
