@@ -77,7 +77,7 @@ Push-to-GitHub:
     - apt-get update -y
     - apt-get install git -y
     # With GitLab
-    - git branch --show-current
+    - git rev-parse --abbrev-ref HEAD
     - git fetch
     - git stash
     - git checkout develop
