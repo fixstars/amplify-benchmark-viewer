@@ -77,6 +77,9 @@ Push-to-GitHub:
     - apt-get update -y
     - apt-get install git -y
     # With GitLab
+    - git branch --show-current
+    - git fetch
+    - git stash
     - git checkout develop
     - git pull origin develop
     # Add GitHub repository to origin
