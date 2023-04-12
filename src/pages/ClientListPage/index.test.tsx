@@ -54,17 +54,17 @@ describe('<ClientListPage />', () => {
     expect(mockClientList.mock.calls.length).toBe(1)
     expect(mockClientList.mock.calls[0][0].data).toEqual([
       {
-        client: 'FixstarsClient',
+        client: 'a_client',
         version: 'v0.6.4-54-ge56964d-A100',
         problemInstances: { Tsp: ['pr124'] },
       },
       {
-        client: 'FixstarsClient',
+        client: 'a_client',
         version: 'v0.6.4-54-ge56964d-V100',
         problemInstances: { Tsp: ['pr124', 'pr136', 'pr144'] },
       },
       {
-        client: 'GurobiClient',
+        client: 'f_client',
         version: '9.5.0',
         problemInstances: { Tsp: ['burma14', 'ulysses16'] },
       },

@@ -13,6 +13,6 @@ const Template: ComponentStory<typeof SelectBox> = (args) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  label: 'FixstarsClient',
+  label: 'a_client',
   options: ['box', 'max-min', '3q-1q', 'median'],
 }

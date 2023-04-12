@@ -345,7 +345,7 @@ exports[`<MasterResultTable /> Rendered well 1`] = `
                     class=""
                     data-mui-internal-clone-element="true"
                   >
-                    FixstarsClient
+                    a_client
                   </span>
                 </div>
               </div>
@@ -406,7 +406,7 @@ exports[`<MasterResultTable /> Rendered well 1`] = `
                     class=""
                     data-mui-internal-clone-element="true"
                   >
-                    FixstarsClient
+                    a_client
                   </span>
                 </div>
               </div>

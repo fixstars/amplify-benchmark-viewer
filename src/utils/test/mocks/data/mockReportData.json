@@ -30341,7 +30341,7 @@
   },
   "clients": {
     "d23739f7c9b606d4ae3b3f764c3e522e": {
-      "name": "FixstarsClient",
+      "name": "a_client",
       "version": "v0.6.4-54-ge56964d-V100",
       "parameters": {
         "outputs.feasibilities": true
@@ -30359,7 +30359,7 @@
       ]
     },
     "701cd81a1b0dde26da58193aab6c9f32": {
-      "name": "FixstarsClient",
+      "name": "a_client",
       "version": "v0.6.4-54-ge56964d-A100",
       "parameters": {
         "outputs.feasibilities": true
@@ -30371,7 +30371,7 @@
       ]
     },
     "9ea9555678504e105cd77a198621f7e4": {
-      "name": "GurobiClient",
+      "name": "f_client",
       "version": "9.5.0",
       "parameters": {
         "seed": -1

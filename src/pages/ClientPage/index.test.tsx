@@ -44,7 +44,7 @@ describe('<ClientPage />', () => {
     }
 
     const history = createMemoryHistory({
-      initialEntries: ['/clients/FixstarsClient'],
+      initialEntries: ['/clients/a_client'],
     })
 
     const { container } = render(
@@ -124,7 +124,7 @@ describe('<ClientPage />', () => {
     mockResponse = { ...mockResponse, data: undefined }
 
     const history = createMemoryHistory({
-      initialEntries: ['/clients/FixstarsClient'],
+      initialEntries: ['/clients/a_client'],
     })
 
     const { container } = render(
@@ -154,7 +154,7 @@ describe('<ClientPage />', () => {
     }
 
     const history = createMemoryHistory({
-      initialEntries: ['/clients/FixstarsClient'],
+      initialEntries: ['/clients/a_client'],
     })
 
     render(
@@ -182,7 +182,7 @@ describe('<ClientPage />', () => {
     }
 
     const history = createMemoryHistory({
-      initialEntries: ['/clients/FixstarsClient'],
+      initialEntries: ['/clients/a_client'],
     })
 
     render(
@@ -205,7 +205,7 @@ describe('<ClientPage />', () => {
   it('Redirect to upload page if no data', () => {
     const mockPush = jest.fn()
     const history = createMemoryHistory({
-      initialEntries: ['/clients/FixstarsClient'],
+      initialEntries: ['/clients/a_client'],
     })
     history.push = mockPush
 

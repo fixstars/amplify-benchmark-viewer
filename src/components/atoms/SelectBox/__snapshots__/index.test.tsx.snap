@@ -8,7 +8,7 @@ exports[`<SelectBox /> Rendered well 1`] = `
     <p
       class="MuiTypography-root MuiTypography-body1 css-1vrwwiq-MuiTypography-root"
     >
-      FixstarsClient
+      a_client
       :
     </p>
     <div

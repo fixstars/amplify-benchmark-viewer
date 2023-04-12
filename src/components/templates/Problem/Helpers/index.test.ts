@@ -40,7 +40,7 @@ describe('Problem template component helpers', () => {
       expect(tooltipContents[2].length).toBe(1)
       expect(tooltipContents[2][0].type).toBe('div')
       expect(tooltipContents[2][0].key).toBe(
-        'FixstarsClient_v0.6.4-54-ge56964d-V100_outputs.feasibilities_true',
+        'a_client_v0.6.4-54-ge56964d-V100_outputs.feasibilities_true',
       )
       expect(tooltipContents[2][0].props.children).toEqual([
         '- ',
@@ -55,7 +55,7 @@ describe('Problem template component helpers', () => {
       expect(tooltipContents[6].length).toBe(1)
       expect(tooltipContents[6][0].type).toBe('div')
       expect(tooltipContents[6][0].key).toBe(
-        'FixstarsClient_v0.6.4-54-ge56964d-V100_num_vars',
+        'a_client_v0.6.4-54-ge56964d-V100_num_vars',
       )
       expect(tooltipContents[6][0].props.children.length).toBe(2)
       expect(tooltipContents[6][0].props.children[0].type).toBe('div')
@@ -98,8 +98,8 @@ describe('Problem template component helpers', () => {
       const labelComponent = childComponent?.props.children.props.children
       expect(labelComponent.type.render.name).toBe('LinkWithRef')
       expect(labelComponent.props).toEqual({
-        to: '/clients/FixstarsClient',
-        children: 'FixstarsClient',
+        to: '/clients/a_client',
+        children: 'a_client',
       })
     }
 

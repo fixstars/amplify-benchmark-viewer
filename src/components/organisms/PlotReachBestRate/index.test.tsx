@@ -40,12 +40,12 @@ describe('<PlotReachBestRate />', () => {
     expect(plot.data).toMatchObject([
       {
         mode: 'lines+markers',
-        name: '1_FixstarsClient(v0.6.4-54-ge56964d-V100)',
+        name: '1_a_client(v0.6.4-54-ge56964d-V100)',
         type: 'scatter',
       },
       {
         mode: 'lines+markers',
-        name: '2_FixstarsClient(v0.6.4-54-ge56964d-A100)',
+        name: '2_a_client(v0.6.4-54-ge56964d-A100)',
         type: 'scatter',
       },
     ])

@@ -12,7 +12,7 @@ describe('<MasterResultChart />', () => {
         problemInstance="pr136"
         data={mockData as ReadonlyArray<MasterData>}
         clientChartType={{
-          FixstarsClient: 'max-min',
+          a_client: 'max-min',
           AClient: 'box',
         }}
       />,
@@ -31,7 +31,7 @@ describe('<MasterResultChart />', () => {
         fill: 'toself',
         hoveron: 'points',
         mode: 'lines',
-        name: '1_FixstarsClient(v1.0.0)',
+        name: '1_a_client(v1.0.0)',
         x: mockData[0]['plot_data']['max-min']?.x,
         y: mockData[0]['plot_data']['max-min']?.y,
         type: 'scatter',

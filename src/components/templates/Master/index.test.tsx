@@ -83,7 +83,7 @@ describe('<Master />', () => {
           problem_best_known: 96772,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
-          client_name: 'FixstarsClient',
+          client_name: 'a_client',
           client_version: 'v1.0.0',
           client_parameters: { 'outputs.feasibilities': true },
           amplify_version: '0.8.1+1662782383',
@@ -100,7 +100,7 @@ describe('<Master />', () => {
           problem_best_known: 59030,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 15376, logical: 15376, physical: 15376 },
-          client_name: 'FixstarsClient',
+          client_name: 'a_client',
           client_version: 'v1.0.1',
           client_parameters: { 'outputs.feasibilities': true },
           amplify_version: '0.8.1+1662782383',
@@ -127,7 +127,7 @@ describe('<Master />', () => {
         },
       ])
       expect(chart.props.clientChartType).toEqual({
-        FixstarsClient: 'box',
+        a_client: 'box',
         AClient: 'box',
       })
 
@@ -146,7 +146,7 @@ describe('<Master />', () => {
           problem_best_known: 96772,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
-          client_name: 'FixstarsClient',
+          client_name: 'a_client',
           client_version: 'v1.0.0',
           client_parameters: { 'outputs.feasibilities': true },
           amplify_version: '0.8.1+1662782383',
@@ -358,12 +358,12 @@ describe('<Master />', () => {
         {
           const option = options[0]
           expect(option.type.name).toBe('Box')
-          expect(option.key).toBe('FixstarsClient')
+          expect(option.key).toBe('a_client')
           expect(option.props.sx).toEqual({ marginRight: '16px' })
 
           const select = option.props.children
           expect(select.type.name).toBe('SelectBox')
-          expect(select.props.label).toBe('FixstarsClient')
+          expect(select.props.label).toBe('a_client')
           expect(select.props.options).toEqual([
             'box',
             'max-min',
@@ -458,7 +458,7 @@ describe('<Master />', () => {
             problem_best_known: 96772,
             problem_parameters: { constraint_weight: 1, seed: null },
             problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
-            client_name: 'FixstarsClient',
+            client_name: 'a_client',
             client_version: 'v1.0.0',
             client_parameters: { 'outputs.feasibilities': true },
             amplify_version: '0.8.1+1662782383',
@@ -475,7 +475,7 @@ describe('<Master />', () => {
             problem_best_known: 59030,
             problem_parameters: { constraint_weight: 1, seed: null },
             problem_num_vars: { input: 15376, logical: 15376, physical: 15376 },
-            client_name: 'FixstarsClient',
+            client_name: 'a_client',
             client_version: 'v1.0.1',
             client_parameters: { 'outputs.feasibilities': true },
             amplify_version: '0.8.1+1662782383',
@@ -502,7 +502,7 @@ describe('<Master />', () => {
           },
         ])
         expect(chart.props.clientChartType).toEqual({
-          FixstarsClient: 'box',
+          a_client: 'box',
           AClient: 'box',
         })
 
@@ -520,7 +520,7 @@ describe('<Master />', () => {
             problem_best_known: 59030,
             problem_parameters: { constraint_weight: 1, seed: null },
             problem_num_vars: { input: 15376, logical: 15376, physical: 15376 },
-            client_name: 'FixstarsClient',
+            client_name: 'a_client',
             client_version: 'v1.0.1',
             client_parameters: { 'outputs.feasibilities': true },
             amplify_version: '0.8.1+1662782383',
@@ -616,7 +616,7 @@ describe('<Master />', () => {
         expect(chart.type.name).toBe('MasterResultChart')
         expect(chart.props.problemInstance).toBe('pr136')
         expect(chart.props.clientChartType).toEqual({
-          FixstarsClient: 'max-min',
+          a_client: 'max-min',
           AClient: 'box',
         })
       }
@@ -654,7 +654,7 @@ describe('<Master />', () => {
                 logical: 18496,
                 physical: 18496,
               },
-              client_name: 'FixstarsClient',
+              client_name: 'a_client',
               client_version: 'v1.0.0',
               client_parameters: { 'outputs.feasibilities': true },
               amplify_version: '0.8.1+1662782383',
@@ -779,7 +779,7 @@ describe('<Master />', () => {
                 logical: 18496,
                 physical: 18496,
               },
-              client_name: 'FixstarsClient',
+              client_name: 'a_client',
               client_version: 'v1.0.0',
               client_parameters: { 'outputs.feasibilities': true },
               amplify_version: '0.8.1+1662782383',

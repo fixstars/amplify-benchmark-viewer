@@ -12,6 +12,6 @@ const Template: ComponentStory<typeof Client> = (args) => <Client {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  title: 'Fixstars',
+  title: 'a_client',
   data: mockData,
 }

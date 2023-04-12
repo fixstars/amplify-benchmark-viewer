@@ -273,7 +273,7 @@ exports[`<LabelList /> Rendered well 1`] = `
                       aria-rowindex="2"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="Fixstars 1GPU vs 4GPU"
+                      data-id="a 1GPU vs 4GPU"
                       data-rowindex="0"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -291,7 +291,7 @@ exports[`<LabelList /> Rendered well 1`] = `
                         <div
                           class="MuiDataGrid-cellContent"
                         >
-                          Fixstars 1GPU vs 4GPU
+                          a 1GPU vs 4GPU
                         </div>
                       </div>
                       <div
@@ -400,9 +400,9 @@ exports[`<LabelList /> Rendered well 1`] = `
                         >
                           <a
                             class="css-ez86r"
-                            href="/clients/FixstarsClient"
+                            href="/clients/a_client"
                           >
-                            FixstarsClient
+                            a_client
                           </a>
                         </div>
                       </div>
@@ -538,19 +538,9 @@ exports[`<LabelList /> Rendered well 1`] = `
                         >
                           <a
                             class="css-ez86r"
-                            href="/clients/FixstarsClient"
+                            href="/clients/a_client"
                           >
-                            FixstarsClient
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-1d1cfkq"
-                            href="/clients/FujitsuDASolverClient"
-                          >
-                            FujitsuDASolverClient
+                            a_client
                           </a>
                         </div>
                         <div
@@ -558,9 +548,19 @@ exports[`<LabelList /> Rendered well 1`] = `
                         >
                           <a
                             class="css-gqb4bp"
-                            href="/clients/ToshibaClient"
+                            href="/clients/c_client"
                           >
-                            ToshibaClient
+                            c_client
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-196ffja"
+                            href="/clients/d_client"
+                          >
+                            d_client
                           </a>
                         </div>
                       </div>
@@ -686,29 +686,19 @@ exports[`<LabelList /> Rendered well 1`] = `
                         >
                           <a
                             class="css-ez86r"
-                            href="/clients/FixstarsClient"
+                            href="/clients/a_client"
                           >
-                            FixstarsClient
+                            a_client
                           </a>
                         </div>
                         <div
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-tudjox"
-                            href="/clients/DWaveSamplerClient"
+                            class="css-14frf9o"
+                            href="/clients/b_client"
                           >
-                            DWaveSamplerClient
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-1d1cfkq"
-                            href="/clients/FujitsuDASolverClient"
-                          >
-                            FujitsuDASolverClient
+                            b_client
                           </a>
                         </div>
                         <div
@@ -716,19 +706,29 @@ exports[`<LabelList /> Rendered well 1`] = `
                         >
                           <a
                             class="css-gqb4bp"
-                            href="/clients/ToshibaClient"
+                            href="/clients/c_client"
                           >
-                            ToshibaClient
+                            c_client
                           </a>
                         </div>
                         <div
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-km1vak"
-                            href="/clients/NECClient"
+                            class="css-196ffja"
+                            href="/clients/d_client"
                           >
-                            NECClient
+                            d_client
+                          </a>
+                        </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-tudjox"
+                            href="/clients/e_client"
+                          >
+                            e_client
                           </a>
                         </div>
                       </div>

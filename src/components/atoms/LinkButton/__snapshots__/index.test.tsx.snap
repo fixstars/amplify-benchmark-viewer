@@ -4,9 +4,9 @@ exports[`<LinkButton /> Rendered well 1`] = `
 <div>
   <a
     class="css-km1vak"
-    href="/clients/fixstars"
+    href="/clients/a_client"
   >
-    Fixstars
+    a_client
   </a>
 </div>
 `;

@@ -17,10 +17,10 @@ describe('<PlotTTS /> event test', () => {
     )
 
     expect(
-      screen.queryByText('1_FixstarsClient(v0.6.4-54-ge56964d-V100)'),
+      screen.queryByText('1_a_client(v0.6.4-54-ge56964d-V100)'),
     ).not.toBeInTheDocument()
     expect(
-      screen.queryByText('2_FixstarsClient(v0.6.4-54-ge56964d-A100)'),
+      screen.queryByText('2_a_client(v0.6.4-54-ge56964d-A100)'),
     ).not.toBeInTheDocument()
 
     await screen.findByText('0%')
@@ -48,10 +48,10 @@ describe('<PlotTTS /> event test', () => {
     expect(screen.queryByText('50%')).not.toBeInTheDocument()
 
     expect(
-      screen.queryByText('1_FixstarsClient(v0.6.4-54-ge56964d-V100)'),
+      screen.queryByText('1_a_client(v0.6.4-54-ge56964d-V100)'),
     ).toBeInTheDocument()
     expect(
-      screen.queryByText('2_FixstarsClient(v0.6.4-54-ge56964d-A100)'),
+      screen.queryByText('2_a_client(v0.6.4-54-ge56964d-A100)'),
     ).toBeInTheDocument()
   })
 
@@ -68,10 +68,10 @@ describe('<PlotTTS /> event test', () => {
     )
 
     expect(
-      screen.queryByText('1_FixstarsClient(v0.6.4-54-ge56964d-V100)'),
+      screen.queryByText('1_a_client(v0.6.4-54-ge56964d-V100)'),
     ).not.toBeInTheDocument()
     expect(
-      screen.queryByText('2_FixstarsClient(v0.6.4-54-ge56964d-A100)'),
+      screen.queryByText('2_a_client(v0.6.4-54-ge56964d-A100)'),
     ).not.toBeInTheDocument()
 
     await screen.findByText('0%')
@@ -82,17 +82,15 @@ describe('<PlotTTS /> event test', () => {
     await screen.findByText('5%')
 
     expect(
-      screen.queryByText('1_FixstarsClient(v0.6.4-54-ge56964d-V100)'),
+      screen.queryByText('1_a_client(v0.6.4-54-ge56964d-V100)'),
     ).toBeInTheDocument()
     expect(
-      screen.queryByText('2_FixstarsClient(v0.6.4-54-ge56964d-A100)'),
+      screen.queryByText('2_a_client(v0.6.4-54-ge56964d-A100)'),
     ).toBeInTheDocument()
 
     // Hover legend to show tooltip
     expect(screen.queryByText('Client parameters')).not.toBeInTheDocument()
-    fireEvent.mouseOver(
-      screen.getByText('2_FixstarsClient(v0.6.4-54-ge56964d-A100)'),
-    )
+    fireEvent.mouseOver(screen.getByText('2_a_client(v0.6.4-54-ge56964d-A100)'))
 
     await screen.findByText('Client parameters')
     expect(screen.queryByText('Client parameters')).toBeInTheDocument()

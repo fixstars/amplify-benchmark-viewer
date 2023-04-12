@@ -63,7 +63,7 @@ describe('<ProblemPage />', () => {
     expect(mockProblem.mock.calls.length).toBe(1)
     expect(mockProblem.mock.calls[0][0].data).toEqual([
       {
-        client: 'FixstarsClient',
+        client: 'a_client',
         version: 'v0.6.4-54-ge56964d-A100',
         clientParameters: { 'outputs.feasibilities': true },
         problemParameters: {
@@ -84,7 +84,7 @@ describe('<ProblemPage />', () => {
         '50%': 1000000,
       },
       {
-        client: 'FixstarsClient',
+        client: 'a_client',
         version: 'v0.6.4-54-ge56964d-A100',
         clientParameters: { 'outputs.feasibilities': true },
         problemParameters: {
@@ -105,7 +105,7 @@ describe('<ProblemPage />', () => {
         '50%': 1000000,
       },
       {
-        client: 'FixstarsClient',
+        client: 'a_client',
         version: 'v0.6.4-54-ge56964d-V100',
         clientParameters: { 'outputs.feasibilities': true },
         problemParameters: {
@@ -126,7 +126,7 @@ describe('<ProblemPage />', () => {
         '50%': 1000000,
       },
       {
-        client: 'FixstarsClient',
+        client: 'a_client',
         version: 'v0.6.4-54-ge56964d-V100',
         clientParameters: { 'outputs.feasibilities': true },
         problemParameters: {

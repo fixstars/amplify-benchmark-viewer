@@ -1,74 +1,47 @@
 import { LinkButton } from 'components/atoms/LinkButton'
 
+const colors = [
+  '#0F66DC',
+  '#f57bae',
+  '#e75e75',
+  '#e5f97c',
+  '#1b000d',
+  '#f6a695',
+  '#692981',
+  '#3cde29',
+  '#591414',
+  '#d66594',
+  '#2d884a',
+  '#400763',
+  '#9d19f4',
+  '#fcdeb9',
+  '#1f4c48',
+  '#909743',
+  '#2dc1c8',
+  '#c17913',
+  '#b2a1f6',
+]
+
 export interface ProblemInstances {
   readonly [key: string]: ReadonlyArray<string> | undefined
 }
 
 const renderClientsCell = (key: string, clients: ReadonlyArray<string>) => {
   const getBackgroundColor = (client: string): string => {
-    let backgroundColor = '#FF66FF'
+    const cache = JSON.parse(localStorage.getItem('clientColorCache') ?? '{}')
+    let cacheIndex = JSON.parse(
+      localStorage.getItem('clientColorIndexCache') ?? '-1',
+    )
+    let backgroundColor = cache[client]
 
-    switch (client) {
-      case 'FixstarsClient':
-        backgroundColor = '#0F66DC'
-        break
-      case 'ToshibaClient':
-        backgroundColor = '#f57bae'
-        break
-      case 'ToshibaSQBM2Client':
-        backgroundColor = '#e75e75'
-        break
-      case 'GurobiClient':
-        backgroundColor = '#e5f97c'
-        break
-      case 'DWaveSamplerClient':
-        backgroundColor = '#1b000d'
-        break
-      case 'LeapHybridSamplerClient':
-        backgroundColor = '#f6a695'
-        break
-      case 'FujitsuDASolverClient':
-        backgroundColor = '#692981'
-        break
-      case 'FujitsuDASolverExpertClient':
-        backgroundColor = '#3cde29'
-        break
-      case 'FujitsuDAPTSolverClient':
-        backgroundColor = '#591414'
-        break
-      case 'FujitsuDAMixedModeSolverClient':
-        backgroundColor = '#d66594'
-        break
-      case 'FujitsuDA2SolverClient':
-        backgroundColor = '#2d884a'
-        break
-      case 'FujitsuDA2SolverExpertClient':
-        backgroundColor = '#400763'
-        break
-      case 'FujitsuDA2PTSolverClient':
-        backgroundColor = '#9d19f4'
-        break
-      case 'FujitsuDA2MixedModeSolverClient':
-        backgroundColor = '#fcdeb9'
-        break
-      case 'FujitsuDA3SolverClient':
-        backgroundColor = '#718de6'
-        break
-      case 'FujitsuDA4SolverClient':
-        backgroundColor = '#1f4c48'
-        break
-      case 'HitachiClient':
-        backgroundColor = '#909743'
-        break
-      case 'ABSClient':
-        backgroundColor = '#2dc1c8'
-        break
-      case 'QiskitClient':
-        backgroundColor = '#c17913'
-        break
-      case 'QulacsClient':
-        backgroundColor = '#b2a1f6'
-        break
+    if (backgroundColor === undefined) {
+      const length = colors.length
+      cacheIndex = cacheIndex >= length ? 0 : cacheIndex + 1
+      backgroundColor = colors[cacheIndex]
+      cache[client] = backgroundColor
+      localStorage.setItem('clientColorCache', JSON.stringify(cache))
+      localStorage.setItem('clientColorIndexCache', JSON.stringify(cacheIndex))
+      return backgroundColor
     }
 
     return backgroundColor

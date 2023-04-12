@@ -15,21 +15,19 @@ describe('<PlotFeasibleRate /> event test', () => {
       />,
     )
 
-    await screen.findByText('1_FixstarsClient(v0.6.4-54-ge56964d-V100)')
+    await screen.findByText('1_a_client(v0.6.4-54-ge56964d-V100)')
     await new Promise((r) => setTimeout(r))
 
     expect(
-      screen.queryByText('1_FixstarsClient(v0.6.4-54-ge56964d-V100)'),
+      screen.queryByText('1_a_client(v0.6.4-54-ge56964d-V100)'),
     ).toBeInTheDocument()
     expect(
-      screen.queryByText('2_FixstarsClient(v0.6.4-54-ge56964d-A100)'),
+      screen.queryByText('2_a_client(v0.6.4-54-ge56964d-A100)'),
     ).toBeInTheDocument()
 
     // Hover legend to show tooltip
     expect(screen.queryByText('Client parameters')).not.toBeInTheDocument()
-    fireEvent.mouseOver(
-      screen.getByText('2_FixstarsClient(v0.6.4-54-ge56964d-A100)'),
-    )
+    fireEvent.mouseOver(screen.getByText('2_a_client(v0.6.4-54-ge56964d-A100)'))
 
     await screen.findByText('Client parameters')
     expect(screen.queryByText('Client parameters')).toBeInTheDocument()

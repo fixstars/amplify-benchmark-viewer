@@ -31,8 +31,8 @@ describe('ClientList template component helpers', () => {
     } as unknown as GridRenderCellParams<unknown, ClientInstances, unknown>) as any
     expect(clientLinkComponent?.type.render.name).toBe('LinkWithRef')
     expect(clientLinkComponent?.props).toEqual({
-      to: '/clients/FixstarsClient',
-      children: 'FixstarsClient',
+      to: '/clients/a_client',
+      children: 'a_client',
     })
 
     const column2 = columns[1]

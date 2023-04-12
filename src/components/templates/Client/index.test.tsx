@@ -10,7 +10,7 @@ describe('<Client />', () => {
   it('Rendered well', async () => {
     const { container } = render(
       <BrowserRouter>
-        <Client title="Fixstars" data={mockData} />
+        <Client title="a_client" data={mockData} />
       </BrowserRouter>,
     )
 
@@ -21,7 +21,7 @@ describe('<Client />', () => {
     expect(sectionTitleContainer.type.name).toBe('Box')
     const sectionTitle = sectionTitleContainer.props.children
     expect(sectionTitle.type.name).toBe('SectionTitle')
-    expect(sectionTitle.props.title).toBe('Fixstars')
+    expect(sectionTitle.props.title).toBe('a_client')
 
     const contentsContainer = layout.children[1]
     expect(contentsContainer.type.name).toBe('Box')

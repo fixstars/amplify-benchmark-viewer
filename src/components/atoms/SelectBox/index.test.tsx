@@ -7,7 +7,7 @@ describe('<SelectBox />', () => {
   it('Rendered well', async () => {
     const { container } = render(
       <SelectBox
-        label="FixstarsClient"
+        label="a_client"
         options={['box', 'max-min', '3q-1q', 'median']}
       />,
     )
@@ -25,7 +25,7 @@ describe('<SelectBox />', () => {
     const label = formControl.children[0]
     expect(label.type.name).toBe('Typography')
     expect(label.props.sx).toEqual({ fontSize: '1rem', marginRight: '8px' })
-    expect(label.props.children[0]).toBe('FixstarsClient')
+    expect(label.props.children[0]).toBe('a_client')
     expect(label.props.children[1]).toBe(':')
 
     const select = formControl.children[1]
@@ -57,7 +57,7 @@ describe('<SelectBox />', () => {
   it('init value', async () => {
     render(
       <SelectBox
-        label="FixstarsClient"
+        label="a_client"
         initValue="max-min"
         options={['box', 'max-min', '3q-1q', 'median']}
       />,
@@ -76,7 +76,7 @@ describe('<SelectBox />', () => {
 
     render(
       <SelectBox
-        label="FixstarsClient"
+        label="a_client"
         options={['box', 'max-min', '3q-1q', 'median']}
         onChange={handleChange}
       />,

@@ -53,11 +53,11 @@ describe('<ProblemListPage />', () => {
 
     expect(mockProblemList.mock.calls.length).toBe(1)
     expect(mockProblemList.mock.calls[0][0].data).toEqual([
-      { class: 'Tsp', instance: 'burma14', clients: ['GurobiClient'] },
-      { class: 'Tsp', instance: 'pr124', clients: ['FixstarsClient'] },
-      { class: 'Tsp', instance: 'pr136', clients: ['FixstarsClient'] },
-      { class: 'Tsp', instance: 'pr144', clients: ['FixstarsClient'] },
-      { class: 'Tsp', instance: 'ulysses16', clients: ['GurobiClient'] },
+      { class: 'Tsp', instance: 'burma14', clients: ['f_client'] },
+      { class: 'Tsp', instance: 'pr124', clients: ['a_client'] },
+      { class: 'Tsp', instance: 'pr136', clients: ['a_client'] },
+      { class: 'Tsp', instance: 'pr144', clients: ['a_client'] },
+      { class: 'Tsp', instance: 'ulysses16', clients: ['f_client'] },
     ])
 
     expect(container).toMatchSnapshot()

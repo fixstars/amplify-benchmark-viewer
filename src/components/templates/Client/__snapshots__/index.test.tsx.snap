@@ -76,7 +76,7 @@ exports[`<Client /> Rendered well 1`] = `
           <h2
             class="MuiTypography-root MuiTypography-h2 css-1asg1ln-MuiTypography-root"
           >
-            Fixstars
+            a_client
           </h2>
         </div>
       </div>

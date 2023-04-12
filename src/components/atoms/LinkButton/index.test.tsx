@@ -8,11 +8,11 @@ describe('<LinkButton />', () => {
   it('Rendered well', async () => {
     const { container } = render(
       <BrowserRouter>
-        <LinkButton label="Fixstars" link="/clients/fixstars" />
+        <LinkButton label="a_client" link="/clients/a_client" />
       </BrowserRouter>,
     )
 
-    const link = screen.getByText('Fixstars')
+    const link = screen.getByText('a_client')
     expect(link).toHaveStyle(`
       padding: 4px 8px;
       font-size: 0.8rem;
@@ -32,12 +32,12 @@ describe('<LinkButton />', () => {
 
     render(
       <Router location={history.location} navigator={history}>
-        <LinkButton label="Fixstars" link="/clients/fixstars" />
+        <LinkButton label="a_client" link="/clients/a_client" />
       </Router>,
     )
 
-    fireEvent.click(screen.getByText('Fixstars'))
-    expect(mockPush.mock.calls[0][0].pathname).toBe('/clients/fixstars')
+    fireEvent.click(screen.getByText('a_client'))
+    expect(mockPush.mock.calls[0][0].pathname).toBe('/clients/a_client')
   })
 
   describe('Change background color', () => {
@@ -45,14 +45,14 @@ describe('<LinkButton />', () => {
       render(
         <BrowserRouter>
           <LinkButton
-            label="Fixstars"
-            link="/clients/fixstars"
+            label="a_client"
+            link="/clients/a_client"
             backgroundColor="#d0d0d0"
           />
         </BrowserRouter>,
       )
 
-      const link = screen.getByText('Fixstars')
+      const link = screen.getByText('a_client')
       expect(link).toHaveStyle(`
         background-color: #d0d0d0;
         color: #111;
@@ -63,14 +63,14 @@ describe('<LinkButton />', () => {
       render(
         <BrowserRouter>
           <LinkButton
-            label="Fixstars"
-            link="/clients/fixstars"
+            label="a_client"
+            link="/clients/a_client"
             backgroundColor="#ec285d"
           />
         </BrowserRouter>,
       )
 
-      const link = screen.getByText('Fixstars')
+      const link = screen.getByText('a_client')
       expect(link).toHaveStyle(`
         background-color: #ec285d;
         color: #FFF;

@@ -273,7 +273,7 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                       aria-rowindex="2"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="FixstarsClient_v0.6.4-54-ge56964d-A100"
+                      data-id="a_client_v0.6.4-54-ge56964d-A100"
                       data-rowindex="0"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -289,9 +289,9 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/clients/FixstarsClient"
+                          href="/clients/a_client"
                         >
-                          FixstarsClient
+                          a_client
                         </a>
                       </div>
                       <div
@@ -346,7 +346,7 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                       aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="FixstarsClient_v0.6.4-54-ge56964d-V100"
+                      data-id="a_client_v0.6.4-54-ge56964d-V100"
                       data-rowindex="1"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -362,9 +362,9 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/clients/FixstarsClient"
+                          href="/clients/a_client"
                         >
-                          FixstarsClient
+                          a_client
                         </a>
                       </div>
                       <div
@@ -439,7 +439,7 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                       aria-rowindex="4"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
-                      data-id="GurobiClient_9.5.0"
+                      data-id="f_client_9.5.0"
                       data-rowindex="2"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -455,9 +455,9 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/clients/GurobiClient"
+                          href="/clients/f_client"
                         >
-                          GurobiClient
+                          f_client
                         </a>
                       </div>
                       <div

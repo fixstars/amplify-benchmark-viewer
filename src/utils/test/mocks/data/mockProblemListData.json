@@ -2,57 +2,36 @@
   {
     "class": "TSP",
     "instance": "16x16_easy_233",
-    "clients": [
-      "FixstarsClient",
-      "DWaveSamplerClient",
-      "FujitsuDASolverClient",
-      "ToshibaClient",
-      "NECClient"
-    ]
+    "clients": ["a_client", "b_client", "c_client", "d_client", "e_client"]
   },
   {
     "class": "TSP",
     "instance": "kroA100",
-    "clients": [
-      "FixstarsClient",
-      "DWaveSamplerClient",
-      "ToshibaClient",
-      "NECClient"
-    ]
+    "clients": ["a_client", "b_client", "d_client", "e_client"]
   },
   {
     "class": "QAP",
     "instance": "tai150c",
-    "clients": ["FixstarsClient", "FujitsuDASolverClient", "ToshibaClient"]
+    "clients": ["a_client", "c_client", "d_client"]
   },
   {
     "class": "MaxCut",
     "instance": "K2000",
-    "clients": [
-      "FixstarsClient",
-      "DWaveSamplerClient",
-      "ToshibaClient",
-      "NECClient"
-    ]
+    "clients": ["a_client", "b_client", "d_client", "e_client"]
   },
   {
     "class": "MaxCut",
     "instance": "G32",
-    "clients": ["FixstarsClient", "DWaveSamplerClient", "ToshibaClient"]
+    "clients": ["a_client", "b_client", "d_client"]
   },
   {
     "class": "CVRP",
     "instance": "A-n32-k5",
-    "clients": [
-      "FixstarsClient",
-      "FujitsuDASolverClient",
-      "ToshibaClient",
-      "NECClient"
-    ]
+    "clients": ["a_client", "c_client", "d_client", "e_client"]
   },
   {
     "class": "CVRP",
     "instance": "B-n31-k5",
-    "clients": ["FixstarsClient", "FujitsuDASolverClient", "ToshibaClient"]
+    "clients": ["a_client", "c_client", "d_client"]
   }
 ]

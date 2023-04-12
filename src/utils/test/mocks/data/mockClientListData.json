@@ -1,6 +1,6 @@
 [
   {
-    "client": "FixstarsClient",
+    "client": "a_client",
     "version": "v0.6.4-54-ge56964d-V100",
     "problemInstances": {
       "Tsp": ["pr144", "pr136", "si175"],
@@ -8,7 +8,7 @@
     }
   },
   {
-    "client": "FixstarsClient",
+    "client": "a_client",
     "version": "v0.7.0-V100",
     "problemInstances": {
       "Tsp": ["pr299", "burma14", "ulysses16"],
@@ -16,7 +16,7 @@
     }
   },
   {
-    "client": "ToshibaClient",
+    "client": "d_client",
     "version": "unknown",
     "problemInstances": {
       "Qap": ["esc32a", "chr12a"],

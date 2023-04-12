@@ -4,76 +4,145 @@ import mockProblemListData from 'utils/test/mocks/data/mockProblemListData.json'
 import { renderClientsCell, renderProblemInstancesCell } from './index'
 
 describe('DataGridCell utils', () => {
-  it('renderClientsCell', () => {
-    const clientComponents = renderClientsCell(
-      'test_key',
-      mockProblemListData[0].clients,
-    )
+  beforeEach(() => {
+    localStorage.clear()
+  })
 
-    {
-      const component = clientComponents[0]
-      expect(component.type).toBe('div')
-      expect(component.key).toBe('test_key_FixstarsClient')
-      expect(component.props.style).toEqual({ marginRight: 10 })
-      expect(component.props.children.type.name).toBe('LinkButton')
-      expect(component.props.children.props).toEqual({
-        label: 'FixstarsClient',
-        link: '/clients/FixstarsClient',
-        backgroundColor: '#0F66DC',
-      })
-    }
+  describe('renderClientsCell', () => {
+    it('show clients with colors well', () => {
+      const clientComponents = renderClientsCell(
+        'test_key',
+        mockProblemListData[0].clients,
+      )
 
-    {
-      const component = clientComponents[1]
-      expect(component.type).toBe('div')
-      expect(component.key).toBe('test_key_DWaveSamplerClient')
-      expect(component.props.style).toEqual({ marginRight: 10 })
-      expect(component.props.children.type.name).toBe('LinkButton')
-      expect(component.props.children.props).toEqual({
-        label: 'DWaveSamplerClient',
-        link: '/clients/DWaveSamplerClient',
-        backgroundColor: '#1b000d',
-      })
-    }
+      {
+        const component = clientComponents[0]
+        expect(component.type).toBe('div')
+        expect(component.key).toBe('test_key_a_client')
+        expect(component.props.style).toEqual({ marginRight: 10 })
+        expect(component.props.children.type.name).toBe('LinkButton')
+        expect(component.props.children.props).toEqual({
+          label: 'a_client',
+          link: '/clients/a_client',
+          backgroundColor: '#0F66DC',
+        })
+      }
 
-    {
-      const component = clientComponents[2]
-      expect(component.type).toBe('div')
-      expect(component.key).toBe('test_key_FujitsuDASolverClient')
-      expect(component.props.style).toEqual({ marginRight: 10 })
-      expect(component.props.children.type.name).toBe('LinkButton')
-      expect(component.props.children.props).toEqual({
-        label: 'FujitsuDASolverClient',
-        link: '/clients/FujitsuDASolverClient',
-        backgroundColor: '#692981',
-      })
-    }
+      {
+        const component = clientComponents[1]
+        expect(component.type).toBe('div')
+        expect(component.key).toBe('test_key_b_client')
+        expect(component.props.style).toEqual({ marginRight: 10 })
+        expect(component.props.children.type.name).toBe('LinkButton')
+        expect(component.props.children.props).toEqual({
+          label: 'b_client',
+          link: '/clients/b_client',
+          backgroundColor: '#f57bae',
+        })
+      }
 
-    {
-      const component = clientComponents[3]
-      expect(component.type).toBe('div')
-      expect(component.key).toBe('test_key_ToshibaClient')
-      expect(component.props.style).toEqual({ marginRight: 10 })
-      expect(component.props.children.type.name).toBe('LinkButton')
-      expect(component.props.children.props).toEqual({
-        label: 'ToshibaClient',
-        link: '/clients/ToshibaClient',
-        backgroundColor: '#f57bae',
-      })
-    }
+      {
+        const component = clientComponents[2]
+        expect(component.type).toBe('div')
+        expect(component.key).toBe('test_key_c_client')
+        expect(component.props.style).toEqual({ marginRight: 10 })
+        expect(component.props.children.type.name).toBe('LinkButton')
+        expect(component.props.children.props).toEqual({
+          label: 'c_client',
+          link: '/clients/c_client',
+          backgroundColor: '#e75e75',
+        })
+      }
 
-    {
-      const component = clientComponents[4]
-      expect(component.type).toBe('div')
-      expect(component.key).toBe('test_key_NECClient')
-      expect(component.props.style).toEqual({ marginRight: 10 })
-      expect(component.props.children.type.name).toBe('LinkButton')
-      expect(component.props.children.props).toEqual({
-        label: 'NECClient',
-        link: '/clients/NECClient',
-        backgroundColor: '#FF66FF',
-      })
-    }
+      {
+        const component = clientComponents[3]
+        expect(component.type).toBe('div')
+        expect(component.key).toBe('test_key_d_client')
+        expect(component.props.style).toEqual({ marginRight: 10 })
+        expect(component.props.children.type.name).toBe('LinkButton')
+        expect(component.props.children.props).toEqual({
+          label: 'd_client',
+          link: '/clients/d_client',
+          backgroundColor: '#e5f97c',
+        })
+      }
+
+      {
+        const component = clientComponents[4]
+        expect(component.type).toBe('div')
+        expect(component.key).toBe('test_key_e_client')
+        expect(component.props.style).toEqual({ marginRight: 10 })
+        expect(component.props.children.type.name).toBe('LinkButton')
+        expect(component.props.children.props).toEqual({
+          label: 'e_client',
+          link: '/clients/e_client',
+          backgroundColor: '#1b000d',
+        })
+      }
+    })
+
+    it('show clients with cached colors', () => {
+      localStorage.setItem(
+        'clientColorCache',
+        JSON.stringify({
+          a_client: 'red',
+          b_client: 'blue',
+          c_client: 'green',
+          d_client: 'yellow',
+          e_client: 'purple',
+        }),
+      )
+
+      const clientComponents = renderClientsCell(
+        'test_key',
+        mockProblemListData[0].clients,
+      )
+
+      {
+        const component = clientComponents[0]
+        expect(component.props.children.props).toEqual({
+          label: 'a_client',
+          link: '/clients/a_client',
+          backgroundColor: 'red',
+        })
+      }
+
+      {
+        const component = clientComponents[1]
+        expect(component.props.children.props).toEqual({
+          label: 'b_client',
+          link: '/clients/b_client',
+          backgroundColor: 'blue',
+        })
+      }
+
+      {
+        const component = clientComponents[2]
+        expect(component.props.children.props).toEqual({
+          label: 'c_client',
+          link: '/clients/c_client',
+          backgroundColor: 'green',
+        })
+      }
+
+      {
+        const component = clientComponents[3]
+        expect(component.props.children.props).toEqual({
+          label: 'd_client',
+          link: '/clients/d_client',
+          backgroundColor: 'yellow',
+        })
+      }
+
+      {
+        const component = clientComponents[4]
+        expect(component.props.children.props).toEqual({
+          label: 'e_client',
+          link: '/clients/e_client',
+          backgroundColor: 'purple',
+        })
+      }
+    })
   })
 
   it('renderProblemInstancesCell', () => {

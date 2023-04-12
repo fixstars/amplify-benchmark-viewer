@@ -65,7 +65,7 @@ describe('MasterResultChart helpers', () => {
 
   it('getPlotData', () => {
     const clientChartType = {
-      FixstarsClient: 'max-min',
+      a_client: 'max-min',
       AClient: 'box',
     }
 
@@ -80,7 +80,7 @@ describe('MasterResultChart helpers', () => {
           fill: 'toself',
           hoveron: 'points',
           mode: 'lines',
-          name: '1_FixstarsClient(v1.0.0)',
+          name: '1_a_client(v1.0.0)',
           x: mockData[0]['plot_data']['max-min']?.x,
           y: mockData[0]['plot_data']['max-min']?.y,
           type: 'scatter',
@@ -98,7 +98,7 @@ describe('MasterResultChart helpers', () => {
           fill: 'toself',
           hoveron: 'points',
           mode: 'lines',
-          name: '1_FixstarsClient(v1.0.1)',
+          name: '1_a_client(v1.0.1)',
           x: mockData[1]['plot_data']['max-min']?.x,
           y: mockData[1]['plot_data']['max-min']?.y,
           type: 'scatter',
@@ -109,8 +109,8 @@ describe('MasterResultChart helpers', () => {
 
     expect(problemBestKnown).toEqual({ pr136: 96772, pr124: 59030 })
 
-    expect('1_FixstarsClient(v1.0.0)_pr136' in plotOriginData).toBe(true)
-    expect('1_FixstarsClient(v1.0.1)_pr124' in plotOriginData).toBe(true)
+    expect('1_a_client(v1.0.0)_pr136' in plotOriginData).toBe(true)
+    expect('1_a_client(v1.0.1)_pr124' in plotOriginData).toBe(true)
     expect('2_AClient(v1.0.0)_pr136' in plotOriginData).toBe(true)
   })
 })

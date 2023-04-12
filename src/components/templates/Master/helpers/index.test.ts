@@ -19,7 +19,7 @@ describe('Master template component helpers', () => {
       { name: 'abc' },
     ])
     expect(filteringData.clientNameData).toEqual([
-      { name: 'FixstarsClient' },
+      { name: 'a_client' },
       { name: 'AClient' },
     ])
     expect(filteringData.clientVersionData).toEqual([
@@ -32,7 +32,7 @@ describe('Master template component helpers', () => {
     let filteringData = getFilteringData({
       data: mockData as ReadonlyArray<MasterData>,
       problemClassFilter: ['Tsp'],
-      clientNameFilter: ['FixstarsClient'],
+      clientNameFilter: ['a_client'],
       clientVersionFilter: ['v1.0.0'],
     })
     expect(filteringData).toEqual([mockData[0]])
@@ -52,7 +52,7 @@ describe('Master template component helpers', () => {
     )
 
     expect(chartOptions).toEqual({
-      FixstarsClient: new Set(['box', 'max-min', '3q-1q', 'median']),
+      a_client: new Set(['box', 'max-min', '3q-1q', 'median']),
       AClient: new Set(['box']),
     })
   })

@@ -150,7 +150,7 @@ describe('<Problem />', () => {
       })
       expect(dataGrid.props.rows).toEqual([
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.6.4-54-ge56964d-V100',
           clientParameters: { 'outputs.feasibilities': true },
           problemParameters: {
@@ -169,7 +169,7 @@ describe('<Problem />', () => {
           '50%': 1000000,
         },
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.6.4-54-ge56964d-A100',
           clientParameters: { 'outputs.feasibilities': true },
           problemParameters: {
@@ -190,7 +190,7 @@ describe('<Problem />', () => {
           '50%': null,
         },
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.7.0-V100',
           clientParameters: { 'outputs.feasibilities': true, num_gpus: 4 },
           problemParameters: {
@@ -360,7 +360,7 @@ describe('<Problem />', () => {
       const dataGrid = childComponent.props.children[0]
       expect(dataGrid.props.rows).toEqual([
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.6.4-54-ge56964d-V100',
           clientParameters: { 'outputs.feasibilities': true },
           problemParameters: {
@@ -379,7 +379,7 @@ describe('<Problem />', () => {
           '50%': 1000000,
         },
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.6.4-54-ge56964d-A100',
           clientParameters: { 'outputs.feasibilities': true },
           problemParameters: {
@@ -400,7 +400,7 @@ describe('<Problem />', () => {
           '50%': null,
         },
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.7.0-V100',
           clientParameters: { 'outputs.feasibilities': true, num_gpus: 4 },
           problemParameters: {
@@ -458,7 +458,7 @@ describe('<Problem />', () => {
       const dataGrid = childComponent.props.children[0]
       expect(dataGrid.props.rows).toEqual([
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.6.4-54-ge56964d-V100',
           clientParameters: { 'outputs.feasibilities': true },
           problemParameters: {
@@ -477,7 +477,7 @@ describe('<Problem />', () => {
           '50%': 1000000,
         },
         {
-          client: 'FixstarsClient',
+          client: 'a_client',
           version: 'v0.7.0-V100',
           clientParameters: { 'outputs.feasibilities': true, num_gpus: 4 },
           problemParameters: {

@@ -56,12 +56,12 @@ describe('<LabelListPage />', () => {
       {
         label: '20220927_173640',
         problemInstances: { Tsp: ['burma14', 'ulysses16'] },
-        clients: ['GurobiClient'],
+        clients: ['f_client'],
       },
       {
         label: 'Optigan CI benchmark v0.6.4',
         problemInstances: { Tsp: ['pr124', 'pr136', 'pr144'] },
-        clients: ['FixstarsClient'],
+        clients: ['a_client'],
       },
     ])
 

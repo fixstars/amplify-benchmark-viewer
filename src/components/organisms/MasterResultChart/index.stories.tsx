@@ -18,7 +18,7 @@ Default.args = {
   problemInstance: 'pr136',
   data: mockData as ReadonlyArray<MasterData>,
   clientChartType: {
-    FixstarsClient: 'max-min',
+    a_client: 'max-min',
     AClient: 'box',
   },
 }

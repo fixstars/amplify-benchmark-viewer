@@ -8,7 +8,7 @@
     "problem_best_known": 96772,
     "problem_parameters": { "constraint_weight": 1.0, "seed": null },
     "problem_num_vars": { "input": 18496, "logical": 18496, "physical": 18496 },
-    "client_name": "FixstarsClient",
+    "client_name": "a_client",
     "client_version": "v1.0.0",
     "client_parameters": { "outputs.feasibilities": true },
     "amplify_version": "0.8.1+1662782383",
@@ -30,7 +30,7 @@
     ],
     "plot_data": {
       "box": {
-        "name": "FixstarsClient(v0.6.4-54-ge56964d-V100)",
+        "name": "a_client(v0.6.4-54-ge56964d-V100)",
         "x": [
           1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0,
           1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0,
@@ -324,7 +324,7 @@
     "problem_best_known": 59030,
     "problem_parameters": { "constraint_weight": 1.0, "seed": null },
     "problem_num_vars": { "input": 15376, "logical": 15376, "physical": 15376 },
-    "client_name": "FixstarsClient",
+    "client_name": "a_client",
     "client_version": "v1.0.1",
     "client_parameters": { "outputs.feasibilities": true },
     "amplify_version": "0.8.1+1662782383",
@@ -346,7 +346,7 @@
     ],
     "plot_data": {
       "box": {
-        "name": "FixstarsClient(v0.6.4-54-ge56964d-A100)",
+        "name": "a_client(v0.6.4-54-ge56964d-A100)",
         "x": [
           1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0,
           1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0, 1000000.0,
@@ -664,7 +664,7 @@
     ],
     "plot_data": {
       "box": {
-        "name": "ToshibaClient(unknown)",
+        "name": "d_client(unknown)",
         "x": [
           1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0,
           1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0,

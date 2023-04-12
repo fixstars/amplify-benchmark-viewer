@@ -349,10 +349,10 @@ exports[`<LabelListPage /> rendered well with data 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-14frf9o"
-                            href="/clients/GurobiClient"
+                            class="css-ez86r"
+                            href="/clients/f_client"
                           >
-                            GurobiClient
+                            f_client
                           </a>
                         </div>
                       </div>
@@ -447,10 +447,10 @@ exports[`<LabelListPage /> rendered well with data 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
-                            href="/clients/FixstarsClient"
+                            class="css-gqb4bp"
+                            href="/clients/a_client"
                           >
-                            FixstarsClient
+                            a_client
                           </a>
                         </div>
                       </div>

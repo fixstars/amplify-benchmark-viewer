@@ -16,6 +16,6 @@ const Template: ComponentStory<typeof LinkButton> = (args) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  label: 'Fixstars',
-  link: '/clients/fixstars',
+  label: 'a_client',
+  link: '/clients/a_client',
 }
