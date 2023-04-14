@@ -1,6 +1,7 @@
 stages:
   - scan
   - push
+  - pages
 
 Prettier:
   stage: scan
@@ -94,5 +95,36 @@ Push-to-GitHub:
     - git branch -D main
     - git checkout -b main
     - git push origin main
+  only:
+    - develop
+
+test_pages:
+  stage: pages
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+  only:
+    - merge_requests
+
+pages:
+  stage: pages
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run build
+    - cp -rp dist/* public
+  artifacts:
+    paths:
+      - public
   only:
     - develop
