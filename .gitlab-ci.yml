@@ -87,7 +87,7 @@ sync-repositories:
     # rebase and push
     - git status
     - git rebase github/main
-    - git push origin develop -f
+    - git push origin develop
     - git push origin develop:main
     - git push github develop:main
   rules:
