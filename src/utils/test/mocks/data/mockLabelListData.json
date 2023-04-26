@@ -8,7 +8,7 @@
     "clients": ["a_client"]
   },
   {
-    "label": "2022/12 QSTAR Benchmark",
+    "label": "2022/12 BBB Benchmark",
     "problemInstances": {
       "Tsp": ["pr299", "burma14", "ulysses16"],
       "MaxCut": ["G1", "G11", "G77"]

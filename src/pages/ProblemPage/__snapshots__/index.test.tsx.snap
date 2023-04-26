@@ -867,7 +867,7 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
                       aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="a_client_v0.6.4-54-ge56964d-A100_Optigan CI benchmark v0.6.4"
+                      data-id="a_client_v0.6.4-54-ge56964d-A100_AAA CI benchmark v0.6.4"
                       data-rowindex="1"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -924,7 +924,7 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
                           class=""
                           data-mui-internal-clone-element="true"
                         >
-                          Optigan CI benchmark v0.6.4
+                          AAA CI benchmark v0.6.4
                         </span>
                       </div>
                       <div

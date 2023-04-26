@@ -4,7 +4,7 @@ import { AxiosError } from 'axios'
 import { createMemoryHistory } from 'history'
 import { BrowserRouter, Router } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
-import { mockLayout, mockLabelList } from 'utils/test'
+import { mockLabelList, mockLayout } from 'utils/test'
 import mockData from 'utils/test/mocks/data/mockReportData.json'
 
 import { LabelListPage } from '.'
@@ -59,7 +59,7 @@ describe('<LabelListPage />', () => {
         clients: ['f_client'],
       },
       {
-        label: 'Optigan CI benchmark v0.6.4',
+        label: 'AAA CI benchmark v0.6.4',
         problemInstances: { Tsp: ['pr124', 'pr136', 'pr144'] },
         clients: ['a_client'],
       },

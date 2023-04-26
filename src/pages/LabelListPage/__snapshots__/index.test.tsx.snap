@@ -361,7 +361,7 @@ exports[`<LabelListPage /> rendered well with data 1`] = `
                       aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
-                      data-id="Optigan CI benchmark v0.6.4"
+                      data-id="AAA CI benchmark v0.6.4"
                       data-rowindex="1"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -379,7 +379,7 @@ exports[`<LabelListPage /> rendered well with data 1`] = `
                         <div
                           class="MuiDataGrid-cellContent"
                         >
-                          Optigan CI benchmark v0.6.4
+                          AAA CI benchmark v0.6.4
                         </div>
                       </div>
                       <div

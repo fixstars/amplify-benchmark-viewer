@@ -702,7 +702,7 @@ exports[`<Problem /> Rendered well 1`] = `
                       aria-rowindex="2"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="a_client_v0.6.4-54-ge56964d-V100_Optigan CI benchmark v0.6.4"
+                      data-id="a_client_v0.6.4-54-ge56964d-V100_AAA CI benchmark v0.6.4"
                       data-rowindex="0"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -759,7 +759,7 @@ exports[`<Problem /> Rendered well 1`] = `
                           class=""
                           data-mui-internal-clone-element="true"
                         >
-                          Optigan CI benchmark v0.6.4
+                          AAA CI benchmark v0.6.4
                         </span>
                       </div>
                       <div
@@ -1036,7 +1036,7 @@ exports[`<Problem /> Rendered well 1`] = `
                       aria-rowindex="4"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
-                      data-id="a_client_v0.7.0-V100_Optigan CI benchmark v0.6.4"
+                      data-id="a_client_v0.7.0-V100_AAA CI benchmark v0.6.4"
                       data-rowindex="2"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -1093,7 +1093,7 @@ exports[`<Problem /> Rendered well 1`] = `
                           class=""
                           data-mui-internal-clone-element="true"
                         >
-                          Optigan CI benchmark v0.6.4
+                          AAA CI benchmark v0.6.4
                         </span>
                       </div>
                       <div

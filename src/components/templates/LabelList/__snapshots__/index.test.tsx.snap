@@ -411,7 +411,7 @@ exports[`<LabelList /> Rendered well 1`] = `
                       aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="2022/12 QSTAR Benchmark"
+                      data-id="2022/12 BBB Benchmark"
                       data-rowindex="1"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -429,7 +429,7 @@ exports[`<LabelList /> Rendered well 1`] = `
                         <div
                           class="MuiDataGrid-cellContent"
                         >
-                          2022/12 QSTAR Benchmark
+                          2022/12 BBB Benchmark
                         </div>
                       </div>
                       <div

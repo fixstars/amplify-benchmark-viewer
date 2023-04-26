@@ -102,7 +102,7 @@
             ]
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "specified_time": 1000000,
             "num_samples": 20,
@@ -2304,7 +2304,7 @@
             }
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "sampling_time": 1035.1716769999998,
             "num_samples": 20,
@@ -4510,7 +4510,7 @@
             ]
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "specified_time": 1000000,
             "num_samples": 20,
@@ -6712,7 +6712,7 @@
             }
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "sampling_time": 1369.58027,
             "num_samples": 20,
@@ -8918,7 +8918,7 @@
             ]
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "specified_time": 1000000,
             "num_samples": 20,
@@ -11120,7 +11120,7 @@
             }
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "sampling_time": 1611.993867,
             "num_samples": 20,
@@ -13326,7 +13326,7 @@
             ]
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "specified_time": 1000000,
             "num_samples": 20,
@@ -15528,7 +15528,7 @@
             }
           }
         ],
-        "Optigan CI benchmark v0.6.4": [
+        "AAA CI benchmark v0.6.4": [
           {
             "sampling_time": 265.358596,
             "num_samples": 20,

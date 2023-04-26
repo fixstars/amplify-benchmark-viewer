@@ -15,7 +15,7 @@ describe('<Problem />', () => {
         <Problem
           className="Tsp"
           instance="pr124"
-          labels={['all', 'Optigan CI benchmark v0.6.4']}
+          labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}
         />
@@ -42,7 +42,7 @@ describe('<Problem />', () => {
       expect(selectBox.props.label).toBe('Label')
       expect(selectBox.props.options).toEqual([
         'all',
-        'Optigan CI benchmark v0.6.4',
+        'AAA CI benchmark v0.6.4',
       ])
       expect(selectBox.props.onChange.name).toBe('onChange')
     }
@@ -160,7 +160,7 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'Optigan CI benchmark v0.6.4',
+          label: 'AAA CI benchmark v0.6.4',
           '0%': null,
           '1%': null,
           '5%': 5767220.789231007,
@@ -200,7 +200,7 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'Optigan CI benchmark v0.6.4',
+          label: 'AAA CI benchmark v0.6.4',
           '0%': null,
           '1%': null,
           '5%': 5380407.729629215,
@@ -324,7 +324,7 @@ describe('<Problem />', () => {
         <Problem
           className="Tsp"
           instance="pr124"
-          labels={['all', 'Optigan CI benchmark v0.6.4']}
+          labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}
         />
@@ -343,7 +343,7 @@ describe('<Problem />', () => {
       expect(selectBox.props.label).toBe('Label')
       expect(selectBox.props.options).toEqual([
         'all',
-        'Optigan CI benchmark v0.6.4',
+        'AAA CI benchmark v0.6.4',
       ])
       expect(selectBox.props.onChange.name).toBe('onChange')
     }
@@ -370,7 +370,7 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'Optigan CI benchmark v0.6.4',
+          label: 'AAA CI benchmark v0.6.4',
           '0%': null,
           '1%': null,
           '5%': 5767220.789231007,
@@ -410,7 +410,7 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'Optigan CI benchmark v0.6.4',
+          label: 'AAA CI benchmark v0.6.4',
           '0%': null,
           '1%': null,
           '5%': 5380407.729629215,
@@ -425,7 +425,7 @@ describe('<Problem />', () => {
     mockLayout.mockClear()
     act(() => {
       layout.children[1].props.children.props.onChange(
-        'Optigan CI benchmark v0.6.4',
+        'AAA CI benchmark v0.6.4',
       )
     })
 
@@ -441,7 +441,7 @@ describe('<Problem />', () => {
       expect(selectBox.props.label).toBe('Label')
       expect(selectBox.props.options).toEqual([
         'all',
-        'Optigan CI benchmark v0.6.4',
+        'AAA CI benchmark v0.6.4',
       ])
       expect(selectBox.props.onChange.name).toBe('onChange')
     }
@@ -450,7 +450,7 @@ describe('<Problem />', () => {
       const childComponent = layout.children[3]
       const chart = childComponent.props.children
       expect(chart[0].type.name).toBe('PlotTTS')
-      expect(chart[0].props.label).toBe('Optigan CI benchmark v0.6.4')
+      expect(chart[0].props.label).toBe('AAA CI benchmark v0.6.4')
     }
 
     {
@@ -468,7 +468,7 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'Optigan CI benchmark v0.6.4',
+          label: 'AAA CI benchmark v0.6.4',
           '0%': null,
           '1%': null,
           '5%': 5767220.789231007,
@@ -487,7 +487,7 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'Optigan CI benchmark v0.6.4',
+          label: 'AAA CI benchmark v0.6.4',
           '0%': null,
           '1%': null,
           '5%': 5380407.729629215,
@@ -505,7 +505,7 @@ describe('<Problem />', () => {
         <Problem
           className="Tsp"
           instance="pr124"
-          labels={['all', 'Optigan CI benchmark v0.6.4']}
+          labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}
         />
@@ -580,7 +580,7 @@ describe('<Problem />', () => {
         <Problem
           className="Tsp"
           instance="pr124"
-          labels={['all', 'Optigan CI benchmark v0.6.4']}
+          labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}
         />
