@@ -7,14 +7,7 @@ import { PlotTargetEnergy } from '.'
 describe('<PlotTargetEnergy />', () => {
   it('Rendered well', async () => {
     const { container } = render(
-      <PlotTargetEnergy
-        data={mockData}
-        instance="pr124"
-        useHistory
-        xtype="log"
-        ytype="log"
-        label=""
-      />,
+      <PlotTargetEnergy data={mockData} instance="pr124" useHistory label="" />,
     )
 
     const plot = mockPlot.mock.calls[0][0]
@@ -26,19 +19,80 @@ describe('<PlotTargetEnergy />', () => {
       responsive: true,
     })
     expect(plot.layout).toEqual({
+      showlegend: true,
+      updatemenus: [
+        {
+          buttons: [
+            {
+              args: [
+                {},
+                {
+                  xaxis: {
+                    title: 'sampling_time[ms]',
+                    type: 'log',
+                  },
+                },
+              ],
+              label: 'Log Scale',
+              method: 'update',
+            },
+            {
+              args: [
+                {},
+                {
+                  xaxis: {
+                    title: 'sampling_time[ms]',
+                    type: 'linear',
+                  },
+                },
+              ],
+              label: 'Linear Scale',
+              method: 'update',
+            },
+          ],
+          xanchor: 'left',
+          y: 1.2,
+          yanchor: 'top',
+        },
+        {
+          buttons: [
+            {
+              args: [
+                {
+                  visible: [true, true, true, true, true, true],
+                },
+              ],
+              label: 'Scatter',
+              method: 'update',
+            },
+            {
+              args: [
+                {
+                  visible: [true, true, true, true, true, true],
+                },
+              ],
+              label: 'Box',
+              method: 'update',
+            },
+          ],
+          x: 0.2,
+          xanchor: 'left',
+          y: 1.2,
+          yanchor: 'top',
+        },
+      ],
       xaxis: {
+        autorange: true,
         title: 'sampling_time[ms]',
         type: 'log',
-        autorange: true,
       },
       yaxis: {
-        title: 'target_energy',
-        type: 'log',
         autorange: true,
+        title: 'target_energy',
+        type: 'linear',
       },
-      showlegend: true,
     })
-    expect(plot.data).toHaveLength(6)
+    expect(plot.data).toHaveLength(7)
     expect(plot.data).toMatchObject([
       {
         fill: 'toself',
@@ -96,6 +150,18 @@ describe('<PlotTargetEnergy />', () => {
         showlegend: true,
         type: 'scatter',
       },
+      {
+        line: {
+          color: 'black',
+          dash: 'dot',
+          width: 4,
+        },
+        mode: 'lines',
+        name: 'best known',
+        showlegend: false,
+        x: [265.358596, 1000000],
+        y: [59030, 59030],
+      },
     ])
     expect(container).toMatchSnapshot()
   })
@@ -106,8 +172,6 @@ describe('<PlotTargetEnergy />', () => {
         data={mockData}
         instance="pr124"
         useHistory
-        xtype="log"
-        ytype="log"
         label="20220927_173640"
       />,
     )
@@ -121,18 +185,79 @@ describe('<PlotTargetEnergy />', () => {
       responsive: true,
     })
     expect(plot.layout).toEqual({
+      showlegend: true,
+      updatemenus: [
+        {
+          buttons: [
+            {
+              args: [
+                {},
+                {
+                  xaxis: {
+                    title: 'sampling_time[ms]',
+                    type: 'log',
+                  },
+                },
+              ],
+              label: 'Log Scale',
+              method: 'update',
+            },
+            {
+              args: [
+                {},
+                {
+                  xaxis: {
+                    title: 'sampling_time[ms]',
+                    type: 'linear',
+                  },
+                },
+              ],
+              label: 'Linear Scale',
+              method: 'update',
+            },
+          ],
+          xanchor: 'left',
+          y: 1.2,
+          yanchor: 'top',
+        },
+        {
+          buttons: [
+            {
+              args: [
+                {
+                  visible: [],
+                },
+              ],
+              label: 'Scatter',
+              method: 'update',
+            },
+            {
+              args: [
+                {
+                  visible: [],
+                },
+              ],
+              label: 'Box',
+              method: 'update',
+            },
+          ],
+          x: 0.2,
+          xanchor: 'left',
+          y: 1.2,
+          yanchor: 'top',
+        },
+      ],
       xaxis: {
+        autorange: true,
         title: 'sampling_time[ms]',
         type: 'log',
-        autorange: true,
       },
       yaxis: {
-        title: 'target_energy',
-        type: 'log',
         autorange: true,
+        title: 'target_energy',
+        type: 'linear',
       },
-      showlegend: true,
     })
-    expect(plot.data).toHaveLength(0)
+    expect(plot.data).toHaveLength(1)
   })
 })

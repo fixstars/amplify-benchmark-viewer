@@ -9,8 +9,8 @@ import {
   Layout,
   PlotFeasibleRate,
   PlotReachBestRate,
-  PlotTargetEnergy,
   PlotTTS,
+  PlotTargetEnergy,
 } from 'components/organisms'
 
 import type { ProblemData } from './Helpers'
@@ -87,8 +87,6 @@ export const Problem = ({
             data={reportData}
             instance={instance}
             useHistory
-            xtype="log"
-            ytype="linear"
             label={selectedLabel === 'all' ? '' : selectedLabel}
           />
         )}

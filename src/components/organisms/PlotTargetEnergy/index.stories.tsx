@@ -1,4 +1,4 @@
-import type { ComponentStory, ComponentMeta } from '@storybook/react'
+import type { ComponentMeta, ComponentStory } from '@storybook/react'
 import mockData from 'utils/test/mocks/data/mockReportData.json'
 
 import { PlotTargetEnergy } from '.'
@@ -17,7 +17,5 @@ Default.args = {
   data: mockData,
   instance: 'pr124',
   useHistory: false,
-  xtype: 'log',
-  ytype: 'log',
   label: '',
 }

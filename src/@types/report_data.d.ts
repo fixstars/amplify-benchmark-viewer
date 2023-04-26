@@ -140,7 +140,7 @@ export interface ReportData {
       /**
        * 最適解のエネルギー値
        */
-      best_known: number
+      best_known: number | null
       /**
        * 定式化パラメータ
        */

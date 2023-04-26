@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import mockData from 'utils/test/mocks/data/mockReportData.json'
 
 import { PlotTargetEnergy } from '.'
@@ -6,14 +6,7 @@ import { PlotTargetEnergy } from '.'
 describe('<PlotTargetEnergy /> event test', () => {
   it('Show tooltip well', async () => {
     render(
-      <PlotTargetEnergy
-        data={mockData}
-        instance="pr124"
-        useHistory
-        xtype="log"
-        ytype="log"
-        label=""
-      />,
+      <PlotTargetEnergy data={mockData} instance="pr124" useHistory label="" />,
     )
 
     await screen.findByText('1_a_client(v0.6.4-54-ge56964d-V100)')

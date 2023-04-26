@@ -61,10 +61,21 @@ export const PlotTTS = ({
 
       const samplingTime: number[] = []
       const ttsList: number[] = []
+      const texts: string[] = []
       for (const r of results) {
         const tts = r.time_to_solution[p as keyof typeof r.time_to_solution]
         if (tts != null) {
-          const time = 'sampling_time' in r ? r.sampling_time : r.specified_time
+          let time = 0
+          if ('sampling_time' in r) {
+            time = r.sampling_time
+          }
+          if ('raw_data' in r) {
+            for (const raw of r.raw_data) {
+              time += raw.sampling_time
+            }
+            time /= r.raw_data.length
+            texts.push(`specified time:${r.specified_time}`)
+          }
           samplingTime.push(time)
           ttsList.push(tts)
         }
@@ -82,6 +93,7 @@ export const PlotTTS = ({
         type: 'scatter',
         mode: 'lines+markers',
         visible: visible,
+        text: texts,
       })
     }
   }

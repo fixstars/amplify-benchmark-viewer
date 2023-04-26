@@ -59,8 +59,20 @@ export const PlotFeasibleRate = ({
 
     const samplingTime: number[] = []
     const feasibleRate: number[] = []
+    const texts: string[] = []
     for (const r of results) {
-      const time = 'sampling_time' in r ? r.sampling_time : r.specified_time
+      let time = 0
+      if ('sampling_time' in r) {
+        time = r.sampling_time
+      }
+      if ('raw_data' in r) {
+        for (const raw of r.raw_data) {
+          time += raw.sampling_time
+        }
+        time /= r.raw_data.length
+        texts.push(`specified time:${r.specified_time}`)
+      }
+
       samplingTime.push(time)
       feasibleRate.push(r.feasible_rate)
     }
@@ -72,6 +84,7 @@ export const PlotFeasibleRate = ({
       name: `${i + 1}_${name}(${version})`,
       type: 'scatter',
       mode: 'lines+markers',
+      text: texts,
     })
     parameters[parameterName] = {
       clientParameters,

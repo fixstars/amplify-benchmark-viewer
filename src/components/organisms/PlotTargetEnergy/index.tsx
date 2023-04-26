@@ -7,8 +7,6 @@ interface Props {
   readonly data: ReportData
   readonly instance: string
   readonly useHistory: boolean
-  readonly xtype: 'linear' | 'log'
-  readonly ytype: 'linear' | 'log'
   readonly label: string
 }
 
@@ -16,8 +14,6 @@ export const PlotTargetEnergy = ({
   data,
   instance,
   useHistory,
-  xtype,
-  ytype,
   label,
 }: Props) => {
   const groupIDs = Object.values(data.problems)
@@ -49,8 +45,12 @@ export const PlotTargetEnergy = ({
       }
     }
   } = {}
+  let xMin = Infinity
+  let xMax = -Infinity
 
   const plotData: Plotly.Data[] = []
+  const scatterVisible: boolean[] = []
+  const boxVisible: boolean[] = []
   for (let i = 0; i < groupIDs.length; i++) {
     const groupID = groupIDs[i]
     const {
@@ -63,6 +63,7 @@ export const PlotTargetEnergy = ({
       version,
       parameters: clientParameters,
     } = data.clients[clientID]
+
     const { parameters: problemParameters } = data.problems[problemID]
 
     if (useHistory && history != null) {
@@ -103,6 +104,8 @@ export const PlotTargetEnergy = ({
       targetEnergy['75%'].reverse()
       targetEnergy['max'].reverse()
       const rSamplingTime = [...samplingTime].reverse()
+      xMin = samplingTime.reduce((min, d) => Math.min(min, d), xMin)
+      xMax = samplingTime.reduce((max, d) => Math.max(max, d), xMax)
 
       const parameterName = `${i + 1}_${name}(${version})`
       plotData.push({
@@ -118,6 +121,8 @@ export const PlotTargetEnergy = ({
         line: { color: colors[i % colors.length] + '00' },
         text: 'max-min',
       })
+      scatterVisible.push(true)
+      boxVisible.push(true)
       plotData.push({
         x: samplingTime.concat(rSamplingTime),
         y: targetEnergy['25%'].concat(targetEnergy['75%']),
@@ -131,6 +136,8 @@ export const PlotTargetEnergy = ({
         line: { color: colors[i % colors.length] + '00' },
         text: '75%-25%',
       })
+      scatterVisible.push(true)
+      boxVisible.push(true)
       plotData.push({
         x: samplingTime,
         y: targetEnergy['50%'],
@@ -142,6 +149,8 @@ export const PlotTargetEnergy = ({
         fillcolor: colors[i % colors.length] + 'ff',
         line: { color: colors[i % colors.length] },
       })
+      scatterVisible.push(true)
+      boxVisible.push(true)
 
       parameters[parameterName] = {
         clientParameters,
@@ -153,13 +162,22 @@ export const PlotTargetEnergy = ({
       if ((results as typeof results | undefined) == null) continue
 
       const samplingTime: number[] = []
+      const samplingMeanTime: number[] = []
       const targetEnergy: number[] = []
+      const texts: string[] = []
       for (const r of results) {
         for (const e of r.raw_data) {
           samplingTime.push(e.sampling_time)
           targetEnergy.push(e.target_energy)
+          texts.push(`specified time:${r.specified_time}`)
         }
+        const mean =
+          r.raw_data.reduce((a, b) => a + b.sampling_time, 0) /
+          r.raw_data.length
+        samplingMeanTime.push(...Array(r.raw_data.length).fill(mean))
       }
+      xMin = samplingTime.reduce((min, d) => Math.min(min, d), xMin)
+      xMax = samplingTime.reduce((max, d) => Math.max(max, d), xMax)
       plotData.push({
         x: samplingTime,
         y: targetEnergy,
@@ -168,7 +186,25 @@ export const PlotTargetEnergy = ({
         name: parameterName,
         legendgroup: parameterName,
         marker: { color: colors[i % colors.length] },
+        text: texts,
       })
+      scatterVisible.push(true)
+      boxVisible.push(false)
+      xMin = samplingMeanTime.reduce((min, d) => Math.min(min, d), xMin)
+      xMax = samplingMeanTime.reduce((max, d) => Math.max(max, d), xMax)
+      plotData.push({
+        x: samplingMeanTime,
+        y: targetEnergy,
+        type: 'box',
+        visible: false,
+        name: parameterName,
+        legendgroup: parameterName,
+        marker: { color: colors[i % colors.length] },
+        width: 0.1,
+        text: texts,
+      })
+      scatterVisible.push(false)
+      boxVisible.push(true)
 
       parameters[parameterName] = {
         clientParameters,
@@ -176,19 +212,82 @@ export const PlotTargetEnergy = ({
       }
     }
   }
+
   const layout: Partial<Plotly.Layout> = {
+    updatemenus: [
+      {
+        buttons: [
+          {
+            args: [{}, { xaxis: { title: 'sampling_time[ms]', type: 'log' } }],
+            label: 'Log Scale',
+            method: 'update',
+          },
+          {
+            args: [
+              {},
+              {
+                xaxis: {
+                  title: 'sampling_time[ms]',
+                  type: 'linear',
+                },
+              },
+            ],
+            label: 'Linear Scale',
+            method: 'update',
+          },
+        ],
+        xanchor: 'left',
+        y: 1.2,
+        yanchor: 'top',
+      },
+      {
+        buttons: [
+          {
+            args: [{ visible: scatterVisible }],
+            label: 'Scatter',
+            method: 'update',
+          },
+          {
+            args: [{ visible: boxVisible }],
+            label: 'Box',
+            method: 'update',
+          },
+        ],
+        xanchor: 'left',
+        x: 0.2,
+        y: 1.2,
+        yanchor: 'top',
+      },
+    ],
     xaxis: {
       title: 'sampling_time[ms]',
-      type: xtype,
+      type: 'log',
       autorange: true,
     },
     yaxis: {
       title: 'target_energy',
-      type: ytype,
       autorange: true,
+      type: 'linear',
     },
     showlegend: true,
   }
+  const { best_known: bestKnown } =
+    data.problems[data.benchmarks[groupIDs[0]].problem_id]
+  if (bestKnown !== null) {
+    plotData.push({
+      x: [xMin, xMax],
+      y: [bestKnown, bestKnown],
+      mode: 'lines',
+      name: 'best known',
+      line: {
+        dash: 'dot',
+        width: 4,
+        color: 'black',
+      },
+      showlegend: false,
+    })
+  }
+
   const config: Partial<Plotly.Config> = {
     toImageButtonOptions: { filename: `TargetEnergy_${instance}_${label}` },
     responsive: true,

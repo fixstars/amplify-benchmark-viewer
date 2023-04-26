@@ -14,3 +14,6 @@ pre-commit:
     Test:
       files: git diff --name-only HEAD | grep -e \.ts$ -e \.tsx$ || echo ''
       run: npm run test:ci
+    report_page_build:
+      files: git diff --name-only HEAD | grep "schema/report_data.json" || echo ''
+      run: npx json2ts ./schema/report_data.json > src/@types/report_data.d.ts --style.singleQuote --style.trailingComma=all --no-style.semi && git add src/@types/report_data.d.ts
