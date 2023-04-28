@@ -16,7 +16,7 @@
     "axios": "^1.2.1",
     "d3": "^7.7.0",
     "json-schema-to-typescript": "^11.0.2",
-    "plotly.js": "^2.16.4",
+    "plotly.js": "^2.22.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-plotly.js": "^2.6.0",
