@@ -89,7 +89,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
-    "axios-mock-adapter": "^1.21.2",
+    "axios-mock-adapter": "^1.21.4",
     "babel-plugin-named-exports-order": "^0.0.2",
     "cross-env": "^7.0.3",
     "cspell": "^6.15.0",
