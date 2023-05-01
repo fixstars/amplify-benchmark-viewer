@@ -56,17 +56,17 @@ describe('<ClientListPage />', () => {
       {
         client: 'a_client',
         version: 'v0.6.4-54-ge56964d-A100',
-        problemInstances: { Tsp: ['pr124'] },
+        problemInstances: { Tsp: ['r_instance'] },
       },
       {
         client: 'a_client',
         version: 'v0.6.4-54-ge56964d-V100',
-        problemInstances: { Tsp: ['pr124', 'pr136', 'pr144'] },
+        problemInstances: { Tsp: ['a_instance', 'b_instance', 'r_instance'] },
       },
       {
         client: 'f_client',
         version: '9.5.0',
-        problemInstances: { Tsp: ['burma14', 'ulysses16'] },
+        problemInstances: { Tsp: ['h_instance', 'i_instance'] },
       },
     ])
 

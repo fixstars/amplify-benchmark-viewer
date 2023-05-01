@@ -9,7 +9,7 @@ describe('<PlotFeasibleRate />', () => {
     const { container } = render(
       <PlotFeasibleRate
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         label=""
@@ -19,7 +19,7 @@ describe('<PlotFeasibleRate />', () => {
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'FeasibleRate_pr124_',
+        filename: 'FeasibleRate_r_instance_',
       },
       responsive: true,
     })
@@ -55,7 +55,7 @@ describe('<PlotFeasibleRate />', () => {
     render(
       <PlotFeasibleRate
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         label="20220927_173640"
@@ -65,7 +65,7 @@ describe('<PlotFeasibleRate />', () => {
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'FeasibleRate_pr124_20220927_173640',
+        filename: 'FeasibleRate_r_instance_20220927_173640',
       },
       responsive: true,
     })

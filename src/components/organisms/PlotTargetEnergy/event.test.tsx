@@ -6,7 +6,12 @@ import { PlotTargetEnergy } from '.'
 describe('<PlotTargetEnergy /> event test', () => {
   it('Show tooltip well', async () => {
     render(
-      <PlotTargetEnergy data={mockData} instance="pr124" useHistory label="" />,
+      <PlotTargetEnergy
+        data={mockData}
+        instance="r_instance"
+        useHistory
+        label=""
+      />,
     )
 
     await screen.findByText('1_a_client(v0.6.4-54-ge56964d-V100)')

@@ -9,7 +9,7 @@ describe('<PlotTTS />', () => {
     const { container } = render(
       <PlotTTS
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         ytype="log"
@@ -21,7 +21,7 @@ describe('<PlotTTS />', () => {
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'TTS_pr124_',
+        filename: 'TTS_r_instance_',
       },
       responsive: true,
     })
@@ -182,7 +182,7 @@ describe('<PlotTTS />', () => {
     render(
       <PlotTTS
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         ytype="log"
@@ -194,7 +194,7 @@ describe('<PlotTTS />', () => {
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'TTS_pr124_20220927_173640',
+        filename: 'TTS_r_instance_20220927_173640',
       },
       responsive: true,
     })

@@ -48,16 +48,22 @@ describe('<Master />', () => {
       expect(tabsContainer.type.name).toBe('Tabs')
       expect(tabsContainer.props.variant).toBe('scrollable')
       expect(tabsContainer.props.scrollButtons).toBe('auto')
-      expect(tabsContainer.props.value).toBe('pr136')
+      expect(tabsContainer.props.value).toBe('b_instance')
       expect(tabsContainer.props.onChange.name).toBe('onChange')
 
       const tabs = tabsContainer.props.children
       expect(tabs[0].type.render.name).toBe('Tab')
-      expect(tabs[0].key).toBe('pr136')
-      expect(tabs[0].props).toEqual({ label: 'pr136', value: 'pr136' })
+      expect(tabs[0].key).toBe('b_instance')
+      expect(tabs[0].props).toEqual({
+        label: 'b_instance',
+        value: 'b_instance',
+      })
       expect(tabs[1].type.render.name).toBe('Tab')
-      expect(tabs[1].key).toBe('pr124')
-      expect(tabs[1].props).toEqual({ label: 'pr124', value: 'pr124' })
+      expect(tabs[1].key).toBe('r_instance')
+      expect(tabs[1].props).toEqual({
+        label: 'r_instance',
+        value: 'r_instance',
+      })
     }
 
     {
@@ -72,14 +78,14 @@ describe('<Master />', () => {
 
       const chart = chartContainer.props.children
       expect(chart.type.name).toBe('MasterResultChart')
-      expect(chart.props.problemInstance).toBe('pr136')
+      expect(chart.props.problemInstance).toBe('b_instance')
       expect(chart.props.data).toEqual([
         {
           group_id: 'eeeeeeeeeeeeeeeeeeeeeeeeee',
           problem_id: 'ffffffffffffffffffffffffffff',
           client_id: 'gggggggggggggggggggggggggggggggg',
           problem_class: 'Tsp',
-          problem_instance: 'pr136',
+          problem_instance: 'b_instance',
           problem_best_known: 96772,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
@@ -96,7 +102,7 @@ describe('<Master />', () => {
           problem_id: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
           client_id: 'ccccccccccccccccccccccccccccccccccc',
           problem_class: 'Tsp',
-          problem_instance: 'pr124',
+          problem_instance: 'r_instance',
           problem_best_known: 59030,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 15376, logical: 15376, physical: 15376 },
@@ -113,7 +119,7 @@ describe('<Master />', () => {
           problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
           client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
           problem_class: 'abc',
-          problem_instance: 'pr136',
+          problem_instance: 'b_instance',
           problem_best_known: 96772,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
@@ -142,7 +148,7 @@ describe('<Master />', () => {
           problem_id: 'ffffffffffffffffffffffffffff',
           client_id: 'gggggggggggggggggggggggggggggggg',
           problem_class: 'Tsp',
-          problem_instance: 'pr136',
+          problem_instance: 'b_instance',
           problem_best_known: 96772,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
@@ -159,7 +165,7 @@ describe('<Master />', () => {
           problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
           client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
           problem_class: 'abc',
-          problem_instance: 'pr136',
+          problem_instance: 'b_instance',
           problem_best_known: 96772,
           problem_parameters: { constraint_weight: 1, seed: null },
           problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
@@ -427,7 +433,7 @@ describe('<Master />', () => {
 
       // click tab
       mockLayout.mockClear()
-      fireEvent.click(screen.getByText('pr124'))
+      fireEvent.click(screen.getByText('r_instance'))
 
       const layout = mockLayout.mock.calls[0][0]
 
@@ -439,7 +445,7 @@ describe('<Master />', () => {
       {
         const box = layout.children[2]
         const tabsContainer = box.props.children
-        expect(tabsContainer.props.value).toBe('pr124')
+        expect(tabsContainer.props.value).toBe('r_instance')
       }
 
       {
@@ -447,14 +453,14 @@ describe('<Master />', () => {
         const chartContainer = box.props.children[0]
         const chart = chartContainer.props.children
         expect(chart.type.name).toBe('MasterResultChart')
-        expect(chart.props.problemInstance).toBe('pr124')
+        expect(chart.props.problemInstance).toBe('r_instance')
         expect(chart.props.data).toEqual([
           {
             group_id: 'eeeeeeeeeeeeeeeeeeeeeeeeee',
             problem_id: 'ffffffffffffffffffffffffffff',
             client_id: 'gggggggggggggggggggggggggggggggg',
             problem_class: 'Tsp',
-            problem_instance: 'pr136',
+            problem_instance: 'b_instance',
             problem_best_known: 96772,
             problem_parameters: { constraint_weight: 1, seed: null },
             problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
@@ -471,7 +477,7 @@ describe('<Master />', () => {
             problem_id: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
             client_id: 'ccccccccccccccccccccccccccccccccccc',
             problem_class: 'Tsp',
-            problem_instance: 'pr124',
+            problem_instance: 'r_instance',
             problem_best_known: 59030,
             problem_parameters: { constraint_weight: 1, seed: null },
             problem_num_vars: { input: 15376, logical: 15376, physical: 15376 },
@@ -488,7 +494,7 @@ describe('<Master />', () => {
             problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
             client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
             problem_class: 'abc',
-            problem_instance: 'pr136',
+            problem_instance: 'b_instance',
             problem_best_known: 96772,
             problem_parameters: { constraint_weight: 1, seed: null },
             problem_num_vars: { input: 18496, logical: 18496, physical: 18496 },
@@ -516,7 +522,7 @@ describe('<Master />', () => {
             problem_id: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
             client_id: 'ccccccccccccccccccccccccccccccccccc',
             problem_class: 'Tsp',
-            problem_instance: 'pr124',
+            problem_instance: 'r_instance',
             problem_best_known: 59030,
             problem_parameters: { constraint_weight: 1, seed: null },
             problem_num_vars: { input: 15376, logical: 15376, physical: 15376 },
@@ -604,7 +610,7 @@ describe('<Master />', () => {
 
         const tabsContainer = box.props.children
         expect(tabsContainer.type.name).toBe('Tabs')
-        expect(tabsContainer.props.value).toBe('pr136')
+        expect(tabsContainer.props.value).toBe('b_instance')
       }
 
       {
@@ -614,7 +620,7 @@ describe('<Master />', () => {
         const chartContainer = box.props.children[0]
         const chart = chartContainer.props.children
         expect(chart.type.name).toBe('MasterResultChart')
-        expect(chart.props.problemInstance).toBe('pr136')
+        expect(chart.props.problemInstance).toBe('b_instance')
         expect(chart.props.clientChartType).toEqual({
           a_client: 'max-min',
           AClient: 'box',
@@ -646,7 +652,7 @@ describe('<Master />', () => {
               problem_id: 'ffffffffffffffffffffffffffff',
               client_id: 'gggggggggggggggggggggggggggggggg',
               problem_class: 'Tsp',
-              problem_instance: 'pr136',
+              problem_instance: 'b_instance',
               problem_best_known: 96772,
               problem_parameters: { constraint_weight: 1, seed: null },
               problem_num_vars: {
@@ -667,7 +673,7 @@ describe('<Master />', () => {
               problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
               client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
               problem_class: 'abc',
-              problem_instance: 'pr136',
+              problem_instance: 'b_instance',
               problem_best_known: 96772,
               problem_parameters: { constraint_weight: 1, seed: null },
               problem_num_vars: {
@@ -728,7 +734,7 @@ describe('<Master />', () => {
               problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
               client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
               problem_class: 'abc',
-              problem_instance: 'pr136',
+              problem_instance: 'b_instance',
               problem_best_known: 96772,
               problem_parameters: { constraint_weight: 1, seed: null },
               problem_num_vars: {
@@ -771,7 +777,7 @@ describe('<Master />', () => {
               problem_id: 'ffffffffffffffffffffffffffff',
               client_id: 'gggggggggggggggggggggggggggggggg',
               problem_class: 'Tsp',
-              problem_instance: 'pr136',
+              problem_instance: 'b_instance',
               problem_best_known: 96772,
               problem_parameters: { constraint_weight: 1, seed: null },
               problem_num_vars: {
@@ -792,7 +798,7 @@ describe('<Master />', () => {
               problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
               client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
               problem_class: 'abc',
-              problem_instance: 'pr136',
+              problem_instance: 'b_instance',
               problem_best_known: 96772,
               problem_parameters: { constraint_weight: 1, seed: null },
               problem_num_vars: {
@@ -846,14 +852,14 @@ describe('<Master />', () => {
           const chartContainer = box.props.children[0]
           const chart = chartContainer.props.children
           expect(chart.type.name).toBe('MasterResultChart')
-          expect(chart.props.problemInstance).toBe('pr136')
+          expect(chart.props.problemInstance).toBe('b_instance')
           expect(chart.props.data).toEqual([
             {
               group_id: 'hhhhhhhhhhhhhhhhhhhhhhhhhh',
               problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
               client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
               problem_class: 'abc',
-              problem_instance: 'pr136',
+              problem_instance: 'b_instance',
               problem_best_known: 96772,
               problem_parameters: { constraint_weight: 1, seed: null },
               problem_num_vars: {
@@ -884,7 +890,7 @@ describe('<Master />', () => {
               problem_id: 'iiiiiiiiiiiiiiiiiiiiiiiiii',
               client_id: 'jjjjjjjjjjjjjjjjjjjjjjjjjj',
               problem_class: 'abc',
-              problem_instance: 'pr136',
+              problem_instance: 'b_instance',
               problem_best_known: 96772,
               problem_parameters: { constraint_weight: 1, seed: null },
               problem_num_vars: {

@@ -36,8 +36,8 @@ describe('ProblemList template component helpers', () => {
     } as unknown as GridRenderCellParams<unknown, ProblemClients, unknown>) as any
     expect(instanceLinkComponent?.type.render.name).toBe('LinkWithRef')
     expect(instanceLinkComponent?.props).toEqual({
-      to: '/classes/TSP/instances/16x16_easy_233',
-      children: '16x16_easy_233',
+      to: '/classes/TSP/instances/s_instance',
+      children: 's_instance',
     })
 
     const column3 = columns[2]

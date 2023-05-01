@@ -20,7 +20,6 @@ describe('<MasterResultTable />', () => {
 
     expect(dataGrid.rows).toEqual([
       {
-        id: '0-hhhhhhhhhhhhhhhhhhhhhhhhhh',
         num_feasibles: 20,
         mean: 100455.8,
         std: 1194.797476782704,
@@ -32,9 +31,23 @@ describe('<MasterResultTable />', () => {
         num_samples: 20,
         num_reach_best: 0,
         setting_time: 1000000,
+        id: '0-hhhhhhhhhhhhhhhhhhhhhhhhhh',
       },
       {
-        id: '0-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+        num_feasibles: 20,
+        mean: 100455.8,
+        std: 1194.797476782704,
+        min: 98340,
+        '25%': 99680.25,
+        '50%': 100536,
+        '75%': 101316,
+        max: 102254,
+        num_samples: 20,
+        num_reach_best: 0,
+        setting_time: 1000000,
+        id: '0-eeeeeeeeeeeeeeeeeeeeeeeeee',
+      },
+      {
         num_feasibles: 20,
         mean: 61958.5,
         std: 1127.9892916624976,
@@ -46,20 +59,7 @@ describe('<MasterResultTable />', () => {
         num_samples: 20,
         num_reach_best: 0,
         setting_time: 1000000,
-      },
-      {
-        id: '0-eeeeeeeeeeeeeeeeeeeeeeeeee',
-        num_feasibles: 20,
-        mean: 100455.8,
-        std: 1194.797476782704,
-        min: 98340,
-        '25%': 99680.25,
-        '50%': 100536,
-        '75%': 101316,
-        max: 102254,
-        num_samples: 20,
-        num_reach_best: 0,
-        setting_time: 1000000,
+        id: '0-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
       },
     ])
 

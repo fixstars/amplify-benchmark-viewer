@@ -8,7 +8,7 @@ describe('<PlotTTS /> event test', () => {
     render(
       <PlotTTS
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         ytype="log"
@@ -59,7 +59,7 @@ describe('<PlotTTS /> event test', () => {
     render(
       <PlotTTS
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         ytype="log"

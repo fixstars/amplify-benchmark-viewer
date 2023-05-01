@@ -8,7 +8,7 @@ describe('<PlotReachBestRate /> event test', () => {
     render(
       <PlotReachBestRate
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory={false}
         xtype="log"
         label=""

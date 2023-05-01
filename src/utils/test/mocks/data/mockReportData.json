@@ -30242,7 +30242,7 @@
   "problems": {
     "3fc2fa4a0be187a78f7ec2ec3bc366c2": {
       "class": "Tsp",
-      "instance": "pr124",
+      "instance": "r_instance",
       "best_known": 59030,
       "parameters": {
         "num_vars": {
@@ -30264,7 +30264,7 @@
     },
     "9e250458220fe13969da1bfc4b4da3a4": {
       "class": "Tsp",
-      "instance": "pr136",
+      "instance": "b_instance",
       "best_known": 96772,
       "parameters": {
         "num_vars": {
@@ -30283,7 +30283,7 @@
     },
     "b8bb016c4fedc270742f24ba7ab67abe": {
       "class": "Tsp",
-      "instance": "pr144",
+      "instance": "a_instance",
       "best_known": 58537,
       "parameters": {
         "num_vars": {
@@ -30302,7 +30302,7 @@
     },
     "bbbd642d4be2cf3f7accc97676ed313b": {
       "class": "Tsp",
-      "instance": "burma14",
+      "instance": "h_instance",
       "best_known": 3323,
       "parameters": {
         "num_vars": {
@@ -30321,7 +30321,7 @@
     },
     "c6b99db366d192b5b039c453899cef9f": {
       "class": "Tsp",
-      "instance": "ulysses16",
+      "instance": "i_instance",
       "best_known": 6859,
       "parameters": {
         "num_vars": {

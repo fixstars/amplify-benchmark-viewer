@@ -14,7 +14,7 @@ const Template: ComponentStory<typeof Problem> = (args) => <Problem {...args} />
 export const Default = Template.bind({})
 Default.args = {
   className: 'Tsp',
-  instance: 'pr124',
+  instance: 'r_instance',
   labels: ['all', 'AAA CI benchmark v0.6.4'],
   data: mockData,
   reportData: mockReportData,

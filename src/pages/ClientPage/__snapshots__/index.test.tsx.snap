@@ -602,7 +602,7 @@ exports[`<ClientPage /> rendered well with data 1`] = `
                       aria-rowindex="2"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="Tsp_pr124_v0.6.4-54-ge56964d-A100"
+                      data-id="Tsp_a_instance_v0.6.4-54-ge56964d-V100"
                       data-rowindex="0"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -634,155 +634,9 @@ exports[`<ClientPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Tsp/instances/pr124"
+                          href="/classes/Tsp/instances/a_instance"
                         >
-                          pr124
-                        </a>
-                      </div>
-                      <div
-                        aria-colindex="3"
-                        aria-colspan="1"
-                        class="problemParameters MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="2"
-                        data-field="problemParameters"
-                        role="cell"
-                        style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        <div>
-                          outputs.feasibilities
-                          : 
-                          true
-                        </div>
-                      </div>
-                      <div
-                        aria-colindex="4"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="3"
-                        data-field="version"
-                        role="cell"
-                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        <div
-                          class="MuiDataGrid-cellContent"
-                        >
-                          v0.6.4-54-ge56964d-A100
-                        </div>
-                      </div>
-                      <div
-                        aria-colindex="5"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="4"
-                        data-field="0%"
-                        role="cell"
-                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        -
-                      </div>
-                      <div
-                        aria-colindex="6"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="5"
-                        data-field="1%"
-                        role="cell"
-                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        -
-                      </div>
-                      <div
-                        aria-colindex="7"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="6"
-                        data-field="5%"
-                        role="cell"
-                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        3824978.578786397
-                      </div>
-                      <div
-                        aria-colindex="8"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="7"
-                        data-field="10%"
-                        role="cell"
-                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        1000000
-                      </div>
-                      <div
-                        aria-colindex="9"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="8"
-                        data-field="20%"
-                        role="cell"
-                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        1000000
-                      </div>
-                      <div
-                        aria-colindex="10"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="9"
-                        data-field="50%"
-                        role="cell"
-                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        1000000
-                      </div>
-                    </div>
-                    <div
-                      aria-rowindex="3"
-                      aria-selected="false"
-                      class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="Tsp_pr124_v0.6.4-54-ge56964d-V100"
-                      data-rowindex="1"
-                      role="row"
-                      style="max-height: none; min-height: auto;"
-                    >
-                      <div
-                        aria-colindex="1"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="0"
-                        data-field="class"
-                        role="cell"
-                        style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        <div
-                          class="MuiDataGrid-cellContent"
-                        >
-                          Tsp
-                        </div>
-                      </div>
-                      <div
-                        aria-colindex="2"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="1"
-                        data-field="instance"
-                        role="cell"
-                        style="min-width: 140px; max-width: 140px; min-height: auto; max-height: none;"
-                        tabindex="-1"
-                      >
-                        <a
-                          href="/classes/Tsp/instances/pr124"
-                        >
-                          pr124
+                          a_instance
                         </a>
                       </div>
                       <div
@@ -851,7 +705,7 @@ exports[`<ClientPage /> rendered well with data 1`] = `
                         style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
                         tabindex="-1"
                       >
-                        5767220.789231007
+                        20637702.31703234
                       </div>
                       <div
                         aria-colindex="8"
@@ -863,7 +717,7 @@ exports[`<ClientPage /> rendered well with data 1`] = `
                         style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
                         tabindex="-1"
                       >
-                        1000000
+                        2861353.1161467857
                       </div>
                       <div
                         aria-colindex="9"
@@ -891,11 +745,11 @@ exports[`<ClientPage /> rendered well with data 1`] = `
                       </div>
                     </div>
                     <div
-                      aria-rowindex="4"
+                      aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="Tsp_pr136_v0.6.4-54-ge56964d-V100"
-                      data-rowindex="2"
+                      data-id="Tsp_b_instance_v0.6.4-54-ge56964d-V100"
+                      data-rowindex="1"
                       role="row"
                       style="max-height: none; min-height: auto;"
                     >
@@ -926,9 +780,9 @@ exports[`<ClientPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Tsp/instances/pr136"
+                          href="/classes/Tsp/instances/b_instance"
                         >
-                          pr136
+                          b_instance
                         </a>
                       </div>
                       <div
@@ -998,6 +852,152 @@ exports[`<ClientPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         3321928.0948873623
+                      </div>
+                      <div
+                        aria-colindex="8"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="7"
+                        data-field="10%"
+                        role="cell"
+                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        1000000
+                      </div>
+                      <div
+                        aria-colindex="9"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="8"
+                        data-field="20%"
+                        role="cell"
+                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        1000000
+                      </div>
+                      <div
+                        aria-colindex="10"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="9"
+                        data-field="50%"
+                        role="cell"
+                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        1000000
+                      </div>
+                    </div>
+                    <div
+                      aria-rowindex="4"
+                      aria-selected="false"
+                      class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+                      data-id="Tsp_r_instance_v0.6.4-54-ge56964d-A100"
+                      data-rowindex="2"
+                      role="row"
+                      style="max-height: none; min-height: auto;"
+                    >
+                      <div
+                        aria-colindex="1"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="0"
+                        data-field="class"
+                        role="cell"
+                        style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="MuiDataGrid-cellContent"
+                        >
+                          Tsp
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="2"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="1"
+                        data-field="instance"
+                        role="cell"
+                        style="min-width: 140px; max-width: 140px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <a
+                          href="/classes/Tsp/instances/r_instance"
+                        >
+                          r_instance
+                        </a>
+                      </div>
+                      <div
+                        aria-colindex="3"
+                        aria-colspan="1"
+                        class="problemParameters MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="2"
+                        data-field="problemParameters"
+                        role="cell"
+                        style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          outputs.feasibilities
+                          : 
+                          true
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="4"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="3"
+                        data-field="version"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="MuiDataGrid-cellContent"
+                        >
+                          v0.6.4-54-ge56964d-A100
+                        </div>
+                      </div>
+                      <div
+                        aria-colindex="5"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="4"
+                        data-field="0%"
+                        role="cell"
+                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        -
+                      </div>
+                      <div
+                        aria-colindex="6"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="5"
+                        data-field="1%"
+                        role="cell"
+                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        -
+                      </div>
+                      <div
+                        aria-colindex="7"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="6"
+                        data-field="5%"
+                        role="cell"
+                        style="min-width: 160px; max-width: 160px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        3824978.578786397
                       </div>
                       <div
                         aria-colindex="8"

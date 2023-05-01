@@ -273,7 +273,7 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                       aria-rowindex="2"
                       aria-selected="false"
                       class="MuiDataGrid-row"
-                      data-id="Tsp_burma14"
+                      data-id="Tsp_a_instance"
                       data-rowindex="0"
                       role="row"
                       style="max-height: 52px; min-height: 52px;"
@@ -305,9 +305,9 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Tsp/instances/burma14"
+                          href="/classes/Tsp/instances/a_instance"
                         >
-                          burma14
+                          a_instance
                         </a>
                       </div>
                       <div
@@ -324,10 +324,10 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
-                            href="/clients/f_client"
+                            class="css-1o7gueb"
+                            href="/clients/a_client"
                           >
-                            f_client
+                            a_client
                           </a>
                         </div>
                       </div>
@@ -336,7 +336,7 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                       aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row"
-                      data-id="Tsp_pr124"
+                      data-id="Tsp_b_instance"
                       data-rowindex="1"
                       role="row"
                       style="max-height: 52px; min-height: 52px;"
@@ -368,9 +368,9 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Tsp/instances/pr124"
+                          href="/classes/Tsp/instances/b_instance"
                         >
-                          pr124
+                          b_instance
                         </a>
                       </div>
                       <div
@@ -387,7 +387,7 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-gqb4bp"
+                            class="css-1o7gueb"
                             href="/clients/a_client"
                           >
                             a_client
@@ -399,7 +399,7 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                       aria-rowindex="4"
                       aria-selected="false"
                       class="MuiDataGrid-row"
-                      data-id="Tsp_pr136"
+                      data-id="Tsp_h_instance"
                       data-rowindex="2"
                       role="row"
                       style="max-height: 52px; min-height: 52px;"
@@ -431,9 +431,9 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Tsp/instances/pr136"
+                          href="/classes/Tsp/instances/h_instance"
                         >
-                          pr136
+                          h_instance
                         </a>
                       </div>
                       <div
@@ -451,9 +451,9 @@ exports[`<ProblemListPage /> rendered well with data 1`] = `
                         >
                           <a
                             class="css-gqb4bp"
-                            href="/clients/a_client"
+                            href="/clients/f_client"
                           >
-                            a_client
+                            f_client
                           </a>
                         </div>
                       </div>

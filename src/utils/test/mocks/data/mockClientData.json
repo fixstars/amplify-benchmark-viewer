@@ -1,7 +1,7 @@
 [
   {
     "class": "Tsp",
-    "instance": "pr144",
+    "instance": "a_instance",
     "problemParameters": {
       "num_vars": {
         "input": 15376,
@@ -19,7 +19,7 @@
   },
   {
     "class": "Tsp",
-    "instance": "pr299",
+    "instance": "g_instance",
     "problemParameters": {
       "outputs.feasibilities": true,
       "num_gpus": 4
@@ -34,7 +34,7 @@
   },
   {
     "class": "Qap",
-    "instance": "esc32a",
+    "instance": "m_instance",
     "problemParameters": {
       "num_vars": {
         "input": 15376,

@@ -44,7 +44,7 @@ describe('<ProblemPage />', () => {
     }
 
     const history = createMemoryHistory({
-      initialEntries: ['/classes/Tsp/instances/pr124'],
+      initialEntries: ['/classes/Tsp/instances/r_instance'],
     })
 
     const { container } = render(
@@ -155,7 +155,7 @@ describe('<ProblemPage />', () => {
     mockResponse = { ...mockResponse, data: undefined }
 
     const history = createMemoryHistory({
-      initialEntries: ['/classes/Tsp/instances/pr124'],
+      initialEntries: ['/classes/Tsp/instances/r_instance'],
     })
 
     const { container } = render(
@@ -188,7 +188,7 @@ describe('<ProblemPage />', () => {
     }
 
     const history = createMemoryHistory({
-      initialEntries: ['/classes/Tsp/instances/pr124'],
+      initialEntries: ['/classes/Tsp/instances/r_instance'],
     })
 
     render(
@@ -219,7 +219,7 @@ describe('<ProblemPage />', () => {
     }
 
     const history = createMemoryHistory({
-      initialEntries: ['/classes/Tsp/instances/pr124'],
+      initialEntries: ['/classes/Tsp/instances/r_instance'],
     })
 
     render(
@@ -245,7 +245,7 @@ describe('<ProblemPage />', () => {
   it('Redirect to upload page if no data', () => {
     const mockPush = jest.fn()
     const history = createMemoryHistory({
-      initialEntries: ['/classes/Tsp/instances/pr124'],
+      initialEntries: ['/classes/Tsp/instances/r_instance'],
     })
     history.push = mockPush
 

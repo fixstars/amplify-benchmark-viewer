@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof MasterResultChart> = (args) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  problemInstance: 'pr136',
+  problemInstance: 'b_instance',
   data: mockData as ReadonlyArray<MasterData>,
   clientChartType: {
     a_client: 'max-min',

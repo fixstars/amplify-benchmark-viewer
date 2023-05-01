@@ -333,10 +333,10 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-ez86r"
-                              href="/classes/Tsp/instances/pr124"
+                              class="css-1o4kjj1"
+                              href="/classes/Tsp/instances/r_instance"
                             >
-                              pr124
+                              r_instance
                             </a>
                           </div>
                         </div>
@@ -406,10 +406,10 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-ez86r"
-                              href="/classes/Tsp/instances/pr124"
+                              class="css-1o7gueb"
+                              href="/classes/Tsp/instances/a_instance"
                             >
-                              pr124
+                              a_instance
                             </a>
                           </div>
                           <div
@@ -417,19 +417,19 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                           >
                             <a
                               class="css-gqb4bp"
-                              href="/classes/Tsp/instances/pr136"
+                              href="/classes/Tsp/instances/b_instance"
                             >
-                              pr136
+                              b_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-196ffja"
-                              href="/classes/Tsp/instances/pr144"
+                              class="css-1o4kjj1"
+                              href="/classes/Tsp/instances/r_instance"
                             >
-                              pr144
+                              r_instance
                             </a>
                           </div>
                         </div>
@@ -499,20 +499,20 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1jpc6yz"
-                              href="/classes/Tsp/instances/burma14"
+                              class="css-196ffja"
+                              href="/classes/Tsp/instances/h_instance"
                             >
-                              burma14
+                              h_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-6011wx"
-                              href="/classes/Tsp/instances/ulysses16"
+                              class="css-14frf9o"
+                              href="/classes/Tsp/instances/i_instance"
                             >
-                              ulysses16
+                              i_instance
                             </a>
                           </div>
                         </div>

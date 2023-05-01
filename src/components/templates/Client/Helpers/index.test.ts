@@ -40,8 +40,8 @@ describe('Client template component helpers', () => {
       const childComponent = column.renderCell!(cellParameter) as any
       expect(childComponent?.type.render.name).toBe('LinkWithRef')
       expect(childComponent?.props).toEqual({
-        to: '/classes/Tsp/instances/pr144',
-        children: 'pr144',
+        to: '/classes/Tsp/instances/a_instance',
+        children: 'a_instance',
       })
     }
 
@@ -57,7 +57,7 @@ describe('Client template component helpers', () => {
       expect(childComponent.length).toBe(1)
       expect(childComponent[0]?.type).toBe('div')
       expect(childComponent[0]?.key).toBe(
-        'Tsp_pr144_v0.6.4-54-ge56964d-V100_num_vars',
+        'Tsp_a_instance_v0.6.4-54-ge56964d-V100_num_vars',
       )
 
       {

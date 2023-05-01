@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof PlotFeasibleRate> = (args) => (
 export const Default = Template.bind({})
 Default.args = {
   data: mockData,
-  instance: 'pr124',
+  instance: 'r_instance',
   useHistory: false,
   xtype: 'log',
   label: '',

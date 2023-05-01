@@ -13,7 +13,7 @@ const Template: ComponentStory<typeof PlotTTS> = (args) => <PlotTTS {...args} />
 export const Default = Template.bind({})
 Default.args = {
   data: mockData,
-  instance: 'pr124',
+  instance: 'r_instance',
   useHistory: false,
   xtype: 'log',
   ytype: 'log',

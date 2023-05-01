@@ -602,7 +602,7 @@ exports[`<Client /> Rendered well 1`] = `
                       aria-rowindex="2"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="Tsp_pr144_v0.6.4-54-ge56964d-V100"
+                      data-id="Tsp_a_instance_v0.6.4-54-ge56964d-V100"
                       data-rowindex="0"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -634,9 +634,9 @@ exports[`<Client /> Rendered well 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Tsp/instances/pr144"
+                          href="/classes/Tsp/instances/a_instance"
                         >
-                          pr144
+                          a_instance
                         </a>
                       </div>
                       <div
@@ -763,7 +763,7 @@ exports[`<Client /> Rendered well 1`] = `
                       aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                      data-id="Tsp_pr299_v0.7.0-V100"
+                      data-id="Tsp_g_instance_v0.7.0-V100"
                       data-rowindex="1"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -795,9 +795,9 @@ exports[`<Client /> Rendered well 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Tsp/instances/pr299"
+                          href="/classes/Tsp/instances/g_instance"
                         >
-                          pr299
+                          g_instance
                         </a>
                       </div>
                       <div
@@ -914,7 +914,7 @@ exports[`<Client /> Rendered well 1`] = `
                       aria-rowindex="4"
                       aria-selected="false"
                       class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
-                      data-id="Qap_esc32a_unknown"
+                      data-id="Qap_m_instance_unknown"
                       data-rowindex="2"
                       role="row"
                       style="max-height: none; min-height: auto;"
@@ -946,9 +946,9 @@ exports[`<Client /> Rendered well 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/Qap/instances/esc32a"
+                          href="/classes/Qap/instances/m_instance"
                         >
-                          esc32a
+                          m_instance
                         </a>
                       </div>
                       <div

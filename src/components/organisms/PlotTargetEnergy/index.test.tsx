@@ -7,14 +7,19 @@ import { PlotTargetEnergy } from '.'
 describe('<PlotTargetEnergy />', () => {
   it('Rendered well', async () => {
     const { container } = render(
-      <PlotTargetEnergy data={mockData} instance="pr124" useHistory label="" />,
+      <PlotTargetEnergy
+        data={mockData}
+        instance="r_instance"
+        useHistory
+        label=""
+      />,
     )
 
     const plot = mockPlot.mock.calls[0][0]
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'TargetEnergy_pr124_',
+        filename: 'TargetEnergy_r_instance_',
       },
       responsive: true,
     })
@@ -170,7 +175,7 @@ describe('<PlotTargetEnergy />', () => {
     render(
       <PlotTargetEnergy
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         label="20220927_173640"
       />,
@@ -180,7 +185,7 @@ describe('<PlotTargetEnergy />', () => {
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'TargetEnergy_pr124_20220927_173640',
+        filename: 'TargetEnergy_r_instance_20220927_173640',
       },
       responsive: true,
     })

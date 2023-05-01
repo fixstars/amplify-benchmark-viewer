@@ -9,7 +9,7 @@ describe('<PlotReachBestRate />', () => {
     const { container } = render(
       <PlotReachBestRate
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         label=""
@@ -20,7 +20,7 @@ describe('<PlotReachBestRate />', () => {
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'ReachBestRate_pr124_',
+        filename: 'ReachBestRate_r_instance_',
       },
       responsive: true,
     })
@@ -56,7 +56,7 @@ describe('<PlotReachBestRate />', () => {
     render(
       <PlotReachBestRate
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory
         xtype="log"
         label="20220927_173640"
@@ -67,7 +67,7 @@ describe('<PlotReachBestRate />', () => {
     expect(plot.style).toEqual({ flex: 1, height: '100%' })
     expect(plot.config).toEqual({
       toImageButtonOptions: {
-        filename: 'ReachBestRate_pr124_20220927_173640',
+        filename: 'ReachBestRate_r_instance_20220927_173640',
       },
       responsive: true,
     })

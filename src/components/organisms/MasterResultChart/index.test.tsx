@@ -9,7 +9,7 @@ describe('<MasterResultChart />', () => {
   it('Rendered well', async () => {
     const { container } = render(
       <MasterResultChart
-        problemInstance="pr136"
+        problemInstance="b_instance"
         data={mockData as ReadonlyArray<MasterData>}
         clientChartType={{
           a_client: 'max-min',
@@ -23,7 +23,7 @@ describe('<MasterResultChart />', () => {
     expect(plot.config).toEqual({
       responsive: true,
       toImageButtonOptions: {
-        filename: 'Tsp_pr136',
+        filename: 'Tsp_b_instance',
       },
     })
     expect(plot.data).toEqual([

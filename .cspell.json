@@ -20,13 +20,10 @@
     "showlegend",
     "testid",
     "toself",
-    "bayg29",
     "xtype",
     "ytype",
     "fillcolor",
-    "legendgroup",
-    "showarrow",
-    "yref"
+    "legendgroup"
   ],
   "ignorePaths": [
     "__snapshots__",

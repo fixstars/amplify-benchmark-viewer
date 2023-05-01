@@ -317,10 +317,20 @@ exports[`<LabelList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-196ffja"
-                              href="/classes/Tsp/instances/pr144"
+                              class="css-1o4kjj1"
+                              href="/classes/Tsp/instances/a_instance"
                             >
-                              pr144
+                              a_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1o7gueb"
+                              href="/classes/Tsp/instances/b_instance"
+                            >
+                              b_instance
                             </a>
                           </div>
                           <div
@@ -328,19 +338,9 @@ exports[`<LabelList /> Rendered well 1`] = `
                           >
                             <a
                               class="css-gqb4bp"
-                              href="/classes/Tsp/instances/pr136"
+                              href="/classes/Tsp/instances/c_instance"
                             >
-                              pr136
-                            </a>
-                          </div>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-14frf9o"
-                              href="/classes/Tsp/instances/si175"
-                            >
-                              si175
+                              c_instance
                             </a>
                           </div>
                         </div>
@@ -357,30 +357,30 @@ exports[`<LabelList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-122ny3k"
-                              href="/classes/MaxCut/instances/G32"
+                              class="css-196ffja"
+                              href="/classes/MaxCut/instances/d_instance"
                             >
-                              G32
+                              d_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-h2czby"
-                              href="/classes/MaxCut/instances/K2000"
+                              class="css-14frf9o"
+                              href="/classes/MaxCut/instances/e_instance"
                             >
-                              K2000
+                              e_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1i2dnn3"
-                              href="/classes/MaxCut/instances/G65"
+                              class="css-tudjox"
+                              href="/classes/MaxCut/instances/f_instance"
                             >
-                              G65
+                              f_instance
                             </a>
                           </div>
                         </div>
@@ -399,7 +399,7 @@ exports[`<LabelList /> Rendered well 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
+                            class="css-1o7gueb"
                             href="/clients/a_client"
                           >
                             a_client
@@ -455,30 +455,30 @@ exports[`<LabelList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-tudjox"
-                              href="/classes/Tsp/instances/pr299"
+                              class="css-1wumwsl"
+                              href="/classes/Tsp/instances/g_instance"
                             >
-                              pr299
+                              g_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1jpc6yz"
-                              href="/classes/Tsp/instances/burma14"
+                              class="css-1d1cfkq"
+                              href="/classes/Tsp/instances/h_instance"
                             >
-                              burma14
+                              h_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-6011wx"
-                              href="/classes/Tsp/instances/ulysses16"
+                              class="css-1s7e1mx"
+                              href="/classes/Tsp/instances/i_instance"
                             >
-                              ulysses16
+                              i_instance
                             </a>
                           </div>
                         </div>
@@ -495,20 +495,10 @@ exports[`<LabelList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-ii0jz"
-                              href="/classes/MaxCut/instances/G1"
+                              class="css-1i2dnn3"
+                              href="/classes/MaxCut/instances/j_instance"
                             >
-                              G1
-                            </a>
-                          </div>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-1pxl2vt"
-                              href="/classes/MaxCut/instances/G11"
-                            >
-                              G11
+                              j_instance
                             </a>
                           </div>
                           <div
@@ -516,9 +506,19 @@ exports[`<LabelList /> Rendered well 1`] = `
                           >
                             <a
                               class="css-c8py96"
-                              href="/classes/MaxCut/instances/G77"
+                              href="/classes/MaxCut/instances/k_instance"
                             >
-                              G77
+                              k_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-10okgg3"
+                              href="/classes/MaxCut/instances/l_instance"
+                            >
+                              l_instance
                             </a>
                           </div>
                         </div>
@@ -537,7 +537,7 @@ exports[`<LabelList /> Rendered well 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
+                            class="css-1o7gueb"
                             href="/clients/a_client"
                           >
                             a_client
@@ -613,20 +613,20 @@ exports[`<LabelList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-x2w0jh"
-                              href="/classes/Qap/instances/esc32a"
+                              class="css-zzcu01"
+                              href="/classes/Qap/instances/m_instance"
                             >
-                              esc32a
+                              m_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1pvt7ys"
-                              href="/classes/Qap/instances/chr12a"
+                              class="css-2ijomo"
+                              href="/classes/Qap/instances/n_instance"
                             >
-                              chr12a
+                              n_instance
                             </a>
                           </div>
                         </div>
@@ -643,30 +643,30 @@ exports[`<LabelList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1ij905d"
-                              href="/classes/Cvrp/instances/P-n16-k8"
+                              class="css-19sw7en"
+                              href="/classes/Cvrp/instances/o_instance"
                             >
-                              P-n16-k8
+                              o_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-16jiptj"
-                              href="/classes/Cvrp/instances/P-n19-k2"
+                              class="css-11vui9t"
+                              href="/classes/Cvrp/instances/p_instance"
                             >
-                              P-n19-k2
+                              p_instance
                             </a>
                           </div>
                           <div
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1h16xoj"
-                              href="/classes/Cvrp/instances/A-n32-k5"
+                              class="css-1jpc6yz"
+                              href="/classes/Cvrp/instances/q_instance"
                             >
-                              A-n32-k5
+                              q_instance
                             </a>
                           </div>
                         </div>
@@ -685,7 +685,7 @@ exports[`<LabelList /> Rendered well 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
+                            class="css-1o7gueb"
                             href="/clients/a_client"
                           >
                             a_client

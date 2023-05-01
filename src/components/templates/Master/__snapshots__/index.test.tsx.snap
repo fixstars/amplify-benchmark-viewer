@@ -125,7 +125,7 @@ exports[`<Master /> Rendered well 1`] = `
                 tabindex="0"
                 type="button"
               >
-                pr136
+                b_instance
                 <span
                   class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
                 />
@@ -137,7 +137,7 @@ exports[`<Master /> Rendered well 1`] = `
                 tabindex="-1"
                 type="button"
               >
-                pr124
+                r_instance
                 <span
                   class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
                 />

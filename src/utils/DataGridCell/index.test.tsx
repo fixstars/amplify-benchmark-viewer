@@ -24,7 +24,7 @@ describe('DataGridCell utils', () => {
         expect(component.props.children.props).toEqual({
           label: 'a_client',
           link: '/clients/a_client',
-          backgroundColor: '#0F66DC',
+          backgroundColor: '#0f66dc',
         })
       }
 
@@ -167,45 +167,45 @@ describe('DataGridCell utils', () => {
     {
       const linkContainer = instances[0]
       expect(linkContainer.type).toBe('div')
-      expect(linkContainer.key).toBe('test_key_Tsp_pr299')
+      expect(linkContainer.key).toBe('test_key_Tsp_g_instance')
       expect(linkContainer.props.style).toEqual({ marginRight: 10 })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
       expect(link.props).toEqual({
-        label: 'pr299',
-        link: '/classes/Tsp/instances/pr299',
-        backgroundColor: '#1b000d',
+        label: 'g_instance',
+        link: '/classes/Tsp/instances/g_instance',
+        backgroundColor: '#ff66ff',
       })
     }
 
     {
       const linkContainer = instances[1]
       expect(linkContainer.type).toBe('div')
-      expect(linkContainer.key).toBe('test_key_Tsp_burma14')
+      expect(linkContainer.key).toBe('test_key_Tsp_h_instance')
       expect(linkContainer.props.style).toEqual({ marginRight: 10 })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
       expect(link.props).toEqual({
-        label: 'burma14',
-        link: '/classes/Tsp/instances/burma14',
-        backgroundColor: '#1f4c48',
+        label: 'h_instance',
+        link: '/classes/Tsp/instances/h_instance',
+        backgroundColor: '#0f66dc',
       })
     }
 
     {
       const linkContainer = instances[2]
       expect(linkContainer.type).toBe('div')
-      expect(linkContainer.key).toBe('test_key_Tsp_ulysses16')
+      expect(linkContainer.key).toBe('test_key_Tsp_i_instance')
       expect(linkContainer.props.style).toEqual({ marginRight: 10 })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
       expect(link.props).toEqual({
-        label: 'ulysses16',
-        link: '/classes/Tsp/instances/ulysses16',
-        backgroundColor: '#909743',
+        label: 'i_instance',
+        link: '/classes/Tsp/instances/i_instance',
+        backgroundColor: '#f57bae',
       })
     }
   })

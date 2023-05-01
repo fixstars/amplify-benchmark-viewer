@@ -2,24 +2,24 @@
   {
     "label": "a 1GPU vs 4GPU",
     "problemInstances": {
-      "Tsp": ["pr144", "pr136", "si175"],
-      "MaxCut": ["G32", "K2000", "G65"]
+      "Tsp": ["a_instance", "b_instance", "c_instance"],
+      "MaxCut": ["d_instance", "e_instance", "f_instance"]
     },
     "clients": ["a_client"]
   },
   {
     "label": "2022/12 BBB Benchmark",
     "problemInstances": {
-      "Tsp": ["pr299", "burma14", "ulysses16"],
-      "MaxCut": ["G1", "G11", "G77"]
+      "Tsp": ["g_instance", "h_instance", "i_instance"],
+      "MaxCut": ["j_instance", "k_instance", "l_instance"]
     },
     "clients": ["a_client", "c_client", "d_client"]
   },
   {
     "label": "20221101",
     "problemInstances": {
-      "Qap": ["esc32a", "chr12a"],
-      "Cvrp": ["P-n16-k8", "P-n19-k2", "A-n32-k5"]
+      "Qap": ["m_instance", "n_instance"],
+      "Cvrp": ["o_instance", "p_instance", "q_instance"]
     },
     "clients": ["a_client", "b_client", "c_client", "d_client", "e_client"]
   }

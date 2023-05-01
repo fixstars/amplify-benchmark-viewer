@@ -16,7 +16,7 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
         >
           <a
             class="css-94l1l1"
-            href="/classes/Tsp/instances/pr124"
+            href="/classes/Tsp/instances/r_instance"
           >
             <h6
               class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-19sbe58-MuiTypography-root"
@@ -76,7 +76,7 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
           <h2
             class="MuiTypography-root MuiTypography-h2 css-1asg1ln-MuiTypography-root"
           >
-            Tsp/pr124
+            Tsp/r_instance
           </h2>
         </div>
       </div>
@@ -1247,7 +1247,7 @@ exports[`<ProblemPage /> rendered well without data 1`] = `
         >
           <a
             class="css-94l1l1"
-            href="/classes/Tsp/instances/pr124"
+            href="/classes/Tsp/instances/r_instance"
           >
             <h6
               class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-19sbe58-MuiTypography-root"

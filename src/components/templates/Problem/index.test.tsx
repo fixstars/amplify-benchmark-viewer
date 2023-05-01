@@ -14,7 +14,7 @@ describe('<Problem />', () => {
       <BrowserRouter>
         <Problem
           className="Tsp"
-          instance="pr124"
+          instance="r_instance"
           labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}
@@ -30,7 +30,7 @@ describe('<Problem />', () => {
       expect(childComponent.type.name).toBe('Box')
       const sectionTitle = childComponent.props.children
       expect(sectionTitle.type.name).toBe('SectionTitle')
-      expect(sectionTitle.props.title).toBe('Tsp/pr124')
+      expect(sectionTitle.props.title).toBe('Tsp/r_instance')
     }
 
     {
@@ -107,7 +107,7 @@ describe('<Problem />', () => {
       expect(chartContainer.length).toBe(5)
       expect(chartContainer[0].type.name).toBe('PlotTTS')
       expect(chartContainer[0].props.data).toEqual(mockReportData)
-      expect(chartContainer[0].props.instance).toBe('pr124')
+      expect(chartContainer[0].props.instance).toBe('r_instance')
       expect(chartContainer[0].props.useHistory).toBe(true)
       expect(chartContainer[0].props.xtype).toBe('log')
       expect(chartContainer[0].props.ytype).toBe('log')
@@ -323,7 +323,7 @@ describe('<Problem />', () => {
       <BrowserRouter>
         <Problem
           className="Tsp"
-          instance="pr124"
+          instance="r_instance"
           labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}
@@ -504,7 +504,7 @@ describe('<Problem />', () => {
       <BrowserRouter>
         <Problem
           className="Tsp"
-          instance="pr124"
+          instance="r_instance"
           labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}
@@ -527,7 +527,7 @@ describe('<Problem />', () => {
       expect(chartContainer.length).toBe(5)
       expect(chartContainer[0].type.name).toBe('PlotTTS')
       expect(chartContainer[0].props.data).toEqual(mockReportData)
-      expect(chartContainer[0].props.instance).toBe('pr124')
+      expect(chartContainer[0].props.instance).toBe('r_instance')
       expect(chartContainer[0].props.useHistory).toBe(true)
       expect(chartContainer[0].props.xtype).toBe('log')
       expect(chartContainer[0].props.ytype).toBe('log')
@@ -563,7 +563,7 @@ describe('<Problem />', () => {
       expect(chartContainer[1]).toBe(false)
       expect(chartContainer[2].type.name).toBe('PlotFeasibleRate')
       expect(chartContainer[2].props.data).toEqual(mockReportData)
-      expect(chartContainer[2].props.instance).toBe('pr124')
+      expect(chartContainer[2].props.instance).toBe('r_instance')
       expect(chartContainer[2].props.useHistory).toBe(true)
       expect(chartContainer[2].props.xtype).toBe('log')
       expect(chartContainer[2].props.label).toBe('')
@@ -579,7 +579,7 @@ describe('<Problem />', () => {
       <BrowserRouter>
         <Problem
           className="Tsp"
-          instance="pr124"
+          instance="r_instance"
           labels={['all', 'AAA CI benchmark v0.6.4']}
           data={mockData}
           reportData={mockReportData}

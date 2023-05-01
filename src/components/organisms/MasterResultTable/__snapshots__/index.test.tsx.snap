@@ -267,7 +267,7 @@ exports[`<MasterResultTable /> Rendered well 1`] = `
                     class=""
                     data-mui-internal-clone-element="true"
                   >
-                    pr136
+                    b_instance
                   </span>
                 </div>
                 <div
@@ -292,7 +292,7 @@ exports[`<MasterResultTable /> Rendered well 1`] = `
                 aria-rowindex="4"
                 aria-selected="false"
                 class="MuiDataGrid-row"
-                data-id="0-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                data-id="0-eeeeeeeeeeeeeeeeeeeeeeeeee"
                 data-rowindex="1"
                 role="row"
                 style="max-height: 52px; min-height: 52px;"
@@ -328,7 +328,7 @@ exports[`<MasterResultTable /> Rendered well 1`] = `
                     class=""
                     data-mui-internal-clone-element="true"
                   >
-                    pr124
+                    b_instance
                   </span>
                 </div>
                 <div
@@ -353,7 +353,7 @@ exports[`<MasterResultTable /> Rendered well 1`] = `
                 aria-rowindex="5"
                 aria-selected="false"
                 class="MuiDataGrid-row MuiDataGrid-row--lastVisible"
-                data-id="0-eeeeeeeeeeeeeeeeeeeeeeeeee"
+                data-id="0-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 data-rowindex="2"
                 role="row"
                 style="max-height: 52px; min-height: 52px;"
@@ -389,7 +389,7 @@ exports[`<MasterResultTable /> Rendered well 1`] = `
                     class=""
                     data-mui-internal-clone-element="true"
                   >
-                    pr136
+                    r_instance
                   </span>
                 </div>
                 <div

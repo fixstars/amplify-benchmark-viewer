@@ -76,7 +76,7 @@ exports[`<Problem /> Rendered well 1`] = `
           <h2
             class="MuiTypography-root MuiTypography-h2 css-1asg1ln-MuiTypography-root"
           >
-            Tsp/pr124
+            Tsp/r_instance
           </h2>
         </div>
       </div>

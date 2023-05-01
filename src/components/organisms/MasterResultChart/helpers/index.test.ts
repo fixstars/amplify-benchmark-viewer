@@ -75,7 +75,7 @@ describe('MasterResultChart helpers', () => {
     })
 
     expect(plotData).toEqual({
-      pr136: [
+      b_instance: [
         {
           fill: 'toself',
           hoveron: 'points',
@@ -93,7 +93,7 @@ describe('MasterResultChart helpers', () => {
           type: 'box',
         },
       ],
-      pr124: [
+      r_instance: [
         {
           fill: 'toself',
           hoveron: 'points',
@@ -107,10 +107,10 @@ describe('MasterResultChart helpers', () => {
       ],
     })
 
-    expect(problemBestKnown).toEqual({ pr136: 96772, pr124: 59030 })
+    expect(problemBestKnown).toEqual({ b_instance: 96772, r_instance: 59030 })
 
-    expect('1_a_client(v1.0.0)_pr136' in plotOriginData).toBe(true)
-    expect('1_a_client(v1.0.1)_pr124' in plotOriginData).toBe(true)
-    expect('2_AClient(v1.0.0)_pr136' in plotOriginData).toBe(true)
+    expect('1_a_client(v1.0.0)_b_instance' in plotOriginData).toBe(true)
+    expect('1_a_client(v1.0.1)_r_instance' in plotOriginData).toBe(true)
+    expect('2_AClient(v1.0.0)_b_instance' in plotOriginData).toBe(true)
   })
 })

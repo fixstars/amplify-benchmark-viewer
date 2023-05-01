@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof PlotTargetEnergy> = (args) => (
 export const Default = Template.bind({})
 Default.args = {
   data: mockData,
-  instance: 'pr124',
+  instance: 'r_instance',
   useHistory: false,
   label: '',
 }

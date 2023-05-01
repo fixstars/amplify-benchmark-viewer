@@ -1,37 +1,37 @@
 [
   {
     "class": "TSP",
-    "instance": "16x16_easy_233",
+    "instance": "s_instance",
     "clients": ["a_client", "b_client", "c_client", "d_client", "e_client"]
   },
   {
     "class": "TSP",
-    "instance": "kroA100",
+    "instance": "t_instance",
     "clients": ["a_client", "b_client", "d_client", "e_client"]
   },
   {
     "class": "QAP",
-    "instance": "tai150c",
+    "instance": "u_instance",
     "clients": ["a_client", "c_client", "d_client"]
   },
   {
     "class": "MaxCut",
-    "instance": "K2000",
+    "instance": "e_instance",
     "clients": ["a_client", "b_client", "d_client", "e_client"]
   },
   {
     "class": "MaxCut",
-    "instance": "G32",
+    "instance": "d_instance",
     "clients": ["a_client", "b_client", "d_client"]
   },
   {
     "class": "CVRP",
-    "instance": "A-n32-k5",
+    "instance": "q_instance",
     "clients": ["a_client", "c_client", "d_client", "e_client"]
   },
   {
     "class": "CVRP",
-    "instance": "B-n31-k5",
+    "instance": "v_instance",
     "clients": ["a_client", "c_client", "d_client"]
   }
 ]

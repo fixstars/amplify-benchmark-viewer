@@ -55,12 +55,12 @@ describe('<LabelListPage />', () => {
     expect(mockLabelList.mock.calls[0][0].data).toEqual([
       {
         label: '20220927_173640',
-        problemInstances: { Tsp: ['burma14', 'ulysses16'] },
+        problemInstances: { Tsp: ['h_instance', 'i_instance'] },
         clients: ['f_client'],
       },
       {
         label: 'AAA CI benchmark v0.6.4',
-        problemInstances: { Tsp: ['pr124', 'pr136', 'pr144'] },
+        problemInstances: { Tsp: ['r_instance', 'b_instance', 'a_instance'] },
         clients: ['a_client'],
       },
     ])

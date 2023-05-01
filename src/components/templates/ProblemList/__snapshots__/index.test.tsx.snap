@@ -273,7 +273,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                       aria-rowindex="2"
                       aria-selected="false"
                       class="MuiDataGrid-row"
-                      data-id="TSP_16x16_easy_233"
+                      data-id="TSP_s_instance"
                       data-rowindex="0"
                       role="row"
                       style="max-height: 52px; min-height: 52px;"
@@ -305,9 +305,9 @@ exports[`<ProblemList /> Rendered well 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/TSP/instances/16x16_easy_233"
+                          href="/classes/TSP/instances/s_instance"
                         >
-                          16x16_easy_233
+                          s_instance
                         </a>
                       </div>
                       <div
@@ -324,7 +324,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
+                            class="css-1o7gueb"
                             href="/clients/a_client"
                           >
                             a_client
@@ -376,7 +376,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                       aria-rowindex="3"
                       aria-selected="false"
                       class="MuiDataGrid-row"
-                      data-id="TSP_kroA100"
+                      data-id="TSP_t_instance"
                       data-rowindex="1"
                       role="row"
                       style="max-height: 52px; min-height: 52px;"
@@ -408,9 +408,9 @@ exports[`<ProblemList /> Rendered well 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/TSP/instances/kroA100"
+                          href="/classes/TSP/instances/t_instance"
                         >
-                          kroA100
+                          t_instance
                         </a>
                       </div>
                       <div
@@ -427,7 +427,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
+                            class="css-1o7gueb"
                             href="/clients/a_client"
                           >
                             a_client
@@ -469,7 +469,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                       aria-rowindex="4"
                       aria-selected="false"
                       class="MuiDataGrid-row"
-                      data-id="QAP_tai150c"
+                      data-id="QAP_u_instance"
                       data-rowindex="2"
                       role="row"
                       style="max-height: 52px; min-height: 52px;"
@@ -501,9 +501,9 @@ exports[`<ProblemList /> Rendered well 1`] = `
                         tabindex="-1"
                       >
                         <a
-                          href="/classes/QAP/instances/tai150c"
+                          href="/classes/QAP/instances/u_instance"
                         >
-                          tai150c
+                          u_instance
                         </a>
                       </div>
                       <div
@@ -520,7 +520,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                           style="margin-right: 10px;"
                         >
                           <a
-                            class="css-ez86r"
+                            class="css-1o7gueb"
                             href="/clients/a_client"
                           >
                             a_client

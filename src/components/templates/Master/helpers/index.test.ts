@@ -62,6 +62,6 @@ describe('Master template component helpers', () => {
       mockData as ReadonlyArray<MasterData>,
     )
 
-    expect(problemInstances).toEqual(['pr136', 'pr124'])
+    expect(problemInstances).toEqual(['b_instance', 'r_instance'])
   })
 })

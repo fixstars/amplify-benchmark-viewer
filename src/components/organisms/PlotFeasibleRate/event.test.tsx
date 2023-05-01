@@ -8,7 +8,7 @@ describe('<PlotFeasibleRate /> event test', () => {
     render(
       <PlotFeasibleRate
         data={mockData}
-        instance="pr124"
+        instance="r_instance"
         useHistory={false}
         xtype="log"
         label=""
