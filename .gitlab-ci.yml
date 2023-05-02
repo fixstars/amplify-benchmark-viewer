@@ -42,6 +42,19 @@ StyleLint:
     refs:
       - merge_requests
 
+RemarkLint:
+  stage: scan
+  tags:
+    - docker
+  image: node:16-slim
+  script:
+    - npm install --global npm@latest
+    - npm ci
+    - npm run lint:md
+  only:
+    refs:
+      - merge_requests
+
 CheckTypo:
   stage: scan
   tags:

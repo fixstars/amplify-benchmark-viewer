@@ -9,6 +9,9 @@ pre-commit:
     StyleLint:
       files: git diff --name-only HEAD | grep -e \.css$ -e \.tsx$ || echo ''
       run: npm run lint:css
+    RemarkLint:
+      files: git diff --name-only HEAD | grep -e \.md$ -e \.markdown$ || echo ''
+      run: npm run lint:md
     CheckTypo:
       run: npm run check:spell
     Test:

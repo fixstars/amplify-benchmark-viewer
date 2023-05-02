@@ -24,6 +24,26 @@ jobs:
           node-version: '16'
       - run: npm ci
       - run: npm run lint
+  StyleLint:
+    name: StyleLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm run lint:css
+  RemarkLint:
+    name: RemarkLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm run lint:md
   CheckTypo:
     name: Check typo
     runs-on: ubuntu-latest
