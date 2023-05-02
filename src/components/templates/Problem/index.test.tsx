@@ -58,23 +58,26 @@ describe('<Problem />', () => {
       const tabs = childComponent.props.children
       expect(tabs.props.variant).toBe('scrollable')
       expect(tabs.props.scrollButtons).toBe('auto')
-      expect(tabs.props.value).toBe('TTS')
+      expect(tabs.props.value).toBe('Target energy')
       expect(tabs.props.onChange.name).toBe('onChange')
 
       {
         const tab = tabs.props.children[0]
-        expect(tab.key).toBe('TTS')
-        expect(tab.type.render.name).toBe('Tab')
-        expect(tab.props).toEqual({ label: 'TTS', value: 'TTS' })
-      }
-
-      {
-        const tab = tabs.props.children[1]
         expect(tab.key).toBe('Target energy')
         expect(tab.type.render.name).toBe('Tab')
         expect(tab.props).toEqual({
           label: 'Target energy',
           value: 'Target energy',
+        })
+      }
+
+      {
+        const tab = tabs.props.children[1]
+        expect(tab.key).toBe('TTS')
+        expect(tab.type.render.name).toBe('Tab')
+        expect(tab.props).toEqual({
+          label: 'TTS',
+          value: 'TTS',
         })
       }
 
@@ -105,14 +108,12 @@ describe('<Problem />', () => {
       expect(childComponent.props.sx).toEqual({ flex: 1, display: 'initial' })
       const chartContainer = childComponent.props.children
       expect(chartContainer.length).toBe(5)
-      expect(chartContainer[0].type.name).toBe('PlotTTS')
-      expect(chartContainer[0].props.data).toEqual(mockReportData)
-      expect(chartContainer[0].props.instance).toBe('r_instance')
-      expect(chartContainer[0].props.useHistory).toBe(true)
-      expect(chartContainer[0].props.xtype).toBe('log')
-      expect(chartContainer[0].props.ytype).toBe('log')
-      expect(chartContainer[0].props.label).toBe('')
-      expect(chartContainer[1]).toBe(false)
+      expect(chartContainer[0]).toBe(false)
+      expect(chartContainer[1].type.name).toBe('PlotTargetEnergy')
+      expect(chartContainer[1].props.data).toEqual(mockReportData)
+      expect(chartContainer[1].props.instance).toBe('r_instance')
+      expect(chartContainer[1].props.useHistory).toBe(true)
+      expect(chartContainer[1].props.label).toBe('')
       expect(chartContainer[2]).toBe(false)
       expect(chartContainer[3]).toBe(false)
 
@@ -150,9 +151,21 @@ describe('<Problem />', () => {
       })
       expect(dataGrid.props.rows).toEqual([
         {
+          benchmark_id: 'ccccccccccccc',
+          'TTS(0%)': null,
+          'TTS(1%)': null,
+          'TTS(10%)': 1000000,
+          'TTS(20%)': 1000000,
+          'TTS(5%)': 5767220.789231007,
+          'TTS(50%)': 1000000,
           client: 'a_client',
-          version: 'v0.6.4-54-ge56964d-V100',
-          clientParameters: { 'outputs.feasibilities': true },
+          clientParameters: {
+            num_gpus: 4,
+            'outputs.feasibilities': true,
+          },
+          feasible_rate: 1,
+          label: '',
+          num_samples: 100,
           problemParameters: {
             num_vars: {
               input: 15376,
@@ -160,53 +173,14 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'AAA CI benchmark v0.6.4',
-          '0%': null,
-          '1%': null,
-          '5%': 5767220.789231007,
-          '10%': 1000000,
-          '20%': 1000000,
-          '50%': 1000000,
-        },
-        {
-          client: 'a_client',
-          version: 'v0.6.4-54-ge56964d-A100',
-          clientParameters: { 'outputs.feasibilities': true },
-          problemParameters: {
-            num_vars: {
-              input: 2601,
-              logical: 2601,
-              physical: 2601,
-            },
-            constraint_weight: 1,
-            seed: null,
-          },
-          label: '20220927_173640',
-          '0%': null,
-          '1%': null,
-          '5%': null,
-          '10%': null,
-          '20%': null,
-          '50%': null,
-        },
-        {
-          client: 'a_client',
+          reach_best_rate: 0,
+          specified_time: 100,
+          'target_energy(25%)': 200,
+          'target_energy(50%)': 300,
+          'target_energy(75%)': 400,
+          'target_energy(max)': 500,
+          'target_energy(min)': 100,
           version: 'v0.7.0-V100',
-          clientParameters: { 'outputs.feasibilities': true, num_gpus: 4 },
-          problemParameters: {
-            num_vars: {
-              input: 15376,
-              logical: 15376,
-              physical: 15376,
-            },
-          },
-          label: 'AAA CI benchmark v0.6.4',
-          '0%': null,
-          '1%': null,
-          '5%': 5380407.729629215,
-          '10%': 932929.0357109132,
-          '20%': 932929.0357109132,
-          '50%': 932929.0357109132,
         },
       ])
 
@@ -231,62 +205,124 @@ describe('<Problem />', () => {
         expect(column.headerName).toBe('Label')
         expect(column.sortable).toBe(false)
       }
-
       {
         const column = dataGrid.props.columns[3]
-        expect(column.field).toBe('0%')
-        expect(column.headerName).toBe('TTS(0%)')
-        expect(column.sortable).toBe(false)
-        expect(column.flex).toBe(1)
-        expect(column.minWidth).toBe(140)
-        expect(column.renderCell.name).toBe('renderCell')
+        expect(column.field).toBe('specified_time')
+        expect(column.headerName).toBe('SpecifiedTime')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
       }
-
       {
         const column = dataGrid.props.columns[4]
-        expect(column.field).toBe('1%')
-        expect(column.headerName).toBe('TTS(1%)')
+        expect(column.field).toBe('num_samples')
+        expect(column.headerName).toBe('NumSamples')
         expect(column.sortable).toBe(false)
-        expect(column.flex).toBe(1)
-        expect(column.minWidth).toBe(140)
-        expect(column.renderCell.name).toBe('renderCell')
+        expect(column.minWidth).toBe(220)
       }
-
       {
         const column = dataGrid.props.columns[5]
-        expect(column.field).toBe('5%')
-        expect(column.headerName).toBe('TTS(5%)')
-        expect(column.sortable).toBe(false)
-        expect(column.flex).toBe(1)
-        expect(column.minWidth).toBe(140)
-        expect(column.renderCell.name).toBe('renderCell')
+        expect(column.field).toBe('feasible_rate')
+        expect(column.headerName).toBe('FeasibleRate')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
       }
-
       {
         const column = dataGrid.props.columns[6]
-        expect(column.field).toBe('10%')
-        expect(column.headerName).toBe('TTS(10%)')
-        expect(column.sortable).toBe(false)
-        expect(column.flex).toBe(1)
-        expect(column.minWidth).toBe(140)
-        expect(column.renderCell.name).toBe('renderCell')
+        expect(column.field).toBe('reach_best_rate')
+        expect(column.headerName).toBe('ReachBestRate')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
       }
-
       {
         const column = dataGrid.props.columns[7]
-        expect(column.field).toBe('20%')
-        expect(column.headerName).toBe('TTS(20%)')
-        expect(column.sortable).toBe(false)
+        expect(column.field).toBe('target_energy(min)')
+        expect(column.headerName).toBe('TargetEnergy(min)')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
+      }
+      {
+        const column = dataGrid.props.columns[8]
+        expect(column.field).toBe('target_energy(25%)')
+        expect(column.headerName).toBe('TargetEnergy(25%)')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
+      }
+      {
+        const column = dataGrid.props.columns[9]
+        expect(column.field).toBe('target_energy(50%)')
+        expect(column.headerName).toBe('TargetEnergy(50%)')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
+      }
+      {
+        const column = dataGrid.props.columns[10]
+        expect(column.field).toBe('target_energy(75%)')
+        expect(column.headerName).toBe('TargetEnergy(75%)')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
+      }
+      {
+        const column = dataGrid.props.columns[11]
+        expect(column.field).toBe('target_energy(max)')
+        expect(column.headerName).toBe('TargetEnergy(max)')
+        expect(column.sortable).toBe(true)
+        expect(column.minWidth).toBe(220)
+      }
+      {
+        const column = dataGrid.props.columns[12]
+        expect(column.field).toBe('TTS(0%)')
+        expect(column.headerName).toBe('TTS(0%)')
+        expect(column.sortable).toBe(true)
         expect(column.flex).toBe(1)
         expect(column.minWidth).toBe(140)
         expect(column.renderCell.name).toBe('renderCell')
       }
 
       {
-        const column = dataGrid.props.columns[8]
-        expect(column.field).toBe('50%')
+        const column = dataGrid.props.columns[13]
+        expect(column.field).toBe('TTS(1%)')
+        expect(column.headerName).toBe('TTS(1%)')
+        expect(column.sortable).toBe(true)
+        expect(column.flex).toBe(1)
+        expect(column.minWidth).toBe(140)
+        expect(column.renderCell.name).toBe('renderCell')
+      }
+
+      {
+        const column = dataGrid.props.columns[14]
+        expect(column.field).toBe('TTS(5%)')
+        expect(column.headerName).toBe('TTS(5%)')
+        expect(column.sortable).toBe(true)
+        expect(column.flex).toBe(1)
+        expect(column.minWidth).toBe(140)
+        expect(column.renderCell.name).toBe('renderCell')
+      }
+
+      {
+        const column = dataGrid.props.columns[15]
+        expect(column.field).toBe('TTS(10%)')
+        expect(column.headerName).toBe('TTS(10%)')
+        expect(column.sortable).toBe(true)
+        expect(column.flex).toBe(1)
+        expect(column.minWidth).toBe(140)
+        expect(column.renderCell.name).toBe('renderCell')
+      }
+
+      {
+        const column = dataGrid.props.columns[16]
+        expect(column.field).toBe('TTS(20%)')
+        expect(column.headerName).toBe('TTS(20%)')
+        expect(column.sortable).toBe(true)
+        expect(column.flex).toBe(1)
+        expect(column.minWidth).toBe(140)
+        expect(column.renderCell.name).toBe('renderCell')
+      }
+
+      {
+        const column = dataGrid.props.columns[17]
+        expect(column.field).toBe('TTS(50%)')
         expect(column.headerName).toBe('TTS(50%)')
-        expect(column.sortable).toBe(false)
+        expect(column.sortable).toBe(true)
         expect(column.flex).toBe(1)
         expect(column.minWidth).toBe(140)
         expect(column.renderCell.name).toBe('renderCell')
@@ -351,8 +387,8 @@ describe('<Problem />', () => {
     {
       const childComponent = layout.children[3]
       const chart = childComponent.props.children
-      expect(chart[0].type.name).toBe('PlotTTS')
-      expect(chart[0].props.label).toBe('')
+      expect(chart[1].type.name).toBe('PlotTargetEnergy')
+      expect(chart[1].props.label).toBe('')
     }
 
     {
@@ -360,9 +396,21 @@ describe('<Problem />', () => {
       const dataGrid = childComponent.props.children[0]
       expect(dataGrid.props.rows).toEqual([
         {
+          benchmark_id: 'ccccccccccccc',
+          'TTS(0%)': null,
+          'TTS(1%)': null,
+          'TTS(10%)': 1000000,
+          'TTS(20%)': 1000000,
+          'TTS(5%)': 5767220.789231007,
+          'TTS(50%)': 1000000,
           client: 'a_client',
-          version: 'v0.6.4-54-ge56964d-V100',
-          clientParameters: { 'outputs.feasibilities': true },
+          clientParameters: {
+            num_gpus: 4,
+            'outputs.feasibilities': true,
+          },
+          feasible_rate: 1,
+          label: '',
+          num_samples: 100,
           problemParameters: {
             num_vars: {
               input: 15376,
@@ -370,53 +418,14 @@ describe('<Problem />', () => {
               physical: 15376,
             },
           },
-          label: 'AAA CI benchmark v0.6.4',
-          '0%': null,
-          '1%': null,
-          '5%': 5767220.789231007,
-          '10%': 1000000,
-          '20%': 1000000,
-          '50%': 1000000,
-        },
-        {
-          client: 'a_client',
-          version: 'v0.6.4-54-ge56964d-A100',
-          clientParameters: { 'outputs.feasibilities': true },
-          problemParameters: {
-            num_vars: {
-              input: 2601,
-              logical: 2601,
-              physical: 2601,
-            },
-            constraint_weight: 1,
-            seed: null,
-          },
-          label: '20220927_173640',
-          '0%': null,
-          '1%': null,
-          '5%': null,
-          '10%': null,
-          '20%': null,
-          '50%': null,
-        },
-        {
-          client: 'a_client',
+          reach_best_rate: 0,
+          specified_time: 100,
+          'target_energy(25%)': 200,
+          'target_energy(50%)': 300,
+          'target_energy(75%)': 400,
+          'target_energy(max)': 500,
+          'target_energy(min)': 100,
           version: 'v0.7.0-V100',
-          clientParameters: { 'outputs.feasibilities': true, num_gpus: 4 },
-          problemParameters: {
-            num_vars: {
-              input: 15376,
-              logical: 15376,
-              physical: 15376,
-            },
-          },
-          label: 'AAA CI benchmark v0.6.4',
-          '0%': null,
-          '1%': null,
-          '5%': 5380407.729629215,
-          '10%': 932929.0357109132,
-          '20%': 932929.0357109132,
-          '50%': 932929.0357109132,
         },
       ])
     }
@@ -449,8 +458,8 @@ describe('<Problem />', () => {
     {
       const childComponent = layout.children[3]
       const chart = childComponent.props.children
-      expect(chart[0].type.name).toBe('PlotTTS')
-      expect(chart[0].props.label).toBe('AAA CI benchmark v0.6.4')
+      expect(chart[1].type.name).toBe('PlotTargetEnergy')
+      expect(chart[1].props.label).toBe('AAA CI benchmark v0.6.4')
     }
 
     {
@@ -458,42 +467,35 @@ describe('<Problem />', () => {
       const dataGrid = childComponent.props.children[0]
       expect(dataGrid.props.rows).toEqual([
         {
+          benchmark_id: 'aaaaaaaaaaa',
+          'TTS(0%)': null,
+          'TTS(1%)': null,
+          'TTS(10%)': 1000000,
+          'TTS(20%)': 1000000,
+          'TTS(5%)': 5767220.789231007,
+          'TTS(50%)': 1000000,
           client: 'a_client',
+          clientParameters: {
+            'outputs.feasibilities': true,
+          },
+          feasible_rate: 1,
+          label: 'AAA CI benchmark v0.6.4',
+          num_samples: 100,
+          problemParameters: {
+            num_vars: {
+              input: 15376,
+              logical: 15376,
+              physical: 15376,
+            },
+          },
+          reach_best_rate: 0,
+          specified_time: 100,
+          'target_energy(25%)': 200,
+          'target_energy(50%)': 300,
+          'target_energy(75%)': 400,
+          'target_energy(max)': 500,
+          'target_energy(min)': 100,
           version: 'v0.6.4-54-ge56964d-V100',
-          clientParameters: { 'outputs.feasibilities': true },
-          problemParameters: {
-            num_vars: {
-              input: 15376,
-              logical: 15376,
-              physical: 15376,
-            },
-          },
-          label: 'AAA CI benchmark v0.6.4',
-          '0%': null,
-          '1%': null,
-          '5%': 5767220.789231007,
-          '10%': 1000000,
-          '20%': 1000000,
-          '50%': 1000000,
-        },
-        {
-          client: 'a_client',
-          version: 'v0.7.0-V100',
-          clientParameters: { 'outputs.feasibilities': true, num_gpus: 4 },
-          problemParameters: {
-            num_vars: {
-              input: 15376,
-              logical: 15376,
-              physical: 15376,
-            },
-          },
-          label: 'AAA CI benchmark v0.6.4',
-          '0%': null,
-          '1%': null,
-          '5%': 5380407.729629215,
-          '10%': 932929.0357109132,
-          '20%': 932929.0357109132,
-          '50%': 932929.0357109132,
         },
       ])
     }
@@ -518,21 +520,19 @@ describe('<Problem />', () => {
     {
       const childComponent = layout.children[2]
       const tabs = childComponent.props.children
-      expect(tabs.props.value).toBe('TTS')
+      expect(tabs.props.value).toBe('Target energy')
     }
 
     {
       const childComponent = layout.children[3]
       const chartContainer = childComponent.props.children
       expect(chartContainer.length).toBe(5)
-      expect(chartContainer[0].type.name).toBe('PlotTTS')
-      expect(chartContainer[0].props.data).toEqual(mockReportData)
-      expect(chartContainer[0].props.instance).toBe('r_instance')
-      expect(chartContainer[0].props.useHistory).toBe(true)
-      expect(chartContainer[0].props.xtype).toBe('log')
-      expect(chartContainer[0].props.ytype).toBe('log')
-      expect(chartContainer[0].props.label).toBe('')
-      expect(chartContainer[1]).toBe(false)
+      expect(chartContainer[0]).toBe(false)
+      expect(chartContainer[1].type.name).toBe('PlotTargetEnergy')
+      expect(chartContainer[1].props.data).toEqual(mockReportData)
+      expect(chartContainer[1].props.instance).toBe('r_instance')
+      expect(chartContainer[1].props.useHistory).toBe(true)
+      expect(chartContainer[1].props.label).toBe('')
       expect(chartContainer[2]).toBe(false)
       expect(chartContainer[3]).toBe(false)
 

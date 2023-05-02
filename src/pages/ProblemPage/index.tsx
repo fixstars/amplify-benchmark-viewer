@@ -9,6 +9,13 @@ import type { ProblemData } from 'components/templates/Problem/Helpers'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useRecoilState } from 'recoil'
 import { reportDataState } from 'stores'
+import {
+  quartile0,
+  quartile100,
+  quartile25,
+  quartile50,
+  quartile75,
+} from 'utils/statistics'
 
 export const ProblemPage = () => {
   const navigate = useNavigate()
@@ -72,7 +79,6 @@ export const ProblemPage = () => {
   }
 
   const benchmarkIDList = getBenchmarkIDList(data.problems)
-
   let problemData: Array<ProblemData> = []
 
   benchmarkIDList.map((benchmarkID) => {
@@ -93,26 +99,40 @@ export const ProblemPage = () => {
         if (
           problemData.find(
             (problem) =>
+              problem.benchmark_id === benchmarkID &&
               problem.client === client &&
               problem.version === version &&
-              problem.label === label,
+              problem.label === label &&
+              problem.specified_time === item.specified_time,
           ) != null
         ) {
           return
         }
 
+        const targetEnergies = item.raw_data.map((d) => d.target_energy)
+
         problemData.push({
+          benchmark_id: benchmarkID,
           client,
           version,
           clientParameters,
           problemParameters: problemParameters,
           label,
-          '0%': item.time_to_solution['0%'],
-          '1%': item.time_to_solution['1%'],
-          '5%': item.time_to_solution['5%'],
-          '10%': item.time_to_solution['10%'],
-          '20%': item.time_to_solution['20%'],
-          '50%': item.time_to_solution['50%'],
+          num_samples: item.num_samples,
+          specified_time: item.specified_time,
+          'target_energy(min)': quartile0(targetEnergies),
+          'target_energy(25%)': quartile25(targetEnergies),
+          'target_energy(50%)': quartile50(targetEnergies),
+          'target_energy(75%)': quartile75(targetEnergies),
+          'target_energy(max)': quartile100(targetEnergies),
+          'TTS(0%)': item.time_to_solution['0%'],
+          'TTS(1%)': item.time_to_solution['1%'],
+          'TTS(5%)': item.time_to_solution['5%'],
+          'TTS(10%)': item.time_to_solution['10%'],
+          'TTS(20%)': item.time_to_solution['20%'],
+          'TTS(50%)': item.time_to_solution['50%'],
+          reach_best_rate: item.reach_best_rate,
+          feasible_rate: item.feasible_rate,
         })
       })
     })

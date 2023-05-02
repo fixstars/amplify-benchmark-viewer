@@ -31,15 +31,13 @@ export const Problem = ({
   data,
   reportData,
 }: Props) => {
-  const chartTabs = ['TTS', 'Target energy', 'Feasible rate', 'Reach best rate']
+  const chartTabs = ['Target energy', 'TTS', 'Feasible rate', 'Reach best rate']
   const [currentChartTab, setCurrentChartTab] = useState(chartTabs[0])
   const [selectedLabel, setSelectedLabel] = useState(labels[0])
   const [showData, setShowData] = useState(false)
 
-  const filteredData =
-    selectedLabel === 'all'
-      ? data
-      : data.filter((item) => item.label === selectedLabel)
+  const filterKeyword = selectedLabel === 'all' ? '' : selectedLabel
+  const filteredData = data.filter((item) => item.label === filterKeyword)
 
   return (
     <Layout>
@@ -133,7 +131,9 @@ export const Problem = ({
           rows={filteredData}
           columns={columns}
           hideFooter
-          getRowId={(row) => `${row.client}_${row.version}_${row.label}`}
+          getRowId={(row) =>
+            `${row.benchmark_id}_${row.client}_${row.version}_${row.label}_${row.specified_time}`
+          }
           disableColumnMenu
           initialState={{
             pagination: {

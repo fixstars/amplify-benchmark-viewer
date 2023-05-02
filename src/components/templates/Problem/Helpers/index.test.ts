@@ -116,27 +116,74 @@ describe('Problem template component helpers', () => {
       expect(column.headerName).toBe('Label')
       expect(column.sortable).toBe(false)
     }
-
     {
       const column = columns[3]
-      expect(column.field).toBe('0%')
-      expect(column.headerName).toBe('TTS(0%)')
-      expect(column.sortable).toBe(false)
-      expect(column.flex).toBe(1)
-      expect(column.minWidth).toBe(140)
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
-      const childComponent = column.renderCell!(cellParameter) as any
-      expect(childComponent?.type.render.name).toBe('Tooltip')
-      expect(childComponent?.props.title.props.children.length).toBe(7)
-      expect(childComponent?.props.children.type).toBe('span')
-      expect(childComponent?.props.children.props.children).toBe('-')
+      expect(column.field).toBe('specified_time')
+      expect(column.headerName).toBe('SpecifiedTime')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
     }
-
     {
       const column = columns[4]
-      expect(column.field).toBe('1%')
-      expect(column.headerName).toBe('TTS(1%)')
+      expect(column.field).toBe('num_samples')
+      expect(column.headerName).toBe('NumSamples')
       expect(column.sortable).toBe(false)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[5]
+      expect(column.field).toBe('feasible_rate')
+      expect(column.headerName).toBe('FeasibleRate')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[6]
+      expect(column.field).toBe('reach_best_rate')
+      expect(column.headerName).toBe('ReachBestRate')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[7]
+      expect(column.field).toBe('target_energy(min)')
+      expect(column.headerName).toBe('TargetEnergy(min)')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[8]
+      expect(column.field).toBe('target_energy(25%)')
+      expect(column.headerName).toBe('TargetEnergy(25%)')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[9]
+      expect(column.field).toBe('target_energy(50%)')
+      expect(column.headerName).toBe('TargetEnergy(50%)')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[10]
+      expect(column.field).toBe('target_energy(75%)')
+      expect(column.headerName).toBe('TargetEnergy(75%)')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[11]
+      expect(column.field).toBe('target_energy(max)')
+      expect(column.headerName).toBe('TargetEnergy(max)')
+      expect(column.sortable).toBe(true)
+      expect(column.minWidth).toBe(220)
+    }
+    {
+      const column = columns[12]
+      expect(column.field).toBe('TTS(0%)')
+      expect(column.headerName).toBe('TTS(0%)')
+      expect(column.sortable).toBe(true)
       expect(column.flex).toBe(1)
       expect(column.minWidth).toBe(140)
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
@@ -148,10 +195,25 @@ describe('Problem template component helpers', () => {
     }
 
     {
-      const column = columns[5]
-      expect(column.field).toBe('5%')
+      const column = columns[13]
+      expect(column.field).toBe('TTS(1%)')
+      expect(column.headerName).toBe('TTS(1%)')
+      expect(column.sortable).toBe(true)
+      expect(column.flex).toBe(1)
+      expect(column.minWidth).toBe(140)
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
+      const childComponent = column.renderCell!(cellParameter) as any
+      expect(childComponent?.type.render.name).toBe('Tooltip')
+      expect(childComponent?.props.title.props.children.length).toBe(7)
+      expect(childComponent?.props.children.type).toBe('span')
+      expect(childComponent?.props.children.props.children).toBe('-')
+    }
+
+    {
+      const column = columns[14]
+      expect(column.field).toBe('TTS(5%)')
       expect(column.headerName).toBe('TTS(5%)')
-      expect(column.sortable).toBe(false)
+      expect(column.sortable).toBe(true)
       expect(column.flex).toBe(1)
       expect(column.minWidth).toBe(140)
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
@@ -165,10 +227,10 @@ describe('Problem template component helpers', () => {
     }
 
     {
-      const column = columns[6]
-      expect(column.field).toBe('10%')
+      const column = columns[15]
+      expect(column.field).toBe('TTS(10%)')
       expect(column.headerName).toBe('TTS(10%)')
-      expect(column.sortable).toBe(false)
+      expect(column.sortable).toBe(true)
       expect(column.flex).toBe(1)
       expect(column.minWidth).toBe(140)
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
@@ -180,10 +242,10 @@ describe('Problem template component helpers', () => {
     }
 
     {
-      const column = columns[7]
-      expect(column.field).toBe('20%')
+      const column = columns[16]
+      expect(column.field).toBe('TTS(20%)')
       expect(column.headerName).toBe('TTS(20%)')
-      expect(column.sortable).toBe(false)
+      expect(column.sortable).toBe(true)
       expect(column.flex).toBe(1)
       expect(column.minWidth).toBe(140)
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
@@ -195,10 +257,10 @@ describe('Problem template component helpers', () => {
     }
 
     {
-      const column = columns[8]
-      expect(column.field).toBe('50%')
+      const column = columns[17]
+      expect(column.field).toBe('TTS(50%)')
       expect(column.headerName).toBe('TTS(50%)')
-      expect(column.sortable).toBe(false)
+      expect(column.sortable).toBe(true)
       expect(column.flex).toBe(1)
       expect(column.minWidth).toBe(140)
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any

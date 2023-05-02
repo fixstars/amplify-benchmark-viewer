@@ -9,17 +9,27 @@ export interface Parameter {
 }
 
 export interface ProblemData {
+  readonly benchmark_id: string
   readonly client: string
   readonly version: string
   readonly clientParameters: Parameter
   readonly problemParameters: Parameter
   readonly label: string
-  readonly '0%': number | null
-  readonly '1%': number | null
-  readonly '5%': number | null
-  readonly '10%': number | null
-  readonly '20%': number | null
-  readonly '50%': number | null
+  readonly num_samples: number
+  readonly specified_time: number
+  readonly 'target_energy(min)': number | null
+  readonly 'target_energy(25%)': number | null
+  readonly 'target_energy(50%)': number | null
+  readonly 'target_energy(75%)': number | null
+  readonly 'target_energy(max)': number | null
+  readonly 'TTS(0%)': number | null
+  readonly 'TTS(1%)': number | null
+  readonly 'TTS(5%)': number | null
+  readonly 'TTS(10%)': number | null
+  readonly 'TTS(20%)': number | null
+  readonly 'TTS(50%)': number | null
+  readonly reach_best_rate: number
+  readonly feasible_rate: number
 }
 
 const renderTooltip = (
@@ -91,7 +101,7 @@ const renderClientCell = (row: ProblemData) => {
   return <Link to={`/clients/${row.client}`}>{row.client}</Link>
 }
 
-const renderTTSCell = (value: number | null) => {
+const renderOptionalNumberCell = (value: number | null) => {
   return value == null ? '-' : value.toString()
 }
 
@@ -118,52 +128,126 @@ const columns: GridColumns<ProblemData> = [
     renderCell: ({ row }) => renderTooltip(row, row.label),
   },
   {
-    field: '0%',
+    field: 'specified_time',
+    headerName: 'SpecifiedTime',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) => renderTooltip(row, row.specified_time.toString()),
+  },
+  {
+    field: 'num_samples',
+    headerName: 'NumSamples',
+    sortable: false,
+    minWidth: 220,
+    renderCell: ({ row }) => renderTooltip(row, row.num_samples.toString()),
+  },
+  {
+    field: 'feasible_rate',
+    headerName: 'FeasibleRate',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) => renderTooltip(row, row.feasible_rate.toString()),
+  },
+  {
+    field: 'reach_best_rate',
+    headerName: 'ReachBestRate',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) => renderTooltip(row, row.reach_best_rate.toString()),
+  },
+  {
+    field: 'target_energy(min)',
+    headerName: 'TargetEnergy(min)',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['target_energy(min)'])),
+  },
+  {
+    field: 'target_energy(25%)',
+    headerName: 'TargetEnergy(25%)',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['target_energy(25%)'])),
+  },
+  {
+    field: 'target_energy(50%)',
+    headerName: 'TargetEnergy(50%)',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['target_energy(50%)'])),
+  },
+  {
+    field: 'target_energy(75%)',
+    headerName: 'TargetEnergy(75%)',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['target_energy(75%)'])),
+  },
+  {
+    field: 'target_energy(max)',
+    headerName: 'TargetEnergy(max)',
+    sortable: true,
+    minWidth: 220,
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['target_energy(max)'])),
+  },
+  {
+    field: 'TTS(0%)',
     headerName: 'TTS(0%)',
-    sortable: false,
+    sortable: true,
     flex: 1,
     minWidth: 140,
-    renderCell: ({ row }) => renderTooltip(row, renderTTSCell(row['0%'])),
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['TTS(0%)'])),
   },
   {
-    field: '1%',
+    field: 'TTS(1%)',
     headerName: 'TTS(1%)',
-    sortable: false,
+    sortable: true,
     flex: 1,
     minWidth: 140,
-    renderCell: ({ row }) => renderTooltip(row, renderTTSCell(row['1%'])),
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['TTS(1%)'])),
   },
   {
-    field: '5%',
+    field: 'TTS(5%)',
     headerName: 'TTS(5%)',
-    sortable: false,
+    sortable: true,
     flex: 1,
     minWidth: 140,
-    renderCell: ({ row }) => renderTooltip(row, renderTTSCell(row['5%'])),
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['TTS(5%)'])),
   },
   {
-    field: '10%',
+    field: 'TTS(10%)',
     headerName: 'TTS(10%)',
-    sortable: false,
+    sortable: true,
     flex: 1,
     minWidth: 140,
-    renderCell: ({ row }) => renderTooltip(row, renderTTSCell(row['10%'])),
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['TTS(10%)'])),
   },
   {
-    field: '20%',
+    field: 'TTS(20%)',
     headerName: 'TTS(20%)',
-    sortable: false,
+    sortable: true,
     flex: 1,
     minWidth: 140,
-    renderCell: ({ row }) => renderTooltip(row, renderTTSCell(row['20%'])),
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['TTS(20%)'])),
   },
   {
-    field: '50%',
+    field: 'TTS(50%)',
     headerName: 'TTS(50%)',
-    sortable: false,
+    sortable: true,
     flex: 1,
     minWidth: 140,
-    renderCell: ({ row }) => renderTooltip(row, renderTTSCell(row['50%'])),
+    renderCell: ({ row }) =>
+      renderTooltip(row, renderOptionalNumberCell(row['TTS(50%)'])),
   },
 ]
 

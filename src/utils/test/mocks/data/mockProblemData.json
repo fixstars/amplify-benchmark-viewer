@@ -1,5 +1,6 @@
 [
   {
+    "benchmark_id": "aaaaaaaaaaa",
     "client": "a_client",
     "version": "v0.6.4-54-ge56964d-V100",
     "clientParameters": {
@@ -13,14 +14,24 @@
       }
     },
     "label": "AAA CI benchmark v0.6.4",
-    "0%": null,
-    "1%": null,
-    "5%": 5767220.789231007,
-    "10%": 1000000,
-    "20%": 1000000,
-    "50%": 1000000
+    "specified_time": 100,
+    "num_samples": 100,
+    "reach_best_rate": 0,
+    "feasible_rate": 1,
+    "target_energy(min)": 100,
+    "target_energy(25%)": 200,
+    "target_energy(50%)": 300,
+    "target_energy(75%)": 400,
+    "target_energy(max)": 500,
+    "TTS(0%)": null,
+    "TTS(1%)": null,
+    "TTS(5%)": 5767220.789231007,
+    "TTS(10%)": 1000000,
+    "TTS(20%)": 1000000,
+    "TTS(50%)": 1000000
   },
   {
+    "benchmark_id": "bbbbbbbbbbb",
     "client": "a_client",
     "version": "v0.6.4-54-ge56964d-A100",
     "clientParameters": {
@@ -36,14 +47,24 @@
       "seed": null
     },
     "label": "20220927_173640",
-    "0%": null,
-    "1%": null,
-    "5%": null,
-    "10%": null,
-    "20%": null,
-    "50%": null
+    "specified_time": 100,
+    "num_samples": 100,
+    "reach_best_rate": 0,
+    "feasible_rate": 1,
+    "target_energy(min)": 100,
+    "target_energy(25%)": 200,
+    "target_energy(50%)": 300,
+    "target_energy(75%)": 400,
+    "target_energy(max)": 500,
+    "TTS(0%)": null,
+    "TTS(1%)": null,
+    "TTS(5%)": 5767220.789231007,
+    "TTS(10%)": 1000000,
+    "TTS(20%)": 1000000,
+    "TTS(50%)": 1000000
   },
   {
+    "benchmark_id": "ccccccccccccc",
     "client": "a_client",
     "version": "v0.7.0-V100",
     "clientParameters": {
@@ -57,12 +78,21 @@
         "physical": 15376
       }
     },
-    "label": "AAA CI benchmark v0.6.4",
-    "0%": null,
-    "1%": null,
-    "5%": 5380407.729629215,
-    "10%": 932929.0357109132,
-    "20%": 932929.0357109132,
-    "50%": 932929.0357109132
+    "label": "",
+    "specified_time": 100,
+    "num_samples": 100,
+    "reach_best_rate": 0,
+    "feasible_rate": 1,
+    "target_energy(min)": 100,
+    "target_energy(25%)": 200,
+    "target_energy(50%)": 300,
+    "target_energy(75%)": 400,
+    "target_energy(max)": 500,
+    "TTS(0%)": null,
+    "TTS(1%)": null,
+    "TTS(5%)": 5767220.789231007,
+    "TTS(10%)": 1000000,
+    "TTS(20%)": 1000000,
+    "TTS(50%)": 1000000
   }
 ]
