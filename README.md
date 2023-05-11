@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# Amplify benchmark viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Amplify benchmark viewer` is a viewer for the [Amplify benchmark](https://github.com/fixstars/amplify-benchmark) data.
 
-## Available Scripts
+With the viewer, you can see your Amplify benchmark data in tables and graphs for ease and convenience like the following.
 
-In the project directory, you can run:
+![Amplify benchmark viewer](docs/screenshots/instance_detail.png)
 
-### `npm start`
+## Generate data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`Amplify benchmark viewer` is a viewer only for specific data. You can use `Amplify benchmark` to generate the data for the viewer. If you want to know how to generate the data, please see the following link.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Amplify benchmark: [Amplify benchmark](https://github.com/fixstars/amplify-benchmark)
 
-### `npm test`
+## Amplify benchmark viewer page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We provide the `Amplify benchmark viewer` page, so you can just drag and drop the data to the page for seeing it in tables and graphs.
 
-### `npm run build`
+- Amplify benchmark viewer page: [Amplify benchmark viewer page](https://fixstars.github.io/amplify-benchmark-viewer)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**The viewer doesn't save the data on the server.** The data is stored in the memory of the browser, so when you refresh or exit the browser, the data is removed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Amplify benchmark viewer on local
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The viewer is based on [Create React App](https://create-react-app.dev/). So, you need the [Node.js](https://nodejs.org/) environment to use the viewer on your machine.
 
-### `npm run eject`
+If you have the `Node.js` environment, execute the following commands to run the viewer on the machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm install
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you have already the data file locally, you can see it without dragging and dropping actions. If you want to see it directly, copy the data file to the `public/data` folder and restart the viewer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## How to use
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Drag and drop the data to the upload page (Or copy the file to the `public/data` folder locally)
 
-## Learn More
+![Amplify benchmark viewer - Upload page](docs/screenshots/upload.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. You can see the data by `Problems`, `Clients`, and `Labels`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Problems | Clients | Labels |
+| -- | -- | -- |
+| ![Amplify benchmark viewer - Problems page](docs/screenshots/problems.png) | ![Amplify benchmark viewer - Clients page](docs/screenshots/clients.png) | ![Amplify benchmark viewer - Labels page](docs/screenshots/labels.png) |
+
+3. You can see the details by clicking `instances` or `clients`.
+
+| Instance detail | Client detail |
+| -- | -- |
+| ![Amplify benchmark viewer - Instance detail page](docs/screenshots/instance_detail.png) | ![Amplify benchmark viewer - Client detail page](docs/screenshots/client_detail.png)
+
+## Develop by
+
+`Amplify benchmark viewer` is made by
+
+<div align="center">
+  <a href="https://www.fixstars.com/" target="_blank" rel="nofollow noreferrer">
+    <img
+      width="320" height="112"
+      src="docs/logos/fixstars-logo.svg"
+      alt="Fixstars logo"
+    >
+  </a>
+  <a href="https://amplify.fixstars.com/" target="_blank" rel="nofollow noreferrer">
+    <img
+      width="440" height="86"
+      src="docs/logos/amplify-logo.svg"
+      alt="Fixstars Amplify logo"
+    >
+  </a>
+</div>
