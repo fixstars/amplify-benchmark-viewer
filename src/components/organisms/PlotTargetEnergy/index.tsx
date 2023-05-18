@@ -213,6 +213,25 @@ export const PlotTargetEnergy = ({
     }
   }
 
+  const { best_known: bestKnown } =
+    data.problems[data.benchmarks[groupIDs[0]].problem_id]
+  if (bestKnown !== null) {
+    plotData.push({
+      x: [xMin, xMax],
+      y: [bestKnown, bestKnown],
+      mode: 'lines',
+      name: 'best known',
+      line: {
+        dash: 'dot',
+        width: 4,
+        color: 'black',
+      },
+      showlegend: false,
+    })
+    scatterVisible.push(true)
+    boxVisible.push(true)
+  }
+
   const layout: Partial<Plotly.Layout> = {
     updatemenus: [
       {
@@ -270,22 +289,6 @@ export const PlotTargetEnergy = ({
       type: 'linear',
     },
     showlegend: true,
-  }
-  const { best_known: bestKnown } =
-    data.problems[data.benchmarks[groupIDs[0]].problem_id]
-  if (bestKnown !== null) {
-    plotData.push({
-      x: [xMin, xMax],
-      y: [bestKnown, bestKnown],
-      mode: 'lines',
-      name: 'best known',
-      line: {
-        dash: 'dot',
-        width: 4,
-        color: 'black',
-      },
-      showlegend: false,
-    })
   }
 
   const config: Partial<Plotly.Config> = {

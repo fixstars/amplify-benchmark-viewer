@@ -64,7 +64,7 @@ describe('<PlotTargetEnergy />', () => {
             {
               args: [
                 {
-                  visible: [true, true, true, true, true, true],
+                  visible: [true, true, true, true, true, true, true],
                 },
               ],
               label: 'Scatter',
@@ -73,7 +73,7 @@ describe('<PlotTargetEnergy />', () => {
             {
               args: [
                 {
-                  visible: [true, true, true, true, true, true],
+                  visible: [true, true, true, true, true, true, true],
                 },
               ],
               label: 'Box',
@@ -230,7 +230,7 @@ describe('<PlotTargetEnergy />', () => {
             {
               args: [
                 {
-                  visible: [],
+                  visible: [true],
                 },
               ],
               label: 'Scatter',
@@ -239,7 +239,7 @@ describe('<PlotTargetEnergy />', () => {
             {
               args: [
                 {
-                  visible: [],
+                  visible: [true],
                 },
               ],
               label: 'Box',
