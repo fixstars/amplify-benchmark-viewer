@@ -123,7 +123,19 @@ const renderProblemInstancesCell = (
 
     return backgroundColor
   }
-
+  const pairs = Object.entries(problemInstances)
+  pairs.sort(function (p1, p2) {
+    const p1Key = p1[0]
+    const p2Key = p2[0]
+    if (p1Key < p2Key) {
+      return -1
+    }
+    if (p1Key > p2Key) {
+      return 1
+    }
+    return 0
+  })
+  problemInstances = Object.fromEntries(pairs)
   return Object.keys(problemInstances).map((className) => (
     <div
       key={`${key}_${className}`}

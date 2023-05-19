@@ -326,46 +326,6 @@ exports[`<ClientList /> Rendered well 1`] = `
                           <span
                             style="margin-right: 10px;"
                           >
-                            Tsp
-                            :
-                          </span>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-1o4kjj1"
-                              href="/classes/Tsp/instances/a_instance"
-                            >
-                              a_instance
-                            </a>
-                          </div>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-1o7gueb"
-                              href="/classes/Tsp/instances/b_instance"
-                            >
-                              b_instance
-                            </a>
-                          </div>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-gqb4bp"
-                              href="/classes/Tsp/instances/c_instance"
-                            >
-                              c_instance
-                            </a>
-                          </div>
-                        </div>
-                        <div
-                          style="margin: 5px 0px 5px 0px; display: flex;"
-                        >
-                          <span
-                            style="margin-right: 10px;"
-                          >
                             MaxCut
                             :
                           </span>
@@ -373,7 +333,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-196ffja"
+                              class="css-1o4kjj1"
                               href="/classes/MaxCut/instances/d_instance"
                             >
                               d_instance
@@ -383,7 +343,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-14frf9o"
+                              class="css-1o7gueb"
                               href="/classes/MaxCut/instances/e_instance"
                             >
                               e_instance
@@ -393,10 +353,50 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-tudjox"
+                              class="css-gqb4bp"
                               href="/classes/MaxCut/instances/f_instance"
                             >
                               f_instance
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            Tsp
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-196ffja"
+                              href="/classes/Tsp/instances/a_instance"
+                            >
+                              a_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-14frf9o"
+                              href="/classes/Tsp/instances/b_instance"
+                            >
+                              b_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-tudjox"
+                              href="/classes/Tsp/instances/c_instance"
+                            >
+                              c_instance
                             </a>
                           </div>
                         </div>
@@ -459,46 +459,6 @@ exports[`<ClientList /> Rendered well 1`] = `
                           <span
                             style="margin-right: 10px;"
                           >
-                            Tsp
-                            :
-                          </span>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-1wumwsl"
-                              href="/classes/Tsp/instances/g_instance"
-                            >
-                              g_instance
-                            </a>
-                          </div>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-1d1cfkq"
-                              href="/classes/Tsp/instances/h_instance"
-                            >
-                              h_instance
-                            </a>
-                          </div>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-1s7e1mx"
-                              href="/classes/Tsp/instances/i_instance"
-                            >
-                              i_instance
-                            </a>
-                          </div>
-                        </div>
-                        <div
-                          style="margin: 5px 0px 5px 0px; display: flex;"
-                        >
-                          <span
-                            style="margin-right: 10px;"
-                          >
                             MaxCut
                             :
                           </span>
@@ -506,7 +466,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1i2dnn3"
+                              class="css-1wumwsl"
                               href="/classes/MaxCut/instances/j_instance"
                             >
                               j_instance
@@ -516,7 +476,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-c8py96"
+                              class="css-1d1cfkq"
                               href="/classes/MaxCut/instances/k_instance"
                             >
                               k_instance
@@ -526,10 +486,50 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-10okgg3"
+                              class="css-1s7e1mx"
                               href="/classes/MaxCut/instances/l_instance"
                             >
                               l_instance
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            Tsp
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1i2dnn3"
+                              href="/classes/Tsp/instances/g_instance"
+                            >
+                              g_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-c8py96"
+                              href="/classes/Tsp/instances/h_instance"
+                            >
+                              h_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-10okgg3"
+                              href="/classes/Tsp/instances/i_instance"
+                            >
+                              i_instance
                             </a>
                           </div>
                         </div>
@@ -592,36 +592,6 @@ exports[`<ClientList /> Rendered well 1`] = `
                           <span
                             style="margin-right: 10px;"
                           >
-                            Qap
-                            :
-                          </span>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-zzcu01"
-                              href="/classes/Qap/instances/m_instance"
-                            >
-                              m_instance
-                            </a>
-                          </div>
-                          <div
-                            style="margin-right: 10px;"
-                          >
-                            <a
-                              class="css-2ijomo"
-                              href="/classes/Qap/instances/n_instance"
-                            >
-                              n_instance
-                            </a>
-                          </div>
-                        </div>
-                        <div
-                          style="margin: 5px 0px 5px 0px; display: flex;"
-                        >
-                          <span
-                            style="margin-right: 10px;"
-                          >
                             Cvrp
                             :
                           </span>
@@ -629,7 +599,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-19sw7en"
+                              class="css-zzcu01"
                               href="/classes/Cvrp/instances/o_instance"
                             >
                               o_instance
@@ -639,7 +609,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-11vui9t"
+                              class="css-2ijomo"
                               href="/classes/Cvrp/instances/p_instance"
                             >
                               p_instance
@@ -649,10 +619,40 @@ exports[`<ClientList /> Rendered well 1`] = `
                             style="margin-right: 10px;"
                           >
                             <a
-                              class="css-1jpc6yz"
+                              class="css-19sw7en"
                               href="/classes/Cvrp/instances/q_instance"
                             >
                               q_instance
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          style="margin: 5px 0px 5px 0px; display: flex;"
+                        >
+                          <span
+                            style="margin-right: 10px;"
+                          >
+                            Qap
+                            :
+                          </span>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-11vui9t"
+                              href="/classes/Qap/instances/m_instance"
+                            >
+                              m_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1jpc6yz"
+                              href="/classes/Qap/instances/n_instance"
+                            >
+                              n_instance
                             </a>
                           </div>
                         </div>

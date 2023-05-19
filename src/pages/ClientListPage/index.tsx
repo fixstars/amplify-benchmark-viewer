@@ -71,7 +71,10 @@ export const ClientListPage = () => {
         problemInstances,
       })
     } else {
-      client.problemInstances = problemInstances
+      client.problemInstances = {
+        ...client.problemInstances,
+        ...problemInstances,
+      }
     }
   }
 

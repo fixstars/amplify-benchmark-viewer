@@ -153,7 +153,7 @@ describe('DataGridCell utils', () => {
 
     const instance = childComponent[0]
     expect(instance.type).toBe('div')
-    expect(instance.key).toBe('test_key_Tsp')
+    expect(instance.key).toBe('test_key_MaxCut')
     expect(instance.props.style).toEqual({
       margin: '5px 0 5px 0',
       display: 'flex',
@@ -161,20 +161,20 @@ describe('DataGridCell utils', () => {
     const label = instance.props.children[0]
     expect(label.type).toBe('span')
     expect(label.props.style).toEqual({ marginRight: 10 })
-    expect(label.props.children).toEqual(['Tsp', ':'])
+    expect(label.props.children).toEqual(['MaxCut', ':'])
     const instances = instance.props.children[1]
 
     {
       const linkContainer = instances[0]
       expect(linkContainer.type).toBe('div')
-      expect(linkContainer.key).toBe('test_key_Tsp_g_instance')
+      expect(linkContainer.key).toBe('test_key_MaxCut_j_instance')
       expect(linkContainer.props.style).toEqual({ marginRight: 10 })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
       expect(link.props).toEqual({
-        label: 'g_instance',
-        link: '/classes/Tsp/instances/g_instance',
+        label: 'j_instance',
+        link: '/classes/MaxCut/instances/j_instance',
         backgroundColor: '#ff66ff',
       })
     }
@@ -182,14 +182,14 @@ describe('DataGridCell utils', () => {
     {
       const linkContainer = instances[1]
       expect(linkContainer.type).toBe('div')
-      expect(linkContainer.key).toBe('test_key_Tsp_h_instance')
+      expect(linkContainer.key).toBe('test_key_MaxCut_k_instance')
       expect(linkContainer.props.style).toEqual({ marginRight: 10 })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
       expect(link.props).toEqual({
-        label: 'h_instance',
-        link: '/classes/Tsp/instances/h_instance',
+        label: 'k_instance',
+        link: '/classes/MaxCut/instances/k_instance',
         backgroundColor: '#0f66dc',
       })
     }
@@ -197,14 +197,14 @@ describe('DataGridCell utils', () => {
     {
       const linkContainer = instances[2]
       expect(linkContainer.type).toBe('div')
-      expect(linkContainer.key).toBe('test_key_Tsp_i_instance')
+      expect(linkContainer.key).toBe('test_key_MaxCut_l_instance')
       expect(linkContainer.props.style).toEqual({ marginRight: 10 })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
       expect(link.props).toEqual({
-        label: 'i_instance',
-        link: '/classes/Tsp/instances/i_instance',
+        label: 'l_instance',
+        link: '/classes/MaxCut/instances/l_instance',
         backgroundColor: '#f57bae',
       })
     }
