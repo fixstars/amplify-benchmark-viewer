@@ -1,5 +1,8 @@
+import { useState } from 'react'
+
 import { Box } from '@mui/material'
 import { DataGrid } from '@mui/x-data-grid'
+import { SelectBox } from 'components/atoms'
 import { SectionTitle } from 'components/atoms/SectionTitle'
 import { Layout } from 'components/organisms'
 
@@ -8,14 +11,25 @@ import { columns } from './Helpers'
 
 interface Props {
   readonly title: string
+  readonly labels: ReadonlyArray<string>
   readonly data: ReadonlyArray<ClientData>
 }
 
-export const Client = ({ title, data }: Props) => {
+export const Client = ({ title, labels, data }: Props) => {
+  const [selectedLabel, setSelectedLabel] = useState(labels[0])
+  const filterKeyword = selectedLabel === 'all' ? '' : selectedLabel
+  const filteredData = data.filter((item) => item.label === filterKeyword)
   return (
     <Layout>
       <Box>
         <SectionTitle title={title} />
+      </Box>
+      <Box sx={{ marginBottom: '16px' }}>
+        <SelectBox
+          label="Label"
+          options={labels}
+          onChange={(value) => setSelectedLabel(value)}
+        />
       </Box>
       <Box
         sx={{
@@ -34,10 +48,12 @@ export const Client = ({ title, data }: Props) => {
               padding: '5px 0 5px 0',
             },
           }}
-          rows={data}
+          rows={filteredData}
           columns={columns}
           hideFooter
-          getRowId={(row) => `${row.class}_${row.instance}_${row.version}`}
+          getRowId={(row) =>
+            `${row.benchmarkID}_${row.class}_${row.instance}_${row.version}_${row.label}_${row.specified_time}`
+          }
           disableColumnMenu
           initialState={{
             pagination: {

@@ -208,7 +208,17 @@
             },
             "parameters": {
               "description": "定式化パラメータ",
-              "type": "object"
+              "type": "object",
+              "patternProperties": {
+                ".": {
+                  "type": ["string", "number", "boolean", "null", "object"],
+                  "patternProperties": {
+                    ".": {
+                      "type": ["string", "number", "boolean", "null"]
+                    }
+                  }
+                }
+              }
             },
             "benchmarks": {
               "description": "このproblem idを取り扱っているgroup_idのリスト",
@@ -250,7 +260,17 @@
             },
             "parameters": {
               "description": "クライアントパラメータ",
-              "type": "object"
+              "type": "object",
+              "patternProperties": {
+                ".": {
+                  "type": ["string", "number", "boolean", "null", "object"],
+                  "patternProperties": {
+                    ".": {
+                      "type": ["string", "number", "boolean", "null"]
+                    }
+                  }
+                }
+              }
             },
             "benchmarks": {
               "description": "このclient idを取り扱っているgroup_idのリスト",

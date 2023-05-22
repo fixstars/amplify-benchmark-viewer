@@ -145,7 +145,22 @@ export interface ReportData {
        * 定式化パラメータ
        */
       parameters: {
-        [k: string]: unknown
+        /**
+         * This interface was referenced by `undefined`'s JSON-Schema definition
+         * via the `patternProperty` ".".
+         */
+        [k: string]:
+          | string
+          | number
+          | boolean
+          | null
+          | {
+              /**
+               * This interface was referenced by `undefined`'s JSON-Schema definition
+               * via the `patternProperty` ".".
+               */
+              [k: string]: string | number | boolean | null
+            }
       }
       /**
        * このproblem idを取り扱っているgroup_idのリスト
@@ -178,7 +193,22 @@ export interface ReportData {
        * クライアントパラメータ
        */
       parameters: {
-        [k: string]: unknown
+        /**
+         * This interface was referenced by `undefined`'s JSON-Schema definition
+         * via the `patternProperty` ".".
+         */
+        [k: string]:
+          | string
+          | number
+          | boolean
+          | null
+          | {
+              /**
+               * This interface was referenced by `undefined`'s JSON-Schema definition
+               * via the `patternProperty` ".".
+               */
+              [k: string]: string | number | boolean | null
+            }
       }
       /**
        * このclient idを取り扱っているgroup_idのリスト

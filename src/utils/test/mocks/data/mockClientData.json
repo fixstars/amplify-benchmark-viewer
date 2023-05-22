@@ -1,7 +1,12 @@
 [
   {
+    "benchmarkID": "aaaaaaaaaaa",
     "class": "Tsp",
-    "instance": "a_instance",
+    "instance": "aaa",
+    "version": "v0.6.4-54-ge56964d-V100",
+    "clientParameters": {
+      "outputs.feasibilities": true
+    },
     "problemParameters": {
       "num_vars": {
         "input": 15376,
@@ -9,32 +14,66 @@
         "physical": 15376
       }
     },
-    "version": "v0.6.4-54-ge56964d-V100",
-    "0%": null,
-    "1%": null,
-    "5%": 5767220.789231007,
-    "10%": 1000000,
-    "20%": 1000000,
-    "50%": 1000000
+    "label": "AAA CI benchmark v0.6.4",
+    "specified_time": 100,
+    "num_samples": 100,
+    "reach_best_rate": 0,
+    "feasible_rate": 1,
+    "target_energy(min)": 100,
+    "target_energy(25%)": 200,
+    "target_energy(50%)": 300,
+    "target_energy(75%)": 400,
+    "target_energy(max)": 500,
+    "TTS(0%)": null,
+    "TTS(1%)": null,
+    "TTS(5%)": 5767220.789231007,
+    "TTS(10%)": 1000000,
+    "TTS(20%)": 1000000,
+    "TTS(50%)": 1000000
   },
   {
+    "benchmarkID": "bbbbbbbbbbb",
     "class": "Tsp",
-    "instance": "g_instance",
+    "instance": "aaa",
+    "version": "v0.6.4-54-ge56964d-A100",
+    "clientParameters": {
+      "outputs.feasibilities": true
+    },
     "problemParameters": {
+      "num_vars": {
+        "input": 2601,
+        "logical": 2601,
+        "physical": 2601
+      },
+      "constraint_weight": 1,
+      "seed": null
+    },
+    "label": "20220927_173640",
+    "specified_time": 100,
+    "num_samples": 100,
+    "reach_best_rate": 0,
+    "feasible_rate": 1,
+    "target_energy(min)": 100,
+    "target_energy(25%)": 200,
+    "target_energy(50%)": 300,
+    "target_energy(75%)": 400,
+    "target_energy(max)": 500,
+    "TTS(0%)": null,
+    "TTS(1%)": null,
+    "TTS(5%)": 5767220.789231007,
+    "TTS(10%)": 1000000,
+    "TTS(20%)": 1000000,
+    "TTS(50%)": 1000000
+  },
+  {
+    "benchmarkID": "ccccccccccccc",
+    "class": "Tsp",
+    "instance": "aaa",
+    "version": "v0.7.0-V100",
+    "clientParameters": {
       "outputs.feasibilities": true,
       "num_gpus": 4
     },
-    "version": "v0.7.0-V100",
-    "0%": null,
-    "1%": null,
-    "5%": null,
-    "10%": null,
-    "20%": null,
-    "50%": null
-  },
-  {
-    "class": "Qap",
-    "instance": "m_instance",
     "problemParameters": {
       "num_vars": {
         "input": 15376,
@@ -42,12 +81,21 @@
         "physical": 15376
       }
     },
-    "version": "unknown",
-    "0%": null,
-    "1%": null,
-    "5%": 5380407.729629215,
-    "10%": 932929.0357109132,
-    "20%": 932929.0357109132,
-    "50%": 932929.0357109132
+    "label": "",
+    "specified_time": 100,
+    "num_samples": 100,
+    "reach_best_rate": 0,
+    "feasible_rate": 1,
+    "target_energy(min)": 100,
+    "target_energy(25%)": 200,
+    "target_energy(50%)": 300,
+    "target_energy(75%)": 400,
+    "target_energy(max)": 500,
+    "TTS(0%)": null,
+    "TTS(1%)": null,
+    "TTS(5%)": 5767220.789231007,
+    "TTS(10%)": 1000000,
+    "TTS(20%)": 1000000,
+    "TTS(50%)": 1000000
   }
 ]
