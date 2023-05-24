@@ -135,6 +135,20 @@ check_schema:
     refs:
       - merge_requests
 
+scan_secrets:
+  stage: scan
+  tags:
+    - docker
+  image: golang:latest
+  script:
+    - git clone https://github.com/trufflesecurity/trufflehog.git
+    - cd trufflehog; go install
+    - cd ..
+    - trufflehog git file://. --only-verified --fail --branch=$CI_COMMIT_REF_NAME
+  only:
+    refs:
+      - merge_requests
+
 test_pages:
   stage: pages
   tags:
