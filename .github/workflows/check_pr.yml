@@ -64,3 +64,23 @@ jobs:
           node-version: '16'
       - run: npm ci
       - run: npm run test:ci
+  CheckLicense:
+    name: Check license
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: bash license.sh
+      - run: >-
+          if [[ $(git diff --name-only HEAD | grep -e src/ || echo '') != "" ]]; then
+            RED="e[31m"
+            END_COLOR="e[0m"
+
+            echo ""
+            echo -e "${RED}######################################################################${END_COLOR}"
+            echo -e "${RED}# Some of the files in the src folder do not have the LICENSE block. #${END_COLOR}"
+            echo -e "${RED}# Please sh license.sh before committing.                            #${END_COLOR}"
+            echo -e "${RED}######################################################################${END_COLOR}"
+            echo ""
+
+            exit 1
+          fi

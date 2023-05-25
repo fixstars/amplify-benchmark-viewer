@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) Fixstars Corporation and Fixstars Amplify Corporation.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 import { Tooltip } from '@mui/material'
 import type { GridColumnGroupingModel, GridColumns } from '@mui/x-data-grid'
 import type { MasterData } from '@types'

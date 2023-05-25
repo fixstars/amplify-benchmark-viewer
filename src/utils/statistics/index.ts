@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) Fixstars Corporation and Fixstars Amplify Corporation.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 function quartile(data: readonly number[], q: number) {
   const sortedData = data.slice().sort((a, b) => a - b)
   const pos = Math.floor((sortedData.length - 1) * q)
