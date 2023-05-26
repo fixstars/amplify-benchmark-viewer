@@ -10,7 +10,7 @@ import { AxiosError } from 'axios'
 import { createMemoryHistory } from 'history'
 import { BrowserRouter, Router } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
-import { mockLayout, mockClientList } from 'utils/test'
+import { mockClientList, mockLayout } from 'utils/test'
 import mockData from 'utils/test/mocks/data/mockReportData.json'
 
 import { ClientListPage } from '.'

@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import { render, screen, fireEvent, waitFor } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import type { MasterData } from '@types'
 import { mockDataGrid, mockTooltip } from 'utils/test'
 import mockData from 'utils/test/mocks/data/mockMasterData.json'

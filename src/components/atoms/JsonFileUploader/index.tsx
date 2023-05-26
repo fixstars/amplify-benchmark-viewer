@@ -8,7 +8,7 @@ import { useRef, useState } from 'react'
 
 import DriveFolderUploadRoundedIcon from '@mui/icons-material/DriveFolderUploadRounded'
 import { Typography } from '@mui/material'
-import { styled, keyframes } from '@mui/system'
+import { keyframes, styled } from '@mui/system'
 
 import { Loading } from '../Loading'
 

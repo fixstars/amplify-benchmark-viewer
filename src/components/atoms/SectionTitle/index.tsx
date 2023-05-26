@@ -6,7 +6,7 @@
  */
 import type { ReactElement } from 'react'
 
-import { Typography, Grid } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import { styled } from '@mui/system'
 
 const Title = styled(Typography)`

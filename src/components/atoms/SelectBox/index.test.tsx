@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import { render, act } from '@testing-library/react'
+import { act, render } from '@testing-library/react'
 import { mockFormControl, mockSelect } from 'utils/test'
 
 import { SelectBox } from '.'

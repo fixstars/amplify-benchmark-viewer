@@ -9,8 +9,8 @@ import mockData from 'utils/test/mocks/data/mockMasterData.json'
 
 import {
   createFilteringData,
-  getFilteringData,
   getChartOptionsByClients,
+  getFilteringData,
   getProblemInstances,
 } from './index'
 

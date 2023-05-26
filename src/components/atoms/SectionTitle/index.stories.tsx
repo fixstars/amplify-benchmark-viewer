@@ -6,7 +6,7 @@
  */
 import FilterAltIcon from '@mui/icons-material/FilterAlt'
 import { IconButton } from '@mui/material'
-import type { ComponentStory, ComponentMeta } from '@storybook/react'
+import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { SectionTitle } from '.'
 

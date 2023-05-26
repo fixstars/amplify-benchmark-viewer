@@ -15,8 +15,8 @@ import {
   Layout,
   PlotFeasibleRate,
   PlotReachBestRate,
-  PlotTTS,
   PlotTargetEnergy,
+  PlotTTS,
 } from 'components/organisms'
 
 import type { ProblemData } from './Helpers'

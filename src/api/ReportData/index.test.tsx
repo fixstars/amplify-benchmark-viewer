@@ -6,7 +6,7 @@
  */
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import type { UseQueryResult } from '@tanstack/react-query'
-import { renderHook, waitFor, act } from '@testing-library/react'
+import { act, renderHook, waitFor } from '@testing-library/react'
 import type { ReportData } from '@types'
 import axios from 'axios'
 import type { AxiosError } from 'axios'

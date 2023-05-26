@@ -119,6 +119,15 @@ module.exports = {
         },
       },
     ],
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: true,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        allowSeparatedGroups: true,
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     'linebreak-style': ['error', 'unix'],
     eqeqeq: ['error', 'always', { null: 'ignore' }],

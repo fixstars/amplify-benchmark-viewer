@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import { columns, columnGroups } from './index'
+import { columnGroups, columns } from './index'
 
 describe('MasterResultTable organism component helpers', () => {
   it('columns', () => {

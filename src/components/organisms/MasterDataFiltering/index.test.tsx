@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import { render, fireEvent, screen, act } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import { mockBox } from 'utils/test'
 
 import { MasterDataFiltering } from '.'

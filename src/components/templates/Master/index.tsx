@@ -22,9 +22,9 @@ import { SelectBox } from 'components/atoms'
 import { SectionTitle } from 'components/atoms/SectionTitle'
 import {
   Layout,
-  MasterResultTable,
-  MasterResultChart,
   MasterDataFiltering,
+  MasterResultChart,
+  MasterResultTable,
 } from 'components/organisms'
 
 import {
