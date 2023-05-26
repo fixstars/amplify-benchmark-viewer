@@ -93,18 +93,18 @@ sync-repositories:
     - git config user.email "noreply@fixstars.com"
     - git config user.name "GitLab Bot"
     - git fetch github main
-    - git fetch origin main develop
-    - git switch develop
-    - git reset --hard origin/develop
+    - git fetch origin main gitlab_min
+    - git switch gitlab_min
+    - git reset --hard origin/gitlab_min
     - git clean -xfd
     # rebase and push
     - git status
     - git rebase github/main
-    - git push origin develop -f
-    - git push origin develop:main
-    - git push github develop:main
+    - git push origin gitlab_min -f
+    - git push origin gitlab_min:main
+    - git push github gitlab_min:main
   rules:
-    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "develop"'
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "gitlab_min"'
 
 check_schema:
   stage: scan
@@ -203,4 +203,4 @@ pages:
     paths:
       - public
   only:
-    - develop
+    - gitlab_min
