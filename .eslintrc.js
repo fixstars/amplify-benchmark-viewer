@@ -133,6 +133,8 @@ module.exports = {
     eqeqeq: ['error', 'always', { null: 'ignore' }],
     camelcase: ['error', { properties: 'never' }],
     quotes: ['error', 'single', { avoidEscape: true }],
+    curly: ['error', 'multi-line', 'consistent'],
+    'nonblock-statement-body-position': ['error', 'beside'],
   },
   ignorePatterns: ['report_data.d.ts'],
 }
