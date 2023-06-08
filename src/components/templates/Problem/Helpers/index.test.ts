@@ -33,6 +33,7 @@ describe('Problem template component helpers', () => {
       const column = columns[0]
       expect(column.field).toBe('client')
       expect(column.headerName).toBe('Client')
+      expect(column.minWidth).toBe(180)
       expect(column.sortable).toBe(false)
 
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any

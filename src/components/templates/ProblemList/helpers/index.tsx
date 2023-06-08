@@ -26,6 +26,7 @@ const columns: GridColumns<ProblemClients> = [
   {
     field: 'class',
     headerName: 'Class',
+    minWidth: 180,
     sortable: false,
   },
   {

@@ -175,7 +175,7 @@ exports[`<Client /> Rendered well 1`] = `
                     class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable"
                     data-field="class"
                     role="columnheader"
-                    style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
+                    style="height: 56px; width: 180px; min-width: 180px; max-width: 180px;"
                     tabindex="0"
                   >
                     <div
@@ -1490,7 +1490,7 @@ exports[`<Client /> Rendered well 1`] = `
                         data-colindex="0"
                         data-field="class"
                         role="cell"
-                        style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
+                        style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
                         tabindex="-1"
                       >
                         <div

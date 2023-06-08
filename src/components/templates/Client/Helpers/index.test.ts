@@ -33,6 +33,7 @@ describe('Client template component helpers', () => {
       const column = columns[0]
       expect(column.field).toBe('class')
       expect(column.headerName).toBe('Class')
+      expect(column.minWidth).toBe(180)
       expect(column.sortable).toBe(true)
     }
 

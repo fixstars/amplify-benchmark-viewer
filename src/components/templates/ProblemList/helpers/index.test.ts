@@ -15,6 +15,7 @@ describe('ProblemList template component helpers', () => {
     const column1 = columns[0]
     expect(column1.field).toBe('class')
     expect(column1.headerName).toBe('Class')
+    expect(column1.minWidth).toBe(180)
     expect(column1.sortable).toBe(false)
 
     const column2 = columns[1]

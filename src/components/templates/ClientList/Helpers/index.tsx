@@ -24,7 +24,7 @@ const columns: GridColumns<ClientInstances> = [
     field: 'client',
     headerName: 'Client',
     sortable: false,
-    minWidth: 140,
+    minWidth: 180,
     renderCell: (params) => renderClientCell(params.row),
   },
   {

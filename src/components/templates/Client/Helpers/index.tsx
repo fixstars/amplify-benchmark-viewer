@@ -124,6 +124,7 @@ const columns: GridColumns<ClientData> = [
   {
     field: 'class',
     headerName: 'Class',
+    minWidth: 180,
     sortable: true,
   },
   {

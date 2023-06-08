@@ -117,7 +117,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                     class="MuiDataGrid-columnHeader"
                     data-field="client"
                     role="columnheader"
-                    style="height: 56px; width: 140px; min-width: 140px; max-width: 140px;"
+                    style="height: 56px; width: 180px; min-width: 180px; max-width: 180px;"
                     tabindex="0"
                   >
                     <div
@@ -285,7 +285,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                         data-colindex="0"
                         data-field="client"
                         role="cell"
-                        style="min-width: 140px; max-width: 140px; min-height: auto; max-height: none;"
+                        style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
                         tabindex="-1"
                       >
                         <a
@@ -418,7 +418,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                         data-colindex="0"
                         data-field="client"
                         role="cell"
-                        style="min-width: 140px; max-width: 140px; min-height: auto; max-height: none;"
+                        style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
                         tabindex="-1"
                       >
                         <a
@@ -551,7 +551,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                         data-colindex="0"
                         data-field="client"
                         role="cell"
-                        style="min-width: 140px; max-width: 140px; min-height: auto; max-height: none;"
+                        style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
                         tabindex="-1"
                       >
                         <a

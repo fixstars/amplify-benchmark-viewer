@@ -46,26 +46,27 @@ export const ProblemListPage = () => {
     clients: Array<string>
   }> = []
 
-  for (const [
-    problemID,
-    { class: problemClass, instance: instance },
-  ] of Object.entries(data.problems)) {
-    if (
-      problemClients.find(
-        (problemClient) =>
-          problemClient.class === problemClass &&
-          problemClient.instance === instance,
-      )
-    ) {
-      continue
-    }
-    const clients: Array<string> = []
+  for (const [problemID, { class: problemClass, instance }] of Object.entries(
+    data.problems,
+  )) {
+    let clients: Array<string> = []
+    const existProblemClient = problemClients.find(
+      (problemClient) =>
+        problemClient.class === problemClass &&
+        problemClient.instance === instance,
+    )
+    if (existProblemClient) clients = existProblemClient.clients
 
     for (const [, value] of Object.entries(data.benchmarks)) {
       const clientName = data.clients[value.client_id].name
       if (problemID === value.problem_id && !clients.includes(clientName)) {
         clients.push(clientName)
       }
+    }
+
+    if (existProblemClient) {
+      existProblemClient.clients = clients
+      continue
     }
 
     problemClients.push({

@@ -16,7 +16,7 @@ describe('ClientList template component helpers', () => {
     expect(column1.field).toBe('client')
     expect(column1.headerName).toBe('Client')
     expect(column1.sortable).toBe(false)
-    expect(column1.minWidth).toBe(140)
+    expect(column1.minWidth).toBe(180)
     expect(column1.renderCell?.name).toBe('renderCell')
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const clientLinkComponent = column1.renderCell!({

@@ -116,7 +116,7 @@ const columns: GridColumns<ProblemData> = [
     field: 'client',
     headerName: 'Client',
     sortable: false,
-    minWidth: 140,
+    minWidth: 180,
     renderCell: ({ row }) => renderTooltip(row, renderClientCell(row)),
   },
   {
