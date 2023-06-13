@@ -233,7 +233,7 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
         <div
           aria-colcount="18"
           aria-multiselectable="false"
-          aria-rowcount="3"
+          aria-rowcount="4"
           class="MuiDataGrid-root MuiDataGrid-root--densityStandard css-6kzjr8-MuiDataGrid-root"
           role="grid"
         >
@@ -1479,7 +1479,7 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
               >
                 <div
                   class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
-                  style="width: auto; height: 104px; min-height: auto;"
+                  style="width: auto; height: 156px; min-height: auto;"
                 >
                   <div
                     class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
@@ -1806,7 +1806,7 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
                     <div
                       aria-rowindex="3"
                       aria-selected="false"
-                      class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
+                      class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
                       data-id="a07b5eabeb5774419458c495b49d3a23_a_client_v0.6.4-54-ge56964d-V100__1000000"
                       data-rowindex="1"
                       role="row"
@@ -1848,6 +1848,324 @@ exports[`<ProblemPage /> rendered well with data 1`] = `
                           data-mui-internal-clone-element="true"
                         >
                           v0.6.4-54-ge56964d-V100
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="3"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="2"
+                        data-field="label"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        />
+                      </div>
+                      <div
+                        aria-colindex="4"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="3"
+                        data-field="specified_time"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          1000000
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="5"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="4"
+                        data-field="num_samples"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          20
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="6"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="5"
+                        data-field="feasible_rate"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          1
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="7"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="6"
+                        data-field="reach_best_rate"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          0
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="8"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="7"
+                        data-field="target_energy(min)"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          60150
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="9"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="8"
+                        data-field="target_energy(25%)"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          61299
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="10"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="9"
+                        data-field="target_energy(50%)"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          61521
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="11"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="10"
+                        data-field="target_energy(75%)"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          62584
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="12"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="11"
+                        data-field="target_energy(max)"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          64612
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="13"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="12"
+                        data-field="TTS(0%)"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          -
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="14"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="13"
+                        data-field="TTS(1%)"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          -
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="15"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="14"
+                        data-field="TTS(5%)"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          5767220.789231007
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="16"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="15"
+                        data-field="TTS(10%)"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          1000000
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="17"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="16"
+                        data-field="TTS(20%)"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          1000000
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="18"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="17"
+                        data-field="TTS(50%)"
+                        role="cell"
+                        style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          1000000
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      aria-rowindex="4"
+                      aria-selected="false"
+                      class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
+                      data-id="a07b5eabeb5774419458c495b49d3a21_f_client_9.5.0__1000000"
+                      data-rowindex="2"
+                      role="row"
+                      style="max-height: none; min-height: auto;"
+                    >
+                      <div
+                        aria-colindex="1"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="0"
+                        data-field="client"
+                        role="cell"
+                        style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          <a
+                            href="/clients/f_client"
+                          >
+                            f_client
+                          </a>
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="2"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                        data-colindex="1"
+                        data-field="version"
+                        role="cell"
+                        style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class=""
+                          data-mui-internal-clone-element="true"
+                        >
+                          9.5.0
                         </span>
                       </div>
                       <div

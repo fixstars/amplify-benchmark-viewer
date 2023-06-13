@@ -515,6 +515,16 @@ exports[`<ClientListPage /> rendered well with data 1`] = `
                               i_instance
                             </a>
                           </div>
+                          <div
+                            style="margin-right: 10px;"
+                          >
+                            <a
+                              class="css-1o4kjj1"
+                              href="/classes/Tsp/instances/r_instance"
+                            >
+                              r_instance
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>

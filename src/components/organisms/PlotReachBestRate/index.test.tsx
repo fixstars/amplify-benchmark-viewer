@@ -42,17 +42,31 @@ describe('<PlotReachBestRate />', () => {
       },
       showlegend: true,
     })
-    expect(plot.data).toHaveLength(2)
+    expect(plot.data).toHaveLength(3)
     expect(plot.data).toMatchObject([
       {
         mode: 'lines+markers',
         name: '1_a_client(v0.6.4-54-ge56964d-V100)',
+        text: [],
         type: 'scatter',
+        x: expect.any(Array),
+        y: expect.any(Array),
       },
       {
         mode: 'lines+markers',
         name: '2_a_client(v0.6.4-54-ge56964d-A100)',
+        text: [],
         type: 'scatter',
+        x: expect.any(Array),
+        y: expect.any(Array),
+      },
+      {
+        mode: 'lines+markers',
+        name: '3_f_client(9.5.0)',
+        text: [],
+        type: 'scatter',
+        x: expect.any(Array),
+        y: expect.any(Array),
       },
     ])
     expect(container).toMatchSnapshot()

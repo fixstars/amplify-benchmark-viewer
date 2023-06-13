@@ -453,6 +453,16 @@ exports[`<LabelListPage /> rendered well with data 1`] = `
                             a_client
                           </a>
                         </div>
+                        <div
+                          style="margin-right: 10px;"
+                        >
+                          <a
+                            class="css-1o7gueb"
+                            href="/clients/f_client"
+                          >
+                            f_client
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

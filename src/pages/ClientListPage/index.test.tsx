@@ -72,7 +72,7 @@ describe('<ClientListPage />', () => {
       {
         client: 'f_client',
         version: '9.5.0',
-        problemInstances: { Tsp: ['h_instance', 'i_instance'] },
+        problemInstances: { Tsp: ['h_instance', 'i_instance', 'r_instance'] },
       },
     ])
 

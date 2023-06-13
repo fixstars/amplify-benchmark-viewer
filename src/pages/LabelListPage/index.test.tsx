@@ -67,7 +67,7 @@ describe('<LabelListPage />', () => {
       {
         label: 'AAA CI benchmark v0.6.4',
         problemInstances: { Tsp: ['r_instance', 'b_instance', 'a_instance'] },
-        clients: ['a_client'],
+        clients: ['a_client', 'f_client'],
       },
     ])
 

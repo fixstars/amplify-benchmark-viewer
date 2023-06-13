@@ -63,7 +63,11 @@ describe('<ProblemListPage />', () => {
       { class: 'Tsp', instance: 'b_instance', clients: ['a_client'] },
       { class: 'Tsp', instance: 'h_instance', clients: ['f_client'] },
       { class: 'Tsp', instance: 'i_instance', clients: ['f_client'] },
-      { class: 'Tsp', instance: 'r_instance', clients: ['a_client'] },
+      {
+        class: 'Tsp',
+        instance: 'r_instance',
+        clients: ['a_client', 'f_client'],
+      },
     ])
 
     expect(container).toMatchSnapshot()

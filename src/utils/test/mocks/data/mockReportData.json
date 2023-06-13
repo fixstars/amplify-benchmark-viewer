@@ -4408,6 +4408,4414 @@
         ]
       }
     },
+    "a07b5eabeb5774419458c495b49d3a21": {
+      "problem_id": "3fc2fa4a0be187a78f7ec2ec3bc366c1",
+      "client_id": "9ea9555678504e105cd77a198621f7e4",
+      "results": {
+        "": [
+          {
+            "specified_time": 1000000,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5767220.789231007,
+              "10%": 1000000,
+              "20%": 1000000,
+              "50%": 1000000
+            },
+            "raw_data": [
+              {
+                "target_energy": 64612,
+                "sampling_time": 636469.070723
+              },
+              {
+                "target_energy": 60807,
+                "sampling_time": 915608.005389
+              },
+              {
+                "target_energy": 61454,
+                "sampling_time": 434675.517882
+              },
+              {
+                "target_energy": 61345,
+                "sampling_time": 734537.6056199999
+              },
+              {
+                "target_energy": 62247,
+                "sampling_time": 348528.079671
+              },
+              {
+                "target_energy": 63298,
+                "sampling_time": 999338.669907
+              },
+              {
+                "target_energy": 61299,
+                "sampling_time": 735917.6432739999
+              },
+              {
+                "target_energy": 61368,
+                "sampling_time": 821248.070049
+              },
+              {
+                "target_energy": 60565,
+                "sampling_time": 918439.383788
+              },
+              {
+                "target_energy": 61521,
+                "sampling_time": 235674.681123
+              },
+              {
+                "target_energy": 62334,
+                "sampling_time": 341085.596476
+              },
+              {
+                "target_energy": 61695,
+                "sampling_time": 440542.964087
+              },
+              {
+                "target_energy": 60830,
+                "sampling_time": 431900.245735
+              },
+              {
+                "target_energy": 62584,
+                "sampling_time": 235837.836654
+              },
+              {
+                "target_energy": 63067,
+                "sampling_time": 238752.889976
+              },
+              {
+                "target_energy": 63562,
+                "sampling_time": 234806.842193
+              },
+              {
+                "target_energy": 62135,
+                "sampling_time": 888085.823275
+              },
+              {
+                "target_energy": 60150,
+                "sampling_time": 643724.2097959999
+              },
+              {
+                "target_energy": 62965,
+                "sampling_time": 793548.344834
+              },
+              {
+                "target_energy": 61332,
+                "sampling_time": 450549.691168
+              }
+            ]
+          }
+        ],
+        "AAA CI benchmark v0.6.4": [
+          {
+            "specified_time": 1000000,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5767220.789231007,
+              "10%": 1000000,
+              "20%": 1000000,
+              "50%": 1000000
+            },
+            "raw_data": [
+              {
+                "target_energy": 64612,
+                "sampling_time": 636469.070723
+              },
+              {
+                "target_energy": 60807,
+                "sampling_time": 915608.005389
+              },
+              {
+                "target_energy": 61454,
+                "sampling_time": 434675.517882
+              },
+              {
+                "target_energy": 61345,
+                "sampling_time": 734537.6056199999
+              },
+              {
+                "target_energy": 62247,
+                "sampling_time": 348528.079671
+              },
+              {
+                "target_energy": 63298,
+                "sampling_time": 999338.669907
+              },
+              {
+                "target_energy": 61299,
+                "sampling_time": 735917.6432739999
+              },
+              {
+                "target_energy": 61368,
+                "sampling_time": 821248.070049
+              },
+              {
+                "target_energy": 60565,
+                "sampling_time": 918439.383788
+              },
+              {
+                "target_energy": 61521,
+                "sampling_time": 235674.681123
+              },
+              {
+                "target_energy": 62334,
+                "sampling_time": 341085.596476
+              },
+              {
+                "target_energy": 61695,
+                "sampling_time": 440542.964087
+              },
+              {
+                "target_energy": 60830,
+                "sampling_time": 431900.245735
+              },
+              {
+                "target_energy": 62584,
+                "sampling_time": 235837.836654
+              },
+              {
+                "target_energy": 63067,
+                "sampling_time": 238752.889976
+              },
+              {
+                "target_energy": 63562,
+                "sampling_time": 234806.842193
+              },
+              {
+                "target_energy": 62135,
+                "sampling_time": 888085.823275
+              },
+              {
+                "target_energy": 60150,
+                "sampling_time": 643724.2097959999
+              },
+              {
+                "target_energy": 62965,
+                "sampling_time": 793548.344834
+              },
+              {
+                "target_energy": 61332,
+                "sampling_time": 450549.691168
+              }
+            ]
+          }
+        ]
+      },
+      "history": {
+        "": [
+          {
+            "sampling_time": 1035.1716769999998,
+            "num_samples": 20,
+            "feasible_rate": 0.05,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 174274,
+              "75%": 174274,
+              "50%": 174274,
+              "25%": 174274,
+              "min": 174274
+            }
+          },
+          {
+            "sampling_time": 1109.59316022486,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1189.3650189366517,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1274.8719070902655,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1366.5261325249535,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1464.769645081989,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1570.07616765385,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1682.953480440685,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1803.9458694285786,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1933.6367508959938,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 2072.6514846035666,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 178223,
+              "75%": 144184.25,
+              "50%": 138367,
+              "25%": 135380.25,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2221.660389232246,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2381.381974609993,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2552.586406312599,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2736.0992193446696,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2932.805298807862,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 3143.653146750872,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 3369.659455775587,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 139635,
+              "75%": 124145.5,
+              "50%": 120005.5,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 3611.914011453012,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 3871.5849471880347,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 4149.924376871611,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 4448.274432480583,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 4768.073735738009,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 123301,
+              "75%": 114047.25,
+              "50%": 111108,
+              "25%": 108634.75,
+              "min": 104337
+            }
+          },
+          {
+            "sampling_time": 5110.864335039845,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 110266,
+              "25%": 107487.75,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 5478.29914109733,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 110266,
+              "25%": 107487.75,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 5872.149897149202,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 110266,
+              "25%": 107487.75,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 6294.315722175485,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 109494,
+              "25%": 106940,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 6746.832268307618,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 112039,
+              "75%": 105176.5,
+              "50%": 102155,
+              "25%": 99778.75,
+              "min": 95167
+            }
+          },
+          {
+            "sampling_time": 7231.881536591251,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 112039,
+              "75%": 105176.5,
+              "50%": 102155,
+              "25%": 99778.75,
+              "min": 95167
+            }
+          },
+          {
+            "sampling_time": 7751.802398432596,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 112039,
+              "75%": 105176.5,
+              "50%": 102155,
+              "25%": 99778.75,
+              "min": 95167
+            }
+          },
+          {
+            "sampling_time": 8309.101873461967,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 104721,
+              "75%": 98340.25,
+              "50%": 96947,
+              "25%": 93042,
+              "min": 90298
+            }
+          },
+          {
+            "sampling_time": 8906.467218195497,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 104721,
+              "75%": 98340.25,
+              "50%": 96947,
+              "25%": 93042,
+              "min": 90298
+            }
+          },
+          {
+            "sampling_time": 9546.778883785717,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 104721,
+              "75%": 98340.25,
+              "50%": 96947,
+              "25%": 93042,
+              "min": 90298
+            }
+          },
+          {
+            "sampling_time": 10233.12440534223,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 447276.46905255667
+            },
+            "target_energy": {
+              "max": 100714,
+              "75%": 93199.25,
+              "50%": 90390,
+              "25%": 89041.5,
+              "min": 88352
+            }
+          },
+          {
+            "sampling_time": 10968.81328979581,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 479432.466920405
+            },
+            "target_energy": {
+              "max": 100714,
+              "75%": 93199.25,
+              "50%": 90390,
+              "25%": 89041.5,
+              "min": 88352
+            }
+          },
+          {
+            "sampling_time": 11757.392974094057,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 67807.48118735383
+            },
+            "target_energy": {
+              "max": 96644,
+              "75%": 90681.25,
+              "50%": 88148.5,
+              "25%": 86487.5,
+              "min": 79721
+            }
+          },
+          {
+            "sampling_time": 12602.66593067787,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 48204.927220443984
+            },
+            "target_energy": {
+              "max": 96644,
+              "75%": 89025.75,
+              "50%": 87599.5,
+              "25%": 85680.75,
+              "min": 79721
+            }
+          },
+          {
+            "sampling_time": 13508.708002720034,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 32791.75794939886
+            },
+            "target_energy": {
+              "max": 96045,
+              "75%": 87680.75,
+              "50%": 85486,
+              "25%": 84098.75,
+              "min": 78548
+            }
+          },
+          {
+            "sampling_time": 14479.88805753711,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 35149.25218766598
+            },
+            "target_energy": {
+              "max": 96045,
+              "75%": 87299.75,
+              "50%": 84634.5,
+              "25%": 83506,
+              "min": 78548
+            }
+          },
+          {
+            "sampling_time": 15520.889052941886,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 31041.778105883765
+            },
+            "target_energy": {
+              "max": 95030,
+              "75%": 85253.25,
+              "50%": 83388,
+              "25%": 81752.25,
+              "min": 77055
+            }
+          },
+          {
+            "sampling_time": 16636.730618116788,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 33273.46123623357
+            },
+            "target_energy": {
+              "max": 95030,
+              "75%": 85253.25,
+              "50%": 83321.5,
+              "25%": 81752.25,
+              "min": 77055
+            }
+          },
+          {
+            "sampling_time": 17832.79325789154,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 27413.346836466393
+            },
+            "target_energy": {
+              "max": 89192,
+              "75%": 83197.75,
+              "50%": 80529.5,
+              "25%": 78563.75,
+              "min": 76003
+            }
+          },
+          {
+            "sampling_time": 19114.84429713626,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 19114.84429713626
+            },
+            "target_energy": {
+              "max": 88353,
+              "75%": 81111.5,
+              "50%": 79182.5,
+              "25%": 77027,
+              "min": 73242
+            }
+          },
+          {
+            "sampling_time": 20489.065690371997,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 20489.065690371997
+            },
+            "target_energy": {
+              "max": 88353,
+              "75%": 80271.75,
+              "50%": 78682,
+              "25%": 77027,
+              "min": 73242
+            }
+          },
+          {
+            "sampling_time": 21962.083830694482,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 21962.083830694482
+            },
+            "target_energy": {
+              "max": 86326,
+              "75%": 79355.75,
+              "50%": 77919,
+              "25%": 76001.25,
+              "min": 73235
+            }
+          },
+          {
+            "sampling_time": 23541.00150174758,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 23541.00150174758
+            },
+            "target_energy": {
+              "max": 85082,
+              "75%": 78409.75,
+              "50%": 76356.5,
+              "25%": 73355.25,
+              "min": 72238
+            }
+          },
+          {
+            "sampling_time": 25233.43212681644,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 2265486.175299614,
+              "50%": 25233.43212681644
+            },
+            "target_energy": {
+              "max": 83236,
+              "75%": 77641.5,
+              "50%": 74713,
+              "25%": 72186.75,
+              "min": 70702
+            }
+          },
+          {
+            "sampling_time": 27047.53648018688,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 558199.0062871695,
+              "50%": 27047.53648018688
+            },
+            "target_energy": {
+              "max": 82765,
+              "75%": 76551.5,
+              "50%": 73714,
+              "25%": 71162.5,
+              "min": 69014
+            }
+          },
+          {
+            "sampling_time": 28992.062037790525,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 309931.9279831783,
+              "50%": 28992.062037790525
+            },
+            "target_energy": {
+              "max": 81997,
+              "75%": 76191.75,
+              "50%": 72930,
+              "25%": 70064,
+              "min": 68788
+            }
+          },
+          {
+            "sampling_time": 31076.385156881774,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 239383.0462682505,
+              "50%": 31076.385156881774
+            },
+            "target_energy": {
+              "max": 80793,
+              "75%": 74802.75,
+              "50%": 71678,
+              "25%": 69489.5,
+              "min": 66405
+            }
+          },
+          {
+            "sampling_time": 33310.55628813275,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 192109.33272576885,
+              "50%": 33310.55628813275
+            },
+            "target_energy": {
+              "max": 80226,
+              "75%": 74341.5,
+              "50%": 70198,
+              "25%": 68762.25,
+              "min": 66071
+            }
+          },
+          {
+            "sampling_time": 35705.348438157984,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 205920.62779928162,
+              "50%": 35705.348438157984
+            },
+            "target_energy": {
+              "max": 79161,
+              "75%": 73619.5,
+              "50%": 69516,
+              "25%": 67045.75,
+              "min": 65965
+            }
+          },
+          {
+            "sampling_time": 38272.309116148055,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 167886.05686393802,
+              "50%": 38272.309116148055
+            },
+            "target_energy": {
+              "max": 78647,
+              "75%": 72847,
+              "50%": 68733.5,
+              "25%": 66467.5,
+              "min": 65344
+            }
+          },
+          {
+            "sampling_time": 41023.816015098986,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1793097.2836327548,
+              "20%": 156915.21747782794,
+              "50%": 41023.816015098986
+            },
+            "target_energy": {
+              "max": 78030,
+              "75%": 71694.5,
+              "50%": 68252,
+              "25%": 65504.25,
+              "min": 64702
+            }
+          },
+          {
+            "sampling_time": 43973.13669612385,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 567754.426092104,
+              "20%": 146075.59821117626,
+              "50%": 43973.13669612385
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 70123.75,
+              "50%": 67338,
+              "25%": 64822.75,
+              "min": 64383
+            }
+          },
+          {
+            "sampling_time": 47134.49256364447,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 608571.9324401397,
+              "20%": 134868.4271749816,
+              "50%": 47134.49256364447
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69752,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63803
+            }
+          },
+          {
+            "sampling_time": 50523.127439941796,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 652323.9272710535,
+              "20%": 144564.50813775865,
+              "50%": 50523.127439941796
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 54155.381069731884,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 699221.3794417606,
+              "20%": 154957.66837999396,
+              "50%": 54155.381069731884
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 58048.767909195005,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 749490.4249699316,
+              "20%": 166098.02294545667,
+              "50%": 58048.767909195005
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 62222.06157937915,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 803373.4574450306,
+              "20%": 178039.2897932337,
+              "50%": 62222.06157937915
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 66695.38539119918,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 861130.2968321078,
+              "20%": 190839.04882171855,
+              "50%": 66695.38539119918
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 71490.3093785435,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 923039.4423043232,
+              "20%": 204559.0195145932,
+              "50%": 71490.3093785435
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 76629.95430736733,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 989399.4151451687,
+              "20%": 219265.3585475713,
+              "50%": 76629.95430736733
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 82139.10316230416,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1060530.1981958658,
+              "20%": 235028.97879096132,
+              "50%": 82139.10316230416
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 88044.32064836776,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1136774.7787887403,
+              "20%": 251925.8912462339,
+              "50%": 88044.32064836776
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 94374.08128398143,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1218500.8026065957,
+              "20%": 270037.5715654103,
+              "50%": 94374.08128398143
+            },
+            "target_energy": {
+              "max": 75941,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 101158.90670298011,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1306102.3464427502,
+              "20%": 289451.3529205741,
+              "50%": 101158.90670298011
+            },
+            "target_energy": {
+              "max": 74047,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 108431.5128276559,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1400001.8184099887,
+              "20%": 263212.434676631,
+              "50%": 108431.5128276559
+            },
+            "target_energy": {
+              "max": 74047,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 116226.967622493,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1500651.9947609473,
+              "20%": 282135.53721806634,
+              "50%": 116226.967622493
+            },
+            "target_energy": {
+              "max": 74047,
+              "75%": 69512,
+              "50%": 66964,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 124582.86018928105,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1608538.2031414884,
+              "20%": 191514.20121670628,
+              "50%": 124582.86018928105
+            },
+            "target_energy": {
+              "max": 71196,
+              "75%": 68799.75,
+              "50%": 66351.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 133539.48201895776,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1427568.3140461687,
+              "20%": 133539.48201895776,
+              "50%": 133539.48201895776
+            },
+            "target_energy": {
+              "max": 69677,
+              "75%": 67699.75,
+              "50%": 65303.5,
+              "25%": 64513.5,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 143140.02127417782,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 825520.1064634069,
+              "20%": 143140.02127417782,
+              "50%": 143140.02127417782
+            },
+            "target_energy": {
+              "max": 68433,
+              "75%": 66071.25,
+              "50%": 64807.5,
+              "25%": 64291.25,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 153430.77103940913,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 884869.132446223,
+              "20%": 153430.77103940913,
+              "50%": 153430.77103940913
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 164461.35254273872,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 948484.9314095326,
+              "20%": 164461.35254273872,
+              "50%": 164461.35254273872
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 176284.95442573022,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1016674.253992712,
+              "20%": 176284.95442573022,
+              "50%": 176284.95442573022
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 188958.58921509268,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1089765.9040250445,
+              "20%": 188958.58921509268,
+              "50%": 188958.58921509268
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 202543.3682328281,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1168112.3239932375,
+              "20%": 202543.3682328281,
+              "50%": 202543.3682328281
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 217104.7962704755,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1252091.2944928487,
+              "20%": 217104.7962704755,
+              "50%": 217104.7962704755
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 232713.0874483253,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 564900.1543098144,
+              "20%": 232713.0874483253,
+              "50%": 232713.0874483253
+            },
+            "target_energy": {
+              "max": 67237,
+              "75%": 64552.25,
+              "50%": 63855,
+              "25%": 63221,
+              "min": 62760
+            }
+          },
+          {
+            "sampling_time": 249443.50378267904,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 10902848.942378655,
+              "10%": 498887.00756535796,
+              "20%": 249443.50378267904,
+              "50%": 249443.50378267904
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 267376.7180936731,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 11686686.259121994,
+              "10%": 534753.4361873462,
+              "20%": 267376.7180936731,
+              "50%": 267376.7180936731
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 286599.2030036101,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 12526875.905643262,
+              "10%": 573198.40600722,
+              "20%": 286599.2030036101,
+              "50%": 286599.2030036101
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 307203.64790148806,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 13427469.213773051,
+              "10%": 614407.295802976,
+              "20%": 307203.64790148806,
+              "50%": 307203.64790148806
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 329289.405884332,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 14392808.777294694,
+              "10%": 506198.02307675325,
+              "20%": 329289.405884332,
+              "50%": 329289.405884332
+            },
+            "target_energy": {
+              "max": 65514,
+              "75%": 64297.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 352962.9728304105,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 10001632.205303108,
+              "10%": 352962.9728304105,
+              "20%": 352962.9728304105,
+              "50%": 352962.9728304105
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63526,
+              "50%": 62988,
+              "25%": 62312.25,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 378338.50091443036,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 10720678.446546234,
+              "10%": 378338.50091443036,
+              "20%": 378338.50091443036,
+              "50%": 378338.50091443036
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63526,
+              "50%": 62988,
+              "25%": 62312.25,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 405538.3490408013,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 11491418.999920864,
+              "10%": 405538.3490408013,
+              "20%": 405538.3490408013,
+              "50%": 405538.3490408013
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63526,
+              "50%": 62988,
+              "25%": 62312.25,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 434693.6728491611,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5612500.61508801,
+              "10%": 434693.6728491611,
+              "20%": 434693.6728491611,
+              "50%": 434693.6728491611
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63361,
+              "50%": 62524.5,
+              "25%": 61625.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 465945.0571370787,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 4981061.702492567,
+              "10%": 465945.0571370787,
+              "20%": 465945.0571370787,
+              "50%": 465945.0571370787
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63361,
+              "50%": 62399.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 499443.1937494795,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5339164.622201842,
+              "10%": 499443.1937494795,
+              "20%": 499443.1937494795,
+              "50%": 499443.1937494795
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63361,
+              "50%": 62399.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 535349.6082034713,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5723012.595629291,
+              "10%": 535349.6082034713,
+              "20%": 535349.6082034713,
+              "50%": 535349.6082034713
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 573837.4385523599,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6134456.509082975,
+              "10%": 573837.4385523599,
+              "20%": 573837.4385523599,
+              "50%": 573837.4385523599
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 615092.2702444167,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6575480.314436114,
+              "10%": 615092.2702444167,
+              "20%": 615092.2702444167,
+              "50%": 615092.2702444167
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 659313.03100209,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5943806.599246033,
+              "10%": 659313.03100209,
+              "20%": 659313.03100209,
+              "50%": 659313.03100209
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61504.25,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 706712.9500366324,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6371124.031654475,
+              "10%": 706712.9500366324,
+              "20%": 706712.9500366324,
+              "50%": 706712.9500366324
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61504.25,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 757520.5862234783,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5835221.330461933,
+              "10%": 757520.5862234783,
+              "20%": 757520.5862234783,
+              "50%": 757520.5862234783
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61341.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 811980.9301960793,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6254732.254115517,
+              "10%": 811980.9301960793,
+              "20%": 811980.9301960793,
+              "50%": 811980.9301960793
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62883.25,
+              "50%": 62290.5,
+              "25%": 61341.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 870356.5856724924,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5782523.989031384,
+              "10%": 870356.5856724924,
+              "20%": 870356.5856724924,
+              "50%": 870356.5856724924
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62845.75,
+              "50%": 61971,
+              "25%": 61341.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 932929.0357109132,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5380407.729629215,
+              "10%": 932929.0357109132,
+              "20%": 932929.0357109132,
+              "50%": 932929.0357109132
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62679.25,
+              "50%": 61608,
+              "25%": 61323.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 1000000,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5767220.789231007,
+              "10%": 1000000,
+              "20%": 1000000,
+              "50%": 1000000
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62679.25,
+              "50%": 61608,
+              "25%": 61323.75,
+              "min": 60150
+            }
+          }
+        ],
+        "AAA CI benchmark v0.6.4": [
+          {
+            "sampling_time": 1035.1716769999998,
+            "num_samples": 20,
+            "feasible_rate": 0.05,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 174274,
+              "75%": 174274,
+              "50%": 174274,
+              "25%": 174274,
+              "min": 174274
+            }
+          },
+          {
+            "sampling_time": 1109.59316022486,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1189.3650189366517,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1274.8719070902655,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1366.5261325249535,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1464.769645081989,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1570.07616765385,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1682.953480440685,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1803.9458694285786,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 1933.6367508959938,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 189456,
+              "75%": 179302.5,
+              "50%": 178174,
+              "25%": 174050.5,
+              "min": 168727
+            }
+          },
+          {
+            "sampling_time": 2072.6514846035666,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 178223,
+              "75%": 144184.25,
+              "50%": 138367,
+              "25%": 135380.25,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2221.660389232246,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2381.381974609993,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2552.586406312599,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2736.0992193446696,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 2932.805298807862,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 3143.653146750872,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 145334,
+              "75%": 139386,
+              "50%": 138012.5,
+              "25%": 134518.5,
+              "min": 117752
+            }
+          },
+          {
+            "sampling_time": 3369.659455775587,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 139635,
+              "75%": 124145.5,
+              "50%": 120005.5,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 3611.914011453012,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 3871.5849471880347,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 4149.924376871611,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 4448.274432480583,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 129341,
+              "75%": 123484.5,
+              "50%": 118353,
+              "25%": 114234.5,
+              "min": 108126
+            }
+          },
+          {
+            "sampling_time": 4768.073735738009,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 123301,
+              "75%": 114047.25,
+              "50%": 111108,
+              "25%": 108634.75,
+              "min": 104337
+            }
+          },
+          {
+            "sampling_time": 5110.864335039845,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 110266,
+              "25%": 107487.75,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 5478.29914109733,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 110266,
+              "25%": 107487.75,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 5872.149897149202,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 110266,
+              "25%": 107487.75,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 6294.315722175485,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 118175,
+              "75%": 111934.25,
+              "50%": 109494,
+              "25%": 106940,
+              "min": 101314
+            }
+          },
+          {
+            "sampling_time": 6746.832268307618,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 112039,
+              "75%": 105176.5,
+              "50%": 102155,
+              "25%": 99778.75,
+              "min": 95167
+            }
+          },
+          {
+            "sampling_time": 7231.881536591251,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 112039,
+              "75%": 105176.5,
+              "50%": 102155,
+              "25%": 99778.75,
+              "min": 95167
+            }
+          },
+          {
+            "sampling_time": 7751.802398432596,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 112039,
+              "75%": 105176.5,
+              "50%": 102155,
+              "25%": 99778.75,
+              "min": 95167
+            }
+          },
+          {
+            "sampling_time": 8309.101873461967,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 104721,
+              "75%": 98340.25,
+              "50%": 96947,
+              "25%": 93042,
+              "min": 90298
+            }
+          },
+          {
+            "sampling_time": 8906.467218195497,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 104721,
+              "75%": 98340.25,
+              "50%": 96947,
+              "25%": 93042,
+              "min": 90298
+            }
+          },
+          {
+            "sampling_time": 9546.778883785717,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": null
+            },
+            "target_energy": {
+              "max": 104721,
+              "75%": 98340.25,
+              "50%": 96947,
+              "25%": 93042,
+              "min": 90298
+            }
+          },
+          {
+            "sampling_time": 10233.12440534223,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 447276.46905255667
+            },
+            "target_energy": {
+              "max": 100714,
+              "75%": 93199.25,
+              "50%": 90390,
+              "25%": 89041.5,
+              "min": 88352
+            }
+          },
+          {
+            "sampling_time": 10968.81328979581,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 479432.466920405
+            },
+            "target_energy": {
+              "max": 100714,
+              "75%": 93199.25,
+              "50%": 90390,
+              "25%": 89041.5,
+              "min": 88352
+            }
+          },
+          {
+            "sampling_time": 11757.392974094057,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 67807.48118735383
+            },
+            "target_energy": {
+              "max": 96644,
+              "75%": 90681.25,
+              "50%": 88148.5,
+              "25%": 86487.5,
+              "min": 79721
+            }
+          },
+          {
+            "sampling_time": 12602.66593067787,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 48204.927220443984
+            },
+            "target_energy": {
+              "max": 96644,
+              "75%": 89025.75,
+              "50%": 87599.5,
+              "25%": 85680.75,
+              "min": 79721
+            }
+          },
+          {
+            "sampling_time": 13508.708002720034,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 32791.75794939886
+            },
+            "target_energy": {
+              "max": 96045,
+              "75%": 87680.75,
+              "50%": 85486,
+              "25%": 84098.75,
+              "min": 78548
+            }
+          },
+          {
+            "sampling_time": 14479.88805753711,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 35149.25218766598
+            },
+            "target_energy": {
+              "max": 96045,
+              "75%": 87299.75,
+              "50%": 84634.5,
+              "25%": 83506,
+              "min": 78548
+            }
+          },
+          {
+            "sampling_time": 15520.889052941886,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 31041.778105883765
+            },
+            "target_energy": {
+              "max": 95030,
+              "75%": 85253.25,
+              "50%": 83388,
+              "25%": 81752.25,
+              "min": 77055
+            }
+          },
+          {
+            "sampling_time": 16636.730618116788,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 33273.46123623357
+            },
+            "target_energy": {
+              "max": 95030,
+              "75%": 85253.25,
+              "50%": 83321.5,
+              "25%": 81752.25,
+              "min": 77055
+            }
+          },
+          {
+            "sampling_time": 17832.79325789154,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 27413.346836466393
+            },
+            "target_energy": {
+              "max": 89192,
+              "75%": 83197.75,
+              "50%": 80529.5,
+              "25%": 78563.75,
+              "min": 76003
+            }
+          },
+          {
+            "sampling_time": 19114.84429713626,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 19114.84429713626
+            },
+            "target_energy": {
+              "max": 88353,
+              "75%": 81111.5,
+              "50%": 79182.5,
+              "25%": 77027,
+              "min": 73242
+            }
+          },
+          {
+            "sampling_time": 20489.065690371997,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 20489.065690371997
+            },
+            "target_energy": {
+              "max": 88353,
+              "75%": 80271.75,
+              "50%": 78682,
+              "25%": 77027,
+              "min": 73242
+            }
+          },
+          {
+            "sampling_time": 21962.083830694482,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 21962.083830694482
+            },
+            "target_energy": {
+              "max": 86326,
+              "75%": 79355.75,
+              "50%": 77919,
+              "25%": 76001.25,
+              "min": 73235
+            }
+          },
+          {
+            "sampling_time": 23541.00150174758,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": null,
+              "50%": 23541.00150174758
+            },
+            "target_energy": {
+              "max": 85082,
+              "75%": 78409.75,
+              "50%": 76356.5,
+              "25%": 73355.25,
+              "min": 72238
+            }
+          },
+          {
+            "sampling_time": 25233.43212681644,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 2265486.175299614,
+              "50%": 25233.43212681644
+            },
+            "target_energy": {
+              "max": 83236,
+              "75%": 77641.5,
+              "50%": 74713,
+              "25%": 72186.75,
+              "min": 70702
+            }
+          },
+          {
+            "sampling_time": 27047.53648018688,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 558199.0062871695,
+              "50%": 27047.53648018688
+            },
+            "target_energy": {
+              "max": 82765,
+              "75%": 76551.5,
+              "50%": 73714,
+              "25%": 71162.5,
+              "min": 69014
+            }
+          },
+          {
+            "sampling_time": 28992.062037790525,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 309931.9279831783,
+              "50%": 28992.062037790525
+            },
+            "target_energy": {
+              "max": 81997,
+              "75%": 76191.75,
+              "50%": 72930,
+              "25%": 70064,
+              "min": 68788
+            }
+          },
+          {
+            "sampling_time": 31076.385156881774,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 239383.0462682505,
+              "50%": 31076.385156881774
+            },
+            "target_energy": {
+              "max": 80793,
+              "75%": 74802.75,
+              "50%": 71678,
+              "25%": 69489.5,
+              "min": 66405
+            }
+          },
+          {
+            "sampling_time": 33310.55628813275,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 192109.33272576885,
+              "50%": 33310.55628813275
+            },
+            "target_energy": {
+              "max": 80226,
+              "75%": 74341.5,
+              "50%": 70198,
+              "25%": 68762.25,
+              "min": 66071
+            }
+          },
+          {
+            "sampling_time": 35705.348438157984,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 205920.62779928162,
+              "50%": 35705.348438157984
+            },
+            "target_energy": {
+              "max": 79161,
+              "75%": 73619.5,
+              "50%": 69516,
+              "25%": 67045.75,
+              "min": 65965
+            }
+          },
+          {
+            "sampling_time": 38272.309116148055,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": null,
+              "20%": 167886.05686393802,
+              "50%": 38272.309116148055
+            },
+            "target_energy": {
+              "max": 78647,
+              "75%": 72847,
+              "50%": 68733.5,
+              "25%": 66467.5,
+              "min": 65344
+            }
+          },
+          {
+            "sampling_time": 41023.816015098986,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1793097.2836327548,
+              "20%": 156915.21747782794,
+              "50%": 41023.816015098986
+            },
+            "target_energy": {
+              "max": 78030,
+              "75%": 71694.5,
+              "50%": 68252,
+              "25%": 65504.25,
+              "min": 64702
+            }
+          },
+          {
+            "sampling_time": 43973.13669612385,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 567754.426092104,
+              "20%": 146075.59821117626,
+              "50%": 43973.13669612385
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 70123.75,
+              "50%": 67338,
+              "25%": 64822.75,
+              "min": 64383
+            }
+          },
+          {
+            "sampling_time": 47134.49256364447,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 608571.9324401397,
+              "20%": 134868.4271749816,
+              "50%": 47134.49256364447
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69752,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63803
+            }
+          },
+          {
+            "sampling_time": 50523.127439941796,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 652323.9272710535,
+              "20%": 144564.50813775865,
+              "50%": 50523.127439941796
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 54155.381069731884,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 699221.3794417606,
+              "20%": 154957.66837999396,
+              "50%": 54155.381069731884
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 58048.767909195005,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 749490.4249699316,
+              "20%": 166098.02294545667,
+              "50%": 58048.767909195005
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 62222.06157937915,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 803373.4574450306,
+              "20%": 178039.2897932337,
+              "50%": 62222.06157937915
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 66695.38539119918,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 861130.2968321078,
+              "20%": 190839.04882171855,
+              "50%": 66695.38539119918
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 71490.3093785435,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 923039.4423043232,
+              "20%": 204559.0195145932,
+              "50%": 71490.3093785435
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 76629.95430736733,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 989399.4151451687,
+              "20%": 219265.3585475713,
+              "50%": 76629.95430736733
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 82139.10316230416,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1060530.1981958658,
+              "20%": 235028.97879096132,
+              "50%": 82139.10316230416
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 88044.32064836776,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1136774.7787887403,
+              "20%": 251925.8912462339,
+              "50%": 88044.32064836776
+            },
+            "target_energy": {
+              "max": 77536,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 94374.08128398143,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1218500.8026065957,
+              "20%": 270037.5715654103,
+              "50%": 94374.08128398143
+            },
+            "target_energy": {
+              "max": 75941,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 101158.90670298011,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1306102.3464427502,
+              "20%": 289451.3529205741,
+              "50%": 101158.90670298011
+            },
+            "target_energy": {
+              "max": 74047,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 108431.5128276559,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1400001.8184099887,
+              "20%": 263212.434676631,
+              "50%": 108431.5128276559
+            },
+            "target_energy": {
+              "max": 74047,
+              "75%": 69611.75,
+              "50%": 67258.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 116226.967622493,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1500651.9947609473,
+              "20%": 282135.53721806634,
+              "50%": 116226.967622493
+            },
+            "target_energy": {
+              "max": 74047,
+              "75%": 69512,
+              "50%": 66964,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 124582.86018928105,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1608538.2031414884,
+              "20%": 191514.20121670628,
+              "50%": 124582.86018928105
+            },
+            "target_energy": {
+              "max": 71196,
+              "75%": 68799.75,
+              "50%": 66351.5,
+              "25%": 64612.75,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 133539.48201895776,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1427568.3140461687,
+              "20%": 133539.48201895776,
+              "50%": 133539.48201895776
+            },
+            "target_energy": {
+              "max": 69677,
+              "75%": 67699.75,
+              "50%": 65303.5,
+              "25%": 64513.5,
+              "min": 63305
+            }
+          },
+          {
+            "sampling_time": 143140.02127417782,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 825520.1064634069,
+              "20%": 143140.02127417782,
+              "50%": 143140.02127417782
+            },
+            "target_energy": {
+              "max": 68433,
+              "75%": 66071.25,
+              "50%": 64807.5,
+              "25%": 64291.25,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 153430.77103940913,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 884869.132446223,
+              "20%": 153430.77103940913,
+              "50%": 153430.77103940913
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 164461.35254273872,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 948484.9314095326,
+              "20%": 164461.35254273872,
+              "50%": 164461.35254273872
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 176284.95442573022,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1016674.253992712,
+              "20%": 176284.95442573022,
+              "50%": 176284.95442573022
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 188958.58921509268,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1089765.9040250445,
+              "20%": 188958.58921509268,
+              "50%": 188958.58921509268
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 202543.3682328281,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1168112.3239932375,
+              "20%": 202543.3682328281,
+              "50%": 202543.3682328281
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 217104.7962704755,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 1252091.2944928487,
+              "20%": 217104.7962704755,
+              "50%": 217104.7962704755
+            },
+            "target_energy": {
+              "max": 67875,
+              "75%": 65989,
+              "50%": 64807.5,
+              "25%": 63981.5,
+              "min": 63101
+            }
+          },
+          {
+            "sampling_time": 232713.0874483253,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": null,
+              "10%": 564900.1543098144,
+              "20%": 232713.0874483253,
+              "50%": 232713.0874483253
+            },
+            "target_energy": {
+              "max": 67237,
+              "75%": 64552.25,
+              "50%": 63855,
+              "25%": 63221,
+              "min": 62760
+            }
+          },
+          {
+            "sampling_time": 249443.50378267904,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 10902848.942378655,
+              "10%": 498887.00756535796,
+              "20%": 249443.50378267904,
+              "50%": 249443.50378267904
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 267376.7180936731,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 11686686.259121994,
+              "10%": 534753.4361873462,
+              "20%": 267376.7180936731,
+              "50%": 267376.7180936731
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 286599.2030036101,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 12526875.905643262,
+              "10%": 573198.40600722,
+              "20%": 286599.2030036101,
+              "50%": 286599.2030036101
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 307203.64790148806,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 13427469.213773051,
+              "10%": 614407.295802976,
+              "20%": 307203.64790148806,
+              "50%": 307203.64790148806
+            },
+            "target_energy": {
+              "max": 66127,
+              "75%": 64552.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 329289.405884332,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 14392808.777294694,
+              "10%": 506198.02307675325,
+              "20%": 329289.405884332,
+              "50%": 329289.405884332
+            },
+            "target_energy": {
+              "max": 65514,
+              "75%": 64297.25,
+              "50%": 63433.5,
+              "25%": 62895.75,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 352962.9728304105,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 10001632.205303108,
+              "10%": 352962.9728304105,
+              "20%": 352962.9728304105,
+              "50%": 352962.9728304105
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63526,
+              "50%": 62988,
+              "25%": 62312.25,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 378338.50091443036,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 10720678.446546234,
+              "10%": 378338.50091443036,
+              "20%": 378338.50091443036,
+              "50%": 378338.50091443036
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63526,
+              "50%": 62988,
+              "25%": 62312.25,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 405538.3490408013,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 11491418.999920864,
+              "10%": 405538.3490408013,
+              "20%": 405538.3490408013,
+              "50%": 405538.3490408013
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63526,
+              "50%": 62988,
+              "25%": 62312.25,
+              "min": 61521
+            }
+          },
+          {
+            "sampling_time": 434693.6728491611,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5612500.61508801,
+              "10%": 434693.6728491611,
+              "20%": 434693.6728491611,
+              "50%": 434693.6728491611
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63361,
+              "50%": 62524.5,
+              "25%": 61625.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 465945.0571370787,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 4981061.702492567,
+              "10%": 465945.0571370787,
+              "20%": 465945.0571370787,
+              "50%": 465945.0571370787
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63361,
+              "50%": 62399.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 499443.1937494795,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5339164.622201842,
+              "10%": 499443.1937494795,
+              "20%": 499443.1937494795,
+              "50%": 499443.1937494795
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63361,
+              "50%": 62399.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 535349.6082034713,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5723012.595629291,
+              "10%": 535349.6082034713,
+              "20%": 535349.6082034713,
+              "50%": 535349.6082034713
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 573837.4385523599,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6134456.509082975,
+              "10%": 573837.4385523599,
+              "20%": 573837.4385523599,
+              "50%": 573837.4385523599
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 615092.2702444167,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6575480.314436114,
+              "10%": 615092.2702444167,
+              "20%": 615092.2702444167,
+              "50%": 615092.2702444167
+            },
+            "target_energy": {
+              "max": 64735,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61613.25,
+              "min": 60830
+            }
+          },
+          {
+            "sampling_time": 659313.03100209,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5943806.599246033,
+              "10%": 659313.03100209,
+              "20%": 659313.03100209,
+              "50%": 659313.03100209
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61504.25,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 706712.9500366324,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6371124.031654475,
+              "10%": 706712.9500366324,
+              "20%": 706712.9500366324,
+              "50%": 706712.9500366324
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61504.25,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 757520.5862234783,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5835221.330461933,
+              "10%": 757520.5862234783,
+              "20%": 757520.5862234783,
+              "50%": 757520.5862234783
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 63178.75,
+              "50%": 62290.5,
+              "25%": 61341.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 811980.9301960793,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 6254732.254115517,
+              "10%": 811980.9301960793,
+              "20%": 811980.9301960793,
+              "50%": 811980.9301960793
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62883.25,
+              "50%": 62290.5,
+              "25%": 61341.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 870356.5856724924,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5782523.989031384,
+              "10%": 870356.5856724924,
+              "20%": 870356.5856724924,
+              "50%": 870356.5856724924
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62845.75,
+              "50%": 61971,
+              "25%": 61341.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 932929.0357109132,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5380407.729629215,
+              "10%": 932929.0357109132,
+              "20%": 932929.0357109132,
+              "50%": 932929.0357109132
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62679.25,
+              "50%": 61608,
+              "25%": 61323.75,
+              "min": 60150
+            }
+          },
+          {
+            "sampling_time": 1000000,
+            "num_samples": 20,
+            "feasible_rate": 1,
+            "reach_best_rate": 0,
+            "time_to_solution": {
+              "0%": null,
+              "1%": null,
+              "5%": 5767220.789231007,
+              "10%": 1000000,
+              "20%": 1000000,
+              "50%": 1000000
+            },
+            "target_energy": {
+              "max": 64612,
+              "75%": 62679.25,
+              "50%": 61608,
+              "25%": 61323.75,
+              "min": 60150
+            }
+          }
+        ]
+      }
+    },
     "25e9776acc9ba73657ec2860b4f7cab5": {
       "problem_id": "9e250458220fe13969da1bfc4b4da3a4",
       "client_id": "d23739f7c9b606d4ae3b3f764c3e522e",
@@ -30262,6 +34670,25 @@
         }
       ]
     },
+    "3fc2fa4a0be187a78f7ec2ec3bc366c1": {
+      "class": "Tsp",
+      "instance": "r_instance",
+      "best_known": 59030,
+      "parameters": {
+        "num_vars": {
+          "input": 15376,
+          "logical": 15376,
+          "physical": 15376
+        },
+        "constraint_weight": 2,
+        "seed": null
+      },
+      "benchmarks": [
+        {
+          "group_id": "a07b5eabeb5774419458c495b49d3a21"
+        }
+      ]
+    },
     "9e250458220fe13969da1bfc4b4da3a4": {
       "class": "Tsp",
       "instance": "b_instance",
@@ -30382,6 +34809,9 @@
         },
         {
           "group_id": "570f2dc287ca8a3cff645c4bc9df14a6"
+        },
+        {
+          "group_id": "a07b5eabeb5774419458c495b49d3a21"
         }
       ]
     }
