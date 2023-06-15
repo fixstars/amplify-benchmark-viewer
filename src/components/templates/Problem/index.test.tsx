@@ -169,6 +169,12 @@ describe('<Problem />', () => {
             num_gpus: 4,
             'outputs.feasibilities': true,
           },
+          clientSettings: {
+            setting1: 1,
+            setting_obj: {
+              a: 'b',
+            },
+          },
           feasible_rate: 1,
           label: '',
           num_samples: 100,
@@ -414,6 +420,12 @@ describe('<Problem />', () => {
             num_gpus: 4,
             'outputs.feasibilities': true,
           },
+          clientSettings: {
+            setting1: 1,
+            setting_obj: {
+              a: 'b',
+            },
+          },
           feasible_rate: 1,
           label: '',
           num_samples: 100,
@@ -483,6 +495,12 @@ describe('<Problem />', () => {
           client: 'a_client',
           clientParameters: {
             'outputs.feasibilities': true,
+          },
+          clientSettings: {
+            setting1: 1,
+            setting_obj: {
+              a: 'b',
+            },
           },
           feasible_rate: 1,
           label: 'AAA CI benchmark v0.6.4',

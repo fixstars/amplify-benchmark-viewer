@@ -34771,7 +34771,12 @@
       "name": "a_client",
       "version": "v0.6.4-54-ge56964d-V100",
       "parameters": {
-        "outputs.feasibilities": true
+        "outputs.feasibilities": true,
+        "num_gpus": 2
+      },
+      "settings": {
+        "setting_a": 10,
+        "setting_b": 10
       },
       "benchmarks": [
         {
@@ -34791,6 +34796,7 @@
       "parameters": {
         "outputs.feasibilities": true
       },
+      "settings": {},
       "benchmarks": [
         {
           "group_id": "82ce97232e7e71920d217c4d95e6b3b0"
@@ -34802,6 +34808,11 @@
       "version": "9.5.0",
       "parameters": {
         "seed": -1
+      },
+      "settings": {
+        "setting_obj": {
+          "obj_key1": 10
+        }
       },
       "benchmarks": [
         {

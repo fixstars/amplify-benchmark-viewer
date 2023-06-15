@@ -19,7 +19,7 @@ pre-commit:
       run: npm run test:ci
     License:
       files: git diff --name-only HEAD | grep -e src/ || echo ''
-      run: sh license.sh && git add .
+      run: bash license.sh && git add .
     report_page_build:
       files: git diff --name-only HEAD | grep "schema/report_data.json" || echo ''
       run: npx json2ts ./schema/report_data.json > src/@types/report_data.d.ts --style.singleQuote --style.trailingComma=all --no-style.semi && git add src/@types/report_data.d.ts

@@ -7,6 +7,12 @@
     "clientParameters": {
       "outputs.feasibilities": true
     },
+    "clientSettings": {
+      "setting1": 1,
+      "setting_obj": {
+        "a": "b"
+      }
+    },
     "problemParameters": {
       "num_vars": {
         "input": 15376,
@@ -38,6 +44,12 @@
     "version": "v0.6.4-54-ge56964d-A100",
     "clientParameters": {
       "outputs.feasibilities": true
+    },
+    "clientSettings": {
+      "setting1": 1,
+      "setting_obj": {
+        "a": "b"
+      }
     },
     "problemParameters": {
       "num_vars": {
@@ -73,6 +85,12 @@
     "clientParameters": {
       "outputs.feasibilities": true,
       "num_gpus": 4
+    },
+    "clientSettings": {
+      "setting1": 1,
+      "setting_obj": {
+        "a": "b"
+      }
     },
     "problemParameters": {
       "num_vars": {

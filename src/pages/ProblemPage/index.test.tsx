@@ -80,6 +80,7 @@ describe('<ProblemPage />', () => {
         clientParameters: {
           'outputs.feasibilities': true,
         },
+        clientSettings: {},
         feasible_rate: 1,
         label: '',
         num_samples: 20,
@@ -113,6 +114,7 @@ describe('<ProblemPage />', () => {
         clientParameters: {
           'outputs.feasibilities': true,
         },
+        clientSettings: {},
         feasible_rate: 1,
         label: 'AAA CI benchmark v0.6.4',
         num_samples: 20,
@@ -144,8 +146,10 @@ describe('<ProblemPage />', () => {
         'TTS(50%)': 1000000,
         client: 'a_client',
         clientParameters: {
+          num_gpus: 2,
           'outputs.feasibilities': true,
         },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         feasible_rate: 1,
         label: '',
         num_samples: 20,
@@ -177,8 +181,10 @@ describe('<ProblemPage />', () => {
         'TTS(50%)': 1000000,
         client: 'a_client',
         clientParameters: {
+          num_gpus: 2,
           'outputs.feasibilities': true,
         },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         feasible_rate: 1,
         label: 'AAA CI benchmark v0.6.4',
         num_samples: 20,
@@ -212,6 +218,7 @@ describe('<ProblemPage />', () => {
         clientParameters: {
           seed: -1,
         },
+        clientSettings: { setting_obj: { obj_key1: 10 } },
         feasible_rate: 1,
         label: '',
         num_samples: 20,
@@ -245,6 +252,7 @@ describe('<ProblemPage />', () => {
         clientParameters: {
           seed: -1,
         },
+        clientSettings: { setting_obj: { obj_key1: 10 } },
         feasible_rate: 1,
         label: 'AAA CI benchmark v0.6.4',
         num_samples: 20,

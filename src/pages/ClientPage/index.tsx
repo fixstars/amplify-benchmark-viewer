@@ -82,7 +82,11 @@ export const ClientPage = () => {
       results,
     } = data.benchmarks[benchmarkID]
 
-    const { version, parameters: clientParameters } = data.clients[clientID]
+    const {
+      version,
+      parameters: clientParameters,
+      settings: clientSettings,
+    } = data.clients[clientID]
     const {
       parameters: problemParameters,
       class: className,
@@ -112,6 +116,7 @@ export const ClientPage = () => {
           instance,
           version,
           clientParameters,
+          clientSettings,
           problemParameters,
           label,
           num_samples: item.num_samples,

@@ -98,6 +98,7 @@ export const ProblemPage = () => {
       name: client,
       version,
       parameters: clientParameters,
+      settings: clientSettings,
     } = data.clients[clientID]
     const { parameters: problemParameters } = data.problems[problemID]
     Object.entries(results).map(([label, result]) => {
@@ -122,6 +123,7 @@ export const ProblemPage = () => {
           client,
           version,
           clientParameters,
+          clientSettings,
           problemParameters: problemParameters,
           label,
           num_samples: item.num_samples,

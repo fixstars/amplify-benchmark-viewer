@@ -70,7 +70,8 @@ describe('<ClientPage />', () => {
         class: 'Tsp',
         instance: 'a_instance',
         version: 'v0.6.4-54-ge56964d-V100',
-        clientParameters: { 'outputs.feasibilities': true },
+        clientParameters: { num_gpus: 2, 'outputs.feasibilities': true },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         problemParameters: {
           num_vars: { input: 20736, logical: 20736, physical: 20736 },
           constraint_weight: 1,
@@ -98,7 +99,8 @@ describe('<ClientPage />', () => {
         class: 'Tsp',
         instance: 'a_instance',
         version: 'v0.6.4-54-ge56964d-V100',
-        clientParameters: { 'outputs.feasibilities': true },
+        clientParameters: { num_gpus: 2, 'outputs.feasibilities': true },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         problemParameters: {
           num_vars: {
             input: 20736,
@@ -130,7 +132,8 @@ describe('<ClientPage />', () => {
         class: 'Tsp',
         instance: 'b_instance',
         version: 'v0.6.4-54-ge56964d-V100',
-        clientParameters: { 'outputs.feasibilities': true },
+        clientParameters: { num_gpus: 2, 'outputs.feasibilities': true },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         problemParameters: {
           num_vars: {
             input: 18496,
@@ -162,7 +165,8 @@ describe('<ClientPage />', () => {
         class: 'Tsp',
         instance: 'b_instance',
         version: 'v0.6.4-54-ge56964d-V100',
-        clientParameters: { 'outputs.feasibilities': true },
+        clientParameters: { num_gpus: 2, 'outputs.feasibilities': true },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         problemParameters: {
           num_vars: {
             input: 18496,
@@ -195,6 +199,7 @@ describe('<ClientPage />', () => {
         instance: 'r_instance',
         version: 'v0.6.4-54-ge56964d-A100',
         clientParameters: { 'outputs.feasibilities': true },
+        clientSettings: {},
         problemParameters: {
           num_vars: {
             input: 15376,
@@ -227,6 +232,7 @@ describe('<ClientPage />', () => {
         instance: 'r_instance',
         version: 'v0.6.4-54-ge56964d-A100',
         clientParameters: { 'outputs.feasibilities': true },
+        clientSettings: {},
         problemParameters: {
           num_vars: {
             input: 15376,
@@ -258,7 +264,8 @@ describe('<ClientPage />', () => {
         class: 'Tsp',
         instance: 'r_instance',
         version: 'v0.6.4-54-ge56964d-V100',
-        clientParameters: { 'outputs.feasibilities': true },
+        clientParameters: { num_gpus: 2, 'outputs.feasibilities': true },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         problemParameters: {
           num_vars: {
             input: 15376,
@@ -290,7 +297,8 @@ describe('<ClientPage />', () => {
         class: 'Tsp',
         instance: 'r_instance',
         version: 'v0.6.4-54-ge56964d-V100',
-        clientParameters: { 'outputs.feasibilities': true },
+        clientParameters: { num_gpus: 2, 'outputs.feasibilities': true },
+        clientSettings: { setting_a: 10, setting_b: 10 },
         problemParameters: {
           num_vars: {
             input: 15376,

@@ -211,6 +211,27 @@ export interface ReportData {
             }
       }
       /**
+       * クライアント設定
+       */
+      settings: {
+        /**
+         * This interface was referenced by `undefined`'s JSON-Schema definition
+         * via the `patternProperty` ".".
+         */
+        [k: string]:
+          | string
+          | number
+          | boolean
+          | null
+          | {
+              /**
+               * This interface was referenced by `undefined`'s JSON-Schema definition
+               * via the `patternProperty` ".".
+               */
+              [k: string]: string | number | boolean | null
+            }
+      }
+      /**
        * このclient idを取り扱っているgroup_idのリスト
        */
       benchmarks: {

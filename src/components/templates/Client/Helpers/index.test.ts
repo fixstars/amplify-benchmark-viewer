@@ -130,7 +130,7 @@ describe('Client template component helpers', () => {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
       const childComponent = column.renderCell!(cellParameter) as any
       expect(childComponent?.type.render.name).toBe('Tooltip')
-      expect(childComponent?.props.title.props.children.length).toBe(7)
+      expect(childComponent?.props.title.props.children.length).toBe(11)
       expect(childComponent?.props.children.type).toBe('span')
       expect(childComponent?.props.children.props.children).toBe('-')
     }
@@ -145,7 +145,7 @@ describe('Client template component helpers', () => {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
       const childComponent = column.renderCell!(cellParameter) as any
       expect(childComponent?.type.render.name).toBe('Tooltip')
-      expect(childComponent?.props.title.props.children.length).toBe(7)
+      expect(childComponent?.props.title.props.children.length).toBe(11)
       expect(childComponent?.props.children.type).toBe('span')
       expect(childComponent?.props.children.props.children).toBe('-')
     }
@@ -160,7 +160,7 @@ describe('Client template component helpers', () => {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
       const childComponent = column.renderCell!(cellParameter) as any
       expect(childComponent?.type.render.name).toBe('Tooltip')
-      expect(childComponent?.props.title.props.children.length).toBe(7)
+      expect(childComponent?.props.title.props.children.length).toBe(11)
       expect(childComponent?.props.children.type).toBe('span')
       expect(childComponent?.props.children.props.children).toBe(
         '5767220.789231007',
@@ -177,7 +177,7 @@ describe('Client template component helpers', () => {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
       const childComponent = column.renderCell!(cellParameter) as any
       expect(childComponent?.type.render.name).toBe('Tooltip')
-      expect(childComponent?.props.title.props.children.length).toBe(7)
+      expect(childComponent?.props.title.props.children.length).toBe(11)
       expect(childComponent?.props.children.type).toBe('span')
       expect(childComponent?.props.children.props.children).toBe('1000000')
     }
@@ -192,7 +192,7 @@ describe('Client template component helpers', () => {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
       const childComponent = column.renderCell!(cellParameter) as any
       expect(childComponent?.type.render.name).toBe('Tooltip')
-      expect(childComponent?.props.title.props.children.length).toBe(7)
+      expect(childComponent?.props.title.props.children.length).toBe(11)
       expect(childComponent?.props.children.type).toBe('span')
       expect(childComponent?.props.children.props.children).toBe('1000000')
     }
@@ -207,7 +207,7 @@ describe('Client template component helpers', () => {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-explicit-any
       const childComponent = column.renderCell!(cellParameter) as any
       expect(childComponent?.type.render.name).toBe('Tooltip')
-      expect(childComponent?.props.title.props.children.length).toBe(7)
+      expect(childComponent?.props.title.props.children.length).toBe(11)
       expect(childComponent?.props.children.type).toBe('span')
       expect(childComponent?.props.children.props.children).toBe('1000000')
     }

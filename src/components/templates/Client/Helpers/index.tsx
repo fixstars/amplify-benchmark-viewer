@@ -28,6 +28,7 @@ export interface ClientData {
   readonly instance: string
   readonly version: string
   readonly clientParameters: Parameter
+  readonly clientSettings: Parameter
   readonly problemParameters: Parameter
   readonly label: string
   readonly num_samples: number
@@ -48,7 +49,12 @@ export interface ClientData {
 }
 
 const renderTooltip = (
-  { clientParameters, problemParameters, benchmarkID }: ClientData,
+  {
+    clientParameters,
+    clientSettings,
+    problemParameters,
+    benchmarkID,
+  }: ClientData,
   field: ReactElement | string,
 ) => {
   return (
@@ -58,6 +64,29 @@ const renderTooltip = (
           <span>Client parameters</span>
           <br />
           {Object.entries(clientParameters).map(
+            ([parameterName, parameterValue]) =>
+              typeof parameterValue === 'object' && parameterValue != null ? (
+                <div key={`${benchmarkID}_${parameterName}`}>
+                  <div>- {parameterName}</div>
+                  {Object.entries(parameterValue).map(([key, value]) => (
+                    <div
+                      key={`${parameterName}_${key}`}
+                      style={{ paddingLeft: 10 }}
+                    >
+                      - {`${key}: ${value?.toString()}`}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div key={`${benchmarkID}_${parameterName}_${parameterValue}`}>
+                  - {parameterName}: {parameterValue?.toString()}
+                </div>
+              ),
+          )}
+          <br />
+          <span>Client settings</span>
+          <br />
+          {Object.entries(clientSettings).map(
             ([parameterName, parameterValue]) =>
               typeof parameterValue === 'object' && parameterValue != null ? (
                 <div key={`${benchmarkID}_${parameterName}`}>
