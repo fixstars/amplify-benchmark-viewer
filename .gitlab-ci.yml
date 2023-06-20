@@ -3,14 +3,23 @@ stages:
   - push
   - pages
 
+cache: &global_cache
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+
 Prettier:
   stage: scan
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run format
   only:
     refs:
@@ -21,9 +30,11 @@ ESLint:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run lint
   only:
     refs:
@@ -34,9 +45,11 @@ StyleLint:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run lint:css
   only:
     refs:
@@ -47,9 +60,11 @@ RemarkLint:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run lint:md
   only:
     refs:
@@ -60,9 +75,11 @@ CheckTypo:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run check:spell
   only:
     refs:
@@ -73,9 +90,11 @@ Test:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run test:ci
   only:
     refs:
@@ -111,11 +130,13 @@ check_schema:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
     - apt-get update -y
     - apt-get install git -y
-    - npm install --global npm@latest
-    - npm ci
     - npx json2ts ./schema/report_data.json > src/@types/report_data.d.ts --style.singleQuote --style.trailingComma=all --no-style.semi
     - >
       if [[ $(git diff --name-only HEAD | grep 'src/@types/report_data.d.ts' || echo '') != "" ]]; then
@@ -154,9 +175,11 @@ test_pages:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run build
   artifacts:
     paths:
@@ -194,9 +217,11 @@ pages:
   tags:
     - docker
   image: node:20.3.0-slim
+  cache:
+    <<: *global_cache
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm install --global npm@latest
-    - npm ci
     - npm run build
     - cp -rp dist/* public
   artifacts:
