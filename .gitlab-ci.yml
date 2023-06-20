@@ -7,7 +7,7 @@ Prettier:
   stage: scan
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
@@ -20,7 +20,7 @@ ESLint:
   stage: scan
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
@@ -33,7 +33,7 @@ StyleLint:
   stage: scan
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
@@ -46,7 +46,7 @@ RemarkLint:
   stage: scan
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
@@ -59,7 +59,7 @@ CheckTypo:
   stage: scan
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
@@ -72,7 +72,7 @@ Test:
   stage: scan
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
@@ -110,7 +110,7 @@ check_schema:
   stage: scan
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - apt-get update -y
     - apt-get install git -y
@@ -153,7 +153,7 @@ test_pages:
   stage: pages
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
@@ -193,7 +193,7 @@ pages:
   stage: pages
   tags:
     - docker
-  image: node:16-slim
+  image: node:20.3.0-slim
   script:
     - npm install --global npm@latest
     - npm ci
