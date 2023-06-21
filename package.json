@@ -83,7 +83,7 @@
     "@storybook/manager-webpack5": "^6.5.13",
     "@storybook/node-logger": "^6.5.13",
     "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "^6.5.13",
+    "@storybook/react": "^7.0.22",
     "@storybook/testing-library": "^0.0.13",
     "@types/d3": "^7.4.0",
     "@types/react-plotly.js": "^2.5.2",
