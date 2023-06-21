@@ -107,7 +107,7 @@
     "remark-lint": "^9.1.1",
     "remark-preset-lint-recommended": "^6.1.2",
     "sb": "^6.5.13",
-    "storybook-addon-react-router-v6": "^0.2.1",
+    "storybook-addon-react-router-v6": "^1.0.2",
     "stylelint": "^15.8.0",
     "stylelint-config-standard": "^32.0.0",
     "webpack": "^5.87.0"
