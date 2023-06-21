@@ -76,7 +76,7 @@
     "@mui/icons-material": "^5.10.15",
     "@mui/material": "^5.10.15",
     "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-essentials": "^7.0.22",
     "@storybook/addon-interactions": "^6.5.13",
     "@storybook/addon-links": "^6.5.13",
     "@storybook/builder-webpack5": "^6.5.13",
