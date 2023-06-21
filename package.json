@@ -93,7 +93,7 @@
     "axios-mock-adapter": "^1.21.5",
     "babel-plugin-named-exports-order": "^0.0.2",
     "cross-env": "^7.0.3",
-    "cspell": "^6.15.0",
+    "cspell": "^6.31.1",
     "eslint": "^8.42.0",
     "eslint-plugin-functional": "^5.0.8",
     "eslint-plugin-import": "^2.27.5",
