@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@mui/x-data-grid": "^5.17.13",
+    "@mui/x-data-grid": "^6.8.0",
     "@tanstack/react-query": "^4.29.15",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
