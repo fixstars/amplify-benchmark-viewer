@@ -97,7 +97,7 @@
     "eslint": "^8.42.0",
     "eslint-plugin-functional": "^5.0.8",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-storybook": "^0.6.12",
     "history": "^5.3.0",
     "lefthook": "^1.4.3",
