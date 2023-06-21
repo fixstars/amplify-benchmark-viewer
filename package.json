@@ -86,7 +86,7 @@
     "@storybook/react": "^7.0.22",
     "@storybook/testing-library": "^0.0.13",
     "@types/d3": "^7.4.0",
-    "@types/react-plotly.js": "^2.5.2",
+    "@types/react-plotly.js": "^2.6.0",
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.60.0",
