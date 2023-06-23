@@ -7,7 +7,7 @@
     "@mui/x-data-grid": "^5.17.13",
     "@tanstack/react-query": "^4.29.15",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.1",
