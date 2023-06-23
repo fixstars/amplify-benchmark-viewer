@@ -74,7 +74,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.10.15",
+    "@mui/material": "^5.13.5",
     "@storybook/addon-actions": "^7.0.22",
     "@storybook/addon-essentials": "^7.0.23",
     "@storybook/addon-interactions": "^7.0.23",
