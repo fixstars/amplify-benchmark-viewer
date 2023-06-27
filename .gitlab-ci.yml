@@ -165,7 +165,8 @@ scan_secrets:
     - git clone https://github.com/trufflesecurity/trufflehog.git
     - cd trufflehog; go install
     - cd ..
-    - trufflehog git file://. --only-verified --fail --branch=$CI_COMMIT_REF_NAME
+    - rm -rf trufflehog
+    - trufflehog git file://. --only-verified --fail --no-update --since-commit=main
   only:
     refs:
       - merge_requests
