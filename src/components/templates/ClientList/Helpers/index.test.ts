@@ -34,7 +34,7 @@ describe('ClientList template component helpers', () => {
         throw new Error('Function not implemented.')
       },
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } as unknown as GridRenderCellParams<unknown, ClientInstances, unknown>) as any
+    } as unknown as GridRenderCellParams<ClientInstances, unknown>) as any
     expect(clientLinkComponent?.type.render.name).toBe('LinkWithRef')
     expect(clientLinkComponent?.props).toEqual({
       to: '/clients/a_client',

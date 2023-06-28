@@ -143,7 +143,9 @@ export const Problem = ({
           disableColumnMenu
           initialState={{
             pagination: {
-              pageSize: data.length,
+              paginationModel: {
+                pageSize: data.length,
+              },
             },
           }}
           getRowHeight={() => 'auto'}

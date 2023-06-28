@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { GridColumns } from '@mui/x-data-grid'
+import type { GridColDef } from '@mui/x-data-grid'
 import { Link } from 'react-router-dom'
 import { renderClientsCell } from 'utils/DataGridCell'
 
@@ -22,7 +22,8 @@ const renderInstanceCell = (row: ProblemClients) => {
   )
 }
 
-const columns: GridColumns<ProblemClients> = [
+// eslint-disable-next-line functional/prefer-readonly-type
+const columns: GridColDef<ProblemClients>[] = [
   {
     field: 'class',
     headerName: 'Class',

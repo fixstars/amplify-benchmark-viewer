@@ -63,7 +63,9 @@ export const Client = ({ title, labels, data }: Props) => {
           disableColumnMenu
           initialState={{
             pagination: {
-              pageSize: data.length,
+              paginationModel: {
+                pageSize: data.length,
+              },
             },
           }}
           getRowHeight={() => 'auto'}

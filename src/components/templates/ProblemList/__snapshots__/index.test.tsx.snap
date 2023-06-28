@@ -87,17 +87,14 @@ exports[`<ProblemList /> Rendered well 1`] = `
           aria-colcount="3"
           aria-multiselectable="false"
           aria-rowcount="8"
-          class="MuiDataGrid-root MuiDataGrid-root--densityStandard css-15i6hkc-MuiDataGrid-root"
+          class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-11g4t4x-MuiDataGrid-root"
           role="grid"
         >
-          <div>
-            <div />
-          </div>
           <div
             class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
           >
             <div
-              class="MuiDataGrid-columnHeaders css-f3jnds-MuiDataGrid-columnHeaders"
+              class="MuiDataGrid-columnHeaders MuiDataGrid-withBorderColor css-1iyq7zh-MuiDataGrid-columnHeaders"
               style="min-height: 56px; max-height: 56px; line-height: 56px;"
             >
               <div
@@ -114,7 +111,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                     aria-colindex="1"
                     aria-label="Class"
                     aria-sort="none"
-                    class="MuiDataGrid-columnHeader"
+                    class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                     data-field="class"
                     role="columnheader"
                     style="height: 56px; width: 180px; min-width: 180px; max-width: 180px;"
@@ -132,7 +129,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                         >
                           <div
                             aria-label=""
-                            class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                            class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                             data-mui-internal-clone-element="true"
                           >
                             Class
@@ -161,7 +158,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                     aria-colindex="2"
                     aria-label="Instance"
                     aria-sort="none"
-                    class="MuiDataGrid-columnHeader"
+                    class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                     data-field="instance"
                     role="columnheader"
                     style="height: 56px; width: 180px; min-width: 180px; max-width: 180px;"
@@ -179,7 +176,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                         >
                           <div
                             aria-label=""
-                            class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                            class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                             data-mui-internal-clone-element="true"
                           >
                             Instance
@@ -208,7 +205,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                     aria-colindex="3"
                     aria-label="Clients"
                     aria-sort="none"
-                    class="MuiDataGrid-columnHeader"
+                    class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                     data-field="clients"
                     role="columnheader"
                     style="height: 56px; width: 0px; min-width: 0; max-width: 0;"
@@ -226,7 +223,7 @@ exports[`<ProblemList /> Rendered well 1`] = `
                         >
                           <div
                             aria-label=""
-                            class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                            class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                             data-mui-internal-clone-element="true"
                           >
                             Clients
@@ -255,316 +252,301 @@ exports[`<ProblemList /> Rendered well 1`] = `
               </div>
             </div>
             <div
-              style="overflow: visible; height: 0px; width: 0px;"
+              class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+              style="overflow-x: hidden;"
             >
               <div
-                class="MuiDataGrid-virtualScroller css-1w5m2wr-MuiDataGrid-virtualScroller"
-                style="width: 0px; height: auto; margin-top: 56px; overflow-x: hidden;"
+                class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+                style="width: auto; height: 364px; min-height: auto;"
               >
                 <div
-                  class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
-                  style="width: auto; height: 364px; min-height: auto;"
+                  class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+                  style="transform: translate3d(0px, 0px, 0px);"
                 >
                   <div
-                    class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
-                    style="transform: translate3d(0px, 0px, 0px);"
+                    aria-rowindex="2"
+                    aria-selected="false"
+                    class="MuiDataGrid-row"
+                    data-id="TSP_s_instance"
+                    data-rowindex="0"
+                    role="row"
+                    style="max-height: 52px; min-height: 52px;"
                   >
                     <div
-                      aria-rowindex="2"
-                      aria-selected="false"
-                      class="MuiDataGrid-row"
-                      data-id="TSP_s_instance"
-                      data-rowindex="0"
-                      role="row"
-                      style="max-height: 52px; min-height: 52px;"
+                      aria-colindex="1"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="0"
+                      data-field="class"
+                      role="cell"
+                      style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
                     >
                       <div
-                        aria-colindex="1"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="0"
-                        data-field="class"
-                        role="cell"
-                        style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
+                        class="MuiDataGrid-cellContent"
+                        title="TSP"
                       >
-                        <div
-                          class="MuiDataGrid-cellContent"
-                        >
-                          TSP
-                        </div>
-                      </div>
-                      <div
-                        aria-colindex="2"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="1"
-                        data-field="instance"
-                        role="cell"
-                        style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
-                      >
-                        <a
-                          href="/classes/TSP/instances/s_instance"
-                        >
-                          s_instance
-                        </a>
-                      </div>
-                      <div
-                        aria-colindex="3"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="2"
-                        data-field="clients"
-                        role="cell"
-                        style="min-width: 0; max-width: 0; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
-                      >
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-1o7gueb"
-                            href="/clients/a_client"
-                          >
-                            a_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-gqb4bp"
-                            href="/clients/b_client"
-                          >
-                            b_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-196ffja"
-                            href="/clients/c_client"
-                          >
-                            c_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-14frf9o"
-                            href="/clients/d_client"
-                          >
-                            d_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-tudjox"
-                            href="/clients/e_client"
-                          >
-                            e_client
-                          </a>
-                        </div>
+                        TSP
                       </div>
                     </div>
                     <div
-                      aria-rowindex="3"
-                      aria-selected="false"
-                      class="MuiDataGrid-row"
-                      data-id="TSP_t_instance"
-                      data-rowindex="1"
-                      role="row"
-                      style="max-height: 52px; min-height: 52px;"
+                      aria-colindex="2"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="1"
+                      data-field="instance"
+                      role="cell"
+                      style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
+                    >
+                      <a
+                        href="/classes/TSP/instances/s_instance"
+                      >
+                        s_instance
+                      </a>
+                    </div>
+                    <div
+                      aria-colindex="3"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="2"
+                      data-field="clients"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
                     >
                       <div
-                        aria-colindex="1"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="0"
-                        data-field="class"
-                        role="cell"
-                        style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
-                      >
-                        <div
-                          class="MuiDataGrid-cellContent"
-                        >
-                          TSP
-                        </div>
-                      </div>
-                      <div
-                        aria-colindex="2"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="1"
-                        data-field="instance"
-                        role="cell"
-                        style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
+                        style="margin-right: 10px;"
                       >
                         <a
-                          href="/classes/TSP/instances/t_instance"
+                          class="css-1o7gueb"
+                          href="/clients/a_client"
                         >
-                          t_instance
+                          a_client
                         </a>
                       </div>
                       <div
-                        aria-colindex="3"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="2"
-                        data-field="clients"
-                        role="cell"
-                        style="min-width: 0; max-width: 0; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
+                        style="margin-right: 10px;"
                       >
-                        <div
-                          style="margin-right: 10px;"
+                        <a
+                          class="css-gqb4bp"
+                          href="/clients/b_client"
                         >
-                          <a
-                            class="css-1o7gueb"
-                            href="/clients/a_client"
-                          >
-                            a_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
+                          b_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-196ffja"
+                          href="/clients/c_client"
                         >
-                          <a
-                            class="css-gqb4bp"
-                            href="/clients/b_client"
-                          >
-                            b_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
+                          c_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-14frf9o"
+                          href="/clients/d_client"
                         >
-                          <a
-                            class="css-14frf9o"
-                            href="/clients/d_client"
-                          >
-                            d_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
+                          d_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-tudjox"
+                          href="/clients/e_client"
                         >
-                          <a
-                            class="css-tudjox"
-                            href="/clients/e_client"
-                          >
-                            e_client
-                          </a>
-                        </div>
+                          e_client
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-rowindex="3"
+                    aria-selected="false"
+                    class="MuiDataGrid-row"
+                    data-id="TSP_t_instance"
+                    data-rowindex="1"
+                    role="row"
+                    style="max-height: 52px; min-height: 52px;"
+                  >
+                    <div
+                      aria-colindex="1"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="0"
+                      data-field="class"
+                      role="cell"
+                      style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiDataGrid-cellContent"
+                        title="TSP"
+                      >
+                        TSP
                       </div>
                     </div>
                     <div
-                      aria-rowindex="4"
-                      aria-selected="false"
-                      class="MuiDataGrid-row"
-                      data-id="QAP_u_instance"
-                      data-rowindex="2"
-                      role="row"
-                      style="max-height: 52px; min-height: 52px;"
+                      aria-colindex="2"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="1"
+                      data-field="instance"
+                      role="cell"
+                      style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
+                    >
+                      <a
+                        href="/classes/TSP/instances/t_instance"
+                      >
+                        t_instance
+                      </a>
+                    </div>
+                    <div
+                      aria-colindex="3"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="2"
+                      data-field="clients"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
                     >
                       <div
-                        aria-colindex="1"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="0"
-                        data-field="class"
-                        role="cell"
-                        style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
-                      >
-                        <div
-                          class="MuiDataGrid-cellContent"
-                        >
-                          QAP
-                        </div>
-                      </div>
-                      <div
-                        aria-colindex="2"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="1"
-                        data-field="instance"
-                        role="cell"
-                        style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
+                        style="margin-right: 10px;"
                       >
                         <a
-                          href="/classes/QAP/instances/u_instance"
+                          class="css-1o7gueb"
+                          href="/clients/a_client"
                         >
-                          u_instance
+                          a_client
                         </a>
                       </div>
                       <div
-                        aria-colindex="3"
-                        aria-colspan="1"
-                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                        data-colindex="2"
-                        data-field="clients"
-                        role="cell"
-                        style="min-width: 0; max-width: 0; min-height: 52px; max-height: 52px;"
-                        tabindex="-1"
+                        style="margin-right: 10px;"
                       >
-                        <div
-                          style="margin-right: 10px;"
+                        <a
+                          class="css-gqb4bp"
+                          href="/clients/b_client"
                         >
-                          <a
-                            class="css-1o7gueb"
-                            href="/clients/a_client"
-                          >
-                            a_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
+                          b_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-14frf9o"
+                          href="/clients/d_client"
                         >
-                          <a
-                            class="css-196ffja"
-                            href="/clients/c_client"
-                          >
-                            c_client
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
+                          d_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-tudjox"
+                          href="/clients/e_client"
                         >
-                          <a
-                            class="css-14frf9o"
-                            href="/clients/d_client"
-                          >
-                            d_client
-                          </a>
-                        </div>
+                          e_client
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-rowindex="4"
+                    aria-selected="false"
+                    class="MuiDataGrid-row"
+                    data-id="QAP_u_instance"
+                    data-rowindex="2"
+                    role="row"
+                    style="max-height: 52px; min-height: 52px;"
+                  >
+                    <div
+                      aria-colindex="1"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="0"
+                      data-field="class"
+                      role="cell"
+                      style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiDataGrid-cellContent"
+                        title="QAP"
+                      >
+                        QAP
+                      </div>
+                    </div>
+                    <div
+                      aria-colindex="2"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="1"
+                      data-field="instance"
+                      role="cell"
+                      style="min-width: 180px; max-width: 180px; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
+                    >
+                      <a
+                        href="/classes/QAP/instances/u_instance"
+                      >
+                        u_instance
+                      </a>
+                    </div>
+                    <div
+                      aria-colindex="3"
+                      aria-colspan="1"
+                      class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                      data-colindex="2"
+                      data-field="clients"
+                      role="cell"
+                      style="min-width: 0; max-width: 0; min-height: 52px; max-height: 52px;"
+                      tabindex="-1"
+                    >
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-1o7gueb"
+                          href="/clients/a_client"
+                        >
+                          a_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-196ffja"
+                          href="/clients/c_client"
+                        >
+                          c_client
+                        </a>
+                      </div>
+                      <div
+                        style="margin-right: 10px;"
+                      >
+                        <a
+                          class="css-14frf9o"
+                          href="/clients/d_client"
+                        >
+                          d_client
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="Mui-resizeTriggers"
-            >
-              <div
-                class="expand-trigger"
-              >
-                <div
-                  style="width: 1px; height: 1px;"
-                />
-              </div>
-              <div
-                class="contract-trigger"
-              />
             </div>
           </div>
         </div>

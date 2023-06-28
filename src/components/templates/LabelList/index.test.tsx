@@ -54,7 +54,9 @@ describe('<LabelList />', () => {
     expect(dataGrid.props.disableColumnMenu).toBe(true)
     expect(dataGrid.props.initialState).toEqual({
       pagination: {
-        pageSize: mockData.length,
+        paginationModel: {
+          pageSize: mockData.length,
+        },
       },
     })
     expect(dataGrid.props.getRowHeight.name).toBe('getRowHeight')

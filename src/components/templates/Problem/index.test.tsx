@@ -344,7 +344,9 @@ describe('<Problem />', () => {
       expect(dataGrid.props.disableColumnMenu).toBe(true)
       expect(dataGrid.props.initialState).toEqual({
         pagination: {
-          pageSize: 3,
+          paginationModel: {
+            pageSize: 3,
+          },
         },
       })
       expect(dataGrid.props.getRowHeight.name).toBe('getRowHeight')

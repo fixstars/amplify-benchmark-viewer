@@ -27,7 +27,7 @@ describe('Client template component helpers', () => {
         throw new Error('Function not implemented.')
       },
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } as unknown as GridRenderCellParams<unknown, ClientData, unknown>
+    } as unknown as GridRenderCellParams<ClientData, unknown>
 
     {
       const column = columns[0]

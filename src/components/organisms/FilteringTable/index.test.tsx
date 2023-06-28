@@ -47,7 +47,9 @@ describe('<FilteringTable />', () => {
     ])
     expect(dataGrid.initialState).toEqual({
       pagination: {
-        pageSize: mockData.length,
+        paginationModel: {
+          pageSize: mockData.length,
+        },
       },
     })
     expect(dataGrid.getRowHeight.name).toBe('getRowHeight')
@@ -55,7 +57,9 @@ describe('<FilteringTable />', () => {
     expect(dataGrid.hideFooter).toBe(true)
     expect(dataGrid.disableColumnMenu).toBe(true)
     expect(dataGrid.checkboxSelection).toBe(true)
-    expect(dataGrid.onSelectionModelChange.name).toBe('onSelectionModelChange')
+    expect(dataGrid.onRowSelectionModelChange.name).toBe(
+      'onRowSelectionModelChange',
+    )
 
     expect(container).toMatchSnapshot()
   })
@@ -89,6 +93,6 @@ describe('<FilteringTable />', () => {
     )
 
     const dataGrid = mockDataGrid.mock.calls[0][0]
-    expect(dataGrid.selectionModel).toEqual(['Cvrp', 'MaxCut'])
+    expect(dataGrid.rowSelectionModel).toEqual(['Cvrp', 'MaxCut'])
   })
 })

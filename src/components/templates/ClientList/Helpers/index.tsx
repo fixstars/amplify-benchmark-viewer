@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { GridColumns } from '@mui/x-data-grid'
+import type { GridColDef } from '@mui/x-data-grid'
 import { Link } from 'react-router-dom'
 import type { ProblemInstances } from 'utils/DataGridCell'
 import { renderProblemInstancesCell } from 'utils/DataGridCell'
@@ -19,7 +19,8 @@ const renderClientCell = (row: ClientInstances) => {
   return <Link to={`/clients/${row.client}`}>{row.client}</Link>
 }
 
-const columns: GridColumns<ClientInstances> = [
+// eslint-disable-next-line functional/prefer-readonly-type
+const columns: GridColDef<ClientInstances>[] = [
   {
     field: 'client',
     headerName: 'Client',

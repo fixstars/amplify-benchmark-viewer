@@ -40,7 +40,7 @@ describe('ProblemList template component helpers', () => {
         throw new Error('Function not implemented.')
       },
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } as unknown as GridRenderCellParams<unknown, ProblemClients, unknown>) as any
+    } as unknown as GridRenderCellParams<ProblemClients, unknown>) as any
     expect(instanceLinkComponent?.type.render.name).toBe('LinkWithRef')
     expect(instanceLinkComponent?.props).toEqual({
       to: '/classes/TSP/instances/s_instance',

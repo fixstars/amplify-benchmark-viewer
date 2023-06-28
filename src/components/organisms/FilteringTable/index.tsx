@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { GridInputSelectionModel } from '@mui/x-data-grid'
+import type { GridInputRowSelectionModel } from '@mui/x-data-grid'
 import { DataGrid } from '@mui/x-data-grid'
 import type { FilteringData } from '@types'
 
@@ -47,11 +47,13 @@ export const FilteringTable = ({
         },
       }}
       rows={sortedData}
-      selectionModel={selectedData as GridInputSelectionModel}
+      rowSelectionModel={selectedData as GridInputRowSelectionModel}
       columns={columns}
       initialState={{
         pagination: {
-          pageSize: sortedData.length,
+          paginationModel: {
+            pageSize: sortedData.length,
+          },
         },
       }}
       getRowHeight={() => 'auto'}
@@ -59,7 +61,7 @@ export const FilteringTable = ({
       hideFooter
       disableColumnMenu
       checkboxSelection
-      onSelectionModelChange={(item) =>
+      onRowSelectionModelChange={(item) =>
         typeof onSelected === 'function' &&
         onSelected(item as ReadonlyArray<string>)
       }

@@ -58,7 +58,9 @@ export const MasterResultTable = ({ hideProblem = false, data }: Props) => {
       }}
       initialState={{
         pagination: {
-          pageSize: chartData.length,
+          paginationModel: {
+            pageSize: chartData.length,
+          },
         },
       }}
       getRowId={(row) => row.id as string}

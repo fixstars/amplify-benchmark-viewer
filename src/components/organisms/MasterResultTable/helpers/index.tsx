@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Tooltip } from '@mui/material'
-import type { GridColumnGroupingModel, GridColumns } from '@mui/x-data-grid'
+import type { GridColDef, GridColumnGroupingModel } from '@mui/x-data-grid'
 import type { MasterData } from '@types'
 
 const renderCell = (row: MasterData, field: string) => {
@@ -50,7 +50,8 @@ const renderCell = (row: MasterData, field: string) => {
   )
 }
 
-const columns: GridColumns<MasterData> = [
+// eslint-disable-next-line functional/prefer-readonly-type
+const columns: GridColDef<MasterData>[] = [
   {
     field: 'problem_class',
     headerName: 'Problem class',

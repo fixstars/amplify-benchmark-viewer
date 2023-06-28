@@ -166,7 +166,13 @@ describe('<MasterResultTable />', () => {
     expect(column13.minWidth).toBe(120)
     expect(column13.renderCell.name).toBe('renderCell')
 
-    expect(dataGrid.initialState).toEqual({ pagination: { pageSize: 3 } })
+    expect(dataGrid.initialState).toEqual({
+      pagination: {
+        paginationModel: {
+          pageSize: 3,
+        },
+      },
+    })
     expect(dataGrid.getRowId.name).toBe('getRowId')
     expect(dataGrid.hideFooter).toBe(true)
     expect(dataGrid.disableColumnMenu).toBe(true)

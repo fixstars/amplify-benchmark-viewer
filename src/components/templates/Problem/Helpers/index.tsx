@@ -7,7 +7,7 @@
 import type { ReactElement } from 'react'
 
 import { Tooltip } from '@mui/material'
-import type { GridColumns } from '@mui/x-data-grid'
+import type { GridColDef } from '@mui/x-data-grid'
 import { Link } from 'react-router-dom'
 
 export interface Parameter {
@@ -143,7 +143,8 @@ const renderOptionalNumberCell = (value: number | null) => {
   return value == null ? '-' : value.toString()
 }
 
-const columns: GridColumns<ProblemData> = [
+// eslint-disable-next-line functional/prefer-readonly-type
+const columns: GridColDef<ProblemData>[] = [
   {
     field: 'client',
     headerName: 'Client',

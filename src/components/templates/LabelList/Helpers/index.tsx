@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { GridColumns } from '@mui/x-data-grid'
+import type { GridColDef } from '@mui/x-data-grid'
 import type { ProblemInstances } from 'utils/DataGridCell'
 import {
   renderClientsCell,
@@ -17,7 +17,8 @@ export interface LabelData {
   readonly clients: ReadonlyArray<string>
 }
 
-const columns: GridColumns<LabelData> = [
+// eslint-disable-next-line functional/prefer-readonly-type
+const columns: GridColDef<LabelData>[] = [
   {
     field: 'label',
     headerName: 'Label',

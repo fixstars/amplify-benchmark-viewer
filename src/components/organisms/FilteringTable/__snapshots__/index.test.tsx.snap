@@ -6,17 +6,14 @@ exports[`<FilteringTable /> Rendered well 1`] = `
     aria-colcount="2"
     aria-multiselectable="false"
     aria-rowcount="6"
-    class="MuiDataGrid-root MuiDataGrid-root--densityStandard css-1rvo9gi-MuiDataGrid-root"
+    class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-16cp3lf-MuiDataGrid-root"
     role="grid"
   >
-    <div>
-      <div />
-    </div>
     <div
       class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
     >
       <div
-        class="MuiDataGrid-columnHeaders css-f3jnds-MuiDataGrid-columnHeaders"
+        class="MuiDataGrid-columnHeaders MuiDataGrid-withBorderColor css-1iyq7zh-MuiDataGrid-columnHeaders"
         style="min-height: 56px; max-height: 56px; line-height: 56px;"
       >
         <div
@@ -32,7 +29,7 @@ exports[`<FilteringTable /> Rendered well 1`] = `
             <div
               aria-colindex="1"
               aria-sort="none"
-              class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignCenter MuiDataGrid-columnHeaderCheckbox"
+              class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignCenter MuiDataGrid-withBorderColor MuiDataGrid-columnHeaderCheckbox"
               data-field="__check__"
               role="columnheader"
               style="height: 56px; width: 50px; min-width: 50px; max-width: 50px;"
@@ -97,7 +94,7 @@ exports[`<FilteringTable /> Rendered well 1`] = `
               aria-colindex="2"
               aria-label="Problem Class"
               aria-sort="none"
-              class="MuiDataGrid-columnHeader"
+              class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
               data-field="name"
               role="columnheader"
               style="height: 56px; width: 0px; min-width: 0; max-width: 0;"
@@ -115,7 +112,7 @@ exports[`<FilteringTable /> Rendered well 1`] = `
                   >
                     <div
                       aria-label=""
-                      class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                      class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                       data-mui-internal-clone-element="true"
                     >
                       Problem Class
@@ -144,223 +141,208 @@ exports[`<FilteringTable /> Rendered well 1`] = `
         </div>
       </div>
       <div
-        style="overflow: visible; height: 0px; width: 0px;"
+        class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+        style="overflow-x: hidden;"
       >
         <div
-          class="MuiDataGrid-virtualScroller css-1w5m2wr-MuiDataGrid-virtualScroller"
-          style="width: 0px; height: auto; margin-top: 56px; overflow-x: hidden;"
+          class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+          style="width: auto; height: 260px; min-height: auto;"
         >
           <div
-            class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
-            style="width: auto; height: 260px; min-height: auto;"
+            class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+            style="transform: translate3d(0px, 0px, 0px);"
           >
             <div
-              class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
-              style="transform: translate3d(0px, 0px, 0px);"
+              aria-rowindex="2"
+              aria-selected="false"
+              class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+              data-id="Cvrp"
+              data-rowindex="0"
+              role="row"
+              style="max-height: none; min-height: auto;"
             >
               <div
-                aria-rowindex="2"
-                aria-selected="false"
-                class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                data-id="Cvrp"
-                data-rowindex="0"
-                role="row"
-                style="max-height: none; min-height: auto;"
+                aria-colindex="1"
+                aria-colspan="1"
+                class="MuiDataGrid-cellCheckbox MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter MuiDataGrid-withBorderColor"
+                data-colindex="0"
+                data-field="__check__"
+                role="cell"
+                style="min-width: 50px; max-width: 50px; min-height: auto; max-height: none;"
+                tabindex="-1"
               >
-                <div
-                  aria-colindex="1"
-                  aria-colspan="1"
-                  class="MuiDataGrid-cellCheckbox MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter"
-                  data-colindex="0"
-                  data-field="__check__"
-                  role="cell"
-                  style="min-width: 50px; max-width: 50px; min-height: auto; max-height: none;"
-                  tabindex="-1"
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary MuiDataGrid-checkboxInput css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
                 >
+                  <input
+                    aria-label="Select row"
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    tabindex="-1"
+                    type="checkbox"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxOutlineBlankIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
                   <span
-                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary MuiDataGrid-checkboxInput css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
-                  >
-                    <input
-                      aria-label="Select row"
-                      class="PrivateSwitchBase-input css-1m9pwf3"
-                      data-indeterminate="false"
-                      tabindex="-1"
-                      type="checkbox"
-                    />
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                      data-testid="CheckBoxOutlineBlankIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                      />
-                    </svg>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
-                  </span>
-                </div>
-                <div
-                  aria-colindex="2"
-                  aria-colspan="1"
-                  class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                  data-colindex="1"
-                  data-field="name"
-                  role="cell"
-                  style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
-                  tabindex="-1"
-                >
-                  <div
-                    class="MuiDataGrid-cellContent"
-                  >
-                    Cvrp
-                  </div>
-                </div>
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
               </div>
               <div
-                aria-rowindex="3"
-                aria-selected="false"
-                class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                data-id="MaxCut"
-                data-rowindex="1"
-                role="row"
-                style="max-height: none; min-height: auto;"
+                aria-colindex="2"
+                aria-colspan="1"
+                class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                data-colindex="1"
+                data-field="name"
+                role="cell"
+                style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                tabindex="-1"
               >
                 <div
-                  aria-colindex="1"
-                  aria-colspan="1"
-                  class="MuiDataGrid-cellCheckbox MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter"
-                  data-colindex="0"
-                  data-field="__check__"
-                  role="cell"
-                  style="min-width: 50px; max-width: 50px; min-height: auto; max-height: none;"
-                  tabindex="-1"
+                  class="MuiDataGrid-cellContent"
+                  title="Cvrp"
                 >
-                  <span
-                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary MuiDataGrid-checkboxInput css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
-                  >
-                    <input
-                      aria-label="Select row"
-                      class="PrivateSwitchBase-input css-1m9pwf3"
-                      data-indeterminate="false"
-                      tabindex="-1"
-                      type="checkbox"
-                    />
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                      data-testid="CheckBoxOutlineBlankIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                      />
-                    </svg>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
-                  </span>
-                </div>
-                <div
-                  aria-colindex="2"
-                  aria-colspan="1"
-                  class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                  data-colindex="1"
-                  data-field="name"
-                  role="cell"
-                  style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
-                  tabindex="-1"
-                >
-                  <div
-                    class="MuiDataGrid-cellContent"
-                  >
-                    MaxCut
-                  </div>
+                  Cvrp
                 </div>
               </div>
+            </div>
+            <div
+              aria-rowindex="3"
+              aria-selected="false"
+              class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+              data-id="MaxCut"
+              data-rowindex="1"
+              role="row"
+              style="max-height: none; min-height: auto;"
+            >
               <div
-                aria-rowindex="4"
-                aria-selected="false"
-                class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
-                data-id="Qap"
-                data-rowindex="2"
-                role="row"
-                style="max-height: none; min-height: auto;"
+                aria-colindex="1"
+                aria-colspan="1"
+                class="MuiDataGrid-cellCheckbox MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter MuiDataGrid-withBorderColor"
+                data-colindex="0"
+                data-field="__check__"
+                role="cell"
+                style="min-width: 50px; max-width: 50px; min-height: auto; max-height: none;"
+                tabindex="-1"
+              >
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary MuiDataGrid-checkboxInput css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                >
+                  <input
+                    aria-label="Select row"
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    tabindex="-1"
+                    type="checkbox"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxOutlineBlankIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
+              </div>
+              <div
+                aria-colindex="2"
+                aria-colspan="1"
+                class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                data-colindex="1"
+                data-field="name"
+                role="cell"
+                style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                tabindex="-1"
               >
                 <div
-                  aria-colindex="1"
-                  aria-colspan="1"
-                  class="MuiDataGrid-cellCheckbox MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter"
-                  data-colindex="0"
-                  data-field="__check__"
-                  role="cell"
-                  style="min-width: 50px; max-width: 50px; min-height: auto; max-height: none;"
-                  tabindex="-1"
+                  class="MuiDataGrid-cellContent"
+                  title="MaxCut"
                 >
-                  <span
-                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary MuiDataGrid-checkboxInput css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
-                  >
-                    <input
-                      aria-label="Select row"
-                      class="PrivateSwitchBase-input css-1m9pwf3"
-                      data-indeterminate="false"
-                      tabindex="-1"
-                      type="checkbox"
-                    />
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                      data-testid="CheckBoxOutlineBlankIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                      />
-                    </svg>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
-                  </span>
+                  MaxCut
                 </div>
-                <div
-                  aria-colindex="2"
-                  aria-colspan="1"
-                  class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
-                  data-colindex="1"
-                  data-field="name"
-                  role="cell"
-                  style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
-                  tabindex="-1"
+              </div>
+            </div>
+            <div
+              aria-rowindex="4"
+              aria-selected="false"
+              class="MuiDataGrid-row MuiDataGrid-row--dynamicHeight"
+              data-id="Qap"
+              data-rowindex="2"
+              role="row"
+              style="max-height: none; min-height: auto;"
+            >
+              <div
+                aria-colindex="1"
+                aria-colspan="1"
+                class="MuiDataGrid-cellCheckbox MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter MuiDataGrid-withBorderColor"
+                data-colindex="0"
+                data-field="__check__"
+                role="cell"
+                style="min-width: 50px; max-width: 50px; min-height: auto; max-height: none;"
+                tabindex="-1"
+              >
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary MuiDataGrid-checkboxInput css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
                 >
-                  <div
-                    class="MuiDataGrid-cellContent"
+                  <input
+                    aria-label="Select row"
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    tabindex="-1"
+                    type="checkbox"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxOutlineBlankIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
                   >
-                    Qap
-                  </div>
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
+              </div>
+              <div
+                aria-colindex="2"
+                aria-colspan="1"
+                class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                data-colindex="1"
+                data-field="name"
+                role="cell"
+                style="min-width: 0; max-width: 0; min-height: auto; max-height: none;"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiDataGrid-cellContent"
+                  title="Qap"
+                >
+                  Qap
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="Mui-resizeTriggers"
-      >
-        <div
-          class="expand-trigger"
-        >
-          <div
-            style="width: 1px; height: 1px;"
-          />
-        </div>
-        <div
-          class="contract-trigger"
-        />
       </div>
     </div>
   </div>
