@@ -4,15 +4,12 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+import type { Meta, StoryObj } from '@storybook/react'
 import Plot from 'react-plotly.js'
 
 import { registerTooltip } from '.'
 
-export default {
-  title: 'Organisms/LegendTooltip',
-}
-
-const Template = () => {
+const TestComponent = () => {
   const tooltipContents = (name: string) => {
     return `Name: ${name}`
   }
@@ -41,4 +38,14 @@ const Template = () => {
   )
 }
 
-export const Default = Template.bind({})
+const meta: Meta = {
+  title: 'Organisms/LegendTooltip',
+  component: TestComponent,
+  tags: ['autodocs'],
+}
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {}

@@ -4,15 +4,18 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { Header } from '.'
 
-export default {
+const meta: Meta<typeof Header> = {
   title: 'Organisms/Header',
   component: Header,
-} as ComponentMeta<typeof Header>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof Header> = () => <Header />
+export default meta
 
-export const Default = Template.bind({})
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {}

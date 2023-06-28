@@ -4,32 +4,41 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { MasterDataFiltering } from '.'
 import mockData from './mockData/data.json'
 
-export default {
-  title: 'Organisms/MasterDataFiltering',
-  component: MasterDataFiltering,
-} as ComponentMeta<typeof MasterDataFiltering>
-
-const Template: ComponentStory<typeof MasterDataFiltering> = (args) => (
+const TestComponent = (
+  props: React.ComponentProps<typeof MasterDataFiltering>,
+) => (
   <div style={{ height: '100vh' }}>
-    <MasterDataFiltering {...args} />
+    <MasterDataFiltering {...props} />
   </div>
 )
 
-export const Default = Template.bind({})
-Default.args = {
-  label: 'Problem Class Filter',
-  data: mockData,
-  selectedData: [],
+const meta: Meta<typeof MasterDataFiltering> = {
+  title: 'Organisms/MasterDataFiltering',
+  component: TestComponent,
+  tags: ['autodocs'],
 }
 
-export const SelectedFiltering = Template.bind({})
-SelectedFiltering.args = {
-  label: 'Problem Class Filter',
-  data: mockData,
-  selectedData: ['Tsp', 'MaxCut'],
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    label: 'Problem Class Filter',
+    data: mockData,
+    selectedData: [],
+  },
+}
+
+export const SelectedFiltering: Story = {
+  args: {
+    label: 'Problem Class Filter',
+    data: mockData,
+    selectedData: ['Tsp', 'MaxCut'],
+  },
 }

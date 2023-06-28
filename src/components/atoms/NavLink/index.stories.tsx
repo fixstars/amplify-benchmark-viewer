@@ -4,13 +4,14 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { NavLink } from '.'
 
-export default {
+const meta: Meta<typeof NavLink> = {
   title: 'Atoms/NavLink',
   component: NavLink,
+  tags: ['autodocs'],
   parameters: {
     backgrounds: {
       default: 'Header background color',
@@ -18,12 +19,15 @@ export default {
     },
     layout: 'centered',
   },
-} as ComponentMeta<typeof NavLink>
+}
 
-const Template: ComponentStory<typeof NavLink> = (args) => <NavLink {...args} />
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-  url: '/',
-  label: 'Home',
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    url: '/',
+    label: 'Home',
+  },
 }

@@ -4,25 +4,27 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import mockData from 'utils/test/mocks/data/mockReportData.json'
 
 import { PlotFeasibleRate } from '.'
 
-export default {
+const meta: Meta<typeof PlotFeasibleRate> = {
   title: 'Organisms/PlotFeasibleRate',
   component: PlotFeasibleRate,
-} as ComponentMeta<typeof PlotFeasibleRate>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof PlotFeasibleRate> = (args) => (
-  <PlotFeasibleRate {...args} />
-)
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-  data: mockData,
-  instance: 'r_instance',
-  useHistory: false,
-  xtype: 'log',
-  label: '',
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    data: mockData,
+    instance: 'r_instance',
+    useHistory: false,
+    xtype: 'log',
+    label: '',
+  },
 }

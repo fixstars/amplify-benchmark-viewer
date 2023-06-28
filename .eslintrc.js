@@ -128,7 +128,6 @@ module.exports = {
         allowSeparatedGroups: true,
       },
     ],
-    'react/react-in-jsx-scope': 'off',
     'linebreak-style': ['error', 'unix'],
     eqeqeq: ['error', 'always', { null: 'ignore' }],
     camelcase: ['error', { properties: 'never' }],

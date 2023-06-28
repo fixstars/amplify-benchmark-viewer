@@ -4,24 +4,30 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { FilteringTable } from '.'
 import mockData from './mockData/data.json'
 
-export default {
-  title: 'Organisms/FilteringTable',
-  component: FilteringTable,
-} as ComponentMeta<typeof FilteringTable>
-
-const Template: ComponentStory<typeof FilteringTable> = (args) => (
+const TestComponent = (props: React.ComponentProps<typeof FilteringTable>) => (
   <div style={{ height: '100vh' }}>
-    <FilteringTable {...args} />
+    <FilteringTable {...props} />
   </div>
 )
 
-export const Default = Template.bind({})
-Default.args = {
-  title: 'Problem Class',
-  data: mockData,
+const meta: Meta<typeof FilteringTable> = {
+  title: 'Organisms/FilteringTable',
+  component: TestComponent,
+  tags: ['autodocs'],
+}
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    title: 'Problem Class',
+    data: mockData,
+  },
 }

@@ -4,21 +4,23 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import mockData from 'utils/test/mocks/data/mockProblemListData.json'
 
 import { ProblemList } from '.'
 
-export default {
+const meta: Meta<typeof ProblemList> = {
   title: 'Templates/ProblemList',
   component: ProblemList,
-} as ComponentMeta<typeof ProblemList>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof ProblemList> = (args) => (
-  <ProblemList {...args} />
-)
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-  data: mockData,
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    data: mockData,
+  },
 }

@@ -6,30 +6,33 @@
  */
 import FilterAltIcon from '@mui/icons-material/FilterAlt'
 import { IconButton } from '@mui/material'
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { SectionTitle } from '.'
 
-export default {
+const meta: Meta<typeof SectionTitle> = {
   title: 'Atoms/SectionTitle',
   component: SectionTitle,
-} as ComponentMeta<typeof SectionTitle>
-
-const Template: ComponentStory<typeof SectionTitle> = (args) => (
-  <SectionTitle {...args} />
-)
-
-export const Default = Template.bind({})
-Default.args = {
-  title: 'Data Filtering',
+  tags: ['autodocs'],
 }
 
-export const RightComponent = Template.bind({})
-RightComponent.args = {
-  title: 'Data Filtering',
-  rightComponent: (
-    <IconButton>
-      <FilterAltIcon />
-    </IconButton>
-  ),
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    title: 'Data Filtering',
+  },
+}
+
+export const RightComponent: Story = {
+  args: {
+    title: 'Data Filtering',
+    rightComponent: (
+      <IconButton>
+        <FilterAltIcon />
+      </IconButton>
+    ),
+  },
 }

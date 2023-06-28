@@ -4,17 +4,18 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { JsonFileUploader } from '.'
 
-export default {
+const meta: Meta<typeof JsonFileUploader> = {
   title: 'Atoms/JsonFileUploader',
   component: JsonFileUploader,
-} as ComponentMeta<typeof JsonFileUploader>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof JsonFileUploader> = () => (
-  <JsonFileUploader />
-)
+export default meta
 
-export const Default = Template.bind({})
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {}

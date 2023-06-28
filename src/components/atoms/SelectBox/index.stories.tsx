@@ -4,21 +4,29 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+/**
+ * Copyright (c) Fixstars Corporation and Fixstars Amplify Corporation.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { SelectBox } from '.'
 
-export default {
+const meta: Meta<typeof SelectBox> = {
   title: 'Atoms/SelectBox',
   component: SelectBox,
-} as ComponentMeta<typeof SelectBox>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof SelectBox> = (args) => (
-  <SelectBox {...args} />
-)
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-  label: 'a_client',
-  options: ['box', 'max-min', '3q-1q', 'median'],
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    label: 'a_client',
+    options: ['box', 'max-min', '3q-1q', 'median'],
+  },
 }

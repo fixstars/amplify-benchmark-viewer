@@ -71,8 +71,9 @@ export const Master = ({ data }: Props) => {
   })
   const problemInstances = getProblemInstances(filteredData)
   const firstProblemInstance = problemInstances[0]
-  const [problemInstance, setProblemInstance] =
-    useState<string | undefined>(firstProblemInstance)
+  const [problemInstance, setProblemInstance] = useState<string | undefined>(
+    firstProblemInstance,
+  )
 
   const [expanded, setExpanded] = useState(false)
   const [showFilter, setShowFilter] = useState(false)

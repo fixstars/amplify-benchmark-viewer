@@ -4,24 +4,26 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { LinkButton } from '.'
 
-export default {
+const meta: Meta<typeof LinkButton> = {
   title: 'Atoms/LinkButton',
   component: LinkButton,
+  tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
-} as ComponentMeta<typeof LinkButton>
+}
 
-const Template: ComponentStory<typeof LinkButton> = (args) => (
-  <LinkButton {...args} />
-)
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-  label: 'a_client',
-  link: '/clients/a_client',
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    label: 'a_client',
+    link: '/clients/a_client',
+  },
 }

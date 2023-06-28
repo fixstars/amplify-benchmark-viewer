@@ -4,20 +4,24 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import type { MasterData } from '@types'
 import mockData from 'utils/test/mocks/data/mockMasterData.json'
 
 import { Master } from '.'
 
-export default {
+const meta: Meta<typeof Master> = {
   title: 'Templates/Master',
   component: Master,
-} as ComponentMeta<typeof Master>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof Master> = (args) => <Master {...args} />
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-  data: mockData as ReadonlyArray<MasterData>,
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    data: mockData as ReadonlyArray<MasterData>,
+  },
 }

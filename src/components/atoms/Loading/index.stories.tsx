@@ -4,15 +4,18 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { Loading } from '.'
 
-export default {
+const meta: Meta<typeof Loading> = {
   title: 'Atoms/Loading',
   component: Loading,
-} as ComponentMeta<typeof Loading>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof Loading> = () => <Loading />
+export default meta
 
-export const Default = Template.bind({})
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {}

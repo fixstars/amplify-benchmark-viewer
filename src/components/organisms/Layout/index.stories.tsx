@@ -4,18 +4,22 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { Layout } from '.'
 
-export default {
+const meta: Meta<typeof Layout> = {
   title: 'Organisms/Layout',
   component: Layout,
-} as ComponentMeta<typeof Layout>
+  tags: ['autodocs'],
+}
 
-const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-  children: <div>Organisms layout component</div>,
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    children: <div>Organisms layout component</div>,
+  },
 }

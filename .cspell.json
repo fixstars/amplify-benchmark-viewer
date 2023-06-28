@@ -23,7 +23,8 @@
     "xtype",
     "ytype",
     "fillcolor",
-    "legendgroup"
+    "legendgroup",
+    "autodocs"
   ],
   "ignorePaths": [
     "__snapshots__",
