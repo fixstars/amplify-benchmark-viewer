@@ -44,13 +44,15 @@ export const LabelList = ({ data }: Props) => {
           }}
           rows={data}
           columns={columns}
-          hideFooter
+          pagination
           getRowId={(row) => `${row.label}`}
           disableColumnMenu
           initialState={{
             pagination: {
               paginationModel: {
-                pageSize: data.length,
+                // The DataGrid (MIT license) is limited to pages of up to 100 rows.
+                // Reference: https://mui.com/x/react-data-grid/pagination/#size-of-the-page
+                pageSize: 100,
               },
             },
           }}

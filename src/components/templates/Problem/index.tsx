@@ -136,7 +136,7 @@ export const Problem = ({
           }}
           rows={filteredData}
           columns={columns}
-          hideFooter
+          pagination
           getRowId={(row) =>
             `${row.benchmark_id}_${row.client}_${row.version}_${row.label}_${row.specified_time}`
           }
@@ -144,7 +144,9 @@ export const Problem = ({
           initialState={{
             pagination: {
               paginationModel: {
-                pageSize: data.length,
+                // The DataGrid (MIT license) is limited to pages of up to 100 rows.
+                // Reference: https://mui.com/x/react-data-grid/pagination/#size-of-the-page
+                pageSize: 100,
               },
             },
           }}

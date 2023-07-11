@@ -37,12 +37,14 @@ export const ProblemList = ({ data }: Props) => {
           rows={data}
           columns={columns}
           getRowId={(row) => `${row.class}_${row.instance}`}
-          hideFooter
+          pagination
           disableColumnMenu
           initialState={{
             pagination: {
               paginationModel: {
-                pageSize: data.length,
+                // The DataGrid (MIT license) is limited to pages of up to 100 rows.
+                // Reference: https://mui.com/x/react-data-grid/pagination/#size-of-the-page
+                pageSize: 100,
               },
             },
           }}

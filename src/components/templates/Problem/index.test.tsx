@@ -339,13 +339,13 @@ describe('<Problem />', () => {
         expect(column.minWidth).toBe(140)
         expect(column.renderCell.name).toBe('renderCell')
       }
-      expect(dataGrid.props.hideFooter).toBe(true)
+      expect(dataGrid.props.pagination).toBe(true)
       expect(dataGrid.props.getRowId.name).toBe('getRowId')
       expect(dataGrid.props.disableColumnMenu).toBe(true)
       expect(dataGrid.props.initialState).toEqual({
         pagination: {
           paginationModel: {
-            pageSize: 3,
+            pageSize: 100,
           },
         },
       })

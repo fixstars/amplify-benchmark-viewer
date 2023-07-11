@@ -42,8 +42,15 @@ describe('<ProblemList />', () => {
     expect(dataGrid.props.rows).toEqual(mockData)
     expect(dataGrid.props.columns).toEqual(columns)
     expect(dataGrid.props.getRowId.name).toBe('getRowId')
-    expect(dataGrid.props.hideFooter).toBe(true)
+    expect(dataGrid.props.pagination).toBe(true)
     expect(dataGrid.props.disableColumnMenu).toBe(true)
+    expect(dataGrid.props.initialState).toEqual({
+      pagination: {
+        paginationModel: {
+          pageSize: 100,
+        },
+      },
+    })
 
     expect(container).toMatchSnapshot()
   })
