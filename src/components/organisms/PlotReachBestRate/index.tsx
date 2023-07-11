@@ -42,20 +42,37 @@ export const PlotReachBestRate = ({
       }
     }
   } = {}
-
-  for (let i = 0; i < groupIDs.length; i++) {
-    const groupID = groupIDs[i]
-    const {
-      client_id: clientID,
-      problem_id: problemID,
-      history,
-    } = data.benchmarks[groupID]
+  const clientNameVersionCount: { [k: string]: number } = {}
+  const groupIDToParameterName: { [k: string]: string } = {}
+  for (const groupID of groupIDs) {
+    const { client_id: clientID, problem_id: problemID } =
+      data.benchmarks[groupID]
     const {
       name,
       version,
       parameters: clientParameters,
     } = data.clients[clientID]
     const { parameters: problemParameters } = data.problems[problemID]
+    const nameVersion = `${name}(${version})`
+    if (nameVersion in clientNameVersionCount) {
+      clientNameVersionCount[nameVersion] += 1
+    } else {
+      clientNameVersionCount[nameVersion] = 1
+    }
+    const parameterName =
+      nameVersion + `_${clientNameVersionCount[nameVersion]}`
+    parameters[parameterName] = {
+      clientParameters,
+      problemParameters,
+    }
+    groupIDToParameterName[parameterName] = groupID
+  }
+  const parameterNames = Object.keys(groupIDToParameterName)
+  parameterNames.sort()
+
+  for (const parameterName of parameterNames) {
+    const groupID = groupIDToParameterName[parameterName]
+    const { history } = data.benchmarks[groupID]
     const results =
       useHistory && history != null
         ? history[label]
@@ -81,7 +98,6 @@ export const PlotReachBestRate = ({
       reachBestRate.push(r.reach_best_rate)
     }
 
-    const parameterName = `${i + 1}_${name}(${version})`
     plotData.push({
       x: samplingTime,
       y: reachBestRate,
@@ -90,10 +106,6 @@ export const PlotReachBestRate = ({
       mode: 'lines+markers',
       text: texts,
     })
-    parameters[parameterName] = {
-      clientParameters,
-      problemParameters,
-    }
   }
   const layout: Partial<Plotly.Layout> = {
     xaxis: {

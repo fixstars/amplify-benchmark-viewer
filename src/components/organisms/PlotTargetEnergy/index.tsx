@@ -53,24 +53,41 @@ export const PlotTargetEnergy = ({
   } = {}
   let xMin = Infinity
   let xMax = -Infinity
-
-  const plotData: Plotly.Data[] = []
-  const scatterVisible: boolean[] = []
-  const boxVisible: boolean[] = []
-  for (let i = 0; i < groupIDs.length; i++) {
-    const groupID = groupIDs[i]
-    const {
-      client_id: clientID,
-      problem_id: problemID,
-      history,
-    } = data.benchmarks[groupID]
+  const clientNameVersionCount: { [k: string]: number } = {}
+  const groupIDToParameterName: { [k: string]: string } = {}
+  for (const groupID of groupIDs) {
+    const { client_id: clientID, problem_id: problemID } =
+      data.benchmarks[groupID]
     const {
       name,
       version,
       parameters: clientParameters,
     } = data.clients[clientID]
-
     const { parameters: problemParameters } = data.problems[problemID]
+    const nameVersion = `${name}(${version})`
+    if (nameVersion in clientNameVersionCount) {
+      clientNameVersionCount[nameVersion] += 1
+    } else {
+      clientNameVersionCount[nameVersion] = 1
+    }
+    const parameterName =
+      nameVersion + `_${clientNameVersionCount[nameVersion]}`
+    parameters[parameterName] = {
+      clientParameters,
+      problemParameters,
+    }
+    groupIDToParameterName[parameterName] = groupID
+  }
+  const parameterNames = Object.keys(groupIDToParameterName)
+  parameterNames.sort()
+  const plotData: Plotly.Data[] = []
+  const scatterVisible: boolean[] = []
+  const boxVisible: boolean[] = []
+
+  for (let i = 0; i < parameterNames.length; i++) {
+    const parameterName = parameterNames[i]
+    const groupID = groupIDToParameterName[parameterName]
+    const { history } = data.benchmarks[groupID]
 
     if (useHistory && history != null) {
       const results = history[label]
@@ -113,7 +130,6 @@ export const PlotTargetEnergy = ({
       xMin = samplingTime.reduce((min, d) => Math.min(min, d), xMin)
       xMax = samplingTime.reduce((max, d) => Math.max(max, d), xMax)
 
-      const parameterName = `${i + 1}_${name}(${version})`
       plotData.push({
         x: samplingTime.concat(rSamplingTime),
         y: targetEnergy['min'].concat(targetEnergy['max']),
@@ -157,13 +173,7 @@ export const PlotTargetEnergy = ({
       })
       scatterVisible.push(true)
       boxVisible.push(true)
-
-      parameters[parameterName] = {
-        clientParameters,
-        problemParameters,
-      }
     } else {
-      const parameterName = `${i + 1}_${name}(${version})`
       const results = data.benchmarks[groupID].results[label]
       if ((results as typeof results | undefined) == null) continue
 
@@ -211,11 +221,6 @@ export const PlotTargetEnergy = ({
       })
       scatterVisible.push(false)
       boxVisible.push(true)
-
-      parameters[parameterName] = {
-        clientParameters,
-        problemParameters,
-      }
     }
   }
 

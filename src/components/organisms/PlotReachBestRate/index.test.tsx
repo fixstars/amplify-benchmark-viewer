@@ -46,7 +46,7 @@ describe('<PlotReachBestRate />', () => {
     expect(plot.data).toMatchObject([
       {
         mode: 'lines+markers',
-        name: '1_a_client(v0.6.4-54-ge56964d-V100)',
+        name: 'a_client(v0.6.4-54-ge56964d-A100)_1',
         text: [],
         type: 'scatter',
         x: expect.any(Array),
@@ -54,7 +54,7 @@ describe('<PlotReachBestRate />', () => {
       },
       {
         mode: 'lines+markers',
-        name: '2_a_client(v0.6.4-54-ge56964d-A100)',
+        name: 'a_client(v0.6.4-54-ge56964d-V100)_1',
         text: [],
         type: 'scatter',
         x: expect.any(Array),
@@ -62,7 +62,7 @@ describe('<PlotReachBestRate />', () => {
       },
       {
         mode: 'lines+markers',
-        name: '3_f_client(9.5.0)',
+        name: 'f_client(9.5.0)_1',
         text: [],
         type: 'scatter',
         x: expect.any(Array),
