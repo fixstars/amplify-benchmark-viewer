@@ -127,7 +127,7 @@ sync-repositories:
     # rebase and push
     - git status
     - git rebase github/main
-    - git push origin gitlab_main
+    - git push origin gitlab_main -f
     - git push origin gitlab_main:main -f
     - git push github gitlab_main:main
   rules:
