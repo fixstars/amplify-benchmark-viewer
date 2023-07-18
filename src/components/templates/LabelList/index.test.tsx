@@ -48,7 +48,14 @@ describe('<LabelList />', () => {
       },
     })
     expect(dataGrid.props.rows).toEqual(mockData)
-    expect(dataGrid.props.columns).toEqual(columns)
+    {
+      // updateLabelColumnWidth
+      const newColumns = JSON.parse(JSON.stringify(columns))
+      newColumns[0].minWidth = 168
+      newColumns[1].renderCell = columns[1].renderCell
+      newColumns[2].renderCell = columns[2].renderCell
+      expect(dataGrid.props.columns).toEqual(newColumns)
+    }
     expect(dataGrid.props.getRowId.name).toBe('getRowId')
     expect(dataGrid.props.pagination).toBe(true)
     expect(dataGrid.props.disableColumnMenu).toBe(true)

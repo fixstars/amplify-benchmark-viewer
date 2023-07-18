@@ -168,13 +168,21 @@ describe('DataGridCell utils', () => {
     expect(label.type).toBe('span')
     expect(label.props.style).toEqual({ marginRight: 10 })
     expect(label.props.children).toEqual(['MaxCut', ':'])
-    const instances = instance.props.children[1]
 
+    const instancesContainer = instance.props.children[1]
+    expect(instancesContainer.props.style).toEqual({
+      display: 'flex',
+      flexWrap: 'wrap',
+    })
+    const instances = instancesContainer.props.children
     {
       const linkContainer = instances[0]
       expect(linkContainer.type).toBe('div')
       expect(linkContainer.key).toBe('test_key_MaxCut_j_instance')
-      expect(linkContainer.props.style).toEqual({ marginRight: 10 })
+      expect(linkContainer.props.style).toEqual({
+        marginRight: 10,
+        marginBottom: 10,
+      })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
@@ -189,7 +197,10 @@ describe('DataGridCell utils', () => {
       const linkContainer = instances[1]
       expect(linkContainer.type).toBe('div')
       expect(linkContainer.key).toBe('test_key_MaxCut_k_instance')
-      expect(linkContainer.props.style).toEqual({ marginRight: 10 })
+      expect(linkContainer.props.style).toEqual({
+        marginRight: 10,
+        marginBottom: 10,
+      })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')
@@ -204,7 +215,10 @@ describe('DataGridCell utils', () => {
       const linkContainer = instances[2]
       expect(linkContainer.type).toBe('div')
       expect(linkContainer.key).toBe('test_key_MaxCut_l_instance')
-      expect(linkContainer.props.style).toEqual({ marginRight: 10 })
+      expect(linkContainer.props.style).toEqual({
+        marginRight: 10,
+        marginBottom: 10,
+      })
 
       const link = linkContainer.props.children
       expect(link.type.name).toBe('LinkButton')

@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Box } from '@mui/material'
+import type { GridColDef } from '@mui/x-data-grid'
 import { DataGrid } from '@mui/x-data-grid'
 import { SectionTitle } from 'components/atoms/SectionTitle'
 import { Layout } from 'components/organisms'
@@ -17,6 +18,37 @@ interface Props {
 }
 
 export const ClientList = ({ data }: Props) => {
+  const updateColumnWidth = (c: GridColDef<ClientInstances>[]) => {
+    const newColumns = JSON.parse(JSON.stringify(c))
+    let maxClientLength = 0
+    let maxVersionLength = 0
+    data.map((item) => {
+      maxClientLength =
+        item.client.length > maxClientLength
+          ? item.client.length
+          : maxClientLength
+      maxVersionLength =
+        item.version.length > maxVersionLength
+          ? item.version.length
+          : maxVersionLength
+    })
+
+    newColumns.map((item: GridColDef<ClientInstances>, i: number) => {
+      if ('renderCell' in columns[i]) item.renderCell = columns[i].renderCell
+
+      switch (item.field) {
+        case 'client':
+          item.minWidth = maxClientLength * 8
+          break
+        case 'version':
+          item.minWidth = maxVersionLength * 8
+          break
+      }
+    })
+
+    return newColumns
+  }
+
   return (
     <Layout>
       <Box>
@@ -40,7 +72,7 @@ export const ClientList = ({ data }: Props) => {
             },
           }}
           rows={data}
-          columns={columns}
+          columns={updateColumnWidth(columns)}
           pagination
           getRowId={(row) => `${row.client}_${row.version}`}
           disableColumnMenu

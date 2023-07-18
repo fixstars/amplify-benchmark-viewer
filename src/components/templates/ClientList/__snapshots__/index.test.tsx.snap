@@ -114,7 +114,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                     class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                     data-field="client"
                     role="columnheader"
-                    style="height: 56px; width: 180px; min-width: 180px; max-width: 180px;"
+                    style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
                     tabindex="0"
                   >
                     <div
@@ -161,7 +161,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                     class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                     data-field="version"
                     role="columnheader"
-                    style="height: 56px; width: 220px; min-width: 220px; max-width: 220px;"
+                    style="height: 56px; width: 184px; min-width: 184px; max-width: 184px;"
                     tabindex="-1"
                   >
                     <div
@@ -279,7 +279,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                       data-colindex="0"
                       data-field="client"
                       role="cell"
-                      style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
+                      style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
                       tabindex="-1"
                     >
                       <a
@@ -295,7 +295,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                       data-colindex="1"
                       data-field="version"
                       role="cell"
-                      style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                      style="min-width: 184px; max-width: 184px; min-height: auto; max-height: none;"
                       tabindex="-1"
                     >
                       <div
@@ -325,34 +325,38 @@ exports[`<ClientList /> Rendered well 1`] = `
                           :
                         </span>
                         <div
-                          style="margin-right: 10px;"
+                          style="display: flex; flex-wrap: wrap;"
                         >
-                          <a
-                            class="css-1o4kjj1"
-                            href="/classes/MaxCut/instances/d_instance"
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            d_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-1o7gueb"
-                            href="/classes/MaxCut/instances/e_instance"
+                            <a
+                              class="css-1o4kjj1"
+                              href="/classes/MaxCut/instances/d_instance"
+                            >
+                              d_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            e_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-gqb4bp"
-                            href="/classes/MaxCut/instances/f_instance"
+                            <a
+                              class="css-1o7gueb"
+                              href="/classes/MaxCut/instances/e_instance"
+                            >
+                              e_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            f_instance
-                          </a>
+                            <a
+                              class="css-gqb4bp"
+                              href="/classes/MaxCut/instances/f_instance"
+                            >
+                              f_instance
+                            </a>
+                          </div>
                         </div>
                       </div>
                       <div
@@ -365,34 +369,38 @@ exports[`<ClientList /> Rendered well 1`] = `
                           :
                         </span>
                         <div
-                          style="margin-right: 10px;"
+                          style="display: flex; flex-wrap: wrap;"
                         >
-                          <a
-                            class="css-196ffja"
-                            href="/classes/Tsp/instances/a_instance"
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            a_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-14frf9o"
-                            href="/classes/Tsp/instances/b_instance"
+                            <a
+                              class="css-196ffja"
+                              href="/classes/Tsp/instances/a_instance"
+                            >
+                              a_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            b_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-tudjox"
-                            href="/classes/Tsp/instances/c_instance"
+                            <a
+                              class="css-14frf9o"
+                              href="/classes/Tsp/instances/b_instance"
+                            >
+                              b_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            c_instance
-                          </a>
+                            <a
+                              class="css-tudjox"
+                              href="/classes/Tsp/instances/c_instance"
+                            >
+                              c_instance
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -413,7 +421,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                       data-colindex="0"
                       data-field="client"
                       role="cell"
-                      style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
+                      style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
                       tabindex="-1"
                     >
                       <a
@@ -429,7 +437,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                       data-colindex="1"
                       data-field="version"
                       role="cell"
-                      style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                      style="min-width: 184px; max-width: 184px; min-height: auto; max-height: none;"
                       tabindex="-1"
                     >
                       <div
@@ -459,34 +467,38 @@ exports[`<ClientList /> Rendered well 1`] = `
                           :
                         </span>
                         <div
-                          style="margin-right: 10px;"
+                          style="display: flex; flex-wrap: wrap;"
                         >
-                          <a
-                            class="css-1wumwsl"
-                            href="/classes/MaxCut/instances/j_instance"
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            j_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-1d1cfkq"
-                            href="/classes/MaxCut/instances/k_instance"
+                            <a
+                              class="css-1wumwsl"
+                              href="/classes/MaxCut/instances/j_instance"
+                            >
+                              j_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            k_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-1s7e1mx"
-                            href="/classes/MaxCut/instances/l_instance"
+                            <a
+                              class="css-1d1cfkq"
+                              href="/classes/MaxCut/instances/k_instance"
+                            >
+                              k_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            l_instance
-                          </a>
+                            <a
+                              class="css-1s7e1mx"
+                              href="/classes/MaxCut/instances/l_instance"
+                            >
+                              l_instance
+                            </a>
+                          </div>
                         </div>
                       </div>
                       <div
@@ -499,34 +511,38 @@ exports[`<ClientList /> Rendered well 1`] = `
                           :
                         </span>
                         <div
-                          style="margin-right: 10px;"
+                          style="display: flex; flex-wrap: wrap;"
                         >
-                          <a
-                            class="css-1i2dnn3"
-                            href="/classes/Tsp/instances/g_instance"
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            g_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-c8py96"
-                            href="/classes/Tsp/instances/h_instance"
+                            <a
+                              class="css-1i2dnn3"
+                              href="/classes/Tsp/instances/g_instance"
+                            >
+                              g_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            h_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-10okgg3"
-                            href="/classes/Tsp/instances/i_instance"
+                            <a
+                              class="css-c8py96"
+                              href="/classes/Tsp/instances/h_instance"
+                            >
+                              h_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            i_instance
-                          </a>
+                            <a
+                              class="css-10okgg3"
+                              href="/classes/Tsp/instances/i_instance"
+                            >
+                              i_instance
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -547,7 +563,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                       data-colindex="0"
                       data-field="client"
                       role="cell"
-                      style="min-width: 180px; max-width: 180px; min-height: auto; max-height: none;"
+                      style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
                       tabindex="-1"
                     >
                       <a
@@ -563,7 +579,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                       data-colindex="1"
                       data-field="version"
                       role="cell"
-                      style="min-width: 220px; max-width: 220px; min-height: auto; max-height: none;"
+                      style="min-width: 184px; max-width: 184px; min-height: auto; max-height: none;"
                       tabindex="-1"
                     >
                       <div
@@ -593,34 +609,38 @@ exports[`<ClientList /> Rendered well 1`] = `
                           :
                         </span>
                         <div
-                          style="margin-right: 10px;"
+                          style="display: flex; flex-wrap: wrap;"
                         >
-                          <a
-                            class="css-zzcu01"
-                            href="/classes/Cvrp/instances/o_instance"
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            o_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-2ijomo"
-                            href="/classes/Cvrp/instances/p_instance"
+                            <a
+                              class="css-zzcu01"
+                              href="/classes/Cvrp/instances/o_instance"
+                            >
+                              o_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            p_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-19sw7en"
-                            href="/classes/Cvrp/instances/q_instance"
+                            <a
+                              class="css-2ijomo"
+                              href="/classes/Cvrp/instances/p_instance"
+                            >
+                              p_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            q_instance
-                          </a>
+                            <a
+                              class="css-19sw7en"
+                              href="/classes/Cvrp/instances/q_instance"
+                            >
+                              q_instance
+                            </a>
+                          </div>
                         </div>
                       </div>
                       <div
@@ -633,24 +653,28 @@ exports[`<ClientList /> Rendered well 1`] = `
                           :
                         </span>
                         <div
-                          style="margin-right: 10px;"
+                          style="display: flex; flex-wrap: wrap;"
                         >
-                          <a
-                            class="css-11vui9t"
-                            href="/classes/Qap/instances/m_instance"
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            m_instance
-                          </a>
-                        </div>
-                        <div
-                          style="margin-right: 10px;"
-                        >
-                          <a
-                            class="css-1jpc6yz"
-                            href="/classes/Qap/instances/n_instance"
+                            <a
+                              class="css-11vui9t"
+                              href="/classes/Qap/instances/m_instance"
+                            >
+                              m_instance
+                            </a>
+                          </div>
+                          <div
+                            style="margin-right: 10px; margin-bottom: 10px;"
                           >
-                            n_instance
-                          </a>
+                            <a
+                              class="css-1jpc6yz"
+                              href="/classes/Qap/instances/n_instance"
+                            >
+                              n_instance
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>

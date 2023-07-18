@@ -45,7 +45,16 @@ describe('<ClientList />', () => {
       },
     })
     expect(dataGrid.props.rows).toEqual(mockData)
-    expect(dataGrid.props.columns).toEqual(columns)
+    {
+      // updateColumnWidth
+      // The width of client column and version column will be fit to the longest client name and version name.
+      const newColumns = JSON.parse(JSON.stringify(columns))
+      newColumns[0].minWidth = 64
+      newColumns[0].renderCell = columns[0].renderCell
+      newColumns[1].minWidth = 184
+      newColumns[2].renderCell = columns[2].renderCell
+      expect(dataGrid.props.columns).toEqual(newColumns)
+    }
     expect(dataGrid.props.getRowId.name).toBe('getRowId')
     expect(dataGrid.props.pagination).toBe(true)
     expect(dataGrid.props.disableColumnMenu).toBe(true)

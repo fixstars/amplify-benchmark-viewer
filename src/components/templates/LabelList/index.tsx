@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Box } from '@mui/material'
+import type { GridColDef } from '@mui/x-data-grid'
 import { DataGrid } from '@mui/x-data-grid'
 import { SectionTitle } from 'components/atoms/SectionTitle'
 import { Layout } from 'components/organisms'
@@ -17,6 +18,24 @@ interface Props {
 }
 
 export const LabelList = ({ data }: Props) => {
+  const updateLabelColumnWidth = (c: GridColDef<LabelData>[]) => {
+    const newColumns = JSON.parse(JSON.stringify(c))
+    let maxCharacterLength = 0
+    data.map((item) => {
+      maxCharacterLength =
+        item.label.length > maxCharacterLength
+          ? item.label.length
+          : maxCharacterLength
+    })
+
+    newColumns.map((item: GridColDef<LabelData>, i: number) => {
+      if ('renderCell' in columns[i]) item.renderCell = columns[i].renderCell
+      if (item.field === 'label') item.minWidth = maxCharacterLength * 8
+    })
+
+    return newColumns
+  }
+
   return (
     <Layout>
       <Box>
@@ -43,7 +62,7 @@ export const LabelList = ({ data }: Props) => {
             },
           }}
           rows={data}
-          columns={columns}
+          columns={updateLabelColumnWidth(columns)}
           pagination
           getRowId={(row) => `${row.label}`}
           disableColumnMenu

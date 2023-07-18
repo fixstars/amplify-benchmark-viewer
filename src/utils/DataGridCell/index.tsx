@@ -148,18 +148,20 @@ const renderProblemInstancesCell = (
       style={{ margin: '5px 0 5px 0', display: 'flex' }}
     >
       <span style={{ marginRight: 10 }}>{className}:</span>
-      {problemInstances[className]?.map((instance) => (
-        <div
-          key={`${key}_${className}_${instance}`}
-          style={{ marginRight: 10 }}
-        >
-          <LinkButton
-            label={instance}
-            link={`/classes/${className}/instances/${instance}`}
-            backgroundColor={getBackgroundColor(instance)}
-          />
-        </div>
-      ))}
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        {problemInstances[className]?.map((instance) => (
+          <div
+            key={`${key}_${className}_${instance}`}
+            style={{ marginRight: 10, marginBottom: 10 }}
+          >
+            <LinkButton
+              label={instance}
+              link={`/classes/${className}/instances/${instance}`}
+              backgroundColor={getBackgroundColor(instance)}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   ))
 }
