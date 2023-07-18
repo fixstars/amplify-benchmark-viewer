@@ -16,7 +16,11 @@ const NavLinks = styled('nav')`
   display: flex;
 `
 
-export const Header = () => {
+interface Props {
+  readonly showMenu?: boolean
+}
+
+export const Header = ({ showMenu = true }: Props) => {
   const location = useLocation()
 
   return (
@@ -34,23 +38,25 @@ export const Header = () => {
             </Typography>
           </Link>
         </LogoContainer>
-        <NavLinks>
-          <NavLink
-            url="/"
-            label="Problems"
-            isActive={location.pathname === '/'}
-          />
-          <NavLink
-            url="/clients"
-            label="Clients"
-            isActive={location.pathname === '/clients'}
-          />
-          <NavLink
-            url="/labels"
-            label="Label"
-            isActive={location.pathname === '/labels'}
-          />
-        </NavLinks>
+        {showMenu && (
+          <NavLinks>
+            <NavLink
+              url="/"
+              label="Problems"
+              isActive={location.pathname === '/'}
+            />
+            <NavLink
+              url="/clients"
+              label="Clients"
+              isActive={location.pathname === '/clients'}
+            />
+            <NavLink
+              url="/labels"
+              label="Label"
+              isActive={location.pathname === '/labels'}
+            />
+          </NavLinks>
+        )}
       </Toolbar>
     </AppBar>
   )

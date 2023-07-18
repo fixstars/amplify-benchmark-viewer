@@ -24,7 +24,7 @@ export const UploadDataPage = () => {
   }, [reportData])
 
   return (
-    <Layout>
+    <Layout showMenu={false}>
       <JsonFileUploader
         onLoad={(jsonData) => setReportData(jsonData as ReportData)}
       />

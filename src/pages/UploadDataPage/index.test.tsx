@@ -10,7 +10,7 @@ import { BrowserRouter, Router } from 'react-router-dom'
 import type { MutableSnapshot } from 'recoil'
 import { RecoilRoot } from 'recoil'
 import { reportDataState } from 'stores'
-import { mockJsonFileUploader } from 'utils/test'
+import { mockJsonFileUploader, mockLayout } from 'utils/test'
 import mockData from 'utils/test/mocks/data/mockReportData.json'
 
 import { UploadDataPage } from '.'
@@ -29,6 +29,7 @@ describe('<UploadDataPage />', () => {
       </RecoilRoot>,
     )
 
+    expect(mockLayout.mock.calls[0][0].showMenu).toBe(false)
     expect(mockJsonFileUploader.mock.calls.length).toBe(1)
 
     expect(container).toMatchSnapshot()

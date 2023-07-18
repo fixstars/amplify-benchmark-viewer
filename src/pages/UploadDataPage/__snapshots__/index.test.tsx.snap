@@ -25,40 +25,6 @@ exports[`<UploadDataPage /> rendered well 1`] = `
             </h6>
           </a>
         </div>
-        <nav
-          class="css-ov1ktg"
-        >
-          <a
-            class="css-94l1l1"
-            href="/"
-          >
-            <p
-              class="MuiTypography-root MuiTypography-body1 css-4hrd4f-MuiTypography-root"
-            >
-              Problems
-            </p>
-          </a>
-          <a
-            class="css-94l1l1"
-            href="/clients"
-          >
-            <p
-              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
-            >
-              Clients
-            </p>
-          </a>
-          <a
-            class="css-94l1l1"
-            href="/labels"
-          >
-            <p
-              class="MuiTypography-root MuiTypography-body1 css-muv6ew-MuiTypography-root"
-            >
-              Label
-            </p>
-          </a>
-        </nav>
       </div>
     </header>
     <div

@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Box, styled, Toolbar } from '@mui/material'
-import { Header } from 'components/organisms/Header'
+import { Header } from 'components/organisms'
 
 const Page = styled(Box)`
   height: 100vh;
@@ -21,13 +21,14 @@ const Contents = styled(Box)`
 `
 
 interface Props {
+  readonly showMenu?: boolean
   readonly children: React.ReactNode
 }
 
-export const Layout = ({ children }: Props) => {
+export const Layout = ({ showMenu = true, children }: Props) => {
   return (
     <Page>
-      <Header />
+      <Header showMenu={showMenu} />
       <Contents>
         <Toolbar />
         {children}

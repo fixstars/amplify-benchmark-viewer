@@ -6,7 +6,7 @@
  */
 import { render } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
-import { mockBox } from 'utils/test'
+import { mockBox, mockHeader } from 'utils/test'
 
 import { Layout } from '.'
 
@@ -25,6 +25,7 @@ describe('<Layout />', () => {
     const page = mockBox.mock.calls[0][0]
     expect(page.children.length).toBe(2)
 
+    expect(mockHeader.mock.calls[0][0].showMenu).toBe(true)
     const header = page.children[0]
     expect(header.type.name).toBe('Header')
 
@@ -39,5 +40,17 @@ describe('<Layout />', () => {
     expect(component.props.children).toBe('Organisms layout component test')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('Hide menus', async () => {
+    render(
+      <BrowserRouter>
+        <Layout showMenu={false}>
+          <div>Organisms layout component test</div>
+        </Layout>
+      </BrowserRouter>,
+    )
+
+    expect(mockHeader.mock.calls[0][0].showMenu).toBe(false)
   })
 })

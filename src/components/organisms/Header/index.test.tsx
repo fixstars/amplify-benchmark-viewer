@@ -118,4 +118,25 @@ describe('<Header />', () => {
     fireEvent.click(screen.getByText('Label'))
     expect(mockPush.mock.calls[0][0].pathname).toBe('/labels')
   })
+
+  it('Hide menus', () => {
+    render(
+      <BrowserRouter>
+        <Header showMenu={false} />
+      </BrowserRouter>,
+    )
+
+    const appBar = mockAppBar.mock.calls[0][0]
+    const toolbar = appBar.children
+    const headerContents = toolbar.props.children
+    expect(headerContents.length).toBe(2)
+
+    const appTitleLinkContainer = headerContents[0]
+    const appTitleLink = appTitleLinkContainer.props.children
+    const appTitle = appTitleLink.props.children
+    expect(appTitle.props.children).toBe('Annealing Benchmark')
+
+    const navLinks = headerContents[1]
+    expect(navLinks).toBe(false)
+  })
 })
