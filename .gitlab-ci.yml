@@ -279,7 +279,7 @@ release:
     assets:
         links:
           - name: 'build'
-            url: '${PACKAGE_REGISTRY_URL}/amplify-benchmark-viewer.tar.gz'
+            url: 'https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/jobs/artifacts/main/raw/amplify-benchmark-viewer.tar.gz?job=build_for_release'
   only:
     refs:
       - tags
