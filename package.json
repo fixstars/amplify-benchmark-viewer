@@ -1,7 +1,7 @@
 {
   "name": "amplify_benchmark_viewer",
   "homepage": ".",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "@mui/x-data-grid": "^6.9.0",
