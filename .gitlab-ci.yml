@@ -264,6 +264,8 @@ build_for_release:
 
 release:
   stage: release
+  tags:
+    - docker
   image: registry.gitlab.com/gitlab-org/release-cli:latest
   needs:
     - job: build_for_release
