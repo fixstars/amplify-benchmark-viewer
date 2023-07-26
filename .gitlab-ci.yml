@@ -252,7 +252,7 @@ build_for_release:
   script:
     - npm run build
     - cp -rp dist/* public
-    - tar -czvf /amplify-benchmark-viewer.tar.gz /public
+    - tar -czvf amplify-benchmark-viewer.tar.gz public
   artifacts:
     paths:
       - amplify-benchmark-viewer.tar.gz
