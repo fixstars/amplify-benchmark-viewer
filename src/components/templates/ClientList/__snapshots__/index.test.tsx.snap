@@ -87,7 +87,7 @@ exports[`<ClientList /> Rendered well 1`] = `
           aria-colcount="3"
           aria-multiselectable="false"
           aria-rowcount="4"
-          class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1cp0zjk-MuiDataGrid-root"
+          class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1bhsoy5-MuiDataGrid-root"
           role="grid"
         >
           <div
@@ -95,6 +95,7 @@ exports[`<ClientList /> Rendered well 1`] = `
           >
             <div
               class="MuiDataGrid-columnHeaders MuiDataGrid-withBorderColor css-1iyq7zh-MuiDataGrid-columnHeaders"
+              role="presentation"
               style="min-height: 56px; max-height: 56px; line-height: 56px;"
             >
               <div
@@ -120,9 +121,11 @@ exports[`<ClientList /> Rendered well 1`] = `
                     <div
                       class="MuiDataGrid-columnHeaderDraggableContainer"
                       draggable="false"
+                      role="presentation"
                     >
                       <div
                         class="MuiDataGrid-columnHeaderTitleContainer"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -167,9 +170,11 @@ exports[`<ClientList /> Rendered well 1`] = `
                     <div
                       class="MuiDataGrid-columnHeaderDraggableContainer"
                       draggable="false"
+                      role="presentation"
                     >
                       <div
                         class="MuiDataGrid-columnHeaderTitleContainer"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -214,9 +219,11 @@ exports[`<ClientList /> Rendered well 1`] = `
                     <div
                       class="MuiDataGrid-columnHeaderDraggableContainer"
                       draggable="false"
+                      role="presentation"
                     >
                       <div
                         class="MuiDataGrid-columnHeaderTitleContainer"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -253,14 +260,17 @@ exports[`<ClientList /> Rendered well 1`] = `
             </div>
             <div
               class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+              role="presentation"
               style="overflow-x: hidden;"
             >
               <div
                 class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+                role="presentation"
                 style="width: auto; height: 156px; min-height: auto;"
               >
                 <div
                   class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+                  role="rowgroup"
                   style="transform: translate3d(0px, 0px, 0px);"
                 >
                   <div
@@ -300,6 +310,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                     >
                       <div
                         class="MuiDataGrid-cellContent"
+                        role="presentation"
                         title="v0.6.4-54-ge56964d-V100"
                       >
                         v0.6.4-54-ge56964d-V100
@@ -442,6 +453,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                     >
                       <div
                         class="MuiDataGrid-cellContent"
+                        role="presentation"
                         title="v0.7.0-V100"
                       >
                         v0.7.0-V100
@@ -584,6 +596,7 @@ exports[`<ClientList /> Rendered well 1`] = `
                     >
                       <div
                         class="MuiDataGrid-cellContent"
+                        role="presentation"
                         title="unknown"
                       >
                         unknown

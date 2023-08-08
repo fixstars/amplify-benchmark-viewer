@@ -171,7 +171,7 @@ exports[`<Master /> Rendered well 1`] = `
             aria-colcount="11"
             aria-multiselectable="false"
             aria-rowcount="4"
-            class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-11g4t4x-MuiDataGrid-root"
+            class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-xibzeu-MuiDataGrid-root"
             role="grid"
           >
             <div
@@ -179,6 +179,7 @@ exports[`<Master /> Rendered well 1`] = `
             >
               <div
                 class="MuiDataGrid-columnHeaders MuiDataGrid-withBorderColor css-1iyq7zh-MuiDataGrid-columnHeaders"
+                role="presentation"
                 style="min-height: 112px; max-height: 112px; line-height: 56px;"
               >
                 <div
@@ -206,9 +207,11 @@ exports[`<Master /> Rendered well 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer MuiDataGrid-withBorderColor"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -259,9 +262,11 @@ exports[`<Master /> Rendered well 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -306,9 +311,11 @@ exports[`<Master /> Rendered well 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -353,9 +360,11 @@ exports[`<Master /> Rendered well 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -392,14 +401,17 @@ exports[`<Master /> Rendered well 1`] = `
               </div>
               <div
                 class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+                role="presentation"
                 style="overflow-x: hidden;"
               >
                 <div
                   class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+                  role="presentation"
                   style="width: auto; height: 104px; min-height: auto;"
                 >
                   <div
                     class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+                    role="rowgroup"
                     style="transform: translate3d(0px, 0px, 0px);"
                   >
                     <div
