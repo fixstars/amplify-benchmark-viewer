@@ -23,7 +23,7 @@
     "react-scripts": "5.0.1",
     "recoil": "^0.7.7",
     "typescript": "5.0.4",
-    "web-vitals": "^3.3.2"
+    "web-vitals": "^3.4.0"
   },
   "scripts": {
     "deploy": "gh-pages -d public",
