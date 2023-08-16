@@ -77,7 +77,7 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.13.5",
     "@storybook/addon-actions": "^7.0.24",
-    "@storybook/addon-essentials": "^7.2.3",
+    "@storybook/addon-essentials": "^7.3.0",
     "@storybook/addon-interactions": "^7.2.3",
     "@storybook/addon-links": "^7.0.24",
     "@storybook/blocks": "^7.0.24",
