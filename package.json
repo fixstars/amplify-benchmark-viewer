@@ -81,7 +81,7 @@
     "@storybook/addon-interactions": "^7.2.3",
     "@storybook/addon-links": "^7.0.24",
     "@storybook/blocks": "^7.0.24",
-    "@storybook/node-logger": "^7.0.24",
+    "@storybook/node-logger": "^7.3.0",
     "@storybook/preset-create-react-app": "^7.0.24",
     "@storybook/react": "^7.0.24",
     "@storybook/react-webpack5": "^7.3.0",
