@@ -75,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: bash license.sh
+      - run: bash add_license_to_files.sh
       - run: >-
           if [[ $(git diff --name-only HEAD | grep -e src/ || echo '') != "" ]]; then
             RED="e[31m"
@@ -84,7 +84,7 @@ jobs:
             echo ""
             echo -e "${RED}######################################################################${END_COLOR}"
             echo -e "${RED}# Some of the files in the src folder do not have the LICENSE block. #${END_COLOR}"
-            echo -e "${RED}# Please sh license.sh before committing.                            #${END_COLOR}"
+            echo -e "${RED}# Please sh add_license_to_files.sh before committing.                            #${END_COLOR}"
             echo -e "${RED}######################################################################${END_COLOR}"
             echo ""
 
