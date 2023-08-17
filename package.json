@@ -5,7 +5,7 @@
   "dependencies": {
     "@mui/x-data-grid": "^6.11.1",
     "@tanstack/react-query": "^4.32.6",
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.3",
