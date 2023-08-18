@@ -18,7 +18,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react', '@typescript-eslint', 'functional', 'import'],
+  plugins: ['react', '@typescript-eslint', 'functional', 'import', 'rxjs'],
   settings: {
     react: {
       version: 'detect',
@@ -40,9 +40,8 @@ module.exports = {
         ignoreVoidOperator: true,
       },
     ],
-    'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': 'error',
-    '@typescript-eslint/no-implicit-any-catch': 'error',
+    'import/no-duplicates': 'error',
+    'rxjs/no-implicit-any-catch': 'error',
     'no-invalid-this': 'off',
     '@typescript-eslint/no-invalid-this': 'error',
     '@typescript-eslint/no-invalid-void-type': 'error',
