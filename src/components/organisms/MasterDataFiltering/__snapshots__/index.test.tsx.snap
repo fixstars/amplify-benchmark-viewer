@@ -86,7 +86,7 @@ exports[`<MasterDataFiltering /> Rendered well with selected data 1`] = `
         class="MuiBox-root css-0"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlinedPrimary css-1vm6v8-MuiButtonBase-root-MuiChip-root"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlinedPrimary css-4ikpb8-MuiButtonBase-root-MuiChip-root"
           role="button"
           tabindex="0"
         >
@@ -108,7 +108,7 @@ exports[`<MasterDataFiltering /> Rendered well with selected data 1`] = `
           </svg>
         </div>
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlinedPrimary css-1vm6v8-MuiButtonBase-root-MuiChip-root"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlinedPrimary css-4ikpb8-MuiButtonBase-root-MuiChip-root"
           role="button"
           tabindex="0"
         >
