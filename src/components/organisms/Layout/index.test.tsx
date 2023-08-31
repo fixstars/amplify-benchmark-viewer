@@ -6,7 +6,25 @@
  */
 import { render } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
-import { mockBox, mockHeader } from 'utils/test'
+import { mockBox } from 'utils/test'
+
+const mockHeader = jest.fn()
+
+jest.mock('components/organisms/Header', () => {
+  const { Header: HeaderComponent, ...rest } = jest.requireActual(
+    'components/organisms/Header',
+  )
+
+  const Header = (props: typeof HeaderComponent) => {
+    mockHeader(props)
+    return <HeaderComponent {...props} />
+  }
+
+  return {
+    Header,
+    ...rest,
+  }
+})
 
 import { Layout } from '.'
 

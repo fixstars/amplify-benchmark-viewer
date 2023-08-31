@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Box, styled, Toolbar } from '@mui/material'
-import { Header } from 'components/organisms'
+import { Header } from 'components/organisms/Header'
 
 const Page = styled(Box)`
   height: 100vh;
