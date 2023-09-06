@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/amplify-benchmark-viewer/static/css/main.e6c13ad2.css",
-    "main.js": "/amplify-benchmark-viewer/static/js/main.7b060121.js",
+    "main.js": "/amplify-benchmark-viewer/static/js/main.375e12b0.js",
     "static/js/47.9a803606.chunk.js": "/amplify-benchmark-viewer/static/js/47.9a803606.chunk.js",
     "index.html": "/amplify-benchmark-viewer/index.html",
     "main.e6c13ad2.css.map": "/amplify-benchmark-viewer/static/css/main.e6c13ad2.css.map",
-    "main.7b060121.js.map": "/amplify-benchmark-viewer/static/js/main.7b060121.js.map",
+    "main.375e12b0.js.map": "/amplify-benchmark-viewer/static/js/main.375e12b0.js.map",
     "47.9a803606.chunk.js.map": "/amplify-benchmark-viewer/static/js/47.9a803606.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.7b060121.js"
+    "static/js/main.375e12b0.js"
   ]
 }
