@@ -90,3 +90,24 @@ jobs:
 
             exit 1
           fi
+  checkSchema:
+    name: Check schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm ci
+      - run: npx json2ts ./schema/report_data.json > src/@types/report_data.d.ts --style.singleQuote --style.trailingComma=all --no-style.semi
+      - run: >-
+          if [[ $(git diff --name-only HEAD | grep 'src/@types/report_data.d.ts' || echo '') != "" ]]; then
+            RED="\e[31m"
+            END_COLOR="\e[0m"
+
+            echo ""
+            echo -e "${RED}###########################################################${END_COLOR}"
+            echo -e "${RED}# The report_data.d.ts of the report page do not match. #${END_COLOR}"
+            echo -e "${RED}# Please npx json2ts report_data.json before committing.         #${END_COLOR}"
+            echo -e "${RED}###########################################################${END_COLOR}"
+            echo ""
+
+            exit 1
+          fi
