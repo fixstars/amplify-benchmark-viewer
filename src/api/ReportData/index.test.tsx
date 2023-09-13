@@ -39,7 +39,7 @@ describe('[API] useGetReportData', () => {
   })
 
   it('success', async () => {
-    mockAxios.onGet('data/data.json').reply(200, mockData)
+    mockAxios.onGet('data/stats.json').reply(200, mockData)
     const wrapper = ({ children }: { children: JSX.Element }) => (
       <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     )
@@ -63,7 +63,7 @@ describe('[API] useGetReportData', () => {
   })
 
   it('fail', async () => {
-    mockAxios.onGet('data/data.json').reply(400)
+    mockAxios.onGet('data/stats.json').reply(400)
     const wrapper = ({ children }: { children: JSX.Element }) => (
       <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     )

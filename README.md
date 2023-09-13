@@ -35,7 +35,7 @@ If you have already the data file locally, you can see it without dragging and d
 
 ## How to use
 
-1. Drag and drop the data to the upload page (Or copy the file to the `public/data` folder locally)
+1. Drag and drop the data to the upload page (Or copy the file(`stats.json`) to the `public/data` folder locally)
 
 ![Amplify benchmark viewer - Upload page](docs/screenshots/upload.png)
 

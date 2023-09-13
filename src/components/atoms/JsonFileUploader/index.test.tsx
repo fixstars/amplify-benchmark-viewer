@@ -50,7 +50,7 @@ describe('<JsonFileUploader />', () => {
       {
         dataTransfer: {
           files: [
-            new File([JSON.stringify(mockData)], 'data.json', {
+            new File([JSON.stringify(mockData)], 'stats.json', {
               type: 'application/json',
             }),
           ],
