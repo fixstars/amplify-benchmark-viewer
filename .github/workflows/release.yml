@@ -1,4 +1,4 @@
-name: Create release tag and release note
+name: Create release note and deploy GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - 'v[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
-  create-release-tag:
+  create-release-note:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -44,3 +44,20 @@ jobs:
             -H "Authorization: token ${{ secrets.API_KEY }}" \
             -d "{ \"tag_name\": \"${{ steps.release_tag.outputs.version }}\", \"name\": \"${{ steps.release_tag.outputs.version }}\", \"body\": \"${{ steps.release_note.outputs.note }}\"}" \
             https://api.github.com/repos/${{ github.repository }}/releases
+
+  deploy-github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3.8.1
+        with:
+          node-version: '20.3.0'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy GitHub Actions
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.API_KEY }}
+          publish_dir: ./dist

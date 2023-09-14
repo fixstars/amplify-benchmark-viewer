@@ -26,7 +26,6 @@
     "web-vitals": "^3.4.0"
   },
   "scripts": {
-    "deploy": "gh-pages -d public",
     "start": "react-scripts start",
     "build": "cross-env BUILD_PATH='./dist' react-scripts build",
     "test": "react-scripts test",
@@ -101,7 +100,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-storybook": "^0.6.13",
-    "gh-pages": "^6.0.0",
     "history": "^5.3.0",
     "lefthook": "^1.4.9",
     "postcss-styled-syntax": "^0.4.0",

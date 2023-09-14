@@ -246,26 +246,7 @@ pages:
 
 build_for_release:
   stage: release
-  tags:
-    - docker
-  image: node:20.3.0-slim
-  cache:
-    <<: *global_cache
-  before_script:
-    - apt-get update -y
-    - apt-get install git -y
-    - npm ci --cache .npm --prefer-offline
-  script:
-    - npm run build
-    - cp -rp dist/* public
-    # prepare remote repositories
-    - git config remote.origin.url >&- && git remote set-url origin https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/fixstars/amplify-benchmark-viewer.git || git remote add origin https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/fixstars/amplify-benchmark-viewer.git
-    - git config user.email "noreply@fixstars.com"
-    - git config user.name "GitLab Bot"
-    - npm run deploy
-  artifacts:
-    paths:
-      - public
+  <<: *build
   only:
     refs:
       - tags
