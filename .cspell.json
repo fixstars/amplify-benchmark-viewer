@@ -24,7 +24,10 @@
     "ytype",
     "fillcolor",
     "legendgroup",
-    "autodocs"
+    "autodocs",
+    "googletagmanager",
+    "noscript",
+    "iframe"
   ],
   "ignorePaths": [
     "__snapshots__",
