@@ -254,7 +254,11 @@ build_for_release:
   before_script:
     - npm ci --cache .npm --prefer-offline
   script:
-    - bash add_google_analytics_tag.sh
+    - >
+      TARGET='<script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : ""; j.async = true; j.src = "https:\/\/www.googletagmanager.com\/gtm.js?id=" + i + dl; f.parentNode.insertBefore(j, f); })(window, document, "script", "dataLayer", "GTM-W6T5HDN");<\/script> <noscript><iframe src="https:\/\/www.googletagmanager.com\/ns.html?id=GTM-W6T5HDN" height="0" width="0" style="display:none;visibility:hidden"><\/iframe><\/noscript><\/head>'
+      SOURCE='<\/head>'
+      sed -i.bak "s/$SOURCE/$TARGET/g" public/index.html
+      rm public/index.html.bak
     - npm run build
     - cp -rp dist/* public
   artifacts:
