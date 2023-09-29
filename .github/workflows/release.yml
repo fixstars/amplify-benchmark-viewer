@@ -9,7 +9,7 @@ jobs:
   create-release-note:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Get previous tag
         id: pre_tag
@@ -48,7 +48,7 @@ jobs:
   deploy-github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3.8.1
         with:
           node-version: '20.3.0'
