@@ -102,7 +102,7 @@
     "eslint-plugin-storybook": "^0.6.13",
     "history": "^5.3.0",
     "lefthook": "^1.4.9",
-    "postcss-styled-syntax": "^0.4.0",
+    "postcss-styled-syntax": "^0.5.0",
     "prop-types": "^15.8.1",
     "remark-cli": "^11.0.0",
     "remark-lint": "^9.1.2",
