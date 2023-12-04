@@ -101,7 +101,7 @@
     "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-storybook": "^0.6.13",
     "history": "^5.3.0",
-    "lefthook": "^1.4.9",
+    "lefthook": "^1.5.5",
     "postcss-styled-syntax": "^0.4.0",
     "prop-types": "^15.8.1",
     "remark-cli": "^11.0.0",
